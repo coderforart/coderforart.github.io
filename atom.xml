@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[MWeb]]></title>
+  <link href="http://zh.mweb.im/atom.xml" rel="self"/>
+  <link href="http://zh.mweb.im/"/>
+  <updated>2016-08-08T10:39:39+08:00</updated>
+  <id>http://zh.mweb.im/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://www.coderforart.com/">CoderForArt</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0.7 版发布！]]></title>
+    <link href="http://zh.mweb.im/mweb-2.0.7-release.html"/>
+    <updated>2016-07-27T18:08:45+08:00</updated>
+    <id>http://zh.mweb.im/mweb-2.0.7-release.html</id>
+    <content type="html"><![CDATA[
+<p>更新前针对 MAS 上的评论重点说一下：MWeb 是支持直接对本地文件夹操作的，不用导入到文档库！请使用外部模式！请使用外部模式！！请使用外部模式！！! 重要的话讲三次！使用方法是 CMD + E 打开外部模式并把文件夹拖进左侧即可。</p>
+
+<p><strong>重要说明：</strong> Mac App Store 版已提交审核，还没正式发布，想必明天应该是能通过。官网版已经可以更新了。</p>
+
+<p>这次的更新主要是修正一些 bug, 详细为：</p>
+
+<ul>
+<li>加把 HTML 粘贴为 Markdown 的功能，在菜单： 编辑 - 把 HTML 粘贴为 Markdown。提示：此功能可以快速把网页上的内容保存为 markdown，下面有 gif 演示。</li>
+<li>加支持打开所有扩展名的文档。</li>
+<li>加重新加载文档库的功能，菜单：文件 - 重新加载文档库。</li>
+<li>加：当当前视图模式为仅预览模式时，用 CMD + P 会打印当前预览的结果。</li>
+<li>正 CMD + Shift + S 复制文件的 bug</li>
+<li>正预览可能会变空白的问题</li>
+<li>正在表格编辑中，如果有 LaTex 公式，再编辑时公式会出问题的 bug。</li>
+<li>它的一些 Bug 修正和性能提高。</li>
+</ul>
+
+<h2 id="toc_0">把 HTML 粘贴为 Markdown 功能演示：</h2>
+
+<p>这个功能默认会把远程的图片保存到本地，如果你不想保存图片，可以使用 CMD + Shift + N 新建文档再用此功能。</p>
+
+<p><img src="media/14696141258529/demoHtmlToMarkdown.gif" alt=""/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库]]></title>
+    <link href="http://zh.mweb.im/14689205256580.html"/>
+    <updated>2016-07-19T17:28:45+08:00</updated>
+    <id>http://zh.mweb.im/14689205256580.html</id>
+    <content type="html"><![CDATA[
+<p>之前 MWeb 2.0 说要支持 PlantUML，后来又否定了，因为我发现大部分朋友只需要自定义预览样式就可以做到的这种 PlantUML 支持，而早在 MWeb 1.2 版都支持了自我增加这功能了，介绍文章为：<a href="http://zh.mweb.im/mweb-v1.2-release-zh.html">自定预览 CSS</a>。2.0 中的自定预览功能有所变化，这也是今天要介绍的内容。</p>
+
+<p>今天要说的是一步到位，做一个支持 ECharts、mermaid、PlantUML 这三个常用的画图库的预览样式。如果你不想看到制作方法，只想使用，可以直接下载 (<a href="media/14689205256580/sample-all-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) 这个预览样式（如果你的主题中已有名称为 sample-custom-html-charts 的样式，可以直接用这个，不用下载了），解压后，把整个文件夹复制到 MWeb 的预览样式所在文件夹，然后点一下刷新按钮即可。 你可以在 <code>偏好设置</code> - <code>主题&amp;样式</code> 中点一下 <code>预览样式</code> 右边的编辑按钮来打开预览样式所以文件夹。这个预览样式中还包含了一个测试的 Markdown 文档，用 MWeb 打开这个文档，然后选择这个预览样式并预览就可以看到效果。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">自定义预览样式流程</h2>
+
+<p>在 MWeb 中自定义预览样式有两种方法，一种是简单地使用一个 CSS 样式文件即可，另一种是使用一个文件夹。MWeb 默认提供了两种方法的样例，就是预览样式中名为 sample-css 和 sample-custom-html 这两个样式。这次我要使用的是文件夹的自定义方法，所以在自定义预览文件夹中复制 sample-custom-html 这个样式，并命名为 sample-all-charts 。</p>
+
+<p>sample-all-charts 里有一个名为 asset 的文件夹，这个文件夹是放自定义预览样式所用 js、图片、css 等资源文件，还有两个 html 文件，一个名为 index.html，是 MWeb 自定义样式的模板 html，另一个为 demo.html 是制作预览样式时预览用的，并非必须的。</p>
+
+<p>先分别下载这三个 JS 画图库，下载地址分别为：<a href="http://echarts.baidu.com/download.html">http://echarts.baidu.com/download.html</a>、 <a href="http://knsv.github.io/mermaid/">http://knsv.github.io/mermaid/</a>、 <a href="http://zh.plantuml.com/download.html">http://zh.plantuml.com/download.html</a> 中选择下载的是 JQuery integration，另外还有 mermaid 要用到的 font-awesome。然后把相关文件放到 sample-all-charts 中的 asset 文件夹内，样式我直接是用 sample-css.css 这个样式，并改名为 style.css ，完成后整个文件夹如下图：</p>
+
+<p><img src="media/14689205256580/14689339545256.jpg" alt="" style="width:833px;"/></p>
+
+<p><strong>注意：</strong> jquery_plantuml 中的 encode64.js 是我从 jquery_plantuml.js 中提取的部分，由于 MWeb 的预览是本地预览，而  jquery_plantuml.js 中用到了 Worker，本地是不支持的，所以我就用了另外的写法。在 MWeb 中用边写边预览的方式用这个主题时，如果图表量很大的话，可能会比较卡。这里说一下 MWeb 2.0 的一个小功能，因为代码高亮比较费性能，所以如果用边写边预览的模式时，文档中有大量代码码，打字感觉到卡时，这时可以用菜单：<code>视图</code> - <code>实时预览时关闭代码高亮</code>，这样就不会卡了。</p>
+
+<h2 id="toc_1">实现原理</h2>
+
+<p>原理就是使用 Github-flavored Markdown 支持的代码块功能。因为代码块功能可以标记语言类型，并生成 <code>&lt;pre&gt;&lt;code class=&quot;language-语言类型&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> 这两个定制能力非常强大的 HTML 标记。这使得可以用 JS 在生成的 HTML 中获取所有代码块，并准确识别出语言类型，还可以取得原来的代码内容。我们只要用 JS 隐藏掉或者移除掉原来的代码块，并用代码内容生成需要的图形即可。</p>
+
+<p>详细的代码在 index.html 这个文件里，感兴趣可以下载来看看，这里只简单说一下 index.html 这个文档里的一些比较重要的字符串。</p>
+
+<p>index.html 中有三个比较重要的字符串，这三个字符串是自定义样式必须要有的，它们是 {{title}}、{{head}} 和 {{content}}。{{title}} 是导出为 HTML 功能会用到的，会正确替换标题；{{head}} 是 MWeb 内置的代码高亮、LaTeX 渲染等用到的；{{content}} 是为 Markdown 输出的 HTML 内容。</p>
+
+<p>最后再放一次这次自定义的预览样式下载：(<a href="media/14689205256580/sample-all-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) </p>
+
+<p><strong>7/20 Update：</strong>经 @chang 提醒，PlantUML 改成 SVG 样式，这样对中文支持更好。<br/>
+<strong>7/21 Update：</strong>经 <a href="http://weibo.com/n/FTD_Liaoer">@FTD_Liaoer</a> 提醒，ECharts 在导出 PDF 和生成图片时会有问题。这个问题可以在 option 中加 <code>animation:false</code> 解决，大概为：</p>
+
+<pre><code class="language-js">option = {
+    animation:false,
+    title : {
+    ....
+}
+</code></pre>
+
+<h2 id="toc_2">相关截图：</h2>
+
+<p><img src="media/14689205256580/14689360516577.jpg" alt="" style="width:1041px;"/><br/>
+<img src="media/14689205256580/14689360789050.jpg" alt="" style="width:1044px;"/><br/>
+<img src="media/14689205256580/14689361426921.jpg" alt="" style="width:1042px;"/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0 版正式发布，￥50 促销一周，一周后将变为 ￥98，所以也算 50% OFF 了！]]></title>
+    <link href="http://zh.mweb.im/mweb-2.0-release.html"/>
+    <updated>2016-07-17T23:23:43+08:00</updated>
+    <id>http://zh.mweb.im/mweb-2.0-release.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb 2.0 版为重大升级版，这个版本主要为：</p>
+
+<ul>
+<li>文档库支持自定义保存位置（现在可以把文档库保存到网盘来同步了）。偏好设置 - 通用设置 中可以设置</li>
+<li>文档库和外部模式都增加 Tabs 支持</li>
+<li>文档库支持 Tags</li>
+<li>增加工具栏</li>
+<li>重新设计了文档大纲和文档库的文档属性设置方式</li>
+<li>改进表格编辑和插入功能，提供了 UI 界面并支持全键盘操作，使用方式： <code>Ctrl + Shift + T</code> 或按工具栏的插入表格按钮。</li>
+<li>UI 有所调整。</li>
+</ul>
+
+<p>这次发布我做了一个介绍视频，基本上把 MWeb 的功能和使用都演示了一下，包括 2.0 版的功能，感兴趣的朋友可以去以下地址看看：</p>
+
+<ul>
+<li>B 站（bilibili）地址：<a href="http://www.bilibili.com/video/av5366059/">http://www.bilibili.com/video/av5366059/</a></li>
+<li>Youtube 地址：<a href="https://www.youtube.com/watch?v=85RwOuxthoE">https://www.youtube.com/watch?v=85RwOuxthoE</a></li>
+</ul>
+
+<p>当然，视频也放上官网了。</p>
+
+<h2 id="toc_0">Product Hunt 上求投票！</h2>
+
+<p>这次在 <a href="http://weibo.com/liuyi0922">@im61</a> 的帮助下，分享到了 Product Hunt ！网址：<a href="https://www.producthunt.com/tech/mweb">https://www.producthunt.com/tech/mweb</a> MWeb 在国外推广非常艰难，目前我仅知道 Product Hunt，所以这次对 MWeb 的发展非常重要！希望各位帮助一下！</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">2.0 版更新老用户要注意的</h2>
+
+<p>这次更新，自带的静态网站模板有所改动，如果你改动过自带的模板，生成时跟预料的不一样，可以在 </p>
+
+<pre><code>~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/SiteThemes
+</code></pre>
+
+<p>这个位置找到你原来的模板，并替换到新位置即可。第一次打开后会自动升级文档库为 2.0 版，旧的文档库并没有删除，你可以在 </p>
+
+<pre><code>~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/
+</code></pre>
+
+<p>处找到。</p>
+
+<h2 id="toc_2">2.0 版更新情况文字详细说明</h2>
+
+<p>基本上以下两个网址已经清楚说明了，感兴趣的朋友可以查看一下：</p>
+
+<ul>
+<li><a href="http://zh.mweb.im/mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a></li>
+<li><a href="http://zh.mweb.im/mweb-2.0-beta-all-update.html">MWeb 2.0 测试版更新汇总</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0 测试版更新汇总]]></title>
+    <link href="http://zh.mweb.im/mweb-2.0-beta-all-update.html"/>
+    <updated>2016-07-06T12:41:52+08:00</updated>
+    <id>http://zh.mweb.im/mweb-2.0-beta-all-update.html</id>
+    <content type="html"><![CDATA[
+<p>目前更新情况为：7/6 2.0.1 版发布、7/8 2.0.2 版发布、7/9 2.0.3 版发布、7/11 2.0.4 版发布、7/12 2.0.5 版发布。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">7/6 2.0.1 版发布</h2>
+
+<p>这次 2.0 版好像没什么重大 Bug，这个2.0.1 版本的更新如下：</p>
+
+<ul>
+<li>增加隐藏工具栏（视图 - 隐藏工具栏）。</li>
+<li>视图菜单增加切换编辑器主题和预览 CSS。</li>
+<li>主菜单增加发布菜单</li>
+<li>增加用快捷键切换 Tab，原来的缩进快捷键 <code>CMD + Shift + [</code> 和 <code>CMD + Shift + ]</code> 改为前一个 Tab 和后一个 Tab，缩进快捷键请使用选中后按 Tab 和 <code>Shift + Tab</code> 进行前后缩进。修正选择后按 Tab 键的 Bug。</li>
+<li>增加双指左滑和右滑手势来切换三栏/仅编辑器/大纲视图。<strong>注：</strong>鼠标光标放在编辑器内才有效果。</li>
+<li>增加新建未保存的文档 <code>CMD + Shift + N</code></li>
+<li>第二栏列表中增加支持 CMD + Delete 快捷键删除文档</li>
+</ul>
+
+<p>直接下载 2.0.1：<a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.1/1467779812/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.1.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
+
+<p>已安装 2.0.0 版的应该会收到更新提示的，也可以手动点菜单：<code>MWeb</code> - <code>检查更新</code>。</p>
+
+<h2 id="toc_1">7/8 2.0.2 版发布</h2>
+
+<h3 id="toc_2">重点说明的两个改进：</h3>
+
+<p>2.0.2 版增加了两个要截图说明的功能，一个是表格插入和编辑的改进，请看以下 gif，可以知道大概的操作方式：<br/>
+<img src="media/14677801124683/table-edit-demo.gif" alt="mweb-table-edit-demo"/></p>
+
+<p>再放一张静态的图，看图即知，是全键盘操作的。<br/>
+<img src="media/14677801124683/mweb-table-edit.jpg" alt="mweb-table-edit"/></p>
+
+<p>另一个就是<strong>外部模式中</strong>在编辑器右键，可以用另外编辑器打开当前的编辑的 Markdown 文档了，如下图：<br/>
+<img src="media/14677801124683/mweb-open-with.jpg" alt="mweb-open-with"/></p>
+
+<h3 id="toc_3">另外的几个改进：</h3>
+
+<ul>
+<li>发布到 Wordpress 和 MetaWeblog API 现在支持直接发布 markdown 文档了。</li>
+<li>双指左滑和右滑功能有所优化，修改了一下，另外现在不用把鼠标放在编辑器内滑动也可以了。</li>
+<li>图床功能中，之前七牛上传都会在文件名前增加日期，以防重名，现在增加了一个选项，勾选后就不会在文件名前增加日期了。</li>
+<li>之前有说一个从命令行打开的功能，然后我发现一直可以用 <code>open -a MWeb</code> 这个命令打开， 打开文档就是 <code>open -a MWeb xx.md</code>，所以这功能不用做了。</li>
+</ul>
+
+<h3 id="toc_4">否决 PlantUML 功能</h3>
+
+<p>之前说的 PlantUML 功能，现在决定不做了，因为考虑到现在 MWeb 已经足够复杂了，并不合适再增加新功能，相反，要减少功能和再优化现有功能。</p>
+
+<p>直接下载 2.0.2：<a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.2/1467983263/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.2.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
+
+<p>已安装 2.0 版的应该会收到更新提示的，也可以手动点菜单：<code>MWeb</code> - <code>检查更新</code>。</p>
+
+<h2 id="toc_5">7/9 2.0.3 版发布</h2>
+
+<p>2.0.3 版主要是增加 Mavericks 支持，另外就是修正文档库拖拽排序的 bug。</p>
+
+<p>直接下载 2.0.2：<a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.3/1468078313/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.3.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
+
+<h2 id="toc_6">7/11 2.0.4 版发布</h2>
+
+<p>2.0.4 版更新情况如下：</p>
+
+<ul>
+<li>修正面板切换时编辑器当前内容会跳到另外的位置的问题。</li>
+<li>修正启动后打开的文档没有恢复到上一次退出的位置。</li>
+<li>工具栏上的按钮的增加了提示。</li>
+<li>第二列的文档列表可以设置显示为两行和仅显示标题，在菜单 <code>视图</code> - <code>列表样式</code> 中设定。修正 <code>通用设置</code> - <code>主题样式</code> 中设置列表时间格式无效问题。</li>
+<li>Word 粘贴到 MWeb 会变成为图片的问题，请试试使用菜单：<code>编辑</code> - <code>粘贴为纯文本</code> 功能。</li>
+<li>修正文档版本恢复时不能查看历史文档的 Bug。</li>
+<li>其它小修正。</li>
+</ul>
+
+<p>直接下载 2.0.4： <a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.4/1468239146/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.4.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
+
+<h2 id="toc_7">7/12 2.0.5 版发布</h2>
+
+<p>2.0.5 版几乎是这次测试的最后一版了，这次修正有：</p>
+
+<ul>
+<li>用文档版本恢复功能时，浏览历史版本现在也可以看到图片了。</li>
+<li>右键图片，增加设置一半大小和原始大小。PS:一半大小主要是方便 Retina 的图片。</li>
+<li>表格编辑功能中，说明的文字变成可点击。比如说你点 确认 (cmd + enter) 这文字，可代替快捷键 cmd + enter。</li>
+<li>静态网站功能增加模板自带扩展（这个之后再详细说明）</li>
+<li>修正一些小 Bug。</li>
+</ul>
+
+<p>直接下载 2.0.5：<a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.5/1468324727/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.5.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试]]></title>
+    <link href="http://zh.mweb.im/mweb-2.0-beta.html"/>
+    <updated>2016-07-04T09:04:45+08:00</updated>
+    <id>http://zh.mweb.im/mweb-2.0-beta.html</id>
+    <content type="html"><![CDATA[
+<p>2.0 版是 MWeb 发布以来，最重要的一个版本。MWeb 自去年一月份发布以来，获得了很多朋友的建议，在此非常感谢！没有你们，2.0 版可能就不能出来！然后再次感谢 Producter: <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 为 MWeb 设计的图标！</p>
+
+<p>2.0 改动蛮多的，用写的可能表达不大好，我本想录个视频的，但是录起来效果更渣，只好再用写的了。。</p>
+
+<p>新版的 MWeb 界面如下，这个版本终于是可以自定义文档库的位置了，可以打开 <code>偏好设置</code> - <code>通用设置</code> 里设置文档库的位置。另外也增加了 Tabs 功能，MWeb 的 Tabs 的功能设计得跟 Sublime 相同，就是一个窗口中会有一个可替换的 Tab，用点击第二栏的列表时，会使用这个可替换的 Tab 显示点击的文档。如下图，如果用 <code>右键</code> - <code>在新标签中打开</code> 或者双击则会打开一个固定的新 Tab。<br/>
+<img src="media/14675942852243/14676035760371.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>这次也增加了工具栏，如上图中，工具栏最左边的第一个按钮为 <strong>三栏/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + 1</code> 一样，第二个为 <strong>编辑器预览/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + 4</code> 一样，第三个为 <strong>仅预览/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + R</code> 一样。工具栏最右边的按钮为 <strong>分享和发布</strong> 按钮，图床、发布至 Wordpress、Blogger、Evernote 等都是用此按钮。最右边倒数第二个为 <strong>文档大纲视图、属性等</strong> 显示与隐藏按钮。<code>CMD + 7</code> 可以显示与隐藏大纲视图，如下图。<br/>
+<img src="media/14675942852243/14676045235788.jpg" alt=""/></p>
+
+<p>值得一说的是，当切换为仅预览视图时（CMD + R），点击右侧大纲视图时会精准定位，以方便查看和预览 markdown 文档。</p>
+
+<p>点击 <code>扳手</code> 按钮或者用快捷键 <code>CMD + 8</code> 可以显示与隐藏文档属性，在这个地方可以设置文档的标签、日期和勾选文档所属的分类，如下图：<br/>
+<img src="media/14675942852243/14676059966720.jpg" alt=""/></p>
+
+<p>另外的特性就不多做介绍了，感兴趣可以下载测试版试试（文档最后有下载网址）。</p>
+
+<h2 id="toc_0">重点说明：</h2>
+
+<p>旧用户打开后，会自动把 1.x 版的文档库升级到 2.x 版，这个升级是用复制的方式的，并不会影响到 1.x 的文档库（第一次打开因为要升级文档库，会有点慢，之后就不会了）。通常来说使用 2.x 并不会影响到 1.x 版，但是我并没有深入测试过，只是一般使用。还有就是这次的测试版会在 15 天后变成试用版，不喜的话，建议不要下载。</p>
+
+<p>另外：目前发布的 2.0 测试版并没有包括 2.0 正式版的所有功能，未包括的功能有：</p>
+
+<ol>
+<li>表格插入和编辑改进</li>
+<li>从命令行打开、用其它编辑器打开</li>
+<li>静态网站的一些小改进</li>
+<li>Wordpress 发布支持直接发布 markdown</li>
+<li>PlantUML 支持 -- <strong>已否决</strong></li>
+<li>图床功能小改进</li>
+<li>1.9.9 版发布后收到的一些改进建议。</li>
+<li>Mavericks 支持（上次微薄上说大话了，支持 Mavericks 还要做不少工作）</li>
+</ol>
+
+<h2 id="toc_1">文档库结构说明</h2>
+
+<p>2.0 版的文档库由一个 sqlite 数据库文件 mainlib.db 和一个名为 docs 的文件夹组成。mainlib.db 保存的是分类信息、标签信息和静态网站生成的信息，docs 文件夹保存的是所有文档库的文档和图片、附件。docs 内除了所有 .md 文档外，还有一个 media 文件夹，media 文件夹内的文件夹名称都跟 docs 内的文档名对应，如果文档中带图片，则会在 media 内有一个对应的文件夹，里面放的是该文档的图片等附件。文档内是用相对地址进行引用。</p>
+
+<p>综上所述，这一版本的文档库设计得非常开放，文档库还可以保存在任何位置，不再像之前版本那样，固定一个不可见的位置。所以，有动手能力的朋友可以随意读取文档库信息，包括写自己的静态网站生成器，也包括写程序在 Windows 上读取和修改文档库，再回到 mac 上用 MWeb 继续，还可以自己写程序生成各种格式的书等等。</p>
+
+<h2 id="toc_2">iOS 版说明和测试版下载：</h2>
+
+<p>很多朋友可能更关注 iOS 版，这里说明一下。 iOS 版一定会有，事实上已经在开发了，但是<strong>发布时间并不能确定！</strong></p>
+
+<p>MWeb 2.0 测试版下载：<a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.0/1467605197/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.0.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.9.8 发布！顺便说一下 2.0 版和 iOS 版的情况]]></title>
+    <link href="http://zh.mweb.im/mweb-1.9.8-release.html"/>
+    <updated>2016-07-04T08:55:00+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.9.8-release.html</id>
+    <content type="html"><![CDATA[
+<p>这次更新主要有以下内容：</p>
+
+<ul>
+<li>编辑器性能再次优化。</li>
+<li>编辑器内图片右键功能增加 “彻底删除此图片” 菜单项。</li>
+<li>拖拽和粘贴图片支持从 Photo、Safari、Chrome 等常用 app 中拖拽和复制的图片。</li>
+<li>修正外部模式图片设置为绝对路径时，导出 PDF 后图片不显示问题。</li>
+<li>修正在编辑器中直接点击带“标题”属性的连结时，跳转网址不正确问题。</li>
+<li>修正编辑&amp;预览视图下 CMD + 1 后没到切换到仅编辑器视图的问题</li>
+<li>Task list 生成的 checkbox 现在变为 disabled 了。</li>
+<li>一些 Bug 修复。</li>
+</ul>
+
+<p>然后这次最重大的改变是：现在可以在 <strong>MAS 外购买 MWeb 了</strong>！ 还有就是，现在可以下载 MWeb 付费版来试用了！另外重点说明的是：在购买页面中选中国后，会支持使用支付宝购买！购买网址为：<a href="https://sites.fastspring.com/mweb/product/mweb">https://sites.fastspring.com/mweb/product/mweb</a>。</p>
+
+<h2 id="toc_0">关于 MWeb 2.0 版和 iOS 版</h2>
+
+<p>iOS 版其实在去年就已经计划了，但是 OS X 版一直在开发中，还没正式完善，所以去年仅仅是在 iOS 上试验一下编辑器的功能，并没有急急着手去做。在这一版发布之后，就要开始做 2.0 版和 iOS 版了。我的独立开发者生涯，差几个月就满两年了，在这过程中，深知优秀的 App 都是要经过时间的沉淀、大量精力和 N 次版本。MWeb 是我的第一个产品，估计也会是最后一个吧，只做一个，才能用有限的精力把它做好。另外，这一版发布后，如无重大 Bug，应该不会发新版本了，直到 2.0 版和 iOS 版发布。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。]]></title>
+    <link href="http://zh.mweb.im/mweb-1.9.7-release.html"/>
+    <updated>2016-02-26T11:31:44+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.9.7-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">有必要说明的预览方面的改进</h2>
+
+<p><img src="media/14564575040860/14564576891742.jpg" alt="" style="width:491px;"/></p>
+
+<p>这次的改进跟上图中的两个选项有关。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>在之前的版本中，如果取消选中了 <code>Resize window when hide pane</code> 这个选项，就可以在全屏中使用 <code>CMD + 1/2/3</code> 来切换二三栏，但是选中后，就不能使用，同时 CMD + 4 切换边编辑边预览的模式时，不大好用，主要是窗口大小不好控制。在 1.9.7 版中，如果取消这个选项，边编辑边预览会变成下图所示（Mou、Macdown 方式），同时在全屏也支持 <code>CMD + 1/2/3/4</code> 切换，这样就好用了点。所以我就把这个方式设置为默认了，如果要用原来的使用方式（我个人比较喜欢的方式，我都没在用全屏），选中即可。</p>
+
+<p><img src="media/14564575040860/14564581431585.jpg" alt="" style="width:1066px;"/></p>
+
+<p>这次也修改了第二次按 <code>CMD + 1/2/3/4</code> 的行为，比如说按 <code>CMD + 4</code> 时变为边编辑边预览模式，这时再按 <code>CMD + 4</code> 则会变为三栏模式，所以现在只要用 <code>CMD + 4</code> 这个快捷键即可在两者切换。<code>CMD + 1/2/3</code> 则是在二栏/三栏和仅编辑器模式间切换，具体可以感受一下即知。</p>
+
+<p>另外顺手也增加了第二个选项：<code>Live Preview (CMD + R) open new window</code>。如果这个选项<strong>没有选中</strong>，则会以下图的方式显示预览，再 (CMD + R) 则会切换回编辑模式。如果选中，则为原来的方式，这个选项默认也是<strong>没选中</strong>的。<br/>
+<img src="media/14564575040860/14564584705796.jpg" alt="" style="width:1037px;"/></p>
+
+<h2 id="toc_1">其它改进和修正</h2>
+
+<ul>
+<li>图床功能中，七牛上传有时候会出现 401 错误的问题也修正了。</li>
+<li>发布到 Wordpress.com 现在支持 Latex 了。</li>
+<li>修正语法和拼写检查的设置不能保存的问题。</li>
+<li>文档库增加 未分类文档</li>
+<li>其他的一些 Bug 修正</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等]]></title>
+    <link href="http://zh.mweb.im/mweb-1.9.3-release.html"/>
+    <updated>2016-01-19T09:29:55+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.9.3-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">详细更新说明：</h2>
+
+<p>新增：</p>
+
+<ul>
+<li>图床功能现在支持七牛 (qiniu.com) 了</li>
+<li>文档库增加清倒废纸篓功能</li>
+<li>全屏快捷键：Control + CMD + F</li>
+<li>发布到印象笔记时会记住上一次选择的笔记本</li>
+</ul>
+
+<p>修正：</p>
+
+<ul>
+<li>发布到 Wordpress 和 MetaWeblog API 不支持 https 问题</li>
+<li>中文版不能发布到 Medium 问题</li>
+<li>导出 PDF 选择带目录时某些情况下目录结构不对问题</li>
+<li>特殊文档不能正确解析问题（CPU 100%，切换文档不能显示）</li>
+<li>像 wow_great_stuff 这种写法不会解析成下划线了</li>
+<li>其它一些 Bug 修正和细节改进。</li>
+</ul>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">七牛图床设置详细说明</h2>
+
+<p>如下图，进入 MWeb 的偏好设置 - 发布服务里，本地图片上传服务中，点右边的 <code>七牛云存储</code> 按钮，会跳出如下图的新增窗口：<br/>
+<img src="media/14531669957228/14531677609529.jpg" alt="" style="width:697px;"/></p>
+
+<ul>
+<li>名称：填入自定的名称即可。</li>
+<li>API 地址：用默认这个即可，也可以用另外的，详细请参考：<a href="http://developer.qiniu.com/docs/v6/api/reference/up/upload.html">http://developer.qiniu.com/docs/v6/api/reference/up/upload.html</a> 请求头部中的 Host 那里。</li>
+<li>空间名称：你在七牛中新增的空间的名称。</li>
+<li>Access Key 和 Secret Key：在 七牛个人首页 - 帐号 - 密钥 中可以找到，网址通常为：<a href="https://portal.qiniu.com/setting/key">https://portal.qiniu.com/setting/key</a>。</li>
+<li>图片 URL 前缀：这个要去到空间，随便上传一张图，选中后就可以看到外链地址，这样就知道 URL 前缀了。</li>
+</ul>
+
+<p>设置完后可以点验证按钮，选择一张图片验证一下是否设置成功。设置成功后，打开要把本地图片上传到图床的文档，点软件右上角的 <code>分享</code> 按钮，在弹出的菜单中选择 <code>把本地图片上传至图床</code> ，如下图：<br/>
+<img src="media/14531669957228/14531685550447.jpg" alt=""/></p>
+
+<p>上面的下拉框可选择增加了的图床服务，中间会列出文档中的所有本地图片。选择刚刚新增的图床服务，点 <code>上传本地图片</code> 按钮即可。当文档中有新增的本地图片，重新调出这个界面，再点 <code>上传本地图片</code> 按钮即可把新增的图片上传。</p>
+
+<h2 id="toc_2">分享一个图床服务的使用小技巧</h2>
+
+<p>一般的博客、文章服务网站都支持查看 HTML 原码和直接填入 HTML 代码的，这种的话，点击本地图片上传至图床窗口中的 <code>复制 HTML</code> 按钮，然后粘贴即可。但是也有很多网站是不支持直接填入 HTML 代码的，比如说微薄中的发文章功能、微信公共号中的发文章功能等等。对于这些，可以点击 <code>新建文档</code> 按钮，这时 MWeb 会把文档中的本地图片地址替换为上传到图床后的地址并打开新建的文档。选择 视图菜单 - 实时预览 或者用快捷键 <code>CMD + R</code> 打开实时预览窗口，然后 <code>CMD + A</code> 全选预览中的文本和图片，<code>CMD + C</code> 复制。 然后再用 <code>CMD + V</code> 粘贴进不支持填入 HTML 代码的网站即可。下图为我粘贴到微薄文章中的效果。<br/>
+<img src="media/14531669957228/14531698229567.jpg" alt=""/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！]]></title>
+    <link href="http://zh.mweb.im/mweb-1.9.1-release.html"/>
+    <updated>2015-12-18T10:19:05+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.9.1-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">新图标</h2>
+
+<p><img src="media/14504051456811/1024.png" alt="" style="width:256px;"/><br/>
+换了一个新的图标，新图标是由 Producter <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 设计的，MWeb 终于有了一个高大上的图标了！非常感谢 Producter！</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">编辑器大改进</h2>
+
+<p>之前打字时会明显地看到字体颜色变化过程，现在不会了。之前在自定编辑器主题时，如果设置标题字体比较大，会明显看到字体变大过程，现在也修正了这个问题。MWeb 一直都是花比较多的时间在编辑器改进上，之后的版本也会这样做。</p>
+
+<h2 id="toc_2">导出为 PDF 改进</h2>
+
+<p>之前导出的 PDF 中，如果有 TOC 和 footnote，在 PDF 中点击时，是不正常的，不会跳到想要的位置。1.9 版修正了这个问题！另外 1.9 版在导出时还可以选择是否为 PDF 生成大纲视图（目录）。要注意的是这两个功能在 Lite 版中是没有的。现在开始慢慢加强和改进付费版了，希望能有多一点人购买，然后购买了的朋友也能觉得值，另外图床功能也是只支持付费版的。下图是为 PDF 增加目录后的效果。<br/>
+<img src="media/14504051456811/14504125781979.jpg" alt="" style="width:847px;"/></p>
+
+<h2 id="toc_3">增加图床功能</h2>
+
+<p>MWeb 在编写 Markdown 文档时，不管文档库还是外部模式，插入图片都是复制原图到合适的位置，然后以相对引用的方式引用图片。这样做的好处是在编写文档时会感到非常顺畅，不会有等待图片上传完然后再复制地址的问题，然后图片也不会依赖于网络服务。这样就几乎不会丢失图片了（插入非图片也是这样处理的）。</p>
+
+<p>当要把文档发布出去时，比如说导出 html，MWeb 会把本地的图片也一并导出。另外发布到 evernote、wordpress、blogger、medium 等服务，MWeb 也是会把本地图片上传到所属的服务。</p>
+
+<p>现在再增加了图床功能，这样的话基本上就满足大部分使用情景了。下面介绍一下怎么使用这个图床功能。</p>
+
+<h3 id="toc_4">增加图床服务</h3>
+
+<p>像发布服务那样，首先要增加图床服务，在 偏好设置 - 发布服务 里，目前可以增加三种图床服务：Google Photos、imgur、自定义。前两种不用多说，点击然后用所属帐号登入即可，注意先翻墙就没问题了。主要要介绍的是<strong>自定义</strong>，如下图：<br/>
+<img src="media/14504051456811/14504079331389.jpg" alt="" style="width:605px;"/></p>
+
+<p>我会使用 <a href="https://sm.ms/doc/">https://sm.ms/doc/</a> 这个图床做介绍，主要是它的 API 最简单，按 API 说明填入相关信息如下：<br/>
+<img src="media/14504051456811/14504081770612.jpg" alt="" style="width:605px;"/></p>
+
+<p>需要说明的有： <br/>
+<code>POST File Name</code>：这个是指表单的图片上传的名称<br/>
+<code>图片 URL 路径</code>：是指返回的 JSON 结果中的图片网址值的路径。比如说 sm.ms 说明文档中，返回的 JSON 结果如下：</p>
+
+<pre><code class="language-js">{
+    &quot;code&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        width: 1157,
+        height: 680,
+        filename: &quot;image_2015-08-26_10-54-48.png&quot;,
+        storename: &quot;56249afa4e48b.png&quot;,
+        size: 69525,
+        path: &quot;/2015/10/19/56249afa4e48b.png&quot;,
+        hash: &quot;nLbCw63NheaiJp1&quot;,
+        timestamp: 1445239546,
+        url: &quot;https://ooo.0o0.ooo/2015/10/19/56249afa4e48b.png&quot;,
+        delete: &quot;https://sm.ms/api/delete/nLbCw63NheaiJp1&quot;
+    }
+}
+</code></pre>
+
+<p>可以看到它返回的图片的网址是 data 下的 url 字段的值，所以就填入 data/url，要注意的是，只支持 JSON 返回结果。</p>
+
+<p><code>图片 URL 前缀</code>：这个是由于有些 API 可能只返回图片的保存位置，比如说七牛（只返回 key 和 hash），它还要在前面加上一个固定的网址才能得到真正的图片网址，可以参考下图的设置。下图是填好后并点验证按钮测试后的结果。点验证按钮，会让你选择一张图片，选择好会直接用填入的设置上传图片，如果上传成功，则会跳出如下图的提示。<br/>
+<img src="media/14504051456811/14504094805560.jpg" alt="" style="width:621px;"/></p>
+
+<p><strong>重要提示</strong>：目前还不支持七牛，因为七牛的 token 好像最多 12 个小时内就会无效了，也暂时不能生成长久 token （是否这样？）。连官方的 objc SDK 都是直接说从服务器获取 token 的。然后也不支持像 Google Photos 或 imgur 那样的 OAuth 2.0 的方式。貌似可以用官方文档说明的算法生成 token，但是 objc SDK 却不带这个，我暂时也懒得研究了。折中的方法是用官方提供的 php SDK，另外写一个  <a href="https://sm.ms/doc/">https://sm.ms/doc/</a> 这种类型的 API 自用。</p>
+
+<h3 id="toc_5">上传本地图片至图床</h3>
+
+<p><img src="media/14504051456811/14504103924368.jpg" alt="" style="width:456px;"/></p>
+
+<p>图床服务增加后，如上图选择右上角的分享按钮下的 把本地图片传至图床 菜单，会出来如下图的窗口：<br/>
+<img src="media/14504051456811/14504106293732.jpg" alt="" style="width:771px;"/></p>
+
+<p>选择要上传到的图床后，点 <code>上传本地图片</code> 按钮即可。图片会自动上传并在<code>远程：</code> 右方显示上传后的网址。点右边的三个按钮可以删除、查看和复制网址。当你删除远程图片或者在文档中有新增本地图片时，只要再点一次 <code>上传本地图片</code> 按钮即可，未上传的图片会自动上传。 下图是点 <code>上传本地图片</code> 按钮后的结果。另外三个按钮不用介绍应该会用了。</p>
+
+<p><img src="media/14504051456811/14504111413111.jpg" alt="" style="width:757px;"/></p>
+
+<p>再发一张传到七牛的效果：<br/>
+<img src="media/14504051456811/14504112138619.jpg" alt=""/></p>
+
+<h2 id="toc_6">其他改进</h2>
+
+<ul>
+<li>导出为 html 增加覆盖已有文件选项。</li>
+<li>增加简体中文和繁体中文语言支持。</li>
+<li>一些 Bug 修正和细节改进。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等]]></title>
+    <link href="http://zh.mweb.im/mweb-1.8.3-release.html"/>
+    <updated>2015-11-05T09:36:32+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.8.3-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">发布到 Medium 详细说明</h2>
+
+<p>在 <code>Preferences</code> - <code>Publishing</code> 可增加发布到 Medium 服务，点击后会出来以下画面：</p>
+
+<p><img src="media/14466873920420/14466881412766.jpg" alt="" class="mw_img_center" style="width:609px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>点 <a href="https://medium.com/me/settings">Settings page</a> （oops! 图中打错字！）进入 Medium 设置，拉到最下面，会发现 Intgration Tokens，填入想要的名称标识，并点 <code>Get integartion token</code> 按钮，就会得到一串字符，复制并返回 MWeb，粘贴到 Integration Token 字段，并点 <code>OK</code> 按钮即可，如下图为所说的字符串。</p>
+
+<p><img src="media/14466873920420/14466886017072.jpg" alt="" class="mw_img_center" style="width:774px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p>目前 Medium 的 API 还不支持更新，所以现在只支持发布，然后 Medium 的图片上传 API 也还没开放，所以正常情况下也不支持本地图片自动上传，但是如果你有增加了发布到 Blogger 的服务，可以勾选 Upload local image to Google Picasa 这个选项，这样就支持本地图片自动上传了。</p>
+
+<p>如下图左边是没有增加发布到 Blogger 服务的情况，可以看到选项是灰色的，右边是已经增加了发布到 Blogger 服务的情况，当勾选之后，MWeb 就会把本地图片自动上传至 Picasa，然后再发布到 Medium。发布到 Medium 之后，Medium 会自动把 Picasa 的图片保存到自己的服务器。</p>
+
+<p><img src="media/14466873920420/publish-to-medium.jpg" alt="publish-to-mediu" class="mw_img_center" style="width:1440px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p><strong>注意：</strong>发布到 Medium 的功能 Lite 版是没有的。</p>
+
+<h2 id="toc_1">其它更新</h2>
+
+<ul>
+<li>修正 LaTex 编辑器内预览卡死、$$ 语法不出现公式问题。</li>
+<li>修正脚注如果出现第二条引用会出错问题。</li>
+<li>编辑器性能提升了点，现在编辑十万多字的文档比之前好了很多。也修正了编辑时有时候会跳动的 Bug。</li>
+<li>其他小修正。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等]]></title>
+    <link href="http://zh.mweb.im/mweb-1.8.1-release.html"/>
+    <updated>2015-10-24T16:57:41+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.8.1-release.html</id>
+    <content type="html"><![CDATA[
+<p><img src="media/14456770612819/cn-s-5-small.jpg" alt="" style="width:1280px;"/></p>
+
+<ul>
+<li>增加记忆文档滚动位置的功能，之前在切换文档时，会总是跳到顶部，现在会记住你之前滚动的位置，下次切换时会还原（Pro Only）。</li>
+<li>增加 LaTex 语法高亮和编辑器内实时预览。之前写 LaTex 想要预览的话，要打开预览窗口，而且不大好用，现在可以在编辑器内实时预览，已经非常好用了（Pro Only）。</li>
+<li>实时预览窗口工具栏上增加 Above 的选项，选中后会一直在编辑器上面。这个选项给切换文档时喜欢先看预览效果的朋友。</li>
+<li>增加支持 EL Capitan 的 Split View 模式，现在可以在 Split View 的左边放编辑器，右边放实时预览窗口了。</li>
+<li>如果取消 <code>Resize window when hide pane</code> 选项的话，在全屏模式下也支持 CMD + 1， CMD + 3 切换显示面板了。</li>
+<li>修正文档库分类拖动和排序问题</li>
+<li>修正文档列表拖动排序闪退问题</li>
+<li>修正打开某些文档 CPU 会 100%， 文档库文档点开后要选择才看到字体问题。</li>
+<li>修正文档库中文档列表输入标题前不能同步显示，直到写入内容才会同步显示的问题</li>
+<li>修正文档库新增分类直接 Build Site 闪退问题。</li>
+<li>修正 CMD + F 打开查找面板后，不能用 CMD + Option + F 切换为替换面板的问题。</li>
+<li>修正一些文档导出为 PDF 闪退问题。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.7.3 版已提交！兼容 EL Capitan、外部模式增强、Bug 修正等]]></title>
+    <link href="http://zh.mweb.im/mweb-1.7.3-release.html"/>
+    <updated>2015-09-23T09:06:05+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.7.3-release.html</id>
+    <content type="html"><![CDATA[
+<p>这一版主要是修正 EL Capitan 的问题。</p>
+
+<p>由于很快就中秋了，到时候博主要回乡下过中秋，加上 EL Capitan GM 版非常稳定好用，所以就不等 EL Capitan 正式版发布，先提交到 MAS 了。顺便介绍文章也一并发了，也不等审核通过了。</p>
+
+<p>主要改进有：</p>
+
+<span id="more"></span><!-- more -->
+
+<ul>
+<li>兼容 EL Capitan</li>
+<li>外部模式增加是否列出子文件夹的文档（Load Sub Folder Documents）的选项。右键引入的文件夹 - Edit - Load Sub Folder Documents。注意：这个功能 Lite 版是没有的。</li>
+<li>图片居左、居中、居右的语法现在可以不用写宽度了，比如说：<code>![-c](pic.jpg)</code> 就会为居中了。居左：<code>-l</code>，居右：<code>-r</code>。</li>
+<li>字数统计和大纲视图增加快捷键：CMD + 8</li>
+<li>文档设置增加快捷键：CMD + 7</li>
+<li>发布到 Wordpress 的 Custom URL 栏会按标题自动转换为合适的 URL</li>
+<li>修正打开 Preferences 的 Bug。</li>
+</ul>
+
+<p>另外 mweb-medium-like 主题有修正文章列表的 CSS 问题和增加文章可填入 SEO。都放到 github 了：<a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a>，要更新的话，除了覆盖原来的主题外，还要在 <code>Preferences</code> - <code>Extension</code> 中，选择网站，选择 <code>Document Extension</code>，导入 <code>extensions/Document Extension.json</code> 这个档。如图是填入 SEO 的位置效果图。</p>
+
+<p><img src="media/14429703655514/14429725606405.jpg" alt="" style="width:859px;"/></p>
+
+<p>最后附上外部模式列出子文件夹的文档的效果图</p>
+
+<p><img src="media/14429703655514/14429712479034.jpg" alt="" style="width:1226px;"/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！]]></title>
+    <link href="http://zh.mweb.im/mweb-1.7.1-release.html"/>
+    <updated>2015-09-14T09:23:51+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.7.1-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">编辑器及发布服务改进</h2>
+
+<p>增加设置图片宽度和居左、居右、居中的语法。<br/>
+如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 <code>-w450</code> 为设置语法，生成 HTML 时会自动移除。<code>w</code> 表示设置宽度，居左为：<code>-l400</code>，居右为 <code>-r400</code>，居中为 <code>-c400</code>，其中前面的 <code>-</code> 为可选，比如设置一图片宽度为 500 并居中：<code>![c500](pic.jpg)</code>。<br/>
+编辑器内显示的图片增加了右键菜单，右键图片即可查看图片大小、打开图片、复制图片。</p>
+
+<p><img src="media/14421938311781/mweb-img-size.jpg" alt="mweb-img-size"/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>增加导出为 RTF、Docx 和复制为富文本（Copy as Rich Text）功能。其中复制为富文本功能复制后，可以直接把格式化的内容粘贴到 mail 和 pages，带图片和格式。需要说明的是：导出为 Docx 功能目前并不带图片。</p>
+
+<p><img src="media/14421938311781/mweb-docx-rtf.jpg" alt="mweb-docx-rtf"/></p>
+
+<p>发布到 Evernote、印象笔记现在自带漂亮的默认样式。<br/>
+<img src="media/14421938311781/mweb-evernote-format.jpg" alt="mweb-evernote-format"/></p>
+
+<p>icon 有所调整，看上去更舒服了点，界面的颜值也有所提升。</p>
+
+<p>MWeb 从 1.7 版开始将自带不可改动的预览 CSS，方便日后优化和更新。目前自带有 5 种，名称都是以 <code>mweb-</code> 开头。</p>
+
+<p>编辑器右键增加 Copy HTML 菜单项。</p>
+
+<p>增加是否用空格替换 Tabs 选项（Insert spaces instead of tabs），在 <code>Preferences</code> - <code>General</code> 里可以设置。</p>
+
+<p>增加编辑器行最大宽度设置（Editor Line Width），默认为 800，这个设置一般的 Markdown 编辑器都有，主要是全屏写作时，内容能居中，这样看上去会舒服点。 <code>Preferences</code> - <code>Themes</code>。</p>
+
+<p>搜寻改进：当搜寻时，如果打开搜寻结果中的文档，会直接以搜寻的关键字查找打开的文档并高亮显示搜寻的关键字的位置。</p>
+
+<h2 id="toc_1">文档库改进</h2>
+
+<p>文档库增加两个静态网站模版，分别为：mweb-medium-like 和 mweb-foundation-book。mweb-medium-like Demo 网址：<a href="http://coderforart.com/">http://coderforart.com/</a>，使用说明：<a href="http://coderforart.com/mweb-medium-like-theme.html">http://coderforart.com/mweb-medium-like-theme.html</a>。mweb-foundation-book Demo 网址和使用说明：<a href="http://coderforart.com/objccndemo/">http://coderforart.com/objccndemo/</a></p>
+
+<p>文档库增加备份功能，按狡兔三窟的原理，可以备份到三处地方，<code>Preferences</code> - <code>Backup</code>。<br/>
+<img src="media/14421938311781/mweb-backup.jpg" alt="mweb-backup"/></p>
+
+<p>文档库现在支持把列表中的文档拖拽到左边的分类中以设置文档的分类。需要说明的是，这个功能也支持移除分类。比如说 A 文档设置了属于 <code>MWeb</code> 分类，如果想移除，可以再拖拽到 <code>MWeb</code> 这个分类，则会进行移除操作。</p>
+
+<h2 id="toc_2">其他改进</h2>
+
+<p>外部模式现在支持拖拽移动子文件夹。<br/>
+其他的一些小修正</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中]]></title>
+    <link href="http://zh.mweb.im/move-lite-data-to-mweb.html"/>
+    <updated>2015-07-31T15:28:02+08:00</updated>
+    <id>http://zh.mweb.im/move-lite-data-to-mweb.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb Lite 版的文档库中的文档要搬到 MWeb 正式版中，如果 Lite 版的文档中没有图片或者只有少量图片，可以用导入导出为 Markdown 的方法。</p>
+
+<p>否则的话请用以下方式（注意下面这个方法会将 MWeb 正式版的所有内容都换为 Lite 版）：</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">1. 打开 Lite 版文档库文档所在的文件夹</h2>
+
+<p><img src="media/14383276824570/14383283373250.jpg" alt="" style="width:634px;"/></p>
+
+<p>如上图，选择 Lite 版文档库中的任何一篇文章，右键标题栏，从图中可以看到这个文档的保存位置，选择 <code>MWeb</code> 并点击，会打开 Lite 版文档库中的文档所保存的位置，会打开如下图的 Finder 窗口：<br/>
+<img src="media/14383276824570/14383286526093.jpg" alt="" style="width:800px;"/><br/>
+请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
+
+<h2 id="toc_1">2. 打开 MWeb 正式版文档库文档所在的文件夹</h2>
+
+<p><img src="media/14383276824570/14383284793437.jpg" alt="" style="width:670px;"/></p>
+
+<p>如下图，同样选择 <code>MWeb</code> 并点击就可以了，会打开如下图的 Finder 窗口：<br/>
+<img src="media/14383276824570/14383287121781.jpg" alt="" style="width:800px;"/><br/>
+请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
+
+<h2 id="toc_2">3. 搬移 Lite 版的数据到 MWeb 正式版中</h2>
+
+<p><strong>重要：</strong>下面的操作前，请一定要先备份好 MWeb 正式版的 <code>LocalData</code> 文件夹。</p>
+
+<ol>
+<li>退出 Lite 版和正式版 App，注意是退出 <code>CMD + Q</code>。 </li>
+<li>要搬移 Lite 版的数据到正式版中，非常简单，就是将 Lite 版的 <code>LocalData</code> 文件夹换到正式版中即可。所以就是删除正式版的 <code>LocalData</code> 文件夹，然后把 Lite 版的 <code>LocalData</code> 文件夹复制进来。</li>
+<li>重新启动 MWeb 正式版。</li>
+<li>搬移完成！</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等]]></title>
+    <link href="http://zh.mweb.im/mweb-1.6.1-release.html"/>
+    <updated>2015-07-23T09:47:29+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.6.1-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">Dark Mode</h2>
+
+<p><img src="media/14376160492620/14376218615706.jpg" alt="" style="width:993px;"/><br/>
+使用 <code>View</code> - <code>Dark Mode</code> 或快捷键 <code>CMD + Option + L</code> 开启或关闭 Dark Mode。可以在设置中设置 Dark Mode 状态下编辑器所使用的样式，如下图。<br/>
+<img src="media/14376160492620/14376165481845.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">全文搜寻</h2>
+
+<p>文档库模式会搜寻文档库中的所有文档，外部模式只搜寻当前选择的文件夹下的文档。为方便全键盘使用，增加了 Focus Search Field（CMD + Shift + F） 和 Focus Editor（CMD + Shift + E） 两个快捷键。</p>
+
+<h2 id="toc_2">发布服务支持更新</h2>
+
+<p>发布到  Wordpress、Metaweblog API、Evernote、印象笔记、Wordpress.com、Blogger 现在支持<strong>更新</strong>操作了。如下图，发布过之后，再次发布，会出现红线中的是否更新的选项。<br/>
+<img src="media/14376160492620/14376173522487.jpg" alt=""/></p>
+
+<h2 id="toc_3">其他更新</h2>
+
+<ul>
+<li>增加 编辑器 &amp; 实时预览 视图模式，<code>CMD + 4</code> 可以切换到这个视图模式。</li>
+<li>增加可拖拽调整发布服务的顺序。</li>
+<li>增加双击在新窗口中打开文档。</li>
+<li>现在可以设置文档内容高度为多少时才激活打字机滚动 (Typewriter Scrolling) 功能。在 <code>Preferences</code> - <code>General</code> 中可以设置，默认为当文档内容达到编辑器的高度的 50% 时会激活。</li>
+<li>修正点击 Dock 无法显示窗口问题。</li>
+<li>undo 和 redo 改进。</li>
+<li>导出为 PDF 文档的边距有改进。</li>
+<li>一些 Bug 修正</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.5 发布！增加打字机滚动模式、发布到 Evernote、印象笔记、Wordpress.com、Blogger、编辑器内代码块语法高亮]]></title>
+    <link href="http://zh.mweb.im/mweb-1.5.1-release.html"/>
+    <updated>2015-06-05T07:23:16+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.5.1-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">打字机滚动模式（Typewriter Scrolling）</h2>
+
+<p>快捷键：<code>CMD + Option + T</code>，菜单：<code>View</code> - <code>Typewriter Scrolling</code> ，效果如下图：</p>
+
+<p><img src="media/14316499718847/mweb-typewriter-scrolling-demo.gif" alt="mweb-typewriter-scrolling-demo"/></p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">发布到 Evernote、印象笔记、Wordpress.com、Blogger</h2>
+
+<p>一如之前的发布到 Wordpress 博客和 Metaweblog API 服务的功能一样，如果文档内有图片，也会一并发布，其中发布到 Blogger 时图片会保存到 Picasa。然后 Evernote 和 印象笔记还支持发布附件，比如说你拖进来一个 MP3，发布时也会一并发布。</p>
+
+<p><img src="media/14334601963783/publish-evernote-ect.jpg" alt="publish-evernote-ect"/></p>
+
+<h2 id="toc_2">编辑器内代码块语法高亮</h2>
+
+<p>支持大量常用代码，如图：<br/>
+<img src="media/14334601963783/MWeb-Editor-highlight-6-5-2.gif" alt="MWeb-Editor-highlight-6-5"/></p>
+
+<h2 id="toc_3">其他</h2>
+
+<ul>
+<li>增加 github issues <a href="https://github.com/oulvhai/MWeb-isssues/issues">https://github.com/oulvhai/MWeb-isssues/issues</a>，下个版本将放入 Help 菜单。</li>
+<li>增加改变当前行背景色选项，菜单：<code>View</code> - <code>Change Current Line Background Color</code>。</li>
+<li>外部模式右键增加 Expand All 和 Collapse All。</li>
+<li>一些 Bug 修正</li>
+</ul>
+
+<h2 id="toc_4">MWeb 相关网址：</h2>
+
+<p>付费版仅售 $9.9, MAS 网址：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12</a><br/>
+免费版 MAS 网址：<a href="https://itunes.apple.com/cn/app/mweb-lite-pro-markdown-writing/id979033429?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-lite-pro-markdown-writing/id979033429?l=zh&amp;ls=1&amp;mt=12</a><br/>
+官网：<a href="http://zh.mweb.im/">http://zh.mweb.im/</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.4.1 发布！增加引入文件夹到 MWeb 中管理，支持拖拽插入图片和实时预览，静态博客功能增强]]></title>
+    <link href="http://zh.mweb.im/mweb-1.4.1-releases.html"/>
+    <updated>2015-05-15T08:32:51+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.4.1-releases.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">MWeb 1.4.1 版新功能：</h2>
+
+<p>因为这次发布的功能有点多，所以一开始提交到 MAS 前就写了两篇文章特别介绍了两个重要功能，这次更新主要有：</p>
+
+<ol>
+<li>外部文档模式增加可引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览。请按 <code>CMD + E</code> 或者用菜单：<code>View</code> - <code>Open External</code> 打开外部文档模式，点 App 左下脚的 <code>+</code> - <code>Add External Source...</code> 增加文件夹。更多介绍请看提前写好的介绍文章：<a href="http://zh.mweb.im/mweb-1.4-add-floder-octpress-support.html">http://zh.mweb.im/mweb-1.4-add-floder-octpress-support.html</a></li>
+<li>静态博客功能增强，之前写好的文章 <a href="http://zh.mweb.im/mweb-1.4-static-blog-extension.html">http://zh.mweb.im/mweb-1.4-static-blog-extension.html</a> 介绍了如何用 MWeb 的静态博客增强功能为 greyshade 模板增加播客和输出 Apple Podcast 格式的 RSS 的功能。成品的 Demo 网址为：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。</li>
+<li>实时预览增加同步滚动功能</li>
+<li>分享到 Email 由原来的图片改为 RTF 格式的文档。</li>
+</ol>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">MWeb Lite 限定</h2>
+
+<ol>
+<li>文档库 MWeb Lite 限定为 10 个文档</li>
+<li>发布服务只能增加 1 个。</li>
+<li>外部文档模式只能引入一个文件夹。</li>
+</ol>
+
+<p>这里说明一下， MWeb Lite 打开外部 Markdown 文档、新增、保存等等功能是不限定的，外部模式只能引入一个文件夹的限定在某些情况下已经够用了。所以 MWeb Lite 绝对不单单只是 MWeb 付费版的功能演示，MWeb Lite 的目标是轻度 Markdown 用户。</p>
+
+<h2 id="toc_2">MWeb 1.4.3 版功能预告</h2>
+
+<p>在 1.4.1 版审核的时间里，我做了 Typewriter Scrolling（中文是打字机滚动？） 的功能。因为感觉这个功能蛮好用的，所以预告一下，请看下边的 GIF 图就可以了解了：</p>
+
+<p><img src="media/14316499718847/mweb-typewriter-scrolling-demo.gif" alt="mweb-typewriter-scrolling-demo"/></p>
+
+<p>另外会有的功能为发布到 evernote、wordpress.com、blogger。1.4.3 版会在下周某天提交，所以在月底应该能用上了。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.4 新功能介绍二：静态博客功能增强]]></title>
+    <link href="http://zh.mweb.im/mweb-1.4-static-blog-extension.html"/>
+    <updated>2015-05-07T14:46:52+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.4-static-blog-extension.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb 比较有特色的是一键生成静态博客功能，然后从 MWeb 最开始规划要做静态博客生成功能时，我就希望 MWeb 的静态博客生成功能在易用的同时，还要有很强大的扩展性。</p>
+
+<p>比如说能自己增加网站公告，这个公告可以随时更换和取消。再比如说能自己为网站增加广告，而且可以增加多个广告位，google 的或者自定的广告都可以。这些之前都可以通过修改模板解决，但是有些是解决不了的：比如说把文章列表做成像 theverge <a href="http://www.theverge.com/reviews">http://www.theverge.com/reviews</a> 的页的效果，就是列表中有设定的特色图片，有自定的简介，有评分，有价格时会显示价格等。比如说设定 SEO 的一些信息，设定分享到 Facebook 的一些信息。又比如说播客类的网站，要生成 Apple 规格的 RSS。</p>
+
+<p>1.4 版的静态博客增强就是解决这些问题的。我一直考虑如何介绍这个功能，然后因为之前比特新声的主播之一 <a href="http://weibo.com/haohailong">郝海龙</a> 随意问了一下是否支持生成 Podcast 的 RSS。所以我想来想去，还是介绍用 MWeb 自带的 greyshade 网站模板做一个可以写博客又可以做为播客的新模板好了。</p>
+
+<p>这个新模板的 Demo 网址是：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>，Podcast RSS 为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a>。 一般情况下只要到这个网址体验一下，并看一下《音乐《梁祝》及 MWeb 静态博客功能增强的使用体验》这篇文章即可，因为下边的内容是跟自定模板有关。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>下面正式开始做这个新模板。<br/>
+首先在 MWeb 中新增一个静态网站分类，名为比特新声。然后设置如下，我是想放在我的博客中做 Demo，所以网址为：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。评论和分类代码、GA 代码都跟 coderforart 一样。</p>
+
+<p><img src="media/14309812124046/14309891268944.jpg" alt=""/></p>
+
+<p>点上图中最下边的 <code>Advanced Settings</code> 后会出来如下图的网站扩展设置。</p>
+
+<p><img src="media/14309812124046/14309896174085.jpg" alt=""/></p>
+
+<p>一开始打开时，<code>Site Setting</code> 这个 Tab 是没有内容的，可以看到 MWeb 支持整个网站的字段扩展（Site Extension）和网站所属文档的字段扩展（Document Extension）。</p>
+
+<p>如下图，我在 <code>Site Extension</code> 这个 Tab 根据 <a href="https://www.apple.com/itunes/podcasts/specs.html">Apple Podcast RSS</a> 自定了一些必要字段，然后切到 <code>Site Setting</code> 这个 Tab，就会看到按照自定的字段生成可以输入的文本框了。</p>
+
+<p><img src="media/14309812124046/14309917234549.jpg" alt=""/></p>
+
+<p>如右边，我可以填入相关文案。然后如果有图片怎么办，简单的办法是打开比特新声分类内的一个文档，直接把图拖入编辑器中，从生成的 Markdown 语法中取其地址贴上就好。如上图右边的图中的 <code>Fb Image</code> 字段。</p>
+
+<p>然后我也在 <code>Document Extension</code> 这个 Tab 也根据 <a href="https://www.apple.com/itunes/podcasts/specs.html">Apple Podcast RSS</a> 自定了一些必要字段，这些字段可以点软件右上角的设置按钮，并点第三个 Tab <code>Extension</code> 就能看到了按自定字段生成的可输入文本框了，如图。</p>
+
+<p><img src="media/14309812124046/14309923959577.jpg" alt=""/></p>
+
+<p>这样的话，如果想新增新一期播客，就点开第三个 <code>Extension</code> Tab，填入一些这一期播客的相关信息即可。如果新增的文档只是普通文章，则可以不用管扩展的信息。</p>
+
+<p>下图是关于 <code>Base</code> Tab 和 <code>Media</code> Tab 的情况。</p>
+
+<p><img src="media/14309812124046/14309931949625.jpg" alt=""/></p>
+
+<p><code>Media</code> Tab 会列出所有你引入到当前文档中的图片、附件等等。比如要增加一张某期的播客的封面图片，文章里用不到，但是 <code>Extension</code> Tab 里要填入，就可以先把图拖入编辑器内，然后删除，再点 <code>Media</code> Tab 就会看到所拖入的图了，点 <code>Copy Path</code> 然后贴到 <code>Extension</code> Tab 的某字段即可。</p>
+
+<p>字段设置好了，下面要开始修改 greyshade 网站模板了。目前看来只需要为属于播客的文章增加一个播放器，让它可以播放 MP3。然后修改 RSS，让 RSS 按 Apple 播客的格式即可。</p>
+
+<p>以下为修改模板的内容，建议先参考 <a href="http://zh.mweb.im/custom-site-theme-detail-zh.html">自定网站或博客主题简单说明</a>。</p>
+
+<p>首先增加播放器，我随便找了一下，看到 <a href="http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/">http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/</a> 这个播放器不错，所以就决定用这个了，首先复制 greyshade 模板，并重命名为：podcast-greyshade。把 soundmanager 的相关代码放到 asset/soundmanager 中。然后打开 header.html 文档，在上面增加 soundmanager2 播放器的代码，大概是这样：</p>
+
+<pre><code class="language-js">&lt;link href=&quot;asset/soundmanager/css/bar-ui.css&quot; media=&quot;screen, projection&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/soundmanager2-jsmin.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/bar-ui.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+soundManager.setup({
+  preferFlash: false,
+  onready: function() {
+
+  }
+});
+&lt;/script&gt;
+</code></pre>
+
+<p>因为我需要在文章列表和单篇文章都支持播放功能，所以为 category.html 和 post.html 增加播放支持。代码大概如下（我只选关键代码）。</p>
+
+<pre><code class="language-html">{% if post.ext_enclosureURL.length %}
+    &lt;div class=&quot;sm2-bar-ui compact full-width&quot;&gt;
+        ....
+        &lt;div class=&quot;sm2-inline-duration&quot;&gt;{{ post.ext_itunes_duration }}&lt;/div&gt;
+                      
+        &lt;div class=&quot;sm2-playlist-wrapper&quot;&gt;
+            &lt;ul class=&quot;sm2-playlist-bd&quot;&gt;
+             &lt;li&gt;&lt;a href=&quot;{{ post.ext_enclosureURL }}&quot;&gt;&lt;b&gt;{{ post.ext_itunes_author }}&lt;/b&gt; - {{ post.ext_title }}&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        ...
+        &lt;/div&gt;
+    {% /if %}
+</code></pre>
+
+<p>下面解释一下上面这段代码。<br/>
+MWeb 中 <code>Site Setting</code> 设置的所有值会传到所有模板页，比如说要输出上面设置的 SEO Des 的值，用 <code>{{ext_seo_des}}</code> 即可。可以看到，规则是： <code>ext_ + variable Name</code> 。然后用软件右上角第一个按钮设置的文档中的 <code>Extension</code> 的值，会传到所有 <code>文档对象变量</code> 中，如上面代码，文档对象变量为 <code>post</code>，访问规则为 <code>post.ext_ + variable Name</code>。 然后请注意 <code>{% if post.ext_enclosureURL.length %} {% /if %}</code> 这种写法，这是为了判断这文章是否有设置了播客的相关值，有设置，说明这文章为播客文章。</p>
+
+<p>下面介绍一下如何增加输出 Apple 支持的播客的 RSS 格式。 </p>
+
+<p>MWeb 一般情况下只生成全站文章的 RSS，名字为 atom.xml。然后 MWeb 为了满足扩展需要，增加了另外的规则，为：如果网站模板中存在有 <code>分类的 HTML File Name 的值 + -atom.xml</code> 这样的模板文档，则会为这个分类用 <code>分类的 HTML File Name 的值 + -atom.xml</code> 这个模板生成名为  <code>分类的 HTML File Name 的值 + -atom.xml</code> 的 RSS。</p>
+
+<p>如上面，我增加了两个子分类：文章和播客。然后我设置了播客子分类的 <code>HTML File Name</code> 为 <code>podcast</code>。然后我在网站模板中也增加了名为 <code>podcast-atom.xml</code> 的模板，下面是这个模板的内容。</p>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;rss xmlns:itunes=&quot;http://www.itunes.com/dtds/podcast-1.0.dtd&quot; version=&quot;2.0&quot;&gt;
+    &lt;channel&gt;
+        &lt;title&gt;&lt;![CDATA[{{ siteName }}]]&gt;&lt;/title&gt;
+        &lt;link&gt;{{ siteURL }}&lt;/link&gt;
+        &lt;language&gt;zh-CN&lt;/language&gt;
+        {% if ext_copyright.length %}
+            &lt;copyright&gt;{{ ext_copyright }}&lt;/copyright&gt;
+        {% /if %}
+        {% if ext_itunes_subtitle.length %}
+            &lt;itunes:subtitle&gt;{{ ext_itunes_subtitle }}&lt;/itunes:subtitle&gt;
+        {% /if %}
+        {% if ext_itunes_author.length %}
+            &lt;itunes:author&gt;{{ ext_itunes_author }}&lt;/itunes:author&gt;
+        {% /if %}
+        {% if ext_itunes_summary.length %}
+            &lt;itunes:summary&gt;{{ ext_itunes_summary }}&lt;/itunes:summary&gt;
+        {% /if %}
+        {% if ext_itunes_description.length %}
+            &lt;description&gt; {{ ext_itunes_description }} &lt;/description&gt;
+        {% /if %}
+        &lt;itunes:owner&gt;
+            {% if ext_itunes_author.length %}&lt;itunes:name&gt;{{ ext_itunes_author }}&lt;/itunes:name&gt;{% /if %}
+            {% if ext_itunes_email.length %}&lt;itunes:email&gt;{{ ext_itunes_email }}&lt;/itunes:email&gt;{% /if %}
+        &lt;/itunes:owner&gt;
+        {% if ext_itunes_image.length %}
+            &lt;itunes:image href=&quot;{{ ext_itunes_image }}&quot; /&gt;
+        {% /if %}
+        {% if ext_itunes_category.length %}
+            &lt;itunes:category text=&quot;{{ ext_itunes_category }}&quot;/&gt;
+        {% /if %}
+        {% for p in posts %}
+            {% if p.ext_enclosureURL.length %}
+                &lt;item&gt;
+                    &lt;title&gt;{{ p.ext_title }}&lt;/title&gt;
+                    &lt;itunes:author&gt; {{ p.ext_itunes_author }}&lt;/itunes:author&gt;
+                    &lt;itunes:subtitle&gt; {{ p.ext_itunes_subtitle }} &lt;/itunes:subtitle&gt;
+                    &lt;itunes:summary&gt;&lt;![CDATA[ 
+                        {% if p.ext_itunes_summary.length %} 
+                            {{ p.ext_itunes_summary }} 
+                        {% else %}
+                            {{ p.content }}
+                        {% /if %} ]]&gt;
+                    &lt;/itunes:summary&gt;
+                    &lt;itunes:image href=&quot;{{ p.ext_itunes_image }}&quot; /&gt;
+                    &lt;enclosure url=&quot;{{ p.ext_enclosureURL }}&quot;  length=&quot;{{ p.ext_enclosure_length }}&quot;   type=&quot;{{ p.ext_enclosure_type }}&quot;  /&gt;
+                    &lt;guid&gt;{{ p.ext_guid }}&lt;/guid&gt;
+                    &lt;pubDate&gt;{{ p.ext_pubDate }}&lt;/pubDate&gt;
+                    &lt;itunes:duration&gt;{{ p.ext_itunes_duration }}&lt;/itunes:duration&gt;
+                &lt;/item&gt;
+            {% /if %}
+        {% /for %}
+    &lt;/channel&gt;
+&lt;/rss&gt;
+</code></pre>
+
+<p>至此，podcast-greyshade 这个新模板已经完成了，增加了播放器支持和把所有播客文章生成为 Apple 播客格式的 RSS。</p>
+
+<p>podcast-greyshade 这个网站模板已传到 github：<a href="https://github.com/oulvhai/MWeb-Themes/tree/master/podcast-greyshade">https://github.com/oulvhai/MWeb-Themes/tree/master/podcast-greyshade</a><br/>
+使用 podcast-greyshade 这个网站模板的 Demo 的网址：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。我只增加了两篇播客文章。然后 Apple 规格的 RSS 输出网址为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.4 新功能介绍一：引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览]]></title>
+    <link href="http://zh.mweb.im/mweb-1.4-add-floder-octpress-support.html"/>
+    <updated>2015-05-07T09:56:51+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.4-add-floder-octpress-support.html</id>
+    <content type="html"><![CDATA[
+<p>之前在 MWeb 中打开非文档库中的 Markdown 文档，如果文档中有引用到本机图片，是没办法在 MWeb 中显示出来和预览的。这是因为 Apple 规定在 Mac App Store（MAS） 上的软件，都不能对软件自己的沙箱之外的文档进行任何操作，连读取都不能，除非用户明确授权。而用户授权的方式是使用打开、保存对话框。比如说你用 MWeb 打开一个 Markdown 文档，那么 MWeb 就能得到读写这个文档的权限。再比如说你用 MWeb 导出为 HTML 功能，在保存为对话框中选择一个要导出到的文件夹，那么 MWeb 就能得到读写这个文件夹的权限。</p>
+
+<p>正因为这个原因，所以，一般情况下，如果一个软件有 MAS 版，都建议用 MAS 版，特别是国内大厂的软件，即使功能上少了点。</p>
+
+<p>这次 1.4 版新增可以引入文件夹到 MWeb 中管理的功能，就是为了解决用 MWeb 打开非文档库中的 Markdown 文档无法用拖拽和粘贴插入图片，预览时无法显示引用的本机图片的问题。然后 1.4 版还对 Octpress、Jekyll 等静态博客进行了优化。在用 MWeb 编辑 Octpress、Jekyll 的 Markdown 文档时，也可以在编辑器中拖拽或粘贴插入图片并显示在编辑器中和进行实时预览了。</p>
+
+<p>特别说明的是：1.4 版的实时预览增加了同步滚动功能！然后我觉得目前同步滚动功能是相当好用了，所以在这里特别说明一下。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">MWeb 引入文件夹功能介绍</h2>
+
+<p>为了方便使用引入文件夹功能，MWeb 的外部模式新增了一个快捷键：<code>CMD + E</code>。任何情况下按 <code>CMD + E</code> 即可打开外部模式，在外部模式中就可以看到所有引入的文件夹了。同样提示一下 MWeb 的文档库模式的快捷键是：<code>CMD + L</code>。如果你不喜欢用快捷键，也可以用菜单： <code>View</code> - <code>Open External</code> 打开外部模式。</p>
+
+<p>点软件左下方的 <code>+</code> - <code>Add External Source...</code>，然后在对话框中选择要引入到 MWeb 的文件夹，再点 <code>Choose</code> 即可。还有更多的设置如下图。</p>
+
+<p><img src="media/14309638110247/14309679087614.png" alt=""/></p>
+
+<p>引入后，在最左边那栏选择文件夹，中间那栏则会显示该文件夹下的 Markdown 文档。如下图显示，引入后的文档可以方便地拖拽插入图片和附件，下图是增加了一个 MP3 和一张图。然后需要说一下的是，点击软件的标题栏可以修改文档名称和为文档增加 Tags，如下图。</p>
+
+<p><img src="media/14309638110247/14309690743597.png" alt=""/></p>
+
+<p>然后实时预览、导出为HTML/PDF、发布到 Wordpress 等文档库中可以用的一些功能在外部模式也是可以使用的。同样，发布到 Wordpress、新浪博客等支持 Metaweblog API 的服务时，文档中的图片也是会一起发布的。</p>
+
+<h2 id="toc_1">对 Octpress、Jekyll 等静态博客优化介绍</h2>
+
+<p>如上边所写，MWeb 引入的文件夹的 Markdown 文档插入图片的保存位置设置有两个选择：Relative 和 Absolute。</p>
+
+<p>Octpress、Jekyll 等静态博客因为可以自定像 <code>http://域名/2015/3/the-blog-post/</code> 这样的网址，所以在增加图片时，都是用 <code>/images/pic.jpg</code> 这样的绝对路径。然后图片要放在 <code>source/images</code> 文件夹下。</p>
+
+<p>正因为这个原因，引入 Octpress 等静态博客的文件夹到 MWeb 时，请引入 <code>source</code> 文件夹。引入后你可以修改 <code>Display Name</code> 来标识。<strong>最重要一点</strong>，<code>Media Save Path</code> 请选择 <code>Absolute</code>。<br/>
+Octpress 的文档一般都在 <code>_posts</code> 这个资料夹下，在 MWeb 最左边那栏选择 <code>_posts</code> 文件夹，在中间那栏选择要编辑的文档即可。这时的文档已经是支持拖拽插入图片和实时预览了。然后无论你编辑 <code>source</code> 下的那个文档，你所插入的图片都会保存在 <code>source</code> 下的你在 <code>Media Floder Name</code> 中设置的文件夹下。 </p>
+
+<p>如果要新增文档，你可以用 MWeb 中的新增文档功能（点软件中间那栏搜寻框右边的新增按钮），也可以用 Octpress 等所带的命令行新增文档（推荐）。你用命令行新增后，MWeb 会在列表中自动显示你新增的文档。然后删除文档、新增文件夹等，也会自动更新显示的，总之 MWeb 能侦测到你引入的文件夹的内容的变化而自动更新显示。所以 MWeb 没有做 <code>刷新</code> 这个功能。</p>
+
+<p>引入 Otcpress 的 <code>source</code> 文件夹的属性设置、新增附件、图片效果，如图：<br/>
+<img src="media/14309638110247/14309715741257.png" alt=""/></p>
+
+<p>在 MWeb 中实时预览，MWeb 会对 Otcpress Markdown 文档中的 Meta 设置转成代码，如图：<br/>
+<img src="media/14309638110247/14309717157125.png" alt=""/></p>
+
+<p>用 Octpress 的网站预览功能，在 Safari 中查看的效果，如图：<br/>
+<img src="media/14309638110247/14309719918323.png" alt=""/></p>
+
+<p>其他如 hexo、Farbox 等引入 MWeb 中进行管理我想也差不多，不再多介绍了。引入文件夹比用 MWeb 文档库模式好的地方是同步和协作都比较方便。然后说明一下 MWeb 1.4 版现在还没有提交到 MAS 的，我还要多测试几天才会提交。所以看到这篇文章的朋友，如果有什么的建议，可以跟我说，这样就可以及时在提交前改进了。</p>
+
+<p>然后 1.4 版还对 MWeb 静态博客功能进行了增强，我也正在考虑介绍文章怎么写，初步计划是写两篇，一篇是介绍功能，一篇是再做一个生成 Apple 播客 RSS 的例子。最晚的话，明天应该会把文章发出来。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。]]></title>
+    <link href="http://zh.mweb.im/mweb-1.3.7-releases.html"/>
+    <updated>2015-04-17T07:45:08+08:00</updated>
+    <id>http://zh.mweb.im/mweb-1.3.7-releases.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">MWeb 1.3.7 版的新功能</h2>
+
+<ul>
+<li>增加发布到 Wordpress 等支持 Metaweblog API 的服务，目前经测试过的有： Wordpress 博客、新浪博客、cnblogs、oschina。</li>
+<li>增加发布到 Tumblr 和 Scriptogr.am </li>
+<li>即时预览改进，原来会闪动，现在拿掉了同步滚动功能后不会了。</li>
+<li>编辑器和三栏切换也有小改进。</li>
+</ul>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">下边介绍一下发布到 Wordpress 等支持 Metaweblog API 的博客服务的功能</h2>
+
+<p>我所知，Mac 下支持这一功能的 Native 的 Markdown 编辑器就只有 MWeb 了。之前用过 Live Writer 的朋友都知道这功能非常好用，因为加图片非常方便！然后是离线写作，不用担心内容丢失，还可以方便地发布到多处地方。我之前用 Live Writer 时还会时不时要切到 HTML 代码下去修正一下格式问题，有点难用，现在用 Markdown 的话，就不会有这情况了。可以说：Markdown 和 Metaweblog API 才是真正的完美结合！</p>
+
+<p>在 MWeb 中点菜单：<code>MWeb</code> - <code>Preferences</code> - <code>Publishing</code> 即可进入发布设置界面，如下：</p>
+
+<p><img src="media/14292279084701/14292295737706.jpg" alt=""/></p>
+
+<h3 id="toc_2">增加发布到 Wordpress 的服务</h3>
+
+<p>点 Wordpress.org 这个按钮，如下图，由于 Wordpress 的远程发布网址可以由博客网址得知，所以只需要填入博客网址、帐号、密码即可。密码是存到 Keychain，所以可无需担心。<br/>
+<img src="media/14292279084701/14292301869922.jpg" alt=""/></p>
+
+<p><strong>注意：</strong> 如果遇到 <code>validate</code> 不通过并提示 404 错误的话，目前有两个可能（感谢 <a href="http://weibo.com/u/1862562001">@iamliunian</a>）：</p>
+
+<ol>
+<li>可以查看 Wordpress 的设置里是否开启远程发布。位置是 <code>设置</code> - <code>撰写</code> - <code>远程发布</code> 并开启 <code>XML-RPC</code></li>
+<li>检查 你的博客网址 + xmlrpc.php，看看是否正常，比如说我的 Wordpress 博客的是 <a href="http://appbk.sinaapp.com/xmlrpc.php">http://appbk.sinaapp.com/xmlrpc.php</a>，打开会显示 <code>XML-RPC server accepts POST requests only.</code> 是为正常，否则就有可能是 url rewrite 的设置，让 xmlrpc.php 不能用了。这要修改 .htaccess  让 xmlrpc.php 正常。</li>
+</ol>
+
+<h3 id="toc_3">增加发布到 新浪博客、cnblogs、oschina 的博客服务的服务</h3>
+
+<p>点 Metaweblog API 这个按钮，如下图，必填的只有 帐号、密码、Publish URL。Publish URL 这个一般支持 Metaweblog API 的服务都会提供的。</p>
+
+<p><img src="media/14292279084701/14292306829254.jpg" alt=""/></p>
+
+<p>下面说一下新浪博客、cnblogs、oschina 的 Publish URL。</p>
+
+<ul>
+<li>新浪博客的 Publish URL：<a href="http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php">http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php</a></li>
+<li>cnblogs 的 Publish URL：<a href="http://www.cnblogs.com/Blog%E5%90%8D/services/metaweblog.aspx">http://www.cnblogs.com/Blog名/services/metaweblog.aspx</a>。其中 <strong>Blog 名</strong> 请换为您的博客名。cnblogs 的博客后台设置，拉到最下面，也可以找到这个网址。比如说我的是  <a href="http://rpc.cnblogs.com/metaweblog/OtisBlog">http://rpc.cnblogs.com/metaweblog/OtisBlog</a> 两者网址不同，但是效果一样。</li>
+<li>oschina 的 Publish URL：<a href="http://my.oschina.net/action/xmlrpc">http://my.oschina.net/action/xmlrpc</a></li>
+</ul>
+
+<h3 id="toc_4">发布</h3>
+
+<p>如下图红框处，你可以在 MWeb 分享按钮（右上角的第三个按钮）中找到所增加的发布服务。名称会显示 <code>Blog Name</code> 中设定的名称。</p>
+
+<p><img src="media/14292279084701/14292318507812.jpg" alt=""/></p>
+
+<p>比如说我要发布到我的 Wordpress 博客，点 <code>oulvhai 的 Wordpress 博客</code>，如下图：<br/>
+<img src="media/14292279084701/14292325545410.jpg" alt=""/></p>
+
+<p>要注意的时，有些博客服务是不支持上边的一些设置的，比如说 <code>Custom URL</code>、<code>Publish Date</code>、<code>Status</code> 等。设定好后，点 <code>Publish</code> 按钮就可以发布了。</p>
+
+<p>要说明的是：Metaweblog API 有自动上传图片的功能，有看到我现在这文章的图片都是在本地的，发布时就会自动把图片上传到所发布的博客服务。所以就不用找图床了。我这文章会发布到以下几个地方：</p>
+
+<ul>
+<li>我的用 MWeb 静态网站功能生成的个人博客：<a href="http://coderforart.com">http://coderforart.com</a></li>
+<li>同样用 MWeb 静态网站功能生成的 MWeb 中文官网：<a href="http://zh.mweb.im">http://zh.mweb.im</a></li>
+<li>我的 Wordpress 测试博客：<a href="http://appbk.sinaapp.com/">http://appbk.sinaapp.com/</a></li>
+<li>我的新浪博客：<a href="http://blog.sina.com.cn/oulvhai">http://blog.sina.com.cn/oulvhai</a></li>
+<li>我在 cnblogs 的博客：<a href="http://www.cnblogs.com/OtisBlog">http://www.cnblogs.com/OtisBlog</a></li>
+<li>我在 oschina 的博客：<a href="http://my.oschina.net/oulvhai">http://my.oschina.net/oulvhai</a></li>
+</ul>
+
+<h2 id="toc_5">关于 MWeb Lite</h2>
+
+<p>MWeb Lite 的定位是 Markdown 编辑器和一些 MWeb 正式版的功能的体验。对于轻度使用 Markdown 的朋友来说， MWeb Lite 已足够了，MWeb 正式版的功能大部分用不到。MWeb Lite 的 Markdown 编辑器功能是跟 MWeb 正式版一样的。这个功能会随着 MWeb 这个产品的不断打磨而得到更好的体验。目前 MWeb Lite 对于正式版不同的地方有：</p>
+
+<ol>
+<li>文档库 MWeb Lite 限定为 10 个文档</li>
+<li>发布服务只能增加 1 个。</li>
+</ol>
+
+<h2 id="toc_6">其他</h2>
+
+<p>这里说一下用 MWeb 生成的静态博客的好处：可直接打开所生成的 HTML 文档就能预览！这个是不同于 otcpress 等静态博客生成方式的。otcpress 等生成的 HTML 直接打开预览是没办法看到效果的，必须上传或者用 otcpress 来预览。MWeb 的静态博客功能没有 otcpress 这么强大，但是对于简单只想写一下博客的朋友来说，我觉得足够了。当然，下一版也会增强静态博客功能的。</p>
+
+<p>另外发布到 Wordpress.com、bloger、evernote 功能也是会有的，这几个要在 1.4 版发布后才会开始弄。</p>
+
+]]></content>
+  </entry>
+  
+</feed>

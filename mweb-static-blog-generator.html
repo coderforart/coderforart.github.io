@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb 生成静态博客详细说明 - MWeb
+  	
+  	</title>
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" id="menu-index" href="index.html">首页</a>
+          <a class="blog-nav-item" id="menu-help" href="help.html">文档</a>
+          <a class="blog-nav-item" id="menu-blog" href="all.html">博客</a>
+          <a class="blog-nav-item" id="menu-about" href="about.html">关于</a>
+          <a class="blog-nav-item" style="float:right;" href="http://www.mweb.im">English</a>
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="14689205256580.html">自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库</a>
+      </div>
+    
+    <script type="text/javascript">
+      $(function(){
+      	$('#menu-blog').addClass('active');
+      });
+      </script>
+   <div class="container" id="content-wrap">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+			
+					<div class="blog-post">
+			            <h2 class="blog-post-title">MWeb 生成静态博客详细说明</h2>
+			            <p class="blog-post-meta">2015/3/21 
+				            &nbsp;posted in 
+							
+							    <a class='category' href='docs.html'>使用文档</a>&nbsp;
+							 
+							 
+			            </p>
+			            <div class="content-responsive">
+			            <p>此文章将介绍MWeb的文章类型和生成静态博客的设置情况。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>文章目录：</p>
+
+<ul>
+<li>
+<a href="#toc_0">MWeb 中的两种文章类型</a>
+</li>
+<li>
+<a href="#toc_1">MWeb 生成静态博客设置说明</a>
+</li>
+<li>
+<a href="#toc_2">为博客增加评论和分享功能</a>
+</li>
+</ul>
+
+
+<h2 id="toc_0">MWeb 中的两种文章类型</h2>
+
+<p>MWeb 和 Wordpress 等这类博客的结构一样，分为<code>一般文章</code>和<code>页面</code>两种文章类型。<code>页面</code>是用来做像关于我们、联系我们等等这类不用放在正式文章中的网页。</p>
+
+<p><img src="media/14269146169133/14272857930068.jpg" alt=""/><br/>
+如上图，把 MWeb 文档库中的文档设置为 <code>页面</code> 非常简单，点击<code>文档设置</code>按钮（右上角第一个），勾选 <code>Is page</code> 即可。其中 <code>HTML file name</code> 栏是用来设置生成的 HTML 文件名的。比如说上图中的这个文章会生成 help.html。<code>一般文章</code>生成的 HTML 文件名也是在此设定。</p>
+
+<p>要自定页面和博客主题请参考这个文章：<a href="custom-site-theme-detail-zh.html">自定网站或博客主题简单说明</a>。这文章也说明了如何自定首页和分类页，MWeb 官网就是自定了首页。</p>
+
+<h2 id="toc_1">MWeb 生成静态博客设置说明</h2>
+
+<p><img src="media/14269146169133/14272532719802.jpg" alt=""/></p>
+
+<p>如上图，双击或者右键点 <code>Edit</code> 即可以打开网站设置面板。如果你没看到这个面板，请点 <code>Set to site</code> 按钮。点 <code>Build site</code> 即可生成静态博客，点 <code>Preview site</code> 可预览效果。各项目设置说明如下：</p>
+
+<ul>
+<li>Order by: 文章的排序方式</li>
+<li>Build path: 生成的静态博客所在位置</li>
+<li>Theme: 博客主题</li>
+<li>Site name: 博客名称</li>
+<li>Site URL: 网站网址，请一定要以 <code>/</code> 结束。</li>
+<li>Site page size: 博客第页显示文章数</li>
+<li>Enable MathJax &amp; Chart: 博客是否支持 MathJax 和 顺序图、流程图</li>
+<li>Site date format type: 时间格式</li>
+<li>Site description: 博客描述</li>
+<li>Comment &amp; Share code: 博客评论和分享的代码</li>
+<li>Site other code: 放置博客统计代码和其他代码的地方。</li>
+</ul>
+
+<p>提示：如果你有改变到设置，请一定要点：<code>Cear and rebuild site</code> 按钮。</p>
+
+<h2 id="toc_2">为博客增加评论和分享功能</h2>
+
+<p>简单来说就是把评论和分享的代码填入 <code>Comment &amp; Share code</code> 这个输入框。可以参考 <a href="mweb-comment-and-share-help.html">给MWeb生成的静态博客增加分享和评论</a> 这篇文章。</p>
+
+			            </div>
+						
+			           
+			          </div><!-- /.blog-post -->
+			<div class="share-comment">
+			<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+<div class="ds-thread" ></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"mweb-zh"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+			</div>
+
+        </div><!-- /.blog-main -->
+
+       <!-- slider start -->  		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+
+          <div class="sidebar-module">
+            <h4>关于</h4>
+            <p><a target="_blank" href="atom.xml">RSS</a></p>
+            <p><a href="help.html">MWeb帮助文档</a></p>
+            
+
+          </div>
+          <div class="sidebar-module">
+            <h4>分类</h4>
+            
+            <ol class="list-unstyled">
+	      <li class="post">
+	        <a href="docs.html">使用文档&nbsp;(23)</a>
+	        
+	        
+	        
+	      </li>
+	  
+            <ol class="list-unstyled">
+	      <li class="post">
+	        <a href="tips.html">使用技巧&nbsp;(14)</a>
+	        
+	        
+	        
+	      </li>
+	  
+            <ol class="list-unstyled">
+	      <li class="post">
+	        <a href="markdown.html">Markdown&nbsp;(2)</a>
+	        
+	        
+	        
+	      </li>
+	  
+            <ol class="list-unstyled">
+	      <li class="post">
+	        <a href="releases.html">版本发布&nbsp;(20)</a>
+	        
+	        
+	        
+	      </li>
+	  
+            <ol class="list-unstyled">
+	      <li class="post">
+	        <a href="other.html">其他&nbsp;(2)</a>
+	        
+	        
+	        
+	      </li>
+	   
+            </ol>
+          </div>
+
+          <div class="sidebar-module">
+            <h4>最近文章</h4>
+            
+	  
+	      
+		      
+		        <a href="mweb-2.0.7-release.html">MWeb 2.0.7 版发布！</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="14689205256580.html">自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="mweb-2.0-release.html">MWeb 2.0 版正式发布，￥50 促销一周，一周后将变为 ￥98，所以也算 50% OFF 了！</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="mweb-2.0-beta-all-update.html">MWeb 2.0 测试版更新汇总</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="mweb-1.9.8-release.html">MWeb 1.9.8 发布！顺便说一下 2.0 版和 iOS 版的情况</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="mweb-1.9.3-release.html">MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="mweb-1.9.1-release.html">MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！</a><br />
+		      
+	     
+	  
+	      
+		      
+		        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a><br />
+		      
+	     
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	   
+
+          </div>
+         
+        </div><!-- /.blog-sidebar -->
+
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+  <footer class="blog-footer">
+      <p>Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+Theme by <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>、<a target="_blank" href="https://twitter.com/mdo">@mdo</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
