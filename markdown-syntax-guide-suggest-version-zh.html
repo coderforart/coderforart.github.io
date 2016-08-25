@@ -532,9 +532,6 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 </ul>
 
 
-<script src="asset/flow-sequence-chart/raphael-min.js"></script><script src="asset/flow-sequence-chart/underscore-min.js"></script><script src="asset/flow-sequence-chart/flowchart.min.js"></script><script src="asset/flow-sequence-chart/sequence-diagram-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
-<script type="text/x-mathjax-config">if (typeof MathJaxListener !== 'undefined') { MathJax.Hub.Register.StartupHook('End', function () { MathJaxListener.invokeCallbackForKey_('End'); }); } </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 <div class="footnotes">
 <hr/>
 <ol>
@@ -597,7 +594,7 @@ var duoshuoQuery = {short_name:"mweb-zh"};
             
             <ol class="list-unstyled">
 	      <li class="post">
-	        <a href="docs.html">使用文档&nbsp;(23)</a>
+	        <a href="docs.html">使用文档&nbsp;(24)</a>
 	        
 	        
 	        
@@ -621,7 +618,7 @@ var duoshuoQuery = {short_name:"mweb-zh"};
 	  
             <ol class="list-unstyled">
 	      <li class="post">
-	        <a href="releases.html">版本发布&nbsp;(20)</a>
+	        <a href="releases.html">版本发布&nbsp;(21)</a>
 	        
 	        
 	        
@@ -641,6 +638,12 @@ var duoshuoQuery = {short_name:"mweb-zh"};
           <div class="sidebar-module">
             <h4>最近文章</h4>
             
+	  
+	      
+		      
+		        <a href="mweb-2.0.9-release.html">MWeb 2.0.9 版发布！修正 macOS 的问题和发布到 evernote 重大功能！</a><br />
+		      
+	     
 	  
 	      
 		      
@@ -693,12 +696,6 @@ var duoshuoQuery = {short_name:"mweb-zh"};
 	      
 		      
 		        <a href="mweb-1.9.1-release.html">MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！</a><br />
-		      
-	     
-	  
-	      
-		      
-		        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a><br />
 		      
 	     
 	  

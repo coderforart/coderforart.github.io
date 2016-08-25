@@ -4,7 +4,7 @@
   <title><![CDATA[MWeb]]></title>
   <link href="http://zh.mweb.im/atom.xml" rel="self"/>
   <link href="http://zh.mweb.im/"/>
-  <updated>2016-08-08T10:39:39+08:00</updated>
+  <updated>2016-08-25T14:18:00+08:00</updated>
   <id>http://zh.mweb.im/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0.9 版发布！修正 macOS 的问题和发布到 evernote 重大功能！]]></title>
+    <link href="http://zh.mweb.im/mweb-2.0.9-release.html"/>
+    <updated>2016-08-25T13:51:31+08:00</updated>
+    <id>http://zh.mweb.im/mweb-2.0.9-release.html</id>
+    <content type="html"><![CDATA[
+<p>这次发布主要是修正 macOS 打开文档后空白的问题，另外还有一个比较重大的功能，就是：</p>
+
+<ol>
+<li>发布到 evernote 的样式，终于跟选择的预览样式一样了！另外，还支持自定义样式！</li>
+<li>发布到 evernote 支持代码高亮了！</li>
+<li>发布到 evernote LaTeX 和 TOC 也会显示了！</li>
+<li>发布到 evernote 时，也会把 ECharts、mermaid、PlantUML 等画图库生成的图片发布到 evernote 了，这个功能要用到 <a href="http://zh.mweb.im/14689205256580.html">自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库</a> 这篇文章里的预览样式，老用户也要去下载新的样式才能支持 evernote。</li>
+</ol>
+
+<p>需要重点说明的是，这个功能是由 <a href="http://weibo.com/u/1587579460">cyhhao</a> 这位朋友帮忙做的！而且这个功能所用的代码已经开源，网址为：<a href="https://github.com/cyhhao/html2enml">https://github.com/cyhhao/html2enml</a>。这个库的主要功能是把 html 转化为印象笔记所支持的 enml 格式。</p>
+
+<p>另外的改进还有：</p>
+
+<ul>
+<li>由于编辑器内的连结设置为可点时，再想编辑比较麻烦，现在增加：按住 CMD 键再点击时，将不会打开连结。</li>
+<li>修正 把 HTML 粘贴为 Markdown 时，代码块中如果有 &lt; 和 &gt; 字符，会不正常的问题。修正斜体会转化为下划线的问题。</li>
+<li>修正 mweb-otcpress 预览样式中，二级标题有时会被切掉一些的问题。</li>
+</ul>
+
+<p>另外要说明的是：由于不确定这次针对 macOS 的 bug 修正是否稳定（我测试是没有问题的），所以 Mac App Store 版本会过几天才提交。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 2.0.7 版发布！]]></title>
@@ -53,7 +83,7 @@
     <content type="html"><![CDATA[
 <p>之前 MWeb 2.0 说要支持 PlantUML，后来又否定了，因为我发现大部分朋友只需要自定义预览样式就可以做到的这种 PlantUML 支持，而早在 MWeb 1.2 版都支持了自我增加这功能了，介绍文章为：<a href="http://zh.mweb.im/mweb-v1.2-release-zh.html">自定预览 CSS</a>。2.0 中的自定预览功能有所变化，这也是今天要介绍的内容。</p>
 
-<p>今天要说的是一步到位，做一个支持 ECharts、mermaid、PlantUML 这三个常用的画图库的预览样式。如果你不想看到制作方法，只想使用，可以直接下载 (<a href="media/14689205256580/sample-all-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) 这个预览样式（如果你的主题中已有名称为 sample-custom-html-charts 的样式，可以直接用这个，不用下载了），解压后，把整个文件夹复制到 MWeb 的预览样式所在文件夹，然后点一下刷新按钮即可。 你可以在 <code>偏好设置</code> - <code>主题&amp;样式</code> 中点一下 <code>预览样式</code> 右边的编辑按钮来打开预览样式所以文件夹。这个预览样式中还包含了一个测试的 Markdown 文档，用 MWeb 打开这个文档，然后选择这个预览样式并预览就可以看到效果。</p>
+<p>今天要说的是一步到位，做一个支持 ECharts、mermaid、PlantUML 这三个常用的画图库的预览样式。如果你不想看到制作方法，只想使用，可以直接下载 (<a href="media/14689205256580/sample-all-chartsV2.zip">&gt;&gt;点此下载&lt;&lt;</a>) 这个预览样式（如果你的主题中已有名称为 sample-custom-html-charts 的样式，可以直接用这个，不用下载了），解压后，把整个文件夹复制到 MWeb 的预览样式所在文件夹，然后点一下刷新按钮即可。 你可以在 <code>偏好设置</code> - <code>主题&amp;样式</code> 中点一下 <code>预览样式</code> 右边的编辑按钮来打开预览样式所以文件夹。这个预览样式中还包含了一个测试的 Markdown 文档，用 MWeb 打开这个文档，然后选择这个预览样式并预览就可以看到效果。</p>
 
 <span id="more"></span><!-- more -->
 
@@ -77,7 +107,7 @@
 
 <p>index.html 中有三个比较重要的字符串，这三个字符串是自定义样式必须要有的，它们是 {{title}}、{{head}} 和 {{content}}。{{title}} 是导出为 HTML 功能会用到的，会正确替换标题；{{head}} 是 MWeb 内置的代码高亮、LaTeX 渲染等用到的；{{content}} 是为 Markdown 输出的 HTML 内容。</p>
 
-<p>最后再放一次这次自定义的预览样式下载：(<a href="media/14689205256580/sample-all-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) </p>
+<p>最后再放一次这次自定义的预览样式下载：(<a href="media/14689205256580/sample-all-chartsV2.zip">&gt;&gt;点此下载&lt;&lt;</a>) </p>
 
 <p><strong>7/20 Update：</strong>经 @chang 提醒，PlantUML 改成 SVG 样式，这样对中文支持更好。<br/>
 <strong>7/21 Update：</strong>经 <a href="http://weibo.com/n/FTD_Liaoer">@FTD_Liaoer</a> 提醒，ECharts 在导出 PDF 和生成图片时会有问题。这个问题可以在 option 中加 <code>animation:false</code> 解决，大概为：</p>
@@ -88,6 +118,8 @@
     ....
 }
 </code></pre>
+
+<p><strong>8/25 Update：</strong>由于 MWeb 2.0.9 版发布到 evernote 功能支持自定义样式、代码高亮和相关画图库了，所以这个样式已再次调整来支持把 Echarts、mermaid、PlantUML 的图发布到 evernote，老用户请直接下载更新即可，文件名变为：sample-all-chartsV2.zip。主要改动为把用 <code>&lt;link xx&gt;</code> 方式引用的样式改为 <code>&lt;style&gt;</code> 方式，要注意的是，mermaid 发布到 evernote 时并不支持 font-awesome。</p>
 
 <h2 id="toc_2">相关截图：</h2>
 
@@ -1044,97 +1076,6 @@ Octpress 的文档一般都在 <code>_posts</code> 这个资料夹下，在 MWeb
 <p>其他如 hexo、Farbox 等引入 MWeb 中进行管理我想也差不多，不再多介绍了。引入文件夹比用 MWeb 文档库模式好的地方是同步和协作都比较方便。然后说明一下 MWeb 1.4 版现在还没有提交到 MAS 的，我还要多测试几天才会提交。所以看到这篇文章的朋友，如果有什么的建议，可以跟我说，这样就可以及时在提交前改进了。</p>
 
 <p>然后 1.4 版还对 MWeb 静态博客功能进行了增强，我也正在考虑介绍文章怎么写，初步计划是写两篇，一篇是介绍功能，一篇是再做一个生成 Apple 播客 RSS 的例子。最晚的话，明天应该会把文章发出来。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。]]></title>
-    <link href="http://zh.mweb.im/mweb-1.3.7-releases.html"/>
-    <updated>2015-04-17T07:45:08+08:00</updated>
-    <id>http://zh.mweb.im/mweb-1.3.7-releases.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">MWeb 1.3.7 版的新功能</h2>
-
-<ul>
-<li>增加发布到 Wordpress 等支持 Metaweblog API 的服务，目前经测试过的有： Wordpress 博客、新浪博客、cnblogs、oschina。</li>
-<li>增加发布到 Tumblr 和 Scriptogr.am </li>
-<li>即时预览改进，原来会闪动，现在拿掉了同步滚动功能后不会了。</li>
-<li>编辑器和三栏切换也有小改进。</li>
-</ul>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_1">下边介绍一下发布到 Wordpress 等支持 Metaweblog API 的博客服务的功能</h2>
-
-<p>我所知，Mac 下支持这一功能的 Native 的 Markdown 编辑器就只有 MWeb 了。之前用过 Live Writer 的朋友都知道这功能非常好用，因为加图片非常方便！然后是离线写作，不用担心内容丢失，还可以方便地发布到多处地方。我之前用 Live Writer 时还会时不时要切到 HTML 代码下去修正一下格式问题，有点难用，现在用 Markdown 的话，就不会有这情况了。可以说：Markdown 和 Metaweblog API 才是真正的完美结合！</p>
-
-<p>在 MWeb 中点菜单：<code>MWeb</code> - <code>Preferences</code> - <code>Publishing</code> 即可进入发布设置界面，如下：</p>
-
-<p><img src="media/14292279084701/14292295737706.jpg" alt=""/></p>
-
-<h3 id="toc_2">增加发布到 Wordpress 的服务</h3>
-
-<p>点 Wordpress.org 这个按钮，如下图，由于 Wordpress 的远程发布网址可以由博客网址得知，所以只需要填入博客网址、帐号、密码即可。密码是存到 Keychain，所以可无需担心。<br/>
-<img src="media/14292279084701/14292301869922.jpg" alt=""/></p>
-
-<p><strong>注意：</strong> 如果遇到 <code>validate</code> 不通过并提示 404 错误的话，目前有两个可能（感谢 <a href="http://weibo.com/u/1862562001">@iamliunian</a>）：</p>
-
-<ol>
-<li>可以查看 Wordpress 的设置里是否开启远程发布。位置是 <code>设置</code> - <code>撰写</code> - <code>远程发布</code> 并开启 <code>XML-RPC</code></li>
-<li>检查 你的博客网址 + xmlrpc.php，看看是否正常，比如说我的 Wordpress 博客的是 <a href="http://appbk.sinaapp.com/xmlrpc.php">http://appbk.sinaapp.com/xmlrpc.php</a>，打开会显示 <code>XML-RPC server accepts POST requests only.</code> 是为正常，否则就有可能是 url rewrite 的设置，让 xmlrpc.php 不能用了。这要修改 .htaccess  让 xmlrpc.php 正常。</li>
-</ol>
-
-<h3 id="toc_3">增加发布到 新浪博客、cnblogs、oschina 的博客服务的服务</h3>
-
-<p>点 Metaweblog API 这个按钮，如下图，必填的只有 帐号、密码、Publish URL。Publish URL 这个一般支持 Metaweblog API 的服务都会提供的。</p>
-
-<p><img src="media/14292279084701/14292306829254.jpg" alt=""/></p>
-
-<p>下面说一下新浪博客、cnblogs、oschina 的 Publish URL。</p>
-
-<ul>
-<li>新浪博客的 Publish URL：<a href="http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php">http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php</a></li>
-<li>cnblogs 的 Publish URL：<a href="http://www.cnblogs.com/Blog%E5%90%8D/services/metaweblog.aspx">http://www.cnblogs.com/Blog名/services/metaweblog.aspx</a>。其中 <strong>Blog 名</strong> 请换为您的博客名。cnblogs 的博客后台设置，拉到最下面，也可以找到这个网址。比如说我的是  <a href="http://rpc.cnblogs.com/metaweblog/OtisBlog">http://rpc.cnblogs.com/metaweblog/OtisBlog</a> 两者网址不同，但是效果一样。</li>
-<li>oschina 的 Publish URL：<a href="http://my.oschina.net/action/xmlrpc">http://my.oschina.net/action/xmlrpc</a></li>
-</ul>
-
-<h3 id="toc_4">发布</h3>
-
-<p>如下图红框处，你可以在 MWeb 分享按钮（右上角的第三个按钮）中找到所增加的发布服务。名称会显示 <code>Blog Name</code> 中设定的名称。</p>
-
-<p><img src="media/14292279084701/14292318507812.jpg" alt=""/></p>
-
-<p>比如说我要发布到我的 Wordpress 博客，点 <code>oulvhai 的 Wordpress 博客</code>，如下图：<br/>
-<img src="media/14292279084701/14292325545410.jpg" alt=""/></p>
-
-<p>要注意的时，有些博客服务是不支持上边的一些设置的，比如说 <code>Custom URL</code>、<code>Publish Date</code>、<code>Status</code> 等。设定好后，点 <code>Publish</code> 按钮就可以发布了。</p>
-
-<p>要说明的是：Metaweblog API 有自动上传图片的功能，有看到我现在这文章的图片都是在本地的，发布时就会自动把图片上传到所发布的博客服务。所以就不用找图床了。我这文章会发布到以下几个地方：</p>
-
-<ul>
-<li>我的用 MWeb 静态网站功能生成的个人博客：<a href="http://coderforart.com">http://coderforart.com</a></li>
-<li>同样用 MWeb 静态网站功能生成的 MWeb 中文官网：<a href="http://zh.mweb.im">http://zh.mweb.im</a></li>
-<li>我的 Wordpress 测试博客：<a href="http://appbk.sinaapp.com/">http://appbk.sinaapp.com/</a></li>
-<li>我的新浪博客：<a href="http://blog.sina.com.cn/oulvhai">http://blog.sina.com.cn/oulvhai</a></li>
-<li>我在 cnblogs 的博客：<a href="http://www.cnblogs.com/OtisBlog">http://www.cnblogs.com/OtisBlog</a></li>
-<li>我在 oschina 的博客：<a href="http://my.oschina.net/oulvhai">http://my.oschina.net/oulvhai</a></li>
-</ul>
-
-<h2 id="toc_5">关于 MWeb Lite</h2>
-
-<p>MWeb Lite 的定位是 Markdown 编辑器和一些 MWeb 正式版的功能的体验。对于轻度使用 Markdown 的朋友来说， MWeb Lite 已足够了，MWeb 正式版的功能大部分用不到。MWeb Lite 的 Markdown 编辑器功能是跟 MWeb 正式版一样的。这个功能会随着 MWeb 这个产品的不断打磨而得到更好的体验。目前 MWeb Lite 对于正式版不同的地方有：</p>
-
-<ol>
-<li>文档库 MWeb Lite 限定为 10 个文档</li>
-<li>发布服务只能增加 1 个。</li>
-</ol>
-
-<h2 id="toc_6">其他</h2>
-
-<p>这里说一下用 MWeb 生成的静态博客的好处：可直接打开所生成的 HTML 文档就能预览！这个是不同于 otcpress 等静态博客生成方式的。otcpress 等生成的 HTML 直接打开预览是没办法看到效果的，必须上传或者用 otcpress 来预览。MWeb 的静态博客功能没有 otcpress 这么强大，但是对于简单只想写一下博客的朋友来说，我觉得足够了。当然，下一版也会增强静态博客功能的。</p>
-
-<p>另外发布到 Wordpress.com、bloger、evernote 功能也是会有的，这几个要在 1.4 版发布后才会开始弄。</p>
 
 ]]></content>
   </entry>
