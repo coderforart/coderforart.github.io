@@ -51,7 +51,7 @@
     </div>
       
       <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="download.html">MWeb 4.0 macOS/iOS 测试版已发布，欢迎加入测试，帮助我们改进 MWeb！</a>
       </div>
     
     
@@ -147,13 +147,13 @@
 
 <p>首先要说的是 MWeb 对表格编辑的小改进，点工具栏的插入表格按钮或者用 <code>Ctrl + Shift + T</code>，即可弹出如下图的插入表格窗口：</p>
 
-<p><img src="media/15113184658847/15113205424429.jpg" alt="" style="width:624px;"/><br/>
+<p><figure><img src="media/15113184658847/15113205424429.jpg" alt="" style="width:624px;"/></figure><br/>
 <strong>其它说明：</strong>这个功能也支持对已有 Markdown 表格的编辑，方法就是光标移动到要编辑的表格文本中，点插入表格或者 <code>Ctrl + Shift + T</code>。</p>
 
 <h3 id="toc_3">1.3 对 LaTeX 的改进</h3>
 
 <p>如下图，当光标在 LaTeX 语法中时，会自动弹出预览窗口来预览 LaTeX 公式来辅助 LaTeX 输入和预览。<br/>
-<img src="media/15113184658847/15113209274707.jpg" alt="" style="width:460px;"/></p>
+<figure><img src="media/15113184658847/15113209274707.jpg" alt="" style="width:460px;"/></figure></p>
 
 <h3 id="toc_4">1.4 把 HTML 粘贴为 Markdown</h3>
 
@@ -166,18 +166,18 @@
 <h2 id="toc_6">3. MWeb 的标签（Tab）功能</h2>
 
 <p>MWeb 从 2.0 开始支持多 Tab，Tab 的设计比较像 Sublime，我觉得这种设计非常好。我觉得可以直接用下图说明。<br/>
-<img src="media/15113184658847/15113234008577.jpg" alt="" style="width:1039px;"/></p>
+<figure><img src="media/15113184658847/15113234008577.jpg" alt="" style="width:1039px;"/></figure></p>
 
 <h2 id="toc_7">4. 发布到 Wordress、印象笔记等流行平台的功能</h2>
 
 <p>MWeb 支持把 Markdown 图文发布到多个平台，支持的平台如下图：<br/>
-<img src="media/15113184658847/15113237903444.jpg" alt="" style="width:597px;"/></p>
+<figure><img src="media/15113184658847/15113237903444.jpg" alt="" style="width:597px;"/></figure></p>
 
 <h2 id="toc_8">5. 文档库功能</h2>
 
 <p>文档库的功能算是 MWeb 最强大的功能。MWeb 的文档库其实就是把文档和文档相关图片等资源保存到固定一处地方，并提供分类树和 Tags 这两种方式来管理你的 Markdown 文档。而 MWeb 的副标题：专业的 Markdown 写作、记笔记、静态博客生成软件，非常恰当地说明了文档库的用途。关于文档库的详细使用，就不多做说明了。然后静态博客生成功能，好像用的朋友不多，需要说的是，<a href="http://zh.mweb.im/">MWeb 中官网</a>，<a href="http://www.mweb.im/">英文官网</a>，<a href="http://coderforart.com/">coderforart 博客</a>，都是用 MWeb 静态博客功能做的，目前静态博客增加了“发布脚本”功能，发布起来还算方便，详细可以看一下 <a href="http://zh.mweb.im/how_to_use_shell_script.html">如何使用“发布脚本”功能发布静态网站</a> 这文章。下面的截图是我的文档库中这三个网站的情况：</p>
 
-<p><img src="media/15113184658847/15113249082167.jpg" alt="" style="width:1067px;"/></p>
+<p><figure><img src="media/15113184658847/15113249082167.jpg" alt="" style="width:1067px;"/></figure></p>
 
 <p>其实还要说一下，关于 MWeb 文档库的结构。点击 <code>MWeb 偏好设置 - 通用设置 - 文档库 - 在 Finder 中显示</code> 可以查看 MWeb 文档库的结构。<br/>
 它是由 mainlib.db 文件，docs 和 metadata 文件夹这三项组成，其中 docs 文件夹保存了每篇笔记的信息，一篇笔记一个 markdown 文档，markdown 文档内的图片等资源则保存在 docs 下的 media 文件夹内。mainlib.db 文件则保存了笔记的分类和 Tags 信息。我认为这种结构可以避免文档库丢失，因为不太可能一下删除这么多文件。更保险的办法是，使用 <code>MWeb 偏好设置 - 备份</code> 功能，把文档库备份到有<strong>历史记录</strong>的网盘中。</p>

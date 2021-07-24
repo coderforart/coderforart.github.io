@@ -51,7 +51,7 @@
     </div>
       
       <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="download.html">MWeb 4.0 macOS/iOS 测试版已发布，欢迎加入测试，帮助我们改进 MWeb！</a>
       </div>
     
     
@@ -134,11 +134,11 @@
 
 <p>iOS 版 MWeb 在 2.2.x 版首页底部工具栏中有一个名为 “iCloud 文档” 的按钮，现在这个按钮改成了 “网盘文档”，也就是 iCloud Drive、Dropbox、WebDAV 同步的文档都在此。这个网盘文档等于是 Mac 版 MWeb 的外部模式，如下图所示。</p>
 
-<p><img src="media/14963837146939/mweb-ios-231-1.png" alt="mweb-ios-231-1" style="width:770px;"/></p>
+<p><figure><img src="media/14963837146939/mweb-ios-231-1.png" alt="mweb-ios-231-1" style="width:770px;"/><figcaption>mweb-ios-231-1</figcaption></figure></p>
 
 <p>如下图所示，在 “网盘文档” 中，可以增加 Dropbox、WebDAV 的文件夹以同步，相当于 Mac 版的引入文件夹。增加的文件夹都会有 (i) 的按钮，点击后会如出现右边的设置页面，相当于 Mac 版引入的文件夹的设置，可设置新建文档时默认扩展名、图片文件夹和插入图片时是否自动上传至图床。</p>
 
-<p><img src="media/14963837146939/mweb-ios-231-2.png" alt="mweb-ios-231-2" style="width:770px;"/></p>
+<p><figure><img src="media/14963837146939/mweb-ios-231-2.png" alt="mweb-ios-231-2" style="width:770px;"/><figcaption>mweb-ios-231-2</figcaption></figure></p>
 
 <p>以上就是网盘文档的简单说明，我使用下来，发现 Dropbox 是相当稳定可靠的，WebDAV 用的是免费版的坚果云，有时会出现超时，然后同步的话，一般是要 WebDAV 支持 etag 才好做，但是坚果云不支持，所以目前同步是用 “修改时间” 来判定，我测试下来的结果是基本可用，还要继续优化。<br/>
 目前的测试版中，网盘文档还没有提供 “移动” 这个功能，不过正式版会有这功能。</p>
@@ -150,7 +150,7 @@
 <p>之前的版本由于只支持 iCloud Drive，所以不支持自行设置文档库位置。2.3.x 版的文档库已支持自行设置文档库的位置。<br/>
 使用文档库功能，首先要在 MWeb for Mac 的偏好设置 - 通用设置 - 文档库位置 中，用 “另存为” 按钮，把文档库另存到 iCloud Drive、Dropbox 或 WebDAV 的某个文件夹中。当文档库同步好之后，再回到 iOS 的设置页面，选择你之前另存到的网盘的文件夹。如下图，我在 Mac 中是把文档库保存到 Dropbox 下的 mweb_documents_library 文件夹中，所以我下图选择的是一样的位置。要注意的是，如果你选择另存到 iCloud Drive，必须另存到 iCloud Drive 下 MWeb 所属的文件夹内才可以，不然在 iOS 中会选取不到文档库。</p>
 
-<p><img src="media/14963837146939/mweb-ios-231-3.png" alt="mweb-ios-231-3" style="width:770px;"/></p>
+<p><figure><img src="media/14963837146939/mweb-ios-231-3.png" alt="mweb-ios-231-3" style="width:770px;"/><figcaption>mweb-ios-231-3</figcaption></figure></p>
 
 <p>设置完成后，回到首页，点文档库按钮，即可进入文档库，一开始时会自动同步，之后是的频率是 12 小时。当然，你也可以下拉，手动进行同步，如上图右边所示。要注意的是，如果使用的是 iCloud Drive，是不能进行手动同步的，因为 iCloud Drive 的同步是 iOS 系统决定的。</p>
 
