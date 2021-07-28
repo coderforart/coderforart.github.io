@@ -99,7 +99,7 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text"># 第一级标题 `&lt;h1&gt;` 
+<pre class="line-numbers"><code class="language-text"># 第一级标题 `&lt;h1&gt;` 
 ## 第二级标题 `&lt;h2&gt;` 
 ###### 第六级标题 `&lt;h6&gt;` 
 </code></pre>
@@ -116,7 +116,7 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">*这些文字会生成`&lt;em&gt;`*
+<pre class="line-numbers"><code class="language-text">*这些文字会生成`&lt;em&gt;`*
 _这些文字会生成`&lt;u&gt;`_
 
 **这些文字会生成`&lt;strong&gt;`**
@@ -143,7 +143,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">* 项目一 无序列表 `* + 空格键`
+<pre class="line-numbers"><code class="language-text">* 项目一 无序列表 `* + 空格键`
 * 项目二
     * 项目二的子项目一 无序列表 `TAB + * + 空格键`
     * 项目二的子项目二
@@ -165,7 +165,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">1. 项目一 有序列表 `数字 + . + 空格键`
+<pre class="line-numbers"><code class="language-text">1. 项目一 有序列表 `数字 + . + 空格键`
 2. 项目二 
 3. 项目三
     1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
@@ -188,7 +188,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+<pre class="line-numbers"><code class="language-text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
 - [x] 任务二 已做任务 `- + 空格 + [x]`
 </code></pre>
 
@@ -203,7 +203,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
+<pre class="line-numbers"><code class="language-text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
 格式: ![图片描述](url)
 </code></pre>
 
@@ -216,7 +216,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下： </p>
 
-<pre><code class="language-text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
+<pre class="line-numbers"><code class="language-text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
 </code></pre>
 
 <p><figure><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" style="width:140px;"/><figcaption>图片描述</figcaption></figure></p>
@@ -229,7 +229,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">email &lt;example@example.com&gt;
+<pre class="line-numbers"><code class="language-text">email &lt;example@example.com&gt;
 [GitHub](http://github.com)
 自动生成连接  &lt;http://www.github.com/&gt;
 </code></pre>
@@ -246,7 +246,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">某某说:
+<pre class="line-numbers"><code class="language-text">某某说:
 &gt; 第一行引用
 &gt; 第二行费用文字
 </code></pre>
@@ -265,7 +265,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">像这样即可：`&lt;addr&gt;` `code`
+<pre class="line-numbers"><code class="language-text">像这样即可：`&lt;addr&gt;` `code`
 </code></pre>
 
 <p><code>CMD + K</code> 可插入Markdown语法。<br/>
@@ -277,7 +277,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">```js
+<pre class="line-numbers"><code class="language-text">```js
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:&#39;#foo&#39;})
@@ -290,7 +290,7 @@ function fancyAlert(arg) {
 <p><code>CMD + Shift + K</code> 可插入Markdown语法。<br/>
 效果如下：</p>
 
-<pre><code class="language-javascript">function fancyAlert(arg) {
+<pre class="line-numbers"><code class="language-javascript">function fancyAlert(arg) {
     if(arg) {
         $.facebox({div:&#39;#foo&#39;})
     }
@@ -304,7 +304,7 @@ function fancyAlert(arg) {
 
 <p>mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图，它的官网为：<a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a> ，在 MWeb 中使用 mermaid 的语法就是声明代码块的语言为 mermaid，代码块中再写上 mermaid 的画图语法即可，你可以把下面的语法复制到 MWeb 中查看效果。</p>
 
-<pre><code class="language-text">```mermaid
+<pre class="line-numbers"><code class="language-text">```mermaid
 sequenceDiagram
     participant Alice
     participant Bob
@@ -321,7 +321,7 @@ sequenceDiagram
 
 <p><strong>效果如下：</strong></p>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre class="line-numbers"><code class="language-mermaid">sequenceDiagram
     participant Alice
     participant Bob
     Alice-&gt;John: Hello John, how are you?
@@ -338,7 +338,7 @@ sequenceDiagram
 
 <p>Graphviz 是开源的画图软件，它的官网为 <a href="http://www.graphviz.org/">http://www.graphviz.org/</a>。MWeb 采用的是 Graphviz 的 js 版本的实现 <a href="http://viz-js.com/">http://viz-js.com/</a>，可以解析 Graphviz 语法以生成图片。你可以将以下语法复制到 MWeb 中进行尝试。在尝试时可以把 dot 换成 circo, fdp, neato, osage, twopi 这几种来尝试效果。</p>
 
-<pre><code class="language-text">```dot
+<pre class="line-numbers"><code class="language-text">```dot
 # http://www.graphviz.org/content/cluster
 digraph G {
 
@@ -372,7 +372,7 @@ digraph G {
 
 <p><strong>效果如下：</strong></p>
 
-<pre><code class="language-dot"># http://www.graphviz.org/content/cluster
+<pre class="line-numbers"><code class="language-dot"># http://www.graphviz.org/content/cluster
 digraph G {
     
     subgraph cluster_0 {
@@ -406,7 +406,7 @@ digraph G {
 
 <p>echarts 是百度出品的 js 画图库，它的网址为：<a href="http://echarts.baidu.com/index.html">http://echarts.baidu.com/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="http://echarts.baidu.com/examples/index.html">http://echarts.baidu.com/examples/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
 
-<pre><code class="language-text">```echarts
+<pre class="line-numbers"><code class="language-text">```echarts
 option = {
     xAxis: {
         type: &#39;category&#39;,
@@ -425,7 +425,7 @@ option = {
 
 <p><strong>效果如下：</strong></p>
 
-<pre><code class="language-echarts">option = {
+<pre class="line-numbers"><code class="language-echarts">option = {
     xAxis: {
         type: &#39;category&#39;,
         data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
@@ -444,7 +444,7 @@ option = {
 
 <p>plantuml 的网址为：<a href="http://www.plantuml.com/">http://www.plantuml.com/</a>，直接上去看更能了解。MWeb 对 plantuml 的支持的方式是引用 plantuml 服务器生成的图片，你可以将以下语法复制到 MWeb 中进行尝试。</p>
 
-<pre><code class="language-text">```plantuml
+<pre class="line-numbers"><code class="language-text">```plantuml
 @startuml
 
 User -&gt; (Start)
@@ -458,7 +458,7 @@ User --&gt; (Use the application) : A small label
 
 <p><strong>效果如下：</strong></p>
 
-<pre><code class="language-plantuml">@startuml
+<pre class="line-numbers"><code class="language-plantuml">@startuml
     
 User -&gt; (Start)
 User --&gt; (Use the application) : A small label
@@ -472,7 +472,7 @@ User --&gt; (Use the application) : A small label
 
 <p>顺序图和流程图是使用 <a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/">http://adrai.github.io/flowchart.js/</a> 这两个画图库，以下是它在 MWeb 中的 Markdown 语法。</p>
 
-<pre><code class="language-text">```sequence
+<pre class="line-numbers"><code class="language-text">```sequence
 张三-&gt;李四: 嘿，小四儿, 写博客了没?
 Note right of 李四: 李四愣了一下，说：
 李四--&gt;张三: 忙得吐血，哪有时间写。
@@ -492,12 +492,12 @@ cond(no)-&gt;op
 
 <p><strong>效果如下：</strong></p>
 
-<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
+<pre class="line-numbers"><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
 Note right of 李四: 李四愣了一下，说：
 李四--&gt;张三: 忙得吐血，哪有时间写。
 </code></pre>
 
-<pre><code class="language-flow">st=&gt;start: 开始
+<pre class="line-numbers"><code class="language-flow">st=&gt;start: 开始
 e=&gt;end: 结束
 op=&gt;operation: 我的操作
 cond=&gt;condition: 确认？
@@ -511,7 +511,7 @@ cond(no)-&gt;op
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">第一格表头 | 第二格表头
+<pre class="line-numbers"><code class="language-text">第一格表头 | 第二格表头
 --------- | -------------
 内容单元格 第一列第一格 | 内容单元格第二列第一格
 内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
@@ -543,7 +543,7 @@ cond(no)-&gt;op
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">加删除线像这样用： ~~删除这些~~
+<pre class="line-numbers"><code class="language-text">加删除线像这样用： ~~删除这些~~
 </code></pre>
 
 <p>效果如下：</p>
@@ -554,7 +554,7 @@ cond(no)-&gt;op
 
 <p>以下三种方式都可以生成分隔线：</p>
 
-<pre><code class="language-text">***
+<pre class="line-numbers"><code class="language-text">***
 
 *****
 
@@ -573,7 +573,7 @@ cond(no)-&gt;op
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">块级公式：
+<pre class="line-numbers"><code class="language-text">块级公式：
 $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 \\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
@@ -598,7 +598,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">这是一个脚注：[^sample_footnote]
+<pre class="line-numbers"><code class="language-text">这是一个脚注：[^sample_footnote]
 
 [^sample_footnote]: 这里是脚注信息
 </code></pre>
@@ -620,7 +620,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 <p>Markdown 语法：</p>
 
-<pre><code class="language-text">[TOC]
+<pre class="line-numbers"><code class="language-text">[TOC]
 </code></pre>
 
 <p>效果如下：</p>

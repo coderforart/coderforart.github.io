@@ -141,7 +141,7 @@
 <li>API 地址：上传图片的接口，sm.ms 是：<a href="https://sm.ms/api/upload">https://sm.ms/api/upload</a></li>
 <li>POST File Name：MWeb 是用 HTTP POST 表单的方式上传图片，这里填的是所上传图片文件的表单名称，sm.ms 中是：smfile。API 后端如果用的是 PHP 的话，用这句即可把上传的图片保存下来：<code>move_uploaded_file($_FILES[&#39;smfile&#39;][&#39;tmp_name&#39;], $savePath)</code>。</li>
 <li><p>图片 URL 路径：返回的 JSON 结果中的图片的路径，目前 MWeb 仅支持返回结果为 JSON 格式。比如说 sm.ms 中返回结果样例如下：</p>
-<pre><code class="language-javascript">{
+<pre class="line-numbers"><code class="language-javascript">{
     &quot;code&quot;: &quot;success&quot;,<br/>
     &quot;data&quot;: {<br/>
         width: 1157,<br/>

@@ -157,7 +157,7 @@
 
 <p>如果你点击 “加载例子” 按钮，加载出来的是以下的脚本样例：</p>
 
-<pre><code class="language-text">#!/bin/sh
+<pre class="line-numbers"><code class="language-text">#!/bin/sh
 # Please set the name and email. 
 # Because MWeb can&#39;t get your github global setting.
 
@@ -173,7 +173,7 @@ git push -u origin master
 
 <p>在中国，github 一般情况下是无法正常发布的，如果你用 github，可以使用代理，比如说我发布 “MWeb英文官网” 就是使用 Surge 的代理，全部发布脚本如下：</p>
 
-<pre><code class="language-text">#!/bin/sh
+<pre class="line-numbers"><code class="language-text">#!/bin/sh
 
 export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152
 
@@ -198,7 +198,7 @@ git push -u origin master
 
 <p>那么打开终端的时候会自动执行 bashrc / zshrc 文件, 那在 bashrc / zshrc 里面加入检测剪贴板并且自动发布的脚本就能实现打开终端后自动执行发布脚本了.</p>
 
-<pre><code class="language-text"># 在 ~/.zshrc 或 ~/.bashrc 添下面代码, 就能实现自动执行发布脚本
+<pre class="line-numbers"><code class="language-text"># 在 ~/.zshrc 或 ~/.bashrc 添下面代码, 就能实现自动执行发布脚本
 # https://gist.github.com/bramblex/a6b12543a076e2c1fa5acecb95f51ead
 
 if (pbpaste  | grep -Eq  &#39;^cd &quot;[^&quot;]*&quot; &amp;&amp; sh &quot;[^&quot;]*/site_publish_logs/sh_\d*\.sh&quot; &amp;&amp; open &quot;[^&quot;]*&quot;&#39;) 

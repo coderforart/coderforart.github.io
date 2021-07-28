@@ -138,17 +138,17 @@
 
 <p>按上图，<strong>存储地域</strong>就选择对应的区域，我这里是华北2（北京）；<strong>Bucket 名称</strong>我这里是 mwebtest；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可；<strong>图片处理代码</strong>，点击图片处理后进入相关设置，比如说他的默认规则为：</p>
 
-<pre><code class="language-text">域名/sample.jpg?x-oss-process=style/stylename
+<pre class="line-numbers"><code class="language-text">域名/sample.jpg?x-oss-process=style/stylename
 </code></pre>
 
 <p>如果我新增了一个规则名称为 test 的样式，他的处理代码为：</p>
 
-<pre><code class="language-text">image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
+<pre class="line-numbers"><code class="language-text">image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
 </code></pre>
 
 <p>那么在 MWeb 中要填入 </p>
 
-<pre><code class="language-text">?x-oss-process=image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
+<pre class="line-numbers"><code class="language-text">?x-oss-process=image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
 </code></pre>
 
 <p>即可。</p>
