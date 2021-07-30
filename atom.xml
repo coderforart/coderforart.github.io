@@ -4,7 +4,7 @@
   <title><![CDATA[MWeb]]></title>
   <link href="http://zh.mweb.im/atom.xml" rel="self"/>
   <link href="http://zh.mweb.im/"/>
-  <updated>2021-07-25T10:49:44+08:00</updated>
+  <updated>2021-07-28T22:56:16+08:00</updated>
   <id>http://zh.mweb.im/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -32,26 +32,26 @@
 <h2 id="toc_1">2. 界面改进</h2>
 
 <p>新的文档库界面如下：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176948643252.jpg" alt=""/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176948643252.jpg" alt=""/></p>
 
 <p>新的外部模式的界面如下：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176949645435.jpg" alt=""/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176949645435.jpg" alt=""/></p>
 
 <h2 id="toc_2">3. 新增主题编辑界面</h2>
 
 <p>主题编辑的入口为：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176950735734.jpg" alt="" style="width:761px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176950735734.jpg" alt="" style="width:761px;"/></p>
 
 <p>目前不再分开编辑器主题和预览主题，都统一为“主题”。进入主题编辑界面如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176951852650.jpg" alt="" style="width:1015px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176951852650.jpg" alt="" style="width:1015px;"/></p>
 
 <h2 id="toc_3">4. 图床功能有改动</h2>
 
 <p>原本的，本地图片上传至图床的功能不改，界面仍然为：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176953023352.jpg" alt="" style="width:556px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176953023352.jpg" alt="" style="width:556px;"/></p>
 
 <p>先上传图片再插入文档的功能有变化，改为使用单独的图片上传窗口，此窗口使用菜单：“视图 - 图片上传窗口” 可以打开，也可以点击工具栏上的 “图片上传” 按钮打开，如下图所示：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176955150774.jpg" alt="" style="width:414px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176955150774.jpg" alt="" style="width:414px;"/></p>
 
 <p>这样独立出来一个窗口，使用上会更灵活一点。</p>
 
@@ -115,7 +115,7 @@
 </ul>
 
 <p>你可以随便查看内置的网站模板的结构，右键<code>网站分类</code>，选择<code>编辑</code>，在模板那里，点<code>编辑...</code> 按钮，如果是 MWeb 自带的模板，请选择<code>复制当前的模板到自定义模板文件夹...</code>，复制出来，再选择 <code>打开自定义模板所在的文件夹...</code> 则可。<strong>注意：</strong>如果要修改 MWeb 自带模板，首先要先使用<code>复制当前的模板到自定义模板文件夹...</code>复制到自定义模板的位置，才能修改，如下图。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761566606148.jpg" alt="" style="width:591px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761566606148.jpg" alt="" style="width:591px;"/></p>
 
 <h3 id="toc_1">文章页的生成过程</h3>
 
@@ -126,19 +126,19 @@
 <p><strong>更高级的用法：</strong></p>
 
 <p>做网站经常要定制一些页面，在文档中，选中了 <code>是否页面（Is Page）</code> 选项后，如果要自定这页，可以新增一个名称为：page-{HTML 文件名}.html 的模板页面，这样生成文章页的顺序会变为：header.html + page-{HTML 文件名}.html + footer.html。<code>{HTML 文件名}</code> 说的就是下图的 <code>HTML 文件名：</code> 所填入的名字。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761556545753.jpg" alt="" style="width:595px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761556545753.jpg" alt="" style="width:595px;"/></p>
 
 <h3 id="toc_2">自定义首页例子</h3>
 
 <p>在 MWeb 的静态网站生成中，可以自由指定一个文档为首页，方法非常简单，在 <code>HTML 文件名：</code> 中填入 <code>index</code> 即可，这样生成时，就会生成 <code>index.html</code> 页了，如下图。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761386523278.jpg" alt="" style="width:682px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761386523278.jpg" alt="" style="width:682px;"/></p>
 
 <p>如果要自定义，比如说像 MWeb 官网 <a href="https://zh.mweb.im/index.html">https://zh.mweb.im/index.html</a> 这样的首页，则是要自定义了，方法很简单，在主题文件夹里新增一个名为：page-index.html 的页面即可。如上面所说，当生成 index.html 这个 页面时，模板顺序会变成：header.html + page-index.html + footer.html。</p>
 
 <h3 id="toc_3">各分类的文章列表页的生成过程</h3>
 
 <p>分类页生成的顺序为：header.html + category.html + sidebar.html + footer.html。 其中，可以自定义任何一个分类的 category.html 模板。如下图，在网站的任何一个子分类中，<code>右键</code> - <code>编辑</code>，都可以设置 <code>HTML 文件名</code>，下图为 <code>help</code>，则会生成 help.html。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761391754516.jpg" alt="" style="width:391px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761391754516.jpg" alt="" style="width:391px;"/></p>
 
 <p>而 MWeb 在生成分类页的 HTML 时，会判定是否存在：category-{HTML 文件名}.html 的模板文件，如果存在，则会优先使用 category-{HTML 文件名}.html 模板文件。上图就是定制了一个 category-help.html 的模板文件，这样生成的顺序变为：header.html + category-help.html + sidebar.html + footer.html。最终效果如：<a href="https://zh.mweb.im/help.html">https://zh.mweb.im/help.html</a>，这就跟一般的分类不一样了。</p>
 
@@ -161,13 +161,13 @@
 
 <p>一般可以直接修改模板文件来做小的自定义，因为模板文件都是 HTML，懂 HTML 即可。或者修改样式，同样，懂 CSS 即可。<br/>
 如果要做更方便一点的自定义，比如说为网站模板增加一个广告位，这个广告经常换，但是我不想总是修改模板。这种需求可以用 MWeb 的网站扩展来解决。如下图为网站扩展设置界面，这里其实是变量，这些变量，在所有模板页都可以访问到。下页以增加 global_notice 这个变成为例子说明。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761405788732.jpg" alt="" style="width:610px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761405788732.jpg" alt="" style="width:610px;"/></p>
 
 <p>点<code>增加</code>按钮，然后设置如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761407661736.jpg" alt="" style="width:607px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761407661736.jpg" alt="" style="width:607px;"/></p>
 
 <p>增加了 global_notice 变量后，可以在 <code>网站扩展设置</code> 中设置这个变量的值，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761409322231.jpg" alt="" style="width:610px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761409322231.jpg" alt="" style="width:610px;"/></p>
 
 <p>这样，就可以在所有模板页中以 <code>{{ext_global_notice}}</code> 这个语法，输出设置了的值。</p>
 
@@ -674,14 +674,14 @@
     <id>http://zh.mweb.im/how_to_use_aliyun_cos.html</id>
     <content type="html"><![CDATA[
 <p>如下图，在 MWeb 的偏好设置 - 发布服务中，点击 “阿里云 OSS”，来增加阿里云 OSS 图床服务。如下图为阿里云 OSS 图床的设置界面。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676586238889.jpg" alt="" style="width:673px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676586238889.jpg" alt="" style="width:673px;"/></p>
 
 <p>下面详细说明各项设置，首先是 “名称：” 这个，你可以随便取一个名称，用来标记这个上传服务。剩下的项目都要按阿里云 OSS 中的相关项来填写，下面仔细说明。</p>
 
 <h2 id="toc_0">1. 存储地域、Bucket 名称、域名地址的填写：</h2>
 
 <p>进入到阿里云对象存储，选择一个已新建好的存储空间，我选择的是 “mwebtest”，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676591242386.jpg" alt="" style="width:1138px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676591242386.jpg" alt="" style="width:1138px;"/></p>
 
 <p>按上图，<strong>存储地域</strong>就选择对应的区域，我这里是华北2（北京）；<strong>Bucket 名称</strong>我这里是 mwebtest；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可；<strong>图片处理代码</strong>，点击图片处理后进入相关设置，比如说他的默认规则为：</p>
 
@@ -703,14 +703,14 @@
 <h2 id="toc_1">2. Access Key ID、Access Key Secret 和文件保存路径的填写：</h2>
 
 <p>在对象存储页右边，“创建 Bucket” 按钮旁边，有个 “Access Key” 按钮，点击后，就会进入阿里云的 “安全信息管理” 页。在页里可找到 <strong>Access Key ID、Access Key Secret</strong> 这两个要填写的项目，如下图所示，分别填入即可（如果没有，则需要自行新增）。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676597517520.jpg" alt="" style="width:1061px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676597517520.jpg" alt="" style="width:1061px;"/></p>
 
 <p>关于<strong>文件保存路径</strong>这个，设置为 &quot;/{year}/{mon}/{day}/{filename}{.suffix}&quot; 时，上传 filename.jpg 图片会保存在: &quot;/2019/02/02/filename.jpg&quot;。另外可以用 {random} 这个变量，是一个随机数字。</p>
 
 <h2 id="toc_2">3. 填写完成后的效果</h2>
 
 <p>如下图是填写完成后的界面：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676604356718.jpg" alt="" style="width:664px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676604356718.jpg" alt="" style="width:664px;"/></p>
 
 <p>填写完成后，再使用“发布”菜单，选择“把本地图片上传至图床...”，在出来的界面中，再选择新增的阿里云图床即可。如果还不知道怎么使用 MWeb 的图片上传服务，建议参考文章：<a href="15303740497765.html">MWeb 的图片上传服务介绍</a></p>
 
@@ -844,28 +844,28 @@
     <id>http://zh.mweb.im/how_to_use_tencent_cos.html</id>
     <content type="html"><![CDATA[
 <p>如下图，在 MWeb 的设置页面中，滑动到 “增加本地图片上传服务” 那里，点击后，选择 “腾讯云 COS”，来增加腾讯云 COS 图床服务。如下图的右边为腾讯云 COS 图床的设置界面。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos1.jpg" alt="cos2"/><figcaption>cos2</figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos1.jpg" alt="cos2"/></p>
 
 <p>下面详细说明各项设置，首先是 “名称：” 这个，你可以随便取一个名称，用来标记这个上传服务。剩下的项目都要按腾讯云 COS 中的相关项来填写，下面仔细说明。</p>
 
 <h2 id="toc_0">1. 存储地域、空间名称、域名地址的填写：</h2>
 
 <p>进入到腾讯云 COS （对象存储）的存储桶列表中，新增一个存储桶后，点进去并切换到 “基础配置” 这一页，如下图，我的存储桶的名称是为：“test”。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550727428079.jpg" alt="" style="width:822px;"/></figure><br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550727428079.jpg" alt="" style="width:822px;"/><br/>
 按上图，<strong>存储地域</strong>就选择对应的，我这里是上海金融；<strong>空间名称</strong>我这里是填入 test，不用填写后边的 “-数字”；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可。</p>
 
 <h2 id="toc_1">2. App ID、SecretId、SecretKey 和文件保存路径的填写：</h2>
 
 <p>进入腾讯云的 “API密钥管理” 中，即可找到 <strong>App ID、SecretId、SecretKey</strong> 这三个要填写的项目，如下图所示，分别填入即可。<br/>
 <strong>请注意：</strong> App ID 也可以使用空间名称后面那串数字，这串数字是跟 “API密钥管理” 中的 App ID 一样的。这个 App ID <strong>不是</strong>子帐号的帐号 ID。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550737662425.jpg" alt="" style="width:740px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550737662425.jpg" alt="" style="width:740px;"/></p>
 
 <p>关于<strong>文件保存路径</strong>这个，设置为 &quot;/{year}/{mon}/{day}/{filename}{.suffix}&quot; 时，上传 filename.jpg 图片会保存在: &quot;/2019/02/02/filename.jpg&quot;。另外可以用 {random} 这个变量，是一个随机数字。</p>
 
 <h2 id="toc_2">3. 填写完成后的效果</h2>
 
 <p>如下图左边，是填写完成后的界面，右边为使用腾讯云上传本地图片的界面。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos2.jpg" alt="cos1"/><figcaption>cos1</figcaption></figure><br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos2.jpg" alt="cos1"/><br/>
 图片上传后，点 “复制 Markdown” 或者是 “复制 HTML” 时，就会把本地的图片地址替换为图床的地址并复制到剪切板中。</p>
 
 ]]></content>
@@ -888,7 +888,7 @@
 <h2 id="toc_0">MWeb iOS 3.0 版本界面情况</h2>
 
 <p>如下图，这是新的界面，可以看到，几乎跟原来没什么大的改变。最大的改变就是文档导航变成侧边栏了，编辑器变成总会显示了，也就是在切换要打开的文档时，不会关闭原来已打开的文档了。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mweb-ios-3.jpg" alt="mweb ios 3"/><figcaption>mweb ios 3</figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mweb-ios-3.jpg" alt="mweb ios 3"/></p>
 
 <h2 id="toc_1">打开文件应用中的 Markdown 或文本文档</h2>
 
@@ -901,16 +901,16 @@
 
 <p>快速笔记提供了三个入口，如下图所示为两个入口，还有一个办法是使用 URL Scheme：<code>mwebapp://?p=quicknote</code> 。点击后，MWeb 会自动按下图最右边那张图片的设置的规则，来打开快速笔记的文档并弹出键盘。快速笔记的重点在记，只要记下即可，MWeb 会自动按天来整理成文档。在你点击快速笔记时，如果快速笔记在非打开状态，则会自动加上时间做为标题。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note"/><figcaption>open-quick-note</figcaption></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note"/></p>
 
 <p>如果你把快速笔记设置保存在 MWeb for Mac 文档库，目前还不支持归类到某一分类，iOS 版本的文档库同步及完整功能会在数个版本内得到完善。</p>
 
 <p>如下图是快速笔记编辑器的情况和查看之前日期的快速笔记的文件夹（我是保存在本机中的 demo folder 文件夹里的）。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note"/><figcaption>quick-note</figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note"/></p>
 
 <h2 id="toc_3">对 Markdown 语法键盘的改进</h2>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/markdownkeyboard.jpg" alt="markdown-keyboard"/><figcaption>markdown-keyboard</figcaption></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/markdownkeyboard.jpg" alt="markdown-keyboard"/></p>
 
 <p>如上图，Markdown 语法输入键盘更改了样式，另外还增加了插入文件应用中的图片按钮和预览按钮。另外在 <code>设置 - 自定义键盘工具条按钮及顺序</code> 中，还可以调整顺序和设置是否显示在最上面的工具条中，如上图右边的图片所示。<br/>
 如上图左边，最上面的工具条可以向左滑动来查看其它隐藏的按钮，另外，MWeb 还提供一个切换所有 Markdown 语法输入键盘的按钮，所以如果你不喜欢用滑动方式，可以点此按钮插入 Markdown 语法。</p>
@@ -918,19 +918,19 @@
 <h2 id="toc_4">全文搜索</h2>
 
 <p>目前这个版本终于是支持全文搜索了，目前的搜索的话，如果填入的关键字用空格隔开，比如说填入 “测试 说明”，会搜索文档中既包含 “测试” 又包含 “说明” 的文档并显示出来。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/fulltextsearch.jpg" alt="full-text-search"/><figcaption>full-text-search</figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/fulltextsearch.jpg" alt="full-text-search"/></p>
 
 <h2 id="toc_5">文档库改进</h2>
 
 <p>如下图所示，文档库首页增加了显示最近新增的文档，在文档库的所有功能完善前，这个功能应该会方便不少。另外直接点击分类会进入如下图右图效果，此分类的子分类会先显示出来，然后再显示此分类下的文档。再有就是增加了一个新增文档库文档的 URL Scheme：<code>mwebapp://?p=newlibdoc</code> 。<br/>
 要注意的是，目前的文档库还是不支持删除、管理分类和文档归类功能，这些功能只能等之后的更新了，其实这功能也是拖好久了。。。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mwebformaclibrary.jpg" alt="mweb-for-mac-library"/><figcaption>mweb-for-mac-library</figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mwebformaclibrary.jpg" alt="mweb-for-mac-library"/></p>
 
 <h2 id="toc_6">网盘文档改动</h2>
 
 <p>之前的本机文档被归类到网盘文档中了，另外点击（i）按钮可以设置文件夹的相关功能还是没变动，如下图所示。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/externalfolder.jpg" alt="external-folde"/><figcaption>external-folde</figcaption></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/externalfolder.jpg" alt="external-folde"/></p>
 
 <p>以上，MWeb 新版本的情况就介绍完了。</p>
 
@@ -947,12 +947,12 @@
 
 <p>快速笔记提供了三个入口，如下图所示为两个入口，还有一个办法是使用 URL Scheme：<code>mwebapp://?p=quicknote</code> 。点击后，MWeb 会自动按你，下图最右边那张图片的设置的规则来打开快速笔记的文档并弹出键盘。快速笔记的重点在记，只要记下即可，MWeb 会自动按天来整理成文档。在你点击快速笔记时，如果快速笔记在非打开状态，则会自动加上时间做为标题。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note"/><figcaption>open-quick-note</figcaption></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note"/></p>
 
 <p>如果你把快速笔记设置保存在 MWeb for Mac 文档库，目前还不支持归类到某一分类，iOS 版本的文档库同步及完整功能会在数个版本内得到完善。</p>
 
 <p>如下图是快速笔记编辑器的情况和查看之前日期的快速笔记的文件夹（我是保存在本机中的 demo folder 文件夹里的）。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note"/><figcaption>quick-note</figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note"/></p>
 
 ]]></content>
   </entry>
@@ -976,7 +976,7 @@
 <p><strong>文档库迁移：</strong></p>
 
 <p>3.x 启动时会提示导入旧的文档库，如果你开始没做这个，或者其它什么原因有问题，解决办法很简单，把旧的文档库复制到你想要的位置，然后用 3.x 版的 <code>偏好设置</code> - <code>文档库&amp;备份</code> - <code>修改文档库到其它位置</code>-<code>选择现有文档库</code> 然后选择刚刚你复制的位置即可，如图： <br/>
-<figure><img src="media/15305355339332/15306726386908.jpg" alt="" style="width:682px;"/></figure><br/>
+<img src="media/15305355339332/15306726386908.jpg" alt="" style="width:682px;"/><br/>
 如果还有什么问题，建议查看 <a href="mweb-library.html">MWeb 文档库详细介绍</a> 这篇文章，估计一定能解决所有问题了。</p>
 
 <p><strong>其它数据迁移：</strong></p>
@@ -1042,7 +1042,7 @@
 
 <p>网站分类可以设置网站相关的一些东西，设置界面如下：</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761324638192.jpg" alt="" style="width:495px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761324638192.jpg" alt="" style="width:495px;"/></p>
 
 <p>上图中的设置应该都不难理解，如果要生成静态网站，在设置好之后，点击 <code>生成网站</code> 按钮即可，在生成之前，请务必保证你的分类中有至少一篇文章。你也可以直接右键来选择相关菜单项来生成网站。如果你修改了网站模板，请使用 <code>清理并重新生成</code> 按钮。当然，你任何时候都可以使用这个按钮来清理并重新生成网站。</p>
 
@@ -1054,22 +1054,22 @@
 
 <p>如下图，把 MWeb 文档库中的文档设置为 <code>页面</code> 非常简单，点击 <code>最上方的信息条</code> ，勾选 <code>是否页面（Is Page）</code> 即可。其中 <code>HTML 文件名</code> 栏是用来设置生成的 HTML 文件名的。比如说上图中的这个文章会生成 mweb-static-blog.html。<code>一般文章</code> 生成的 HTML 文件名也是在此设定。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304641791928.jpg" alt="" style="width:618px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304641791928.jpg" alt="" style="width:618px;"/></p>
 
 <h2 id="toc_2">网站的扩展设置</h2>
 
 <p>有些网站模板支持一些扩展设置，比如说网站的图标和 logo，可以自定义自己的图标和 logo 图片，还有，有些网站支持配置 disqus 评论，只要填入 disqus 的 shortname 即可。这些网站的配置是需要网站模板支持的，在 <code>偏好设置</code> - <code>网站扩展</code> - <code>网站扩展设置</code> 里可以设置，如下图就是使用了 site-mweb-bluma 模板的 Coder For Art 网站的扩展设置。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761331195368.jpg" alt="" style="width:616px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761331195368.jpg" alt="" style="width:616px;"/></p>
 
 <p>比如，这里我要设置 “site icon”，也就是网站图标。这就有一个问题，就是：网站图标是图片形式的，而输入框是要填入文本的，那要把图片增加到那里呢？<br/>
 MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”，然后在其中，新增一个文档，并且设置这个文档的文章类型是属于页面。然后把图片拖拽进这个文档并删除 mweb 生成的 markdown 语法，这样就不会显示在文档中了。<br/>
 然后如下图，打开大纲视图，找到刚刚拖入的图标，点“Copy”按钮复制，并在 “site icon” 的输入框，粘贴一下即可（我是拿 MWeb 的图标做测试）。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338435586.jpg" alt="" style="width:1275px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338435586.jpg" alt="" style="width:1275px;"/></p>
 
 <p>下图为设置好网站图标的效果：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338944073.jpg" alt="" style="width:611px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338944073.jpg" alt="" style="width:611px;"/></p>
 
 <p>其它需要填入图片的，也是用这用方法。</p>
 
@@ -1079,16 +1079,16 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 
 <p>如下图，打开其中一篇文档，在文档大纲视图最下边，就会发现网站模板所支持的文档扩展填写。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761343071119.jpg" alt="" style="width:1270px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761343071119.jpg" alt="" style="width:1270px;"/></p>
 
 <p>比如说我要填写 featured 图片，则可以先复制 “mweb3-1.jpg” 这张图，然后粘贴入 featured 输入框即可。另外我也顺便填写了 excerpt 这个字段。填写后，在 site-mweb-bluma 模板中的效果如下图：</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761345831970.jpg" alt="" style="width:1052px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761345831970.jpg" alt="" style="width:1052px;"/></p>
 
 <h2 id="toc_4">设置网站的主菜单</h2>
 
 <p>在 <code>偏好设置</code> - <code>网站扩展</code> - <code>网站菜单</code> 中，先选择要设置的网站，并选中 <code>网站菜单</code> 这个选项卡，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304650978816.jpg" alt="" style="width:595px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304650978816.jpg" alt="" style="width:595px;"/></p>
 
 <p>你可以新增，编辑和删除菜单，或者拖拽来调整顺序。要注意的是，自带的网站模板中，MWeb-Foundation-Book 这个模板是不支持网站菜单的。</p>
 
@@ -1097,7 +1097,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_5">文档间的引用</h2>
 
 <p>在 MWeb 中引用其它文档非常简单，在文档列表中，右键要引用的文档，选择 <code>复制</code>，如下图所示。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;"/></figure><br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;"/><br/>
 然后在要引用的文档的位置 <code>CMD + V</code> 粘贴即可，MWeb 会生成 <code>[如何使用“发布脚本”功能发布静态网站](how_to_use_shell_script.html)</code> 这种语法。如果你按住 <code>CMD</code> 键并点击，则会打开这个引用的文档。</p>
 
 <p>生成静态网站功能可以很好的处理这种引用，并生成相关的网页连接。</p>
@@ -1106,7 +1106,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 
 <p>阅读更多的用途请看下面的图片，这个需要网站模板的支持，你可以使用菜单：<code>标签</code> - <code>插入阅读更多注释</code> 来插入阅读更多，然后要注意的是，这个注释是要前后空一行的，也如下图。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304722329962.jpg" alt="" style="width:946px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304722329962.jpg" alt="" style="width:946px;"/></p>
 
 <p>另外，比如说发布到 Wordpress 中时，Wordpress 也能识别这个阅读更多的设置。</p>
 
@@ -1137,7 +1137,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_1">引入文件夹到 MWeb 中的办法</h2>
 
 <p>如下图，按 <code>CMD + E</code> 打开外部模式，然后点击左下角的 “+” 按钮，选择要引入的文件夹即可。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304590777747.jpg" alt="" style="width:958px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304590777747.jpg" alt="" style="width:958px;"/></p>
 
 <p>另外，你还可以直接把文件夹拖拽到左边的文件夹树形列表中，也可以引入文件夹。<br/>
 还有一种方法就是：直接把文件夹拖拽到 MWeb 的图标中，也可以引入文件夹。</p>
@@ -1145,7 +1145,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_2">配置引入的文件夹</h2>
 
 <p>引入文件夹后，还有一项重要的设置，就是引入文件夹的设置，可以右键引入的文件夹，然后选择 <code>编辑</code>，就会显示如下图的界面：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304601545484.jpg" alt="" style="width:352px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304601545484.jpg" alt="" style="width:352px;"/></p>
 
 <p>一个设置是 “显示名称”，这个是引入的文件夹所特有的，你修改这个名称不会修改到文件夹的名称。还有几个比较重要的设置，都是跟插入图片相关的，第一个就是 “保存插入的图片的文件夹名称：”，这个一看就知道意思，这个跟下面的 “插入的图片的保存位置” 相关联，这个只有 “绝对位置” 与 “相对位置” 两个选项。<br/>
 举个例子，比如说我引入的文件夹为 A，然后有一文件在 “A/folder/file.md” 下，我如果在 “file.md” 中插入一张名为 “pic.jpg” 的图片，则不同的选项的结果为：</p>
@@ -1162,7 +1162,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_3">管理引入后的文件夹</h2>
 
 <p>文件夹引入后，就可以使用右键对引入的文件夹和文件进行一些常用的操作，如下图所示。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304599733659.jpg" alt="" style="width:619px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304599733659.jpg" alt="" style="width:619px;"/></p>
 
 ]]></content>
   </entry>
@@ -1178,23 +1178,23 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_0">文档库的快速搜索</h2>
 
 <p>如下图是文档库的快速搜索，不填入搜索关键字的情况下会显示当前打开的文档和最近使用的文档。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304171097168.jpg" alt="" style="width:556px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304171097168.jpg" alt="" style="width:556px;"/></p>
 
 <p>按 <code>向下</code> 键即可选择文档，按 <code>Enter</code> 键可以打开所选择的文档。</p>
 
 <p>另外文档库搜索还可以设置一个全局搜索快捷键，按这个快捷键可以在任何时候进行文档库搜索，这个快捷键可以在 <code>偏好设置</code> - <code>通用设置</code> 中设置，如下图所示：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304175698841.jpg" alt="" style="width:570px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304175698841.jpg" alt="" style="width:570px;"/></p>
 
 <p>下图是设置了快捷键后，从桌面上打开快速搜索并进行搜索的结果。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304177571212.jpg" alt="" style="width:531px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304177571212.jpg" alt="" style="width:531px;"/></p>
 
 <h2 id="toc_1">外部模式的快速搜索</h2>
 
 <p>如下图所示，不填入搜索关键字的情况下会显示当前打开的文档和最近使用的文档。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304173584955.jpg" alt="" style="width:942px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304173584955.jpg" alt="" style="width:942px;"/></p>
 
 <p>如下图的搜索结果，按 <code>向下</code> 键即可选择文档，按 <code>Enter</code> 键可以打开所选择的文档。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304174157473.jpg" alt="" style="width:941px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304174157473.jpg" alt="" style="width:941px;"/></p>
 
 <h2 id="toc_2">搜索语法</h2>
 
@@ -1226,17 +1226,17 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_0">开启快速笔记功能</h2>
 
 <p>此功能默认是关闭的，因为要占用宝贵的状态栏上的一个位置，你可以在 <code>偏好设置</code> - <code>通用设置</code> 中开启，如下图所示。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303797588878.jpg" alt="" style="width:630px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303797588878.jpg" alt="" style="width:630px;"/></p>
 
 <p>你可以设置快速笔记保存在那个分类和产生一篇新文档的时间，如果用得频繁就一天一篇，否则可以选择 3，5 天等等。</p>
 
 <h2 id="toc_1">使用快速笔记功能</h2>
 
 <p>如下图是快速笔记功能，你可以随意打开并填入一些内容。也可以直接截图并粘贴图片，使用方法就跟 MWeb 的编辑器一样。另外就是，你还可以直接在浏览器中拖拽一张图片到状态栏的快速笔记图标中，MWeb 会自动增加你拖拽的图片。如果你觉得这次的收集完成了，可以点 “✓” 按钮，来增加到文档库中。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303799152167.jpg" alt="" style="width:569px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303799152167.jpg" alt="" style="width:569px;"/></p>
 
 <p>你还可以把快速笔记界面拖拽出来，放置在屏幕任何位置，如下图所示。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303802411416.jpg" alt="" style="width:547px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303802411416.jpg" alt="" style="width:547px;"/></p>
 
 <p>界面中的左下角的按钮是显示 MWeb 界面，如果你在浏览器或者其它界面，调出快速笔记界面并点击这个按钮，会打开 MWeb 主界面。</p>
 
@@ -1254,7 +1254,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_0">文档库结构及存储位置</h2>
 
 <p>MWeb 的文档库是保存在一个你开始使用 MWeb 时设置好的文件夹内，由 docs 文件夹，mainlib.db 文件和 metadata 文件夹组成。其中 docs 文件夹里保存的是每一篇笔记及笔记的相关素材。mainlib.db 文件保存的是分类和 Tag 信息以及笔记所属于的分类信息。metadata 文件夹只有在使用到发布服务时才会有，保存的是发布服务相关信息。下图就是一个典型的文档库。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303762803232.jpg" alt="" style="width:624px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303762803232.jpg" alt="" style="width:624px;"/></p>
 
 <p>这种结构可以很好的备份和用于 git，同时也避免误删除，因为不可能会无故删除这么多文档。</p>
 
@@ -1262,20 +1262,20 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 
 <p>下图为 MWeb 中文档库的设置和备份，设计好好的备份策略，有利于保证文档库永远不会丢失。MWeb 的文档库就是一个文件夹，你可以直接使用 <code>在 Finder 中显示</code> 按钮，找到文档库的位置，直接复制到其它地方进行备份。还可以利用下面的备份文档库功能进行定时备份。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303764804498.jpg" alt="" style="width:680px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303764804498.jpg" alt="" style="width:680px;"/></p>
 
 <p>关于备份位置为什么要设置三处，是觉得可能有一些用户会需要，但是我认为，通常两处就不会有问题了。只要把一处设置在有历史记录的网盘中，另一处设置在其它硬盘的位置，或者不设置，也是可以的。但是建议务必设置一个位置在有历史记录功能的网盘中，或者是像时间机器这种设备中，因为文档库总是与备份位置同步的。</p>
 
 <p>如果你要恢复已备份的文档库，请先把备份的文档库复制到一个你想要的位置，然后再使用 <code>选择现有文档库</code> 选择这个位置。这样你的文档库就恢复过来并使用所选择的位置做文档库的位置了，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303770611706.jpg" alt="" style="width:522px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303770611706.jpg" alt="" style="width:522px;"/></p>
 
 <h2 id="toc_2">分类树的使用方法</h2>
 
 <p>MWeb 的分类有两种，一种是普通的分类，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773079972.jpg" alt="" style="width:481px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773079972.jpg" alt="" style="width:481px;"/></p>
 
 <p>一种是静态网站分类，这个分类可以生成静态网站，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773879197.jpg" alt="" style="width:690px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773879197.jpg" alt="" style="width:690px;"/></p>
 
 <p>MWeb 提供一个非常简单的方法再把分类下的文档生成一个静态网站，比如 MWeb 中文官网就是用 MWeb 的静态网站功能生成的。</p>
 
@@ -1288,23 +1288,23 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 </ol>
 
 <p>这种操作方法的地方是可以多选，也就是可以批量管理。如果是单个文档，有更好的办法，就是点击编辑器最上面的信息条，然后进行勾选，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303782515887.jpg" alt="" style="width:590px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303782515887.jpg" alt="" style="width:590px;"/></p>
 
 <p>这个地方也是唯一可以设置文档标签（tag）的地方，下面介绍的标签，设置是用这个办法。你也可以使用快捷键 <code>CMD + 8</code> 来打开这个界面。</p>
 
 <h2 id="toc_3">文档间的引用</h2>
 
 <p>在 MWeb 中引用其它文档非常简单，在文档列表中，右键要引用的文档，选择 <code>复制</code>，如下图所示。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;"/></figure><br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;"/><br/>
 然后在要引用的文档的位置 <code>CMD + V</code> 粘贴即可，MWeb 会生成 <code>[如何使用“发布脚本”功能发布静态网站](how_to_use_shell_script.html)</code> 这种语法。如果你按住 <code>CMD</code> 键并点击，则会打开这个引用的文档。</p>
 
 <h2 id="toc_4">文档排序</h2>
 
 <p>文档库支持多种排序方式，而且每个顶层分类还可以单独设置自己的排序方式。修改排序方式的办法有两种，一种是如下图所示：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303807570789.jpg" alt="" style="width:463px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303807570789.jpg" alt="" style="width:463px;"/></p>
 
 <p>另一种是，选中要修改排序的顶层分类或者顶层分类下的某一子分类，然后在文档列表中右键，如下图所示:<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303808791421.jpg" alt="" style="width:450px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303808791421.jpg" alt="" style="width:450px;"/></p>
 
 <p>在各种排序中，自定义拖拽排序比较特殊，需要特别说明。在说明之前，我先说明一个全局选项：<code>按分类分组显示</code>。在文档列表中右键，就可以看到这个功能的菜单，如果在启用状态，则表示列表中的文档都在以分类分组显示的状态，不管是什么排序设置。<br/>
 这个用处其实也是查找和整理文档。但是如果这个全局选项不是启用状态，那么，如果排序设置为自定义拖拽排序，则这个顶层分类也会按分类分组显示的。也就是说，只要是自定义拖拽排序，文档列表栏必定是分组显示的。<br/>
@@ -1315,19 +1315,19 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 
 <p>MWeb 中标签（tag）的功能还非常简单，设置标签的方法，上面有说到了，另外就是按标签查看文档了，这个功能如下图所示：</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16042935393203.jpg" alt="" style="width:263px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16042935393203.jpg" alt="" style="width:263px;"/></p>
 
 <p>可以看出 MWeb 会列出整个文档库的标签，选择后即可按标签查看文档。</p>
 
 <h2 id="toc_6">文档大纲视图</h2>
 
 <p>如下图所示，文档大纲视图会列出当前文档的标题和插入的图片及附件，当然还有可以设置静态网站用的扩展项目（如果当前的文档属于某个静态网站分类的话）。下图是把大纲视图拖拽出来后固定的效果。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303793181537.jpg" alt="" style="width:293px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303793181537.jpg" alt="" style="width:293px;"/></p>
 
 <h2 id="toc_7">文档库的导入和导出</h2>
 
 <p>如下图所示，文档库支持导入 Markdown 文档到文档库中。如果导入的时候你选择的是一个文件夹，MWeb 会把文件夹内的所有 Markdown 文档导入到当前所选择的分类。如果文件夹的 Markdown 文档中有本地图片，也会一并导入并修改为文档库格式的图片地址。这个是 3.x 版才有的，2.x 版只会导入 Markdown 文本，不会导入图片。需要说明的是，要导入图片，请一定要选择整个文件夹。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303786026066.jpg" alt="" style="width:490px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303786026066.jpg" alt="" style="width:490px;"/></p>
 
 <p>另外还可以把整个分类导出为 Markdown，导出后的 Markdown 文档会按分类的结构建立文件夹。按分类结构建立文件夹这个也是 3.x 才有的功能。</p>
 
@@ -1349,7 +1349,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h3 id="toc_10">1. 文档库位置不正确。</h3>
 
 <p>在 MWeb 3.1.4 及之上的版本，文档库位置不正确，会自动打开 <code>偏好设置</code> - <code>文档库&amp;备份</code> 并在 <code>文档库位置</code> 中会有红字提示，如下图这样：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15313702907218.jpg" alt="" style="width:659px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15313702907218.jpg" alt="" style="width:659px;"/></p>
 
 <p>这种情况的话，你可以按以下几种方法解决：</p>
 
@@ -1389,7 +1389,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p>这是很多朋友喜欢用，但是我不怎么建议用的方式，主要是万一图床挂了或者是什么问题，比较麻烦。这个方式只在外部模式中支持，文档库不支持，下面介绍一下配置方法。</p>
 
 <p><strong>MWeb for Mac 中的配置方法为：</strong>在外部模式中 <code>右键</code> 引入的文件夹，选择 <code>编辑</code>，这时出来如下图的<strong>文件夹设置</strong>界面。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303749773096.jpg" alt="" style="width:333px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303749773096.jpg" alt="" style="width:333px;"/></p>
 
 <p>勾选红框中的把插入的图片自动上传至...，然后选择要上传的图床即可（图床服务可以在 <code>偏好设置</code> - <code>发布服务</code> 中增加）。这样设置后，该引入的文件夹内的文档在插入图片时，会自动上传至所选择的图床并返回地址和生成 Markdown 语法。</p>
 
@@ -1401,7 +1401,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 
 <p>文档库不用配置，默认就是这样，外部模式中，同样 <code>右键</code> 引入的文件夹，在出来的菜单中选择 <code>编辑</code>，调出<strong>文件夹设置</strong>界面，其中的配置如下图：</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303752255512.jpg" alt="" style="width:346px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303752255512.jpg" alt="" style="width:346px;"/></p>
 
 <p>首先要取消勾选 “把插入的图片自动上传至”。上面的配置可以用默认的，也就是说你只要取消勾选自动上传图片即可。</p>
 
@@ -1415,7 +1415,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 
 <p>为什么推荐使用第二种插入后图片处理方式，就是因为有这个功能。使用方法非常简单，在 Mac 版中点 “分享” 按钮 - 把本地图片传至图床，或者菜单：发布 - 把本地图片传至图床 即可调出以下的图片上传面板：</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303753518695.jpg" alt="" style="width:975px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303753518695.jpg" alt="" style="width:975px;"/></p>
 
 <p>在这个面板中，中间的列表会列出文档中的所有本地图片（<strong>注意是文档中的</strong>），首先请选择要上传的图床，然后点 “上传本地图片” 按钮即可。当图片上传完成后，你可以选择使用 “复制 Markdown” 按钮或者 “复制 HTML” 按钮，看你需要什么样的格式。复制进来的就是已经把本地图片地址换成图床的远程地址后的内容。</p>
 
@@ -1442,25 +1442,25 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_0">发布服务的新增和使用</h2>
 
 <p>要使用发布服务，要先新增发布服务。请在 <code>偏好设置</code> - <code>发布服务</code> 中新增相关发布服务，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303730219594.jpg" alt="" style="width:595px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303730219594.jpg" alt="" style="width:595px;"/></p>
 
 <p>如果你是 2.x 版 MWeb 的用户，你可以更新 2.x 到最新版，然后从 2.x 中导出发布服务，再在 3.x 版中导入。要注意的是，印象笔记发布服务是无法导入的，必须重新增加。</p>
 
 <p>发布服务增加后，可以拖拽来改变发布服务的顺序，然后所有增加的发布服务会显示在 <code>发布</code> 菜单中，也会显示在工具栏上的 <code>分享</code> 按钮中，如下图所示：</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303732712589.jpg" alt="" style="width:276px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303732712589.jpg" alt="" style="width:276px;"/></p>
 
 <p>在当前文档中，选择要发布到的发布服务，即可调出相关界面来进行发布。</p>
 
 <p>除了发布到为知笔记比较特殊为，几乎所有发布服务都支持发布本地图片，除了 Medium 外，其它服务都支持更新，也就是说，同一发布服务，你发布过一次后，再发布时，会出现更新文档的信息和一个复选框，如果你勾选他，就会更新已发布的文档，默认是勾选的，如果你取消勾选，则会发布一篇新的文章，如下图：</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303737562154.jpg" alt="" style="width:1000px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303737562154.jpg" alt="" style="width:1000px;"/></p>
 
 <h2 id="toc_1">Metaweblog API 介绍</h2>
 
 <p>在增加发布服务中，选择 Metaweblog API，会出现下图的界面。发布至 Metaweblog API 的填入项目中，多了名为 “API 地址” 这一项。每个支持 Metaweblog API 的网站，都提供一个 API 地址，填入即可。</p>
 
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303742846577.jpg" alt="" style="width:582px;"/></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303742846577.jpg" alt="" style="width:582px;"/></p>
 
 <p>下边列出国内网站中常用的 Metaweblog API 地址。</p>
 
@@ -1474,7 +1474,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_2">发布到 Tumblr 时发图片支持</h2>
 
 <p>发布到 Tumblr 一般情况下是不支持上传本地图片的，但是如果你配置好了图床服务，就可以利用图床服务来让发布到 Tumblr 支持本地图片，如下图，发布时选择一个图床服务即可。<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303739190170.jpg" alt="" style="width:1006px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303739190170.jpg" alt="" style="width:1006px;"/></p>
 
 ]]></content>
   </entry>
@@ -1488,7 +1488,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p>使用 MWeb 将 Markdown 文档导出为图片、HTML、Epub、PDF、RTF和Docx。</p>
 
 <p>MWeb 使用 <code>发布</code> 菜单或者工具栏上的 <code>分享按钮</code> 来导出当前的 Markdown 文档，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303675502315.jpg" alt="" style="width:333px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303675502315.jpg" alt="" style="width:333px;"/></p>
 
 <h2 id="toc_0">复制为富文本功能的用途</h2>
 
@@ -1497,21 +1497,21 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2 id="toc_1">导出或复制为图片</h2>
 
 <p>使用这个功能后，会弹出如下图的界面：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303679268829.jpg" alt="" style="width:1109px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303679268829.jpg" alt="" style="width:1109px;"/></p>
 
 <p>你可以设置导出的图片的宽度，然后按 <code>复制为图片</code> 或者 <code>保存为图片</code> 按钮，或者使用 <code>分享</code> 按钮把图片分享出去。</p>
 
 <h2 id="toc_2">导出为 PDF</h2>
 
 <p>使用这个功能后，会弹出以下界面：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303680716817.jpg" alt="" style="width:1110px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303680716817.jpg" alt="" style="width:1110px;"/></p>
 
 <p>你可以勾选 <code>生成 PDF 目录</code> 复选框来生成有目录的 PDF 文档，这个功能的快捷键是 <code>CMD + P</code>。</p>
 
 <h2 id="toc_3">导出为 Epub</h2>
 
 <p>使用这个功能后，会弹出以下界面：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303683622275.jpg" alt="" style="width:1108px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303683622275.jpg" alt="" style="width:1108px;"/></p>
 
 <p>如图上图所示，你可以修改 Epub 的封面。</p>
 
@@ -1551,21 +1551,21 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 </code></pre>
 
 <p>在 MWeb 编辑器中，你也可以右键图片，然后选择一些对图片的操作，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303665759795.jpg" alt="" style="width:568px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303665759795.jpg" alt="" style="width:568px;"/></p>
 
 <p>在 MWeb 中，你还可以设置图片的对齐，以上面的图片为例子，左对齐为 <code>-l140</code>，居中为 <code>-c140</code>，居右为 <code>-r140</code>。</p>
 
 <h2 id="toc_2">MWeb 对插入表格的支持</h2>
 
 <p>你可以按工具栏上的插入表格按钮来插入表格，也可以用快捷键 <code>Ctrl + Shift + T</code>，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303667198523.jpg" alt="" style="width:606px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303667198523.jpg" alt="" style="width:606px;"/></p>
 
 <p>对于已存在的表格，你可以把光标移动到表格代码内，然后使用插入表格功能来修改已存在的表格。你可以先插入一张表格，然后再尝试修改。</p>
 
 <h2 id="toc_3">MWeb 对 LaTeX 书写的辅助</h2>
 
 <p>在 MWeb 编辑器中，光标移到 LaTeX 公式中间，即可以预览 LaTeX 公式，如果修改公式，预览也会实时更新，如下图：<br/>
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303669655303.jpg" alt="" style="width:476px;"/></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303669655303.jpg" alt="" style="width:476px;"/></p>
 
 ]]></content>
   </entry>
@@ -1715,18 +1715,18 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>效果如下：</p>
 
-<p><figure><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述"/><figcaption>图片描述</figcaption></figure></p>
+<p><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述"/></p>
 
 <p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下： </p>
 
 <pre class="line-numbers"><code class="language-text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
 </code></pre>
 
-<p><figure><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" style="width:140px;"/><figcaption>图片描述</figcaption></figure></p>
+<p><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" style="width:140px;"/></p>
 
 <p>在 MWeb 中，你还可以设置图片的对齐，以上面的图片为例子，左对齐为 <code>-l140</code>，居中为 <code>-c140</code>，居右为 <code>-r140</code>。</p>
 
-<p><figure><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" class="mw_img_center" style="width:140px;display: block; clear:both; margin: 0 auto;"/><figcaption>图片描述</figcaption></figure></p>
+<p><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" class="mw_img_center" style="width:140px;display: block; clear:both; margin: 0 auto;"/></p>
 
 <h2 id="toc_14">链接</h2>
 
