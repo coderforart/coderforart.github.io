@@ -127,44 +127,49 @@
 		            </p>
 		            <div class="content-responsive">
 		            <p>首先选择新增自定义图床，会看到如下图左边的图的界面，如果你不知道如何，可以先看一下<a href="how_to_use_qiniu_url.html">iOS 版 MWeb 图床功能及七牛图床使用指南</a>这篇。</p>
-
 <p>这里我以上传到 <a href="https://sm.ms/">https://sm.ms/</a> 这个图床做为说明，它的 API 文档为：<a href="https://sm.ms/doc/">https://sm.ms/doc/</a>，下图右边的图是参考它的 API 文档，设置成功后的效果。</p>
-
 <span id="more"></span><!-- more -->
-
-<p><img src="media/14822934397721/image-upload-custom-1.png" alt="image-upload-custom-1" style="width:760px;"/></p>
-
+<p><img src="media/14822934397721/image-upload-custom-1.png" alt="image-upload-custom-1" style="width:760px;" /></p>
 <p>再详细说一下各个字段：</p>
-
 <ul>
-<li>名称：自行取一个名称即可，做为识别用。</li>
-<li>API 地址：上传图片的接口，sm.ms 是：<a href="https://sm.ms/api/upload">https://sm.ms/api/upload</a></li>
-<li>POST File Name：MWeb 是用 HTTP POST 表单的方式上传图片，这里填的是所上传图片文件的表单名称，sm.ms 中是：smfile。API 后端如果用的是 PHP 的话，用这句即可把上传的图片保存下来：<code>move_uploaded_file($_FILES[&#39;smfile&#39;][&#39;tmp_name&#39;], $savePath)</code>。</li>
-<li><p>图片 URL 路径：返回的 JSON 结果中的图片的路径，目前 MWeb 仅支持返回结果为 JSON 格式。比如说 sm.ms 中返回结果样例如下：</p>
-<pre class="line-numbers"><code class="language-javascript">{
-    &quot;code&quot;: &quot;success&quot;,<br/>
-    &quot;data&quot;: {<br/>
-        width: 1157,<br/>
-        height: 680,<br/>
-        filename: &quot;image_2015-08-26_10-54-48.png&quot;,<br/>
-        storename: &quot;56249afa4e48b.png&quot;,<br/>
-        size: 69525,<br/>
-        path: &quot;/2015/10/19/56249afa4e48b.png&quot;,<br/>
-        hash: &quot;nLbCw63NheaiJp1&quot;,<br/>
-        timestamp: 1445239546,<br/>
-        url: &quot;https://ooo.0o0.ooo/2015/10/19/56249afa4e48b.png&quot;,<br/>
-        delete: &quot;https://sm.ms/api/delete/nLbCw63NheaiJp1&quot;<br/>
-    }<br/>
+<li>
+<p>名称：自行取一个名称即可，做为识别用。</p>
+</li>
+<li>
+<p>API 地址：上传图片的接口，sm.ms 是：<a href="https://sm.ms/api/upload">https://sm.ms/api/upload</a></p>
+</li>
+<li>
+<p>POST File Name：MWeb 是用 HTTP POST 表单的方式上传图片，这里填的是所上传图片文件的表单名称，sm.ms 中是：smfile。API 后端如果用的是 PHP 的话，用这句即可把上传的图片保存下来：<code>move_uploaded_file($_FILES['smfile']['tmp_name'], $savePath)</code>。</p>
+</li>
+<li>
+<p>图片 URL 路径：返回的 JSON 结果中的图片的路径，目前 MWeb 仅支持返回结果为 JSON 格式。比如说 sm.ms 中返回结果样例如下：</p>
+<pre class="line-numbers"><code class="language-js">{
+    &quot;code&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        width: 1157,
+        height: 680,
+        filename: &quot;image_2015-08-26_10-54-48.png&quot;,
+        storename: &quot;56249afa4e48b.png&quot;,
+        size: 69525,
+        path: &quot;/2015/10/19/56249afa4e48b.png&quot;,
+        hash: &quot;nLbCw63NheaiJp1&quot;,
+        timestamp: 1445239546,
+        url: &quot;https://ooo.0o0.ooo/2015/10/19/56249afa4e48b.png&quot;,
+        delete: &quot;https://sm.ms/api/delete/nLbCw63NheaiJp1&quot;
+    }
 }
 </code></pre>
-<p>我们要的是 url 这个字段的值即可，所以填入 data/url。</p></li>
-<li><p>图片 URL 前缀：这个用法跟上边的 “图片 URL 路径” 结全产生图片网址，在 sm.ms 中，这里不用填写，因为返回的结果 JSON 中已包含完整的图片网址。如果上边的  “图片 URL 路径” 填入的是 data/path，则这里要填入 <a href="https://ooo.0o0.ooo">https://ooo.0o0.ooo</a> 才正确。</p></li>
-<li><p>POST Header 和 POST Body 这两个，在 sm.ms 中，我要求返回的网址是 https 的，所以我在 POST Body 中增加一个 POST Body 字段，并在名称中填入 ssl，在值中填入 Yes。这部分可以参考 <a href="https://sm.ms/doc/">https://sm.ms/doc/</a> 中请求参数部分。</p></li>
+<p>我们要的是 url 这个字段的值即可，所以填入 data/url。</p>
+</li>
+<li>
+<p>图片 URL 前缀：这个用法跟上边的 “图片 URL 路径” 结全产生图片网址，在 sm.ms 中，这里不用填写，因为返回的结果 JSON 中已包含完整的图片网址。如果上边的  “图片 URL 路径” 填入的是 data/path，则这里要填入 <a href="https://ooo.0o0.ooo">https://ooo.0o0.ooo</a> 才正确。</p>
+</li>
+<li>
+<p>POST Header 和 POST Body 这两个，在 sm.ms 中，我要求返回的网址是 https 的，所以我在 POST Body 中增加一个 POST Body 字段，并在名称中填入 ssl，在值中填入 Yes。这部分可以参考 <a href="https://sm.ms/doc/">https://sm.ms/doc/</a> 中请求参数部分。</p>
+</li>
 </ul>
-
 <p>下图是设置完成后，使用 sm.ms 图床的效果：</p>
-
-<p><img src="media/14822934397721/image-upload-custom-2.png" alt="image-upload-custom-2" style="width:760px;"/></p>
+<p><img src="media/14822934397721/image-upload-custom-2.png" alt="image-upload-custom-2" style="width:760px;" /></p>
 
 		            </div>
 				</div><!-- /.blog-post -->

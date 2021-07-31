@@ -127,48 +127,29 @@
 		            </p>
 		            <div class="content-responsive">
 		            <p>之前有写过如何用ForkLift这样的FTP软件自带的同步功能传到FTP，但是还是有点麻烦，昨天发现了一个非常好的软件GoodSync，它有非常强大的同步功能，而且还免费！</p>
-
 <span id="more"></span><!-- more -->
-
-<h2 id="toc_0">下载并安装GoodSync</h2>
-
+<h2><a id="%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85goodsync" class="anchor" aria-hidden="true" href="#%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85goodsync"><span class="octicon octicon-link"></span></a>下载并安装GoodSync</h2>
 <p>去这个网址：<a href="http://www.goodsync.com/">http://www.goodsync.com/</a> 免费下载GoodSync并安装。安装时要选择是否设置GoodSync Connect时，我选择是否：Do not setup GoodSync Connect。完成后点新建任务，就会新增一个同步任务。</p>
-
-<h2 id="toc_1">选择要同步的文件夹</h2>
-
+<h2><a id="%E9%80%89%E6%8B%A9%E8%A6%81%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9" class="anchor" aria-hidden="true" href="#%E9%80%89%E6%8B%A9%E8%A6%81%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="octicon octicon-link"></span></a>选择要同步的文件夹</h2>
 <p>在左侧选择MWeb生成的静态网站所在的文件夹。如果您没有设置MWeb生成的静态网站的文件夹，默认在：</p>
-
-<pre class="line-numbers"><code class="language-text">file:///Users/您的帐号/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
+<pre class="line-numbers"><code>file:///Users/您的帐号/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
 </code></pre>
-
 <p>这个位置，在GoodSync的选择位置的窗口中勾选：<code>Show hidden Files/Floders</code> 才能找到这个位置。</p>
-
-<h2 id="toc_2">选择要同步的目标位置</h2>
-
-<p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br/>
-<img src="media/14250057502319/14250078774218.jpg" alt=""/>￼￼￼￼</p>
-
+<h2><a id="%E9%80%89%E6%8B%A9%E8%A6%81%E5%90%8C%E6%AD%A5%E7%9A%84%E7%9B%AE%E6%A0%87%E4%BD%8D%E7%BD%AE" class="anchor" aria-hidden="true" href="#%E9%80%89%E6%8B%A9%E8%A6%81%E5%90%8C%E6%AD%A5%E7%9A%84%E7%9B%AE%E6%A0%87%E4%BD%8D%E7%BD%AE"><span class="octicon octicon-link"></span></a>选择要同步的目标位置</h2>
+<p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br />
+<img src="media/14250057502319/14250078774218.jpg" alt="" />￼￼￼￼</p>
 <p>点“连接”按钮，连上FTP后，选择FTP上要同步的文件夹，再点“选择”按钮。如果有跳出来提示，点“Yes”。</p>
-
-<h2 id="toc_3">设置自动同步</h2>
-
-<p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br/>
-<img src="media/14250057502319/14250082156068.jpg" alt=""/>￼￼￼￼</p>
-
+<h2><a id="%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5" class="anchor" aria-hidden="true" href="#%E8%AE%BE%E7%BD%AE%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5"><span class="octicon octicon-link"></span></a>设置自动同步</h2>
+<p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br />
+<img src="media/14250057502319/14250082156068.jpg" alt="" />￼￼￼￼</p>
 <p>点“确定”后就会开始分析和同步了。</p>
-
 <p>之后当您每一次用MWeb “Build Site”时，如果有打开GoodSync，它就会自动同步了，非常方便，比Github还方便！</p>
-
-<h2 id="toc_4">总结</h2>
-
+<h2><a id="%E6%80%BB%E7%BB%93" class="anchor" aria-hidden="true" href="#%E6%80%BB%E7%BB%93"><span class="octicon octicon-link"></span></a>总结</h2>
 <p>GoodSync的功能还有很多，比如说同步到SFTP、WebDAV、Amazon S3等等，非常强大而且还免费。</p>
-
 <p>因为有GoodSync这个同步软件，MWeb变得更方便好用了。我现在也在考虑是否把CoderForArt搬到有FTP功能的主机，这样在国内访问会快很多，写新文章时也不用打github命令手动去上传了。然后本来是有考虑为MWeb加上自动同步功能或者另做一软件，现在看来也没有必要了。</p>
-
-<p><strong>更新</strong>：GoodSync 免费版是有限定的，限定为：<br/>
-Q: What are free version limitations? <br/>
+<p><strong>更新</strong>：GoodSync 免费版是有限定的，限定为：<br />
+Q: What are free version limitations?<br />
 A: You can have 3 or less jobs in free version and 100 or less files and folders in each job.</p>
-
 <p>虽然GoodSync不免费，但是非常好用。我也会关注是否有其他同步软件。</p>
 
 		            </div>
