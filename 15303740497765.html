@@ -77,20 +77,20 @@
 <h2><a id="1%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%90%8E%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%9B%BE%E5%BA%8A" class="anchor" aria-hidden="true" href="#1%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%90%8E%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%9B%BE%E5%BA%8A"><span class="octicon octicon-link"></span></a>1. 插入图片后自动上传至图床</h2>
 <p>这是很多朋友喜欢用，但是我不怎么建议用的方式，主要是万一图床挂了或者是什么问题，比较麻烦。这个方式只在外部模式中支持，文档库不支持，下面介绍一下配置方法。</p>
 <p><strong>MWeb for Mac 中的配置方法为：<strong>在外部模式中 <code>右键</code> 引入的文件夹，选择 <code>编辑</code>，这时出来如下图的</strong>文件夹设置</strong>界面。<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303749773096.jpg" alt="" style="width:333px;" /></p>
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303749773096.jpg" alt="" style="width:333px;" /></figure></p>
 <p>勾选红框中的把插入的图片自动上传至...，然后选择要上传的图床即可（图床服务可以在 <code>偏好设置</code> - <code>发布服务</code> 中增加）。这样设置后，该引入的文件夹内的文档在插入图片时，会自动上传至所选择的图床并返回地址和生成 Markdown 语法。</p>
 <h2><a id="2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%90%8E%E5%A4%8D%E5%88%B6%E4%B8%80%E4%BB%BD%E5%88%B0%E6%96%87%E6%A1%A3%E6%89%80%E5%9C%A8%E7%9A%84%E7%9B%B8%E5%AF%B9%E4%BD%8D%E7%BD%AE" class="anchor" aria-hidden="true" href="#2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%90%8E%E5%A4%8D%E5%88%B6%E4%B8%80%E4%BB%BD%E5%88%B0%E6%96%87%E6%A1%A3%E6%89%80%E5%9C%A8%E7%9A%84%E7%9B%B8%E5%AF%B9%E4%BD%8D%E7%BD%AE"><span class="octicon octicon-link"></span></a>2. 插入图片后复制一份到文档所在的相对位置</h2>
 <p>这个是 MWeb 建议使用的方式，这个方式的好处是图片在本地并且跟 Markdown 文档相关联，不会造成图片丢失这种问题，MWeb 在编辑器中会直接显示本地图片，预览时也方便一点。MWeb 的文档库和外部模式都支持这种方式，下面介绍一下如何配置。</p>
 <p><strong>在 MWeb for Mac 中配置：</strong></p>
 <p>文档库不用配置，默认就是这样，外部模式中，同样 <code>右键</code> 引入的文件夹，在出来的菜单中选择 <code>编辑</code>，调出<strong>文件夹设置</strong>界面，其中的配置如下图：</p>
-<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303752255512.jpg" alt="" style="width:346px;" /></p>
+<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303752255512.jpg" alt="" style="width:346px;" /></figure></p>
 <p>首先要取消勾选 “把插入的图片自动上传至”。上面的配置可以用默认的，也就是说你只要取消勾选自动上传图片即可。</p>
 <p>上面也只有两个可设置的地方，一个是 “文件夹名称”，一个是 “保存位置”，保存位置有两种设置，一种是 “相对位置”，另一种是 “绝对位置”。</p>
 <p>这里举个例子说明一下，比如说引入的文件夹为 folder，在 folder/sub/sub2/sub3/doc.md 这个位置的文档插入图片，如果是 “绝对位置”，图片会保存在 fodler/media 下，生成的 Markdown 为 <code>![](/media/pic.jpg)</code>；而 “相对位置”，则会保存在 folder/sub/sub2/sub3/media 下，生成的 Markdown 为  <code>![](media/pic.jpg)</code>。“绝对位置” 这个设置其实是为了支持 Hexo、Octpress、Jekyll 等静态博客的 Markdown 文档能文件用 MWeb 编辑。</p>
 <p>大家或者看出来了，也就是一般情况下不用配置，除非是 Hexo、Jekyll 等静态博客的 Markdown 文档，或者是想要自动上传到图床。</p>
 <h2><a id="%E6%8A%8A%E6%96%87%E6%A1%A3%E4%B8%AD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%9B%BE%E5%BA%8A" class="anchor" aria-hidden="true" href="#%E6%8A%8A%E6%96%87%E6%A1%A3%E4%B8%AD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%9B%BE%E5%BA%8A"><span class="octicon octicon-link"></span></a>把文档中的本地图片上传至图床</h2>
 <p>为什么推荐使用第二种插入后图片处理方式，就是因为有这个功能。使用方法非常简单，在 Mac 版中点 “分享” 按钮 - 把本地图片传至图床，或者菜单：发布 - 把本地图片传至图床 即可调出以下的图片上传面板：</p>
-<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303753518695.jpg" alt="" style="width:975px;" /></p>
+<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303753518695.jpg" alt="" style="width:975px;" /></figure></p>
 <p>在这个面板中，中间的列表会列出文档中的所有本地图片（<strong>注意是文档中的</strong>），首先请选择要上传的图床，然后点 “上传本地图片” 按钮即可。当图片上传完成后，你可以选择使用 “复制 Markdown” 按钮或者 “复制 HTML” 按钮，看你需要什么样的格式。复制进来的就是已经把本地图片地址换成图床的远程地址后的内容。</p>
 <h2><a id="%E5%85%B6%E5%AE%83%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D" class="anchor" aria-hidden="true" href="#%E5%85%B6%E5%AE%83%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D"><span class="octicon octicon-link"></span></a>其它详细介绍</h2>
 <p>你可以查看以下两篇文章关于自定义图床和七牛图床的使用方法：</p>

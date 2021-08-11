@@ -91,20 +91,20 @@
 <li>sitemap.xml -- 网站地图所使用的模板</li>
 </ul>
 <p>你可以随便查看内置的网站模板的结构，右键<code>网站分类</code>，选择<code>编辑</code>，在模板那里，点<code>编辑...</code> 按钮，如果是 MWeb 自带的模板，请选择<code>复制当前的模板到自定义模板文件夹...</code>，复制出来，再选择 <code>打开自定义模板所在的文件夹...</code> 则可。**注意：**如果要修改 MWeb 自带模板，首先要先使用<code>复制当前的模板到自定义模板文件夹...</code>复制到自定义模板的位置，才能修改，如下图。<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761566606148.jpg" alt="" style="width:591px;" /></p>
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761566606148.jpg" alt="" style="width:591px;" /></figure></p>
 <h3><a id="%E6%96%87%E7%AB%A0%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true" href="#%E6%96%87%E7%AB%A0%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B"><span class="octicon octicon-link"></span></a>文章页的生成过程</h3>
 <p>不选<code>是否页面（Is Page）</code>选项时，生成文章页的顺序为：header.html + post.html + sidebar.html + footer.html。</p>
 <p>选中了 <code>是否页面（Is Page）</code> 选项后，生成文章页的顺序为： header.html + page.html + footer.html。</p>
 <p><strong>更高级的用法：</strong></p>
 <p>做网站经常要定制一些页面，在文档中，选中了 <code>是否页面（Is Page）</code> 选项后，如果要自定这页，可以新增一个名称为：page-{HTML 文件名}.html 的模板页面，这样生成文章页的顺序会变为：header.html + page-{HTML 文件名}.html + footer.html。<code>{HTML 文件名}</code> 说的就是下图的 <code>HTML 文件名：</code> 所填入的名字。<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761556545753.jpg" alt="" style="width:595px;" /></p>
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761556545753.jpg" alt="" style="width:595px;" /></figure></p>
 <h3><a id="%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A6%96%E9%A1%B5%E4%BE%8B%E5%AD%90" class="anchor" aria-hidden="true" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A6%96%E9%A1%B5%E4%BE%8B%E5%AD%90"><span class="octicon octicon-link"></span></a>自定义首页例子</h3>
 <p>在 MWeb 的静态网站生成中，可以自由指定一个文档为首页，方法非常简单，在 <code>HTML 文件名：</code> 中填入 <code>index</code> 即可，这样生成时，就会生成 <code>index.html</code> 页了，如下图。<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761386523278.jpg" alt="" style="width:682px;" /></p>
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761386523278.jpg" alt="" style="width:682px;" /></figure></p>
 <p>如果要自定义，比如说像 MWeb 官网 <a href="https://zh.mweb.im/index.html">https://zh.mweb.im/index.html</a> 这样的首页，则是要自定义了，方法很简单，在主题文件夹里新增一个名为：page-index.html 的页面即可。如上面所说，当生成 index.html 这个 页面时，模板顺序会变成：header.html + page-index.html + footer.html。</p>
 <h3><a id="%E5%90%84%E5%88%86%E7%B1%BB%E7%9A%84%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true" href="#%E5%90%84%E5%88%86%E7%B1%BB%E7%9A%84%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B"><span class="octicon octicon-link"></span></a>各分类的文章列表页的生成过程</h3>
 <p>分类页生成的顺序为：header.html + category.html + sidebar.html + footer.html。 其中，可以自定义任何一个分类的 category.html 模板。如下图，在网站的任何一个子分类中，<code>右键</code> - <code>编辑</code>，都可以设置 <code>HTML 文件名</code>，下图为 <code>help</code>，则会生成 help.html。<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761391754516.jpg" alt="" style="width:391px;" /></p>
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761391754516.jpg" alt="" style="width:391px;" /></figure></p>
 <p>而 MWeb 在生成分类页的 HTML 时，会判定是否存在：category-{HTML 文件名}.html 的模板文件，如果存在，则会优先使用 category-{HTML 文件名}.html 模板文件。上图就是定制了一个 category-help.html 的模板文件，这样生成的顺序变为：header.html + category-help.html + sidebar.html + footer.html。最终效果如：<a href="https://zh.mweb.im/help.html">https://zh.mweb.im/help.html</a>，这就跟一般的分类不一样了。</p>
 <h3><a id="%E5%85%B6%E5%AE%83%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true" href="#%E5%85%B6%E5%AE%83%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B"><span class="octicon octicon-link"></span></a>其它页的生成过程</h3>
 <p>其它页面生成没有像文章页和分类页的自定模板规则，下面列出一下：</p>
@@ -119,11 +119,11 @@
 <p>**重要：**在 3.3.9 及以上版本，当在模板中直接输出数组或者字典变量时，会直接变成 json 输出。大概用法为 <code>&lt;script&gt;var postsArr = {{posts}}; var catsArr = {{p.cats}};&lt;/script&gt;</code> 。这个是为了解决模板语言描述能力不足问题，遇到这个问题，直接把变量变成 js 对象，这样就可以直接使用 js 输出了。</p>
 <p>一般可以直接修改模板文件来做小的自定义，因为模板文件都是 HTML，懂 HTML 即可。或者修改样式，同样，懂 CSS 即可。<br />
 如果要做更方便一点的自定义，比如说为网站模板增加一个广告位，这个广告经常换，但是我不想总是修改模板。这种需求可以用 MWeb 的网站扩展来解决。如下图为网站扩展设置界面，这里其实是变量，这些变量，在所有模板页都可以访问到。下页以增加 global_notice 这个变成为例子说明。<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761405788732.jpg" alt="" style="width:610px;" /></p>
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761405788732.jpg" alt="" style="width:610px;" /></figure></p>
 <p>点<code>增加</code>按钮，然后设置如下图：<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761407661736.jpg" alt="" style="width:607px;" /></p>
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761407661736.jpg" alt="" style="width:607px;" /></figure></p>
 <p>增加了 global_notice 变量后，可以在 <code>网站扩展设置</code> 中设置这个变量的值，如下图：<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761409322231.jpg" alt="" style="width:610px;" /></p>
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761409322231.jpg" alt="" style="width:610px;" /></figure></p>
 <p>这样，就可以在所有模板页中以 <code>{{ext_global_notice}}</code> 这个语法，输出设置了的值。</p>
 <p>**特别注意：**在修改了网站模板之后，要生成网站时，请使用<code>清除并重新生成网站</code>这个功能，这样才会生效。</p>
 <p>同样，可以看到还有<code>文档扩展</code>，文档扩展用法一样，但是只针对文档，设置是在文档的<code>大纲视图</code>最底下。</p>
