@@ -128,7 +128,8 @@
 <p><strong>MWeb 3 的 iCloud 同步和 MWeb 4 的有何区别？</strong></p>
 <p>MWeb 3 的同步是把文档库的文件夹保存在 iCloud Drive 中，由系统进行文件同步。MWeb 4 的同步是使用一个叫 CloudKit 的技术进行同步，由 MWeb 控制，不再保存在 iCloud Drive 中。 如果要使用 MWeb 4 的 iCloud 同步，需要在设置中手动点击 “存储到 iCloud 中” 按钮。</p>
 <p><strong>MWeb 3 的文档库如何同步到 iCloud？</strong></p>
-<p>如果是 macOS 版的 MWeb，只需要在 <code>偏好设置 - 文档库</code> 中，点击 <code>存储到 iCloud 中</code> 按钮，然后在跳出的提示是否合并文档库选择中，选择 合并 即可。<br />
+<p>如果是 macOS 版的 MWeb，请先确认是不是保存到 iCloud Drive 或者相关的云盘的文件夹中，如果是，则需要确保文档库所在的文件夹完整同步到本地。总之是先要保证当前的文档库完整。<br />
+然后，再在 <code>偏好设置 - 文档库</code> 中，点击 <code>存储到 iCloud 中</code> 按钮，然后在跳出的提示是否合并文档库选择中，选择 <strong>合并</strong> 即可。<br />
 这个提示只显示一次，如果之前来不及选择，可以先切换回本地文档库，然后退出 MWeb，并在命令行中运行：</p>
 <pre class="line-numbers"><code>defaults write com.coderforart.MWeb3 ckIsChooseMergeLocalToCloudKit -boolean false
 </code></pre>
