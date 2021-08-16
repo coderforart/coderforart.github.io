@@ -137,7 +137,7 @@
 <p>点击 <code>扳手</code> 按钮或者用快捷键 <code>CMD + 8</code> 可以显示与隐藏文档属性，在这个地方可以设置文档的标签、日期和勾选文档所属的分类，如下图：<br />
 <figure><img src="media/14675942852243/14676059966720.jpg" alt="" /></figure></p>
 <p>另外的特性就不多做介绍了，感兴趣可以下载测试版试试（文档最后有下载网址）。</p>
-<h2><a id="%E9%87%8D%E7%82%B9%E8%AF%B4%E6%98%8E%EF%BC%9A" class="anchor" aria-hidden="true" href="#%E9%87%8D%E7%82%B9%E8%AF%B4%E6%98%8E%EF%BC%9A"><span class="octicon octicon-link"></span></a>重点说明：</h2>
+<h2><a id="%E9%87%8D%E7%82%B9%E8%AF%B4%E6%98%8E%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>重点说明：</h2>
 <p>旧用户打开后，会自动把 1.x 版的文档库升级到 2.x 版，这个升级是用复制的方式的，并不会影响到 1.x 的文档库（第一次打开因为要升级文档库，会有点慢，之后就不会了）。通常来说使用 2.x 并不会影响到 1.x 版，但是我并没有深入测试过，只是一般使用。还有就是这次的测试版会在 15 天后变成试用版，不喜的话，建议不要下载。</p>
 <p>另外：目前发布的 2.0 测试版并没有包括 2.0 正式版的所有功能，未包括的功能有：</p>
 <ol>
@@ -150,10 +150,10 @@
 <li>1.9.9 版发布后收到的一些改进建议。</li>
 <li>Mavericks 支持（上次微薄上说大话了，支持 Mavericks 还要做不少工作）</li>
 </ol>
-<h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E" class="anchor" aria-hidden="true" href="#%E6%96%87%E6%A1%A3%E5%BA%93%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>文档库结构说明</h2>
+<h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库结构说明</h2>
 <p>2.0 版的文档库由一个 sqlite 数据库文件 mainlib.db 和一个名为 docs 的文件夹组成。mainlib.db 保存的是分类信息、标签信息和静态网站生成的信息，docs 文件夹保存的是所有文档库的文档和图片、附件。docs 内除了所有 .md 文档外，还有一个 media 文件夹，media 文件夹内的文件夹名称都跟 docs 内的文档名对应，如果文档中带图片，则会在 media 内有一个对应的文件夹，里面放的是该文档的图片等附件。文档内是用相对地址进行引用。</p>
 <p>综上所述，这一版本的文档库设计得非常开放，文档库还可以保存在任何位置，不再像之前版本那样，固定一个不可见的位置。所以，有动手能力的朋友可以随意读取文档库信息，包括写自己的静态网站生成器，也包括写程序在 Windows 上读取和修改文档库，再回到 mac 上用 MWeb 继续，还可以自己写程序生成各种格式的书等等。</p>
-<h2><a id="ios%E7%89%88%E8%AF%B4%E6%98%8E%E5%92%8C%E6%B5%8B%E8%AF%95%E7%89%88%E4%B8%8B%E8%BD%BD%EF%BC%9A" class="anchor" aria-hidden="true" href="#ios%E7%89%88%E8%AF%B4%E6%98%8E%E5%92%8C%E6%B5%8B%E8%AF%95%E7%89%88%E4%B8%8B%E8%BD%BD%EF%BC%9A"><span class="octicon octicon-link"></span></a>iOS 版说明和测试版下载：</h2>
+<h2><a id="ios%E7%89%88%E8%AF%B4%E6%98%8E%E5%92%8C%E6%B5%8B%E8%AF%95%E7%89%88%E4%B8%8B%E8%BD%BD%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS 版说明和测试版下载：</h2>
 <p>很多朋友可能更关注 iOS 版，这里说明一下。 iOS 版一定会有，事实上已经在开发了，但是<strong>发布时间并不能确定！</strong></p>
 <p>MWeb 2.0 测试版下载：<a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.0/1467605197/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.0.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
 

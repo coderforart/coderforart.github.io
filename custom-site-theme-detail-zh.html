@@ -127,7 +127,7 @@
 		            </p>
 		            <div class="content-responsive">
 		            <p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
-<h2><a id="mweb%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF%E7%BB%93%E6%9E%84" class="anchor" aria-hidden="true" href="#mweb%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF%E7%BB%93%E6%9E%84"><span class="octicon octicon-link"></span></a>MWeb主题模板结构</h2>
+<h2><a id="mweb%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF%E7%BB%93%E6%9E%84" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb主题模板结构</h2>
 <p>MWeb所有网站主题模板都放在SiteThemes这个文件夹里，点击 <figure><img src="media/14206135238767/14227577752365.jpg" alt="" /></figure>￼￼￼￼ 这里可以直接显示SiteThemes文件夹，一个文件夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
 <ul>
 <li>asset -- 主题所有要用到的东西，图片、CSS、JS等等都放这里</li>
@@ -142,16 +142,16 @@
 <li>sidebar.html -- 侧边栏的模板</li>
 <li>sitemap.xml -- 网站sitemap所使用的模板</li>
 </ul>
-<h2><a id="%E8%87%AA%E5%AE%9A%E9%A6%96%E9%A1%B5" class="anchor" aria-hidden="true" href="#%E8%87%AA%E5%AE%9A%E9%A6%96%E9%A1%B5"><span class="octicon octicon-link"></span></a>自定首页</h2>
+<h2><a id="%E8%87%AA%E5%AE%9A%E9%A6%96%E9%A1%B5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>自定首页</h2>
 <p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br />
 <figure><img src="media/14189904700669/14210659918568.jpg" alt="" /></figure>￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 <span id="more"></span><!-- more -->
-<h2><a id="%E8%87%AA%E5%AE%9A%E6%96%87%E6%A1%A3%E9%A1%B5%E7%9A%84html%E6%A8%A1%E6%9D%BF" class="anchor" aria-hidden="true" href="#%E8%87%AA%E5%AE%9A%E6%96%87%E6%A1%A3%E9%A1%B5%E7%9A%84html%E6%A8%A1%E6%9D%BF"><span class="octicon octicon-link"></span></a>自定文档页的HTML模板</h2>
+<h2><a id="%E8%87%AA%E5%AE%9A%E6%96%87%E6%A1%A3%E9%A1%B5%E7%9A%84html%E6%A8%A1%E6%9D%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>自定文档页的HTML模板</h2>
 <p>不选<code>Is page</code>选项时，生成HTML时读取的模板为：header.html+post.html+sidebar.html+footer.html。选中了<code>Is page</code>选项后，生成HTML时会读取的模板为：header.html+page.html+footer.html，如果要自定文档的模板，可以在主题文件夹里新增一个名称为：page-{HTML file name}.html 的页面，这样生成HTML时的读取的模板就会变成：header.html+page-{HTML file name}.html+footer.html。比如说要自定首页的模板，则在主题文件夹里新增一个名为：page-index.html 的页面即可。如 <a href="http://coderforart.com">http://coderforart.com</a> 就自定了首页，内容为：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
-<h2><a id="%E8%87%AA%E5%AE%9A%E5%88%86%E7%B1%BB%E9%A1%B5%E7%9A%84html%E6%A8%A1%E6%9D%BF" class="anchor" aria-hidden="true" href="#%E8%87%AA%E5%AE%9A%E5%88%86%E7%B1%BB%E9%A1%B5%E7%9A%84html%E6%A8%A1%E6%9D%BF"><span class="octicon octicon-link"></span></a>自定分类页的HTML模板</h2>
+<h2><a id="%E8%87%AA%E5%AE%9A%E5%88%86%E7%B1%BB%E9%A1%B5%E7%9A%84html%E6%A8%A1%E6%9D%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>自定分类页的HTML模板</h2>
 <p>分类页生成HTML时读取的模板为：header.html+category.html+sidebar.html+footer.html。 其中category.html可以自定，MWeb生成分类页的HTML时，会判定是否存在：category-{HTML file name}.html的模板，如果存在，则会优先使用category-{HTML file name}.html模板。比如说有一个分类的 HTML file name 为 Cocoa，如果要自定这个分类的分类页的模板，则只要在主题文件夹里新增一个名为：category-Cocoa.html的页面即可，MWeb生成HTML时读取模板就会变为：header.html+category-Cocoa.html+sidebar.html+footer.html。</p>
-<h2><a id="%E7%94%9F%E6%88%90html%E6%97%B6%E4%BC%A0%E5%85%A5%E6%A8%A1%E6%9D%BF%E9%A1%B5%E7%9A%84%E5%8F%98%E9%87%8F%E8%AF%B4%E6%98%8E" class="anchor" aria-hidden="true" href="#%E7%94%9F%E6%88%90html%E6%97%B6%E4%BC%A0%E5%85%A5%E6%A8%A1%E6%9D%BF%E9%A1%B5%E7%9A%84%E5%8F%98%E9%87%8F%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>生成HTML时传入模板页的变量说明</h2>
-<h3><a id="%E6%96%87%E6%A1%A3%E5%88%86%E7%B1%BB%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true" href="#%E6%96%87%E6%A1%A3%E5%88%86%E7%B1%BB%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F"><span class="octicon octicon-link"></span></a>文档分类对象变量</h3>
+<h2><a id="%E7%94%9F%E6%88%90html%E6%97%B6%E4%BC%A0%E5%85%A5%E6%A8%A1%E6%9D%BF%E9%A1%B5%E7%9A%84%E5%8F%98%E9%87%8F%E8%AF%B4%E6%98%8E" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>生成HTML时传入模板页的变量说明</h2>
+<h3><a id="%E6%96%87%E6%A1%A3%E5%88%86%E7%B1%BB%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档分类对象变量</h3>
 <table>
 <thead>
 <tr>
@@ -170,7 +170,7 @@
 </tr>
 </tbody>
 </table>
-<h3><a id="%E6%96%87%E6%A1%A3%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true" href="#%E6%96%87%E6%A1%A3%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F"><span class="octicon octicon-link"></span></a>文档对象变量</h3>
+<h3><a id="%E6%96%87%E6%A1%A3%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档对象变量</h3>
 <table>
 <thead>
 <tr>
@@ -221,7 +221,7 @@
 </tr>
 </tbody>
 </table>
-<h3><a id="%E6%9C%80%E8%BF%91%E6%96%87%E7%AB%A0%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true" href="#%E6%9C%80%E8%BF%91%E6%96%87%E7%AB%A0%E5%8F%98%E9%87%8F"><span class="octicon octicon-link"></span></a>最近文章变量</h3>
+<h3><a id="%E6%9C%80%E8%BF%91%E6%96%87%E7%AB%A0%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>最近文章变量</h3>
 <table>
 <thead>
 <tr>
@@ -240,7 +240,7 @@
 </tr>
 </tbody>
 </table>
-<h3><a id="%E5%88%86%E7%B1%BB%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true" href="#%E5%88%86%E7%B1%BB%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F"><span class="octicon octicon-link"></span></a>分类对象变量</h3>
+<h3><a id="%E5%88%86%E7%B1%BB%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>分类对象变量</h3>
 <table>
 <thead>
 <tr>
@@ -263,8 +263,8 @@
 </tr>
 </tbody>
 </table>
-<h2><a id="%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99" class="anchor" aria-hidden="true" href="#%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99"><span class="octicon octicon-link"></span></a>生成网站</h2>
-<h3><a id="%E6%89%80%E6%9C%89%E9%A1%B5%E9%9D%A2%E9%83%BD%E4%BC%9A%E4%BC%A0%E5%85%A5%E7%9A%84%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true" href="#%E6%89%80%E6%9C%89%E9%A1%B5%E9%9D%A2%E9%83%BD%E4%BC%9A%E4%BC%A0%E5%85%A5%E7%9A%84%E5%8F%98%E9%87%8F"><span class="octicon octicon-link"></span></a>所有页面都会传入的变量</h3>
+<h2><a id="%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>生成网站</h2>
+<h3><a id="%E6%89%80%E6%9C%89%E9%A1%B5%E9%9D%A2%E9%83%BD%E4%BC%9A%E4%BC%A0%E5%85%A5%E7%9A%84%E5%8F%98%E9%87%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>所有页面都会传入的变量</h3>
 <table>
 <thead>
 <tr>
@@ -327,7 +327,7 @@
 </tr>
 </tbody>
 </table>
-<h3><a id="%E7%94%9F%E6%88%90rss-atom-xml" class="anchor" aria-hidden="true" href="#%E7%94%9F%E6%88%90rss-atom-xml"><span class="octicon octicon-link"></span></a>生成RSS: atom.xml</h3>
+<h3><a id="%E7%94%9F%E6%88%90rss-atom-xml" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>生成RSS: atom.xml</h3>
 <p>读取的模板：atom.xml<br />
 传入的变量：</p>
 <table>
@@ -345,7 +345,7 @@
 </tbody>
 </table>
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml</a></p>
-<h3><a id="%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E7%9A%84%E9%A1%B5%E9%9D%A2" class="anchor" aria-hidden="true" href="#%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E7%9A%84%E9%A1%B5%E9%9D%A2"><span class="octicon octicon-link"></span></a>生成所有文章的页面</h3>
+<h3><a id="%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E7%9A%84%E9%A1%B5%E9%9D%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>生成所有文章的页面</h3>
 <p>读取的模板：header.html + post.html + sidebar.html + footer.html<br />
 传入的变量：</p>
 <table>
@@ -367,7 +367,7 @@
 </tbody>
 </table>
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html</a></p>
-<h3><a id="%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E5%88%86%E7%B1%BB%E7%9A%84%E9%A1%B5%E9%9D%A2" class="anchor" aria-hidden="true" href="#%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E5%88%86%E7%B1%BB%E7%9A%84%E9%A1%B5%E9%9D%A2"><span class="octicon octicon-link"></span></a>生成所有分类的页面</h3>
+<h3><a id="%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E5%88%86%E7%B1%BB%E7%9A%84%E9%A1%B5%E9%9D%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>生成所有分类的页面</h3>
 <p>读取的模板：header.html + category.html + sidebar.html + footer.html<br />
 传入的变量：</p>
 <table>
@@ -393,7 +393,7 @@
 </tbody>
 </table>
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html</a></p>
-<h3><a id="%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E9%80%89%E4%B8%ADis-page%E7%9A%84%E9%A1%B5%E9%9D%A2" class="anchor" aria-hidden="true" href="#%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E9%80%89%E4%B8%ADis-page%E7%9A%84%E9%A1%B5%E9%9D%A2"><span class="octicon octicon-link"></span></a>生成所有文章选中<code>Is page</code>的页面</h3>
+<h3><a id="%E7%94%9F%E6%88%90%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E9%80%89%E4%B8%ADis-page%E7%9A%84%E9%A1%B5%E9%9D%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>生成所有文章选中<code>Is page</code>的页面</h3>
 <p>读取的模板：header.html + page.html +  footer.html<br />
 传入的变量：</p>
 <table>
@@ -415,7 +415,7 @@
 </tbody>
 </table>
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
-<h3><a id="%E7%94%9F%E6%88%90archives-html" class="anchor" aria-hidden="true" href="#%E7%94%9F%E6%88%90archives-html"><span class="octicon octicon-link"></span></a>生成archives.html</h3>
+<h3><a id="%E7%94%9F%E6%88%90archives-html" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>生成archives.html</h3>
 <p>读取的模板：header.html + archives.html + footer.html<br />
 传入的变量：</p>
 <table>
@@ -483,7 +483,7 @@
 </tbody>
 </table>
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html</a></p>
-<h3><a id="%E7%94%9F%E6%88%90sitemap-xml" class="anchor" aria-hidden="true" href="#%E7%94%9F%E6%88%90sitemap-xml"><span class="octicon octicon-link"></span></a>生成sitemap.xml</h3>
+<h3><a id="%E7%94%9F%E6%88%90sitemap-xml" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>生成sitemap.xml</h3>
 <p>读取的模板：sitemap.xml<br />
 传入的变量：</p>
 <table>

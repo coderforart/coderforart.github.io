@@ -65,14 +65,14 @@
 <p>这次 1.4 版新增可以引入文件夹到 MWeb 中管理的功能，就是为了解决用 MWeb 打开非文档库中的 Markdown 文档无法用拖拽和粘贴插入图片，预览时无法显示引用的本机图片的问题。然后 1.4 版还对 Octpress、Jekyll 等静态博客进行了优化。在用 MWeb 编辑 Octpress、Jekyll 的 Markdown 文档时，也可以在编辑器中拖拽或粘贴插入图片并显示在编辑器中和进行实时预览了。</p>
 <p>特别说明的是：1.4 版的实时预览增加了同步滚动功能！然后我觉得目前同步滚动功能是相当好用了，所以在这里特别说明一下。</p>
 <span id="more"></span><!-- more -->
-<h2><a id="mweb%E5%BC%95%E5%85%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D" class="anchor" aria-hidden="true" href="#mweb%E5%BC%95%E5%85%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"><span class="octicon octicon-link"></span></a>MWeb 引入文件夹功能介绍</h2>
+<h2><a id="mweb%E5%BC%95%E5%85%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 引入文件夹功能介绍</h2>
 <p>为了方便使用引入文件夹功能，MWeb 的外部模式新增了一个快捷键：<code>CMD + E</code>。任何情况下按 <code>CMD + E</code> 即可打开外部模式，在外部模式中就可以看到所有引入的文件夹了。同样提示一下 MWeb 的文档库模式的快捷键是：<code>CMD + L</code>。如果你不喜欢用快捷键，也可以用菜单： <code>View</code> - <code>Open External</code> 打开外部模式。</p>
 <p>点软件左下方的 <code>+</code> - <code>Add External Source...</code>，然后在对话框中选择要引入到 MWeb 的文件夹，再点 <code>Choose</code> 即可。还有更多的设置如下图。</p>
 <p><figure><img src="media/14309638110247/14309679087614.png" alt="" /></figure></p>
 <p>引入后，在最左边那栏选择文件夹，中间那栏则会显示该文件夹下的 Markdown 文档。如下图显示，引入后的文档可以方便地拖拽插入图片和附件，下图是增加了一个 MP3 和一张图。然后需要说一下的是，点击软件的标题栏可以修改文档名称和为文档增加 Tags，如下图。</p>
 <p><figure><img src="media/14309638110247/14309690743597.png" alt="" /></figure></p>
 <p>然后实时预览、导出为HTML/PDF、发布到 Wordpress 等文档库中可以用的一些功能在外部模式也是可以使用的。同样，发布到 Wordpress、新浪博客等支持 Metaweblog API 的服务时，文档中的图片也是会一起发布的。</p>
-<h2><a id="%E5%AF%B9octpress%E3%80%81jekyll%E7%AD%89%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%BB%8B%E7%BB%8D" class="anchor" aria-hidden="true" href="#%E5%AF%B9octpress%E3%80%81jekyll%E7%AD%89%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%BB%8B%E7%BB%8D"><span class="octicon octicon-link"></span></a>对 Octpress、Jekyll 等静态博客优化介绍</h2>
+<h2><a id="%E5%AF%B9octpress%E3%80%81jekyll%E7%AD%89%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%BB%8B%E7%BB%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>对 Octpress、Jekyll 等静态博客优化介绍</h2>
 <p>如上边所写，MWeb 引入的文件夹的 Markdown 文档插入图片的保存位置设置有两个选择：Relative 和 Absolute。</p>
 <p>Octpress、Jekyll 等静态博客因为可以自定像 <code>http://域名/2015/3/the-blog-post/</code> 这样的网址，所以在增加图片时，都是用 <code>/images/pic.jpg</code> 这样的绝对路径。然后图片要放在 <code>source/images</code> 文件夹下。</p>
 <p>正因为这个原因，引入 Octpress 等静态博客的文件夹到 MWeb 时，请引入 <code>source</code> 文件夹。引入后你可以修改 <code>Display Name</code> 来标识。<strong>最重要一点</strong>，<code>Media Save Path</code> 请选择 <code>Absolute</code>。<br />
