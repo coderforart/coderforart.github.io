@@ -137,7 +137,7 @@
 <p>如果是 iOS 版的 MWeb，因为原来 iOS 版的文档库就是只读的，所以需要先使用 macOS 版的 MWeb，按上面的方法把文档库同步到 iCloud。再在 iOS 版把文档库也设置为 <code>存储到 iCloud 中</code> 即可。</p>
 <p><strong>我能否手动 git 备份存储到 iCloud 中的文档库？</strong></p>
 <p>可以的，在 MWeb 4 中，同步用的是苹果的 CloudKit 技术，会完整的把所有文档都同步到本地的 MWeb 的一个私有文件夹中，位置就在：<code>~/Library/Containers/com.coderforart.MWeb3/Data/Library/Application Support/MWebLibrary</code>。<br />
-如果你想备份或者 git 备份，只需要定期备份这个位置即可。</p>
+如果你想备份或者 git 备份，只需要定期备份这个位置即可。这个位置只能备份，请不要改动。</p>
 <p>这个位置的文档库的结构是跟本地的一样的，如果你不想使用 iCloud 同步了，可以把这个文件夹复制到其它地方，再在 MWeb 中切回本地文件夹存储，再选择复制到的文件夹即可。</p>
 <p><strong>iCloud 同步时想要的文档版本被覆盖怎么办？</strong></p>
 <p>在 macOS 版本的 MWeb，可以使用菜单： <code>文件 - 恢复为 - 浏览所有版本</code>，对于 iOS 版，可以点击 “...” 按钮，选择 “文档历史版本” 来恢复。要注意的是，iOS 的文档历史版本只针对文档库中 iCloud 同步的文档。 建议使用时避免多设备编辑同一文档，如果要编辑，请确认文档为最新的状态。<br />
