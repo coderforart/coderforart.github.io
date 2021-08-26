@@ -4,7 +4,7 @@
   <title><![CDATA[MWeb]]></title>
   <link href="http://zh.mweb.im/atom.xml" rel="self"/>
   <link href="http://zh.mweb.im/"/>
-  <updated>2021-08-21T15:56:51+08:00</updated>
+  <updated>2021-08-21T15:57:48+08:00</updated>
   <id>http://zh.mweb.im/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -36,7 +36,7 @@
 <p>如果是 macOS 版的 MWeb，请先确认是不是保存到 iCloud Drive 或者相关的云盘的文件夹中，如果是，则需要确保文档库所在的文件夹完整同步到本地。总之是先要保证当前的文档库完整。<br />
 然后，再在 <code>偏好设置 - 文档库</code> 中，点击 <code>存储到 iCloud 中</code> 按钮，然后在跳出的提示是否合并文档库选择中，选择 <strong>合并</strong> 即可。<br />
 这个提示只显示一次，如果之前来不及选择，可以先切换回本地文档库，然后退出 MWeb，并在命令行中运行：</p>
-<pre class="line-numbers"><code>defaults write com.coderforart.MWeb3 ckIsChooseMergeLocalToCloudKit -boolean false
+<pre class="line-numbers"><code class="language-plain_text">defaults write com.coderforart.MWeb3 ckIsChooseMergeLocalToCloudKit -boolean false
 </code></pre>
 <p>然后再启动 MWeb，重新选择 <code>存储到 iCloud 中</code>，这样就会再次提示是否合并了。</p>
 <p>如果是 iOS 版的 MWeb，因为原来 iOS 版的文档库就是只读的，所以需要先使用 macOS 版的 MWeb，按上面的方法把文档库同步到 iCloud。再在 iOS 版把文档库也设置为 <code>存储到 iCloud 中</code> 即可。</p>
@@ -631,13 +631,13 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <p>进入到阿里云对象存储，选择一个已新建好的存储空间，我选择的是 “mwebtest”，如下图：<br />
 <figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676591242386.jpg" alt="" style="width:1138px;" /></figure></p>
 <p>按上图，<strong>存储地域</strong>就选择对应的区域，我这里是华北2（北京）；<strong>Bucket 名称</strong>我这里是 mwebtest；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可；<strong>图片处理代码</strong>，点击图片处理后进入相关设置，比如说他的默认规则为：</p>
-<pre class="line-numbers"><code>域名/sample.jpg?x-oss-process=style/stylename
+<pre class="line-numbers"><code class="language-plain_text">域名/sample.jpg?x-oss-process=style/stylename
 </code></pre>
 <p>如果我新增了一个规则名称为 test 的样式，他的处理代码为：</p>
-<pre class="line-numbers"><code>image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
+<pre class="line-numbers"><code class="language-plain_text">image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
 </code></pre>
 <p>那么在 MWeb 中要填入</p>
-<pre class="line-numbers"><code>?x-oss-process=image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
+<pre class="line-numbers"><code class="language-plain_text">?x-oss-process=image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
 </code></pre>
 <p>即可。</p>
 <h2><a id="2-access-key-id%E3%80%81access-key-secret%E5%92%8C%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84%E7%9A%84%E5%A1%AB%E5%86%99%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Access Key ID、Access Key Secret 和文件保存路径的填写：</h2>
@@ -1004,7 +1004,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304174157473.jpg" alt="" style="width:941px;" /></figure></p>
 <h2><a id="%E6%90%9C%E7%B4%A2%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>搜索语法</h2>
 <p>从 MWeb 3.1.8 版本开始支持以下的搜索语法：</p>
-<pre class="line-numbers"><code>[keyword1] [keyword2]... [-c category1,category2...] [-t tag1,tag2...] [-h keyword1,keyword2,...] 
+<pre class="line-numbers"><code class="language-plain_text">[keyword1] [keyword2]... [-c category1,category2...] [-t tag1,tag2...] [-h keyword1,keyword2,...] 
 </code></pre>
 <p><strong>相关例子：</strong></p>
 <ol>
@@ -1137,6 +1137,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p><strong>MWeb for Mac 中的配置方法为：<strong>在外部模式中 <code>右键</code> 引入的文件夹，选择 <code>编辑</code>，这时出来如下图的</strong>文件夹设置</strong>界面。<br />
 <figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303749773096.jpg" alt="" style="width:333px;" /></figure></p>
 <p>勾选红框中的把插入的图片自动上传至...，然后选择要上传的图床即可（图床服务可以在 <code>偏好设置</code> - <code>发布服务</code> 中增加）。这样设置后，该引入的文件夹内的文档在插入图片时，会自动上传至所选择的图床并返回地址和生成 Markdown 语法。</p>
+<p><strong>注意：</strong> 此功能在 MWeb 4.x 已经更改，具体请参考：<a href="mweb4qa.html">MWeb 4 相关问题及回答</a></p>
 <h2><a id="2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%90%8E%E5%A4%8D%E5%88%B6%E4%B8%80%E4%BB%BD%E5%88%B0%E6%96%87%E6%A1%A3%E6%89%80%E5%9C%A8%E7%9A%84%E7%9B%B8%E5%AF%B9%E4%BD%8D%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. 插入图片后复制一份到文档所在的相对位置</h2>
 <p>这个是 MWeb 建议使用的方式，这个方式的好处是图片在本地并且跟 Markdown 文档相关联，不会造成图片丢失这种问题，MWeb 在编辑器中会直接显示本地图片，预览时也方便一点。MWeb 的文档库和外部模式都支持这种方式，下面介绍一下如何配置。</p>
 <p><strong>在 MWeb for Mac 中配置：</strong></p>

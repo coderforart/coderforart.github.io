@@ -196,7 +196,7 @@
 <p>官方的语法规定结尾加 2 个以上空格加换行才会转成换行，也就是 <code>&lt;br /&gt;</code> 标签。MWeb 中有个选项可以直接把换行转成 <code>&lt;br /&gt;</code>，不用加上 2 个以上空格，这个选项默认是开启的。如果要关闭，请在设置页面关闭。</p>
 <h3><a id="%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>任务列表（Task lists）</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+<pre class="line-numbers"><code class="language-plain_text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
 - [x] 任务二 已做任务 `- + 空格 + [x]`
 </code></pre>
 <p>效果如下：</p>
@@ -208,7 +208,7 @@
 <p>官方和 GFM 都不支持图片大小控制及对齐设置，MWeb 引入的特别的语法来设置图片宽度和居左、居右、居中。如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 -w450 为设置语法，生成 HTML 时会自动移除。w 表示设置宽度，居左为：-l400，居右为 -r400，居中为 -c400，比如设置一图片宽度为 500 并居中：<code>![-c500](pic.jpg)</code>。 可以看出，MWeb 引入的语法的特点是兼容原来的语法和仅支持设置宽度。</p>
 <h3><a id="%E5%A4%9A%E8%A1%8C%E6%88%96%E8%80%85%E4%B8%80%E6%AE%B5%E4%BB%A3%E7%A0%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>多行或者一段代码</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code>```js
+<pre class="line-numbers"><code class="language-plain_text">```js
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
@@ -228,7 +228,7 @@ function fancyAlert(arg) {
 <p>这个语法目前在 MWeb 中使用，必须前后空一行，才会正确解析。我觉得，在写 Markdown 文档过程中，运用空行很有必要，基本上，块级元素（标题、列表、引用、代码块、表格、段落等），都建议前后空一行。</p>
 <h3><a id="%E8%A1%A8%E6%A0%BC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>表格</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code>第一格表头 | 第二格表头
+<pre class="line-numbers"><code class="language-plain_text">第一格表头 | 第二格表头
 --------- | -------------
 内容单元格 第一列第一格 | 内容单元格第二列第一格
 内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
@@ -254,13 +254,13 @@ function fancyAlert(arg) {
 </table>
 <h3><a id="%E5%88%A0%E9%99%A4%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>删除线</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code>加删除线像这样用： ~~删除这些~~
+<pre class="line-numbers"><code class="language-plain_text">加删除线像这样用： ~~删除这些~~
 </code></pre>
 <p>效果如下：</p>
 <p>加删除线像这样用： <del>删除这些</del></p>
 <h3><a id="latex" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>LaTeX</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code>块级公式：
+<pre class="line-numbers"><code class="language-plain_text">块级公式：
 $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 \\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
@@ -279,7 +279,7 @@ $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <p>行内公式： \(\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N\)</p>
 <h3><a id="%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>脚注（Footnote）</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code>这是一个脚注：[^sample_footnote]
+<pre class="line-numbers"><code class="language-plain_text">这是一个脚注：[^sample_footnote]
 </code></pre>
 <p>效果如下：</p>
 <p>这是一个脚注：[^sample_footnote]</p>
@@ -289,7 +289,7 @@ $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <p><strong>注</strong> 阅读更多的功能只用在文档库生成静态网站或发布到 Wordpress 博客时，插入时注意要后空一行。</p>
 <h3><a id="toc" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>TOC</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code>[TOC]
+<pre class="line-numbers"><code class="language-plain_text">[TOC]
 </code></pre>
 <p>效果如下：</p>
 <ul>
