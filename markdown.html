@@ -88,7 +88,7 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
 <p>如果有写 <code>效果如下：</code>， 在 MWeb 编辑状态下只有用 <code>CMD + 4</code> 或 <code>CMD + R</code> 预览才可以看效果。你可以直接下载本文然后在 MWeb 中打开以查看效果，下载网址为：<a href="media/15302852139239/markdown%20syntax.md">下载本文 Markdown</a></p>
 <h2><a id="%E6%A0%87%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>标题</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text"># 第一级标题 `&lt;h1&gt;` 
+<pre><code class="language-plain_text"># 第一级标题 `&lt;h1&gt;` 
 ## 第二级标题 `&lt;h2&gt;` 
 ###### 第六级标题 `&lt;h6&gt;` 
 </code></pre>
@@ -98,7 +98,7 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
 <h6><a id="%E7%AC%AC%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98h6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>第六级标题 <code>&lt;h6&gt;</code></h6>
 <h2><a id="%E5%BC%BA%E8%B0%83" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>强调</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">*这些文字会生成`&lt;em&gt;`*
+<pre><code class="language-plain_text">*这些文字会生成`&lt;em&gt;`*
 _这些文字会生成`&lt;u&gt;`_
 
 **这些文字会生成`&lt;strong&gt;`**
@@ -116,7 +116,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <h2><a id="%E5%88%97%E8%A1%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>列表</h2>
 <h3><a id="%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>无序列表</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">* 项目一 无序列表 `* + 空格键`
+<pre><code class="language-plain_text">* 项目一 无序列表 `* + 空格键`
 * 项目二
 	* 项目二的子项目一 无序列表 `TAB + * + 空格键`
 	* 项目二的子项目二
@@ -134,7 +134,7 @@ __这些文字会生成`&lt;strong&gt;`__
 </ul>
 <h3><a id="%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>有序列表</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">1. 项目一 有序列表 `数字 + . + 空格键`
+<pre><code class="language-plain_text">1. 项目一 有序列表 `数字 + . + 空格键`
 2. 项目二 
 3. 项目三
 	1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
@@ -153,7 +153,7 @@ __这些文字会生成`&lt;strong&gt;`__
 </ol>
 <h3><a id="%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>任务列表（Task lists）</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+<pre><code class="language-plain_text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
 - [x] 任务二 已做任务 `- + 空格 + [x]`
 </code></pre>
 <p>效果如下：</p>
@@ -163,7 +163,7 @@ __这些文字会生成`&lt;strong&gt;`__
 </ul>
 <h2><a id="%E5%9B%BE%E7%89%87" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>图片</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
+<pre><code class="language-plain_text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
 格式: ![图片描述](url)
 </code></pre>
 <p><code>Control + Shift + I</code> 可插入Markdown语法。<br />
@@ -171,14 +171,14 @@ __这些文字会生成`&lt;strong&gt;`__
 <p>效果如下：</p>
 <p><figure><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" /><figcaption>图片描述<figcaption></figure></p>
 <p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
-<pre class="line-numbers"><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
+<pre><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
 </code></pre>
 <p><figure><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" style="width:140px;" /><figcaption>图片描述<figcaption></figure></p>
 <p>在 MWeb 中，你还可以设置图片的对齐，以上面的图片为例子，左对齐为 <code>-l140</code>，居中为 <code>-c140</code>，居右为 <code>-r140</code>。</p>
 <p><figure><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" class="mw_img_center" style="width:140px;display: block; clear:both; margin: 0 auto;" /><figcaption>图片描述<figcaption></figure></p>
 <h2><a id="%E9%93%BE%E6%8E%A5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>链接</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">email &lt;example@example.com&gt;
+<pre><code class="language-plain_text">email &lt;example@example.com&gt;
 [GitHub](http://github.com)
 自动生成连接  &lt;http://www.github.com/&gt;
 </code></pre>
@@ -190,7 +190,7 @@ __这些文字会生成`&lt;strong&gt;`__
 自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p>
 <h2><a id="%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>区块引用</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">某某说:
+<pre><code class="language-plain_text">某某说:
 &gt; 第一行引用
 &gt; 第二行费用文字
 </code></pre>
@@ -203,14 +203,14 @@ __这些文字会生成`&lt;strong&gt;`__
 </blockquote>
 <h2><a id="%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>行内代码</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">像这样即可：`&lt;addr&gt;` `code`
+<pre><code class="language-plain_text">像这样即可：`&lt;addr&gt;` `code`
 </code></pre>
 <p><code>CMD + K</code> 可插入Markdown语法。<br />
 效果如下：</p>
 <p>像这样即可：<code>&lt;addr&gt;</code> <code>code</code></p>
 <h2><a id="%E5%A4%9A%E8%A1%8C%E6%88%96%E8%80%85%E4%B8%80%E6%AE%B5%E4%BB%A3%E7%A0%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>多行或者一段代码</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">```js
+<pre><code class="language-plain_text">```js
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
@@ -221,7 +221,7 @@ function fancyAlert(arg) {
 </code></pre>
 <p><code>CMD + Shift + K</code> 可插入Markdown语法。<br />
 效果如下：</p>
-<pre class="line-numbers"><code class="language-js">function fancyAlert(arg) {
+<pre><code class="language-js">function fancyAlert(arg) {
 	if(arg) {
 		$.facebox({div:'#foo'})
 	}
@@ -231,7 +231,7 @@ function fancyAlert(arg) {
 <h2><a id="mweb%E7%94%BB%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 画图</h2>
 <h3><a id="mermaid" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>mermaid</h3>
 <p>mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图，它的官网为：<a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a> ，在 MWeb 中使用 mermaid 的语法就是声明代码块的语言为 mermaid，代码块中再写上 mermaid 的画图语法即可，你可以把下面的语法复制到 MWeb 中查看效果。</p>
-<pre class="line-numbers"><code class="language-plain_text">```mermaid
+<pre><code class="language-plain_text">```mermaid
 sequenceDiagram
     participant Alice
     participant Bob
@@ -246,7 +246,7 @@ sequenceDiagram
 ```
 </code></pre>
 <p><strong>效果如下：</strong></p>
-<pre class="line-numbers"><code class="language-mermaid">sequenceDiagram
+<pre><code class="language-mermaid">sequenceDiagram
     participant Alice
     participant Bob
     Alice-&gt;John: Hello John, how are you?
@@ -260,7 +260,7 @@ sequenceDiagram
 </code></pre>
 <h3><a id="graphviz" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graphviz</h3>
 <p>Graphviz 是开源的画图软件，它的官网为 <a href="http://www.graphviz.org/">http://www.graphviz.org/</a>。MWeb 采用的是 Graphviz 的 js 版本的实现 <a href="http://viz-js.com/">http://viz-js.com/</a>，可以解析 Graphviz 语法以生成图片。你可以将以下语法复制到 MWeb 中进行尝试。在尝试时可以把 dot 换成 circo, fdp, neato, osage, twopi 这几种来尝试效果。</p>
-<pre class="line-numbers"><code class="language-plain_text">```dot
+<pre><code class="language-plain_text">```dot
 # http://www.graphviz.org/content/cluster
 digraph G {
 
@@ -292,7 +292,7 @@ digraph G {
 ```
 </code></pre>
 <p><strong>效果如下：</strong></p>
-<pre class="line-numbers"><code class="language-dot"># http://www.graphviz.org/content/cluster
+<pre><code class="language-dot"># http://www.graphviz.org/content/cluster
 digraph G {
     
 	subgraph cluster_0 {
@@ -323,7 +323,7 @@ digraph G {
 </code></pre>
 <h3><a id="echarts" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>echarts</h3>
 <p>echarts 是百度出品的 js 画图库，它的网址为：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="https://echarts.apache.org/examples/zh/index.html">https://echarts.apache.org/examples/zh/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
-<pre class="line-numbers"><code class="language-plain_text">```echarts
+<pre><code class="language-plain_text">```echarts
 option = {
     xAxis: {
         type: 'category',
@@ -340,7 +340,7 @@ option = {
 ```
 </code></pre>
 <p><strong>效果如下：</strong></p>
-<pre class="line-numbers"><code class="language-echarts">option = {
+<pre><code class="language-echarts">option = {
     xAxis: {
         type: 'category',
         data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
@@ -356,7 +356,7 @@ option = {
 </code></pre>
 <h3><a id="plantuml" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>plantuml</h3>
 <p>plantuml 的网址为：<a href="http://www.plantuml.com/">http://www.plantuml.com/</a>，直接上去看更能了解。MWeb 对 plantuml 的支持的方式是引用 plantuml 服务器生成的图片，你可以将以下语法复制到 MWeb 中进行尝试。</p>
-<pre class="line-numbers"><code class="language-plain_text">```plantuml
+<pre><code class="language-plain_text">```plantuml
 @startuml
 
 User -&gt; (Start)
@@ -368,7 +368,7 @@ User --&gt; (Use the application) : A small label
 ```
 </code></pre>
 <p><strong>效果如下：</strong></p>
-<pre class="line-numbers"><code class="language-plantuml">@startuml
+<pre><code class="language-plantuml">@startuml
     
 User -&gt; (Start)
 User --&gt; (Use the application) : A small label
@@ -379,7 +379,7 @@ User --&gt; (Use the application) : A small label
 </code></pre>
 <h3><a id="%E9%A1%BA%E5%BA%8F%E5%9B%BE%E5%92%8C%E6%B5%81%E7%A8%8B%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>顺序图和流程图</h3>
 <p>顺序图和流程图是使用 <a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/">http://adrai.github.io/flowchart.js/</a> 这两个画图库，以下是它在 MWeb 中的 Markdown 语法。</p>
-<pre class="line-numbers"><code class="language-plain_text">```sequence
+<pre><code class="language-plain_text">```sequence
 张三-&gt;李四: 嘿，小四儿, 写博客了没?
 Note right of 李四: 李四愣了一下，说：
 李四--&gt;张三: 忙得吐血，哪有时间写。
@@ -397,11 +397,11 @@ cond(no)-&gt;op
 ```
 </code></pre>
 <p><strong>效果如下：</strong></p>
-<pre class="line-numbers"><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
+<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
 Note right of 李四: 李四愣了一下，说：
 李四--&gt;张三: 忙得吐血，哪有时间写。
 </code></pre>
-<pre class="line-numbers"><code class="language-flow">st=&gt;start: 开始
+<pre><code class="language-flow">st=&gt;start: 开始
 e=&gt;end: 结束
 op=&gt;operation: 我的操作
 cond=&gt;condition: 确认？
@@ -412,7 +412,7 @@ cond(no)-&gt;op
 </code></pre>
 <h2><a id="%E8%A1%A8%E6%A0%BC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>表格</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">第一格表头 | 第二格表头
+<pre><code class="language-plain_text">第一格表头 | 第二格表头
 --------- | -------------
 内容单元格 第一列第一格 | 内容单元格第二列第一格
 内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
@@ -438,13 +438,13 @@ cond(no)-&gt;op
 </table>
 <h2><a id="%E5%88%A0%E9%99%A4%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>删除线</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">加删除线像这样用： ~~删除这些~~
+<pre><code class="language-plain_text">加删除线像这样用： ~~删除这些~~
 </code></pre>
 <p>效果如下：</p>
 <p>加删除线像这样用： <del>删除这些</del></p>
 <h2><a id="%E5%88%86%E9%9A%94%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>分隔线</h2>
 <p>以下三种方式都可以生成分隔线：</p>
-<pre class="line-numbers"><code class="language-plain_text">***
+<pre><code class="language-plain_text">***
 
 *****
 
@@ -456,7 +456,7 @@ cond(no)-&gt;op
 <hr />
 <h2><a id="latex%EF%BC%88-mathjax%E6%B8%B2%E6%9F%93%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>LaTeX （MathJax 渲染）</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">块级公式：
+<pre><code class="language-plain_text">块级公式：
 $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 \\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
@@ -475,7 +475,7 @@ $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <p>行内公式： \(\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N\)</p>
 <h2><a id="%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>脚注（Footnote）</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">这是一个脚注：[^1]
+<pre><code class="language-plain_text">这是一个脚注：[^1]
 
 [^1]: 这里是脚注信息
 </code></pre>
@@ -488,7 +488,7 @@ $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
 <h2><a id="toc" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>TOC</h2>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">[TOC]
+<pre><code class="language-plain_text">[TOC]
 </code></pre>
 <p>效果如下：</p>
 <ul>

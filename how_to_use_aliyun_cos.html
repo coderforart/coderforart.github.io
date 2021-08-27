@@ -133,13 +133,13 @@
 <p>进入到阿里云对象存储，选择一个已新建好的存储空间，我选择的是 “mwebtest”，如下图：<br />
 <figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676591242386.jpg" alt="" style="width:1138px;" /></figure></p>
 <p>按上图，<strong>存储地域</strong>就选择对应的区域，我这里是华北2（北京）；<strong>Bucket 名称</strong>我这里是 mwebtest；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可；<strong>图片处理代码</strong>，点击图片处理后进入相关设置，比如说他的默认规则为：</p>
-<pre class="line-numbers"><code class="language-plain_text">域名/sample.jpg?x-oss-process=style/stylename
+<pre><code class="language-plain_text">域名/sample.jpg?x-oss-process=style/stylename
 </code></pre>
 <p>如果我新增了一个规则名称为 test 的样式，他的处理代码为：</p>
-<pre class="line-numbers"><code class="language-plain_text">image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
+<pre><code class="language-plain_text">image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
 </code></pre>
 <p>那么在 MWeb 中要填入</p>
-<pre class="line-numbers"><code class="language-plain_text">?x-oss-process=image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
+<pre><code class="language-plain_text">?x-oss-process=image/auto-orient,1/quality,q_90/watermark,text_bXdlYi10ZXN0,color_f5eded,size_40,x_10,y_10
 </code></pre>
 <p>即可。</p>
 <h2><a id="2-access-key-id%E3%80%81access-key-secret%E5%92%8C%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84%E7%9A%84%E5%A1%AB%E5%86%99%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Access Key ID、Access Key Secret 和文件保存路径的填写：</h2>

@@ -130,10 +130,10 @@
 <p>MWeb的优点是生成的网站都在你的本地电脑上，所以你可以备份、同步到Dropbox等网盘。当然也可以一键重新生成，您只需要备份好您的文档库即可。比如备份文档库到dropbox的方法为：</p>
 <span id="more"></span><!-- more -->
 <p>请打开终端工具(Terminal),并执行以下命令：</p>
-<pre class="line-numbers"><code class="language-plain_text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+<pre><code class="language-plain_text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
 </code></pre>
 <p>可以看出来大概语法是：</p>
-<pre class="line-numbers"><code class="language-plain_text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb + 网盘同步的位置
+<pre><code class="language-plain_text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb + 网盘同步的位置
 </code></pre>
 <p>这样就可以备份到任何网盘了。</p>
 <p>您也可以把你的网站传到dropbox上，再分享出来，因为dropbox支持直接显示HTML，所以其它人就可以很方便查看。MWeb之后也会增加一些其他类型用途的主题模板。下面说一下如何找到MWeb生成的网站的位置，如图。<br />
@@ -151,7 +151,7 @@
 <p>然后打开终端工具(Terminal)，打<code>cd </code> （注意cd后带一空格），然后<code>CMD+V</code>，然后Enter，如图：<br />
 <figure><img src="media/14224153855854/14224172504947.jpg" alt="" /></figure>￼￼￼￼￼￼￼￼</p>
 <p>然后再分别打入上边github提示的命令样本，注意我这边有改动到喔。再注意，如果你先前没有在MWeb中<code>Build site</code>，要先生成一下。</p>
-<pre class="line-numbers"><code class="language-plain_text">echo &quot;# oimotis.github.io&quot; &gt;&gt; README.md
+<pre><code class="language-plain_text">echo &quot;# oimotis.github.io&quot; &gt;&gt; README.md
 git init
 git add .
 git commit -m &quot;first commit&quot;
@@ -164,7 +164,7 @@ git push -u origin master
 <p>可以看到已经传成功了，<a href="http://oimotis.github.io/">http://oimotis.github.io/</a> 直接用这个网址就可以浏览了。</p>
 <p>下面就要自定域名了。<br />
 依次执行以下命令即可：</p>
-<pre class="line-numbers"><code class="language-plain_text">echo 'blog.coderforart.com' &gt;&gt; CNAME
+<pre><code class="language-plain_text">echo 'blog.coderforart.com' &gt;&gt; CNAME
 git add --ignore-removal .
 git commit -m &quot;cname&quot;
 git push -u origin master
@@ -176,7 +176,7 @@ git push -u origin master
 <p>注意，我并没有真设置喔，所以 blog.coderforart.com 是无效的。<br />
 我的网站<a href="http://coderforart.com">http://coderforart.com</a>是设定CNAME文件的内容为：coderforart.com，CNAME的host为 www, POINTS TO:为 oulvhai.github.io，然后还要把 A Record（A记录）设置为 <code>192.30.252.153</code> 和 <code>192.30.252.154</code> 才行。</p>
 <p>以后发新文章要更新，就执行以下命令即可：</p>
-<pre class="line-numbers"><code class="language-plain_text">git add --ignore-removal .
+<pre><code class="language-plain_text">git add --ignore-removal .
 git commit -m &quot;cname&quot;
 git push -u origin master
 </code></pre>
