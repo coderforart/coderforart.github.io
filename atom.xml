@@ -4,7 +4,7 @@
   <title><![CDATA[MWeb]]></title>
   <link href="http://zh.mweb.im/atom.xml" rel="self"/>
   <link href="http://zh.mweb.im/"/>
-  <updated>2021-08-26T13:04:50+08:00</updated>
+  <updated>2021-08-27T12:04:45+08:00</updated>
   <id>http://zh.mweb.im/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,16 +12,6 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://zh.mweb.im/16293698129208.html"/>
-    <updated>2021-08-19T18:43:32+08:00</updated>
-    <id>http://zh.mweb.im/16293698129208.html</id>
-    <content type="html"><![CDATA[
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 4 相关问题及回答]]></title>
@@ -1220,6 +1210,40 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2><a id="%E5%AF%BC%E5%87%BA%E4%B8%BAhtml%E3%80%81rtf%E3%80%81docx%E7%AD%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出为 HTML、RTF、Docx 等</h2>
 <p>使用 MWeb 导出为 HTML，会导出单个的 HTML，如果有本地图片，会把本地图片进行 Base64 编码嵌入到 HTML 中。<br />
 另外，导出为 Docx 目前还不支持本地图片。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown 辅助]]></title>
+    <link href="http://zh.mweb.im/15303597337753.html"/>
+    <updated>2018-06-30T19:55:33+08:00</updated>
+    <id>http://zh.mweb.im/15303597337753.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="%E5%AF%B9%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E6%94%AF%E6%8C%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>对插入图片的支持</h2>
+<p>请做以下尝试：</p>
+<ol>
+<li>按下 <code>Ctrl + CMD + Shift + 4</code> 键，拖动然后截图，在 MWeb 中，按 <code>CMD + V</code> 键粘贴，即可插入图片。如果你要插入 PNG 格式的图片，可以使用菜单：<code>编辑</code> - <code>粘贴为 PNG</code>。</li>
+<li>在浏览器（如：Safari）中，找到一张图片，然后 <code>右键图片</code> - <code>复制图片</code>，返回 MWeb，按 <code>CMD + V</code> 粘贴即可插入图片。</li>
+<li>直接从 访达（Finder） 中拖拽图片到 MWeb 编辑器中插入图片。</li>
+<li>在访达（Finder）中，找到一张图片文件，按下 <code>CMD + C</code>，返回 MWeb，按 <code>CMD + V</code> 即可插入。</li>
+<li>使用工具栏上的插入图片按钮 （<code>CMD + Option + I</code>）。</li>
+</ol>
+<p>你可以在 <code>偏好设置</code> - <code>通用设置</code> 中设置是否在编辑器中显示图片和是否把图片显示为缩略图。</p>
+<h2><a id="%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6%E5%8F%8A%E5%AF%B9%E9%BD%90" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>设置图片宽度及对齐</h2>
+<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
+<pre><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
+</code></pre>
+<p>在 MWeb 编辑器中，你也可以右键图片，然后选择一些对图片的操作，如下图：<br />
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303665759795.jpg" alt="" style="width:568px;" /></figure></p>
+<p>在 MWeb 中，你还可以设置图片的对齐，以上面的图片为例子，左对齐为 <code>-l140</code>，居中为 <code>-c140</code>，居右为 <code>-r140</code>。</p>
+<h2><a id="mweb%E5%AF%B9%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC%E7%9A%84%E6%94%AF%E6%8C%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 对插入表格的支持</h2>
+<p>你可以按工具栏上的插入表格按钮来插入表格，也可以用快捷键 <code>Ctrl + Shift + T</code>，如下图：<br />
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303667198523.jpg" alt="" style="width:606px;" /></figure></p>
+<p>对于已存在的表格，你可以把光标移动到表格代码内，然后使用插入表格功能来修改已存在的表格。你可以先插入一张表格，然后再尝试修改。</p>
+<h2><a id="mweb%E5%AF%B9-latex%E4%B9%A6%E5%86%99%E7%9A%84%E8%BE%85%E5%8A%A9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 对 LaTeX 书写的辅助</h2>
+<p>在 MWeb 编辑器中，光标移到 LaTeX 公式中间，即可以预览 LaTeX 公式，如果修改公式，预览也会实时更新，如下图：<br />
+<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303669655303.jpg" alt="" style="width:476px;" /></figure></p>
 
 ]]></content>
   </entry>
