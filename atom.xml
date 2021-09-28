@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[MWeb]]></title>
-  <link href="http://zh.mweb.im/atom.xml" rel="self"/>
-  <link href="http://zh.mweb.im/"/>
-  <updated>2021-08-27T12:04:45+08:00</updated>
-  <id>http://zh.mweb.im/</id>
+  <link href="https://zh.mweb.im/atom.xml" rel="self"/>
+  <link href="https://zh.mweb.im/"/>
+  <updated>2021-09-08T14:46:11+08:00</updated>
+  <id>https://zh.mweb.im/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MWeb 4 相关问题及回答]]></title>
-    <link href="http://zh.mweb.im/mweb4qa.html"/>
+    <link href="https://zh.mweb.im/mweb4qa.html"/>
     <updated>2021-08-10T10:40:31+08:00</updated>
-    <id>http://zh.mweb.im/mweb4qa.html</id>
+    <id>https://zh.mweb.im/mweb4qa.html</id>
     <content type="html"><![CDATA[
 <h2><a id="mweb-4-icloud%E5%90%8C%E6%AD%A5%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 4 iCloud 同步文档库的一些问题</h2>
 <p><strong>MWeb 3 的 iCloud 同步和 MWeb 4 的有何区别？</strong></p>
@@ -62,9 +62,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。]]></title>
-    <link href="http://zh.mweb.im/mweb4-macOS-beta.html"/>
+    <link href="https://zh.mweb.im/mweb4-macOS-beta.html"/>
     <updated>2021-04-06T15:17:46+08:00</updated>
-    <id>http://zh.mweb.im/mweb4-macOS-beta.html</id>
+    <id>https://zh.mweb.im/mweb4-macOS-beta.html</id>
     <content type="html"><![CDATA[
 <p><strong>重点说明：</strong> 3.x 版本的用户将<strong>免费</strong>升级至 4.x 版本。</p>
 <p>这次更新比较大，所以花的时间比较多，主要的更新有：</p>
@@ -103,9 +103,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[MWeb 计划在三个月后要换编辑器，然后新编辑器已经可以下载体验了。]]></title>
-    <link href="http://zh.mweb.im/16101924428280.html"/>
+    <link href="https://zh.mweb.im/16101924428280.html"/>
     <updated>2021-01-09T19:40:42+08:00</updated>
-    <id>http://zh.mweb.im/16101924428280.html</id>
+    <id>https://zh.mweb.im/16101924428280.html</id>
     <content type="html"><![CDATA[
 <p>新编辑器名为： One Markdown，目前仅提供 macOS 版，下载网址为：<a href="https://apps.apple.com/cn/app/id1507139439">https://apps.apple.com/cn/app/id1507139439</a>。二周后将提供 iOS 版的下载。</p>
 <p>相关问题及详细的说明请参考：<a href="onemarkdown-help.html">One Markdown 使用说明</a></p>
@@ -115,9 +115,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[自定义或制作自己的静态网站模板]]></title>
-    <link href="http://zh.mweb.im/make_your_site_template.html"/>
+    <link href="https://zh.mweb.im/make_your_site_template.html"/>
     <updated>2019-12-12T15:38:11+08:00</updated>
-    <id>http://zh.mweb.im/make_your_site_template.html</id>
+    <id>https://zh.mweb.im/make_your_site_template.html</id>
     <content type="html"><![CDATA[
 <p>如果当前使用的网站模板无法满足自己的需求，则可以做一些自定义，或者完全重新制作自己喜欢的网站模板。不管是重新制作还是自定义，都是有一定的技术要求的，首先必须要懂 HTML、CSS，然后，再懂 javascript 就更好了。继续阅读前，请确保你已看过<a href="mweb-static-blog.html">MWeb 生成静态网站 &amp; 博客</a>这篇文章。</p>
 <h2><a id="mweb%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 静态网站模板生成过程</h2>
@@ -587,9 +587,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[MWeb 3.2.8 及以下版本升级到 3.3.1 版本说明]]></title>
-    <link href="http://zh.mweb.im/version-3.2.8-to-3.3.1-release-note.html"/>
+    <link href="https://zh.mweb.im/version-3.2.8-to-3.3.1-release-note.html"/>
     <updated>2019-09-21T11:39:27+08:00</updated>
-    <id>http://zh.mweb.im/version-3.2.8-to-3.3.1-release-note.html</id>
+    <id>https://zh.mweb.im/version-3.2.8-to-3.3.1-release-note.html</id>
     <content type="html"><![CDATA[
 <p>这个说明只针对非 Mac App Store 版本，Mac App Store 版本不受影响。</p>
 <h2><a id="%E9%87%8D%E8%A6%81%E8%AF%B4%E6%98%8E%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>重要说明：</h2>
@@ -610,9 +610,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[如何使用阿里云 OSS 图床]]></title>
-    <link href="http://zh.mweb.im/how_to_use_aliyun_cos.html"/>
+    <link href="https://zh.mweb.im/how_to_use_aliyun_cos.html"/>
     <updated>2019-09-05T12:40:04+08:00</updated>
-    <id>http://zh.mweb.im/how_to_use_aliyun_cos.html</id>
+    <id>https://zh.mweb.im/how_to_use_aliyun_cos.html</id>
     <content type="html"><![CDATA[
 <p>如下图，在 MWeb 的偏好设置 - 发布服务中，点击 “阿里云 OSS”，来增加阿里云 OSS 图床服务。如下图为阿里云 OSS 图床的设置界面。<br />
 <figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676586238889.jpg" alt="" style="width:673px;" /></figure></p>
@@ -644,9 +644,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[MWeb 最近更新及现状分享，然后今天（5/29）开始进行全平台 (macOS 和 iOS) 半价促销，持续一周。]]></title>
-    <link href="http://zh.mweb.im/mweb-2019-06-update.html"/>
+    <link href="https://zh.mweb.im/mweb-2019-06-update.html"/>
     <updated>2019-05-29T09:29:00+08:00</updated>
-    <id>http://zh.mweb.im/mweb-2019-06-update.html</id>
+    <id>https://zh.mweb.im/mweb-2019-06-update.html</id>
     <content type="html"><![CDATA[
 <p>MWeb for macOS 版本的促销除了在 Mac App Store 外，还联合了官方授权的合作伙伴： @少数派 、@Price Tag 和 @数码荔枝，你可以选择你喜欢的方式购买，购买网址：<a href="https://zh.mweb.im/buy.html">https://zh.mweb.im/buy.html</a>。</p>
 <p>MWeb for iOS 版本是内购促销，可以在 MWeb for iOS 的设置页面购买。</p>
@@ -740,9 +740,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[如何使用腾讯云 COS 图床]]></title>
-    <link href="http://zh.mweb.im/how_to_use_tencent_cos.html"/>
+    <link href="https://zh.mweb.im/how_to_use_tencent_cos.html"/>
     <updated>2019-04-12T19:45:54+08:00</updated>
-    <id>http://zh.mweb.im/how_to_use_tencent_cos.html</id>
+    <id>https://zh.mweb.im/how_to_use_tencent_cos.html</id>
     <content type="html"><![CDATA[
 <p>如下图，在 MWeb 的设置页面中，滑动到 “增加本地图片上传服务” 那里，点击后，选择 “腾讯云 COS”，来增加腾讯云 COS 图床服务。如下图的右边为腾讯云 COS 图床的设置界面。<br />
 <figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos1.jpg" alt="cos2" /><figcaption>cos2<figcaption></figure></p>
@@ -766,9 +766,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[MWeb for iOS 3.0.0 版发布了，此文章详细介绍一下更新的情况。]]></title>
-    <link href="http://zh.mweb.im/mweb-ios-3.0-release.html"/>
+    <link href="https://zh.mweb.im/mweb-ios-3.0-release.html"/>
     <updated>2019-01-03T14:31:45+08:00</updated>
-    <id>http://zh.mweb.im/mweb-ios-3.0-release.html</id>
+    <id>https://zh.mweb.im/mweb-ios-3.0-release.html</id>
     <content type="html"><![CDATA[
 <p>这次更新有两个坏消息。第一，是这个版本的更新来得太迟了，一转眼，2018 年就过去了！第二，是这次的新版本，很多计划内的功能都没有上。还记得当时决定做 iOS 3.x 时，真的是满怀激动，觉得这次一定要花时间全新设计，让 MWeb 更现代，更好看，还要解决各种用户反馈的问题，特别是文档库同步问题。</p>
 <p>而当冷静下来，设立一些目标，比如说，文档库重新设计，同步和功能都要弄好，跟 Mac 版本一致；界面既要简洁又功能强大，用户用起来要舒畅，还要更现代，更好看；再有就是，原来的渣渣代码，也是要重构一下了吧，写得这么乱，太 low 了。</p>
@@ -808,9 +808,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[iOS 版 MWeb 快速笔记使用说明]]></title>
-    <link href="http://zh.mweb.im/how_to_use_quicknote_in_ios.html"/>
+    <link href="https://zh.mweb.im/how_to_use_quicknote_in_ios.html"/>
     <updated>2019-01-03T13:35:50+08:00</updated>
-    <id>http://zh.mweb.im/how_to_use_quicknote_in_ios.html</id>
+    <id>https://zh.mweb.im/how_to_use_quicknote_in_ios.html</id>
     <content type="html"><![CDATA[
 <p>快速笔记提供一个这样概念：就是不管什么时候，我需要记笔记的话，只需要点一下快速笔记的按钮即可马上开始记录，不需要考虑文件名、保存位置、怎样归类整理等等。只需要记下就是完成任务，至于整理或者什么的，那是之后的事了，不用考虑，减少负担，只为记下。</p>
 <p>快速笔记提供了三个入口，如下图所示为两个入口，还有一个办法是使用 URL Scheme：<code>mwebapp://?p=quicknote</code> 。点击后，MWeb 会自动按你，下图最右边那张图片的设置的规则来打开快速笔记的文档并弹出键盘。快速笔记的重点在记，只要记下即可，MWeb 会自动按天来整理成文档。在你点击快速笔记时，如果快速笔记在非打开状态，则会自动加上时间做为标题。</p>
@@ -824,9 +824,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[MWeb 3 发布后 2.x 版维护说明及两者之间的功能对比]]></title>
-    <link href="http://zh.mweb.im/mweb3x-release-note.html"/>
+    <link href="https://zh.mweb.im/mweb3x-release-note.html"/>
     <updated>2018-07-02T20:45:33+08:00</updated>
-    <id>http://zh.mweb.im/mweb3x-release-note.html</id>
+    <id>https://zh.mweb.im/mweb3x-release-note.html</id>
     <content type="html"><![CDATA[
 <h2><a id="mweb-2-x%E7%89%88%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 2.x 版相关说明</h2>
 <ol>
@@ -887,9 +887,9 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
   
   <entry>
     <title type="html"><![CDATA[MWeb 生成静态网站 & 博客]]></title>
-    <link href="http://zh.mweb.im/mweb-static-blog.html"/>
+    <link href="https://zh.mweb.im/mweb-static-blog.html"/>
     <updated>2018-07-02T00:50:51+08:00</updated>
-    <id>http://zh.mweb.im/mweb-static-blog.html</id>
+    <id>https://zh.mweb.im/mweb-static-blog.html</id>
     <content type="html"><![CDATA[
 <h2><a id="mweb%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%88%86%E7%B1%BB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 的静态网站分类</h2>
 <p>在 MWeb 的文档库中，有两种分类，一种是普通分类，另一种就是静态网站分类了。你可以直接新增一个静态网站分类，也可以在普通分类的顶层的分类中右键，选择 <code>编辑</code>，然后在出来的界面中点击 <code>设置为静态网站</code> 按钮。</p>
@@ -940,9 +940,9 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
   
   <entry>
     <title type="html"><![CDATA[MWeb 外部模式详细介绍]]></title>
-    <link href="http://zh.mweb.im/15304187309476.html"/>
+    <link href="https://zh.mweb.im/15304187309476.html"/>
     <updated>2018-07-01T12:18:50+08:00</updated>
-    <id>http://zh.mweb.im/15304187309476.html</id>
+    <id>https://zh.mweb.im/15304187309476.html</id>
     <content type="html"><![CDATA[
 <p>此文章介绍外部模式的详细使用，如果你没看过 <a href="15303606797118.html">MWeb 的基本使用</a>，建议你先去看一下。</p>
 <h2><a id="mac-app-store%E6%B2%99%E7%AE%B1%EF%BC%88-sandbox%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mac App Store 沙箱（Sandbox）</h2>
@@ -974,9 +974,9 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
   
   <entry>
     <title type="html"><![CDATA[快速搜索]]></title>
-    <link href="http://zh.mweb.im/15303804636963.html"/>
+    <link href="https://zh.mweb.im/15303804636963.html"/>
     <updated>2018-07-01T01:41:03+08:00</updated>
-    <id>http://zh.mweb.im/15303804636963.html</id>
+    <id>https://zh.mweb.im/15303804636963.html</id>
     <content type="html"><![CDATA[
 <p>快速搜索是 3.x 新增的功能，用于对文档库或外部模式引入的文件夹的 Markdown 文件进行全文搜索。使用快速搜索非常简单，在文档库界面或者外部模式界面按 <code>CMD + O</code> 键即可。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E5%BF%AB%E9%80%9F%E6%90%9C%E7%B4%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库的快速搜索</h2>
@@ -1009,9 +1009,9 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
   
   <entry>
     <title type="html"><![CDATA[快速笔记]]></title>
-    <link href="http://zh.mweb.im/15303794142935.html"/>
+    <link href="https://zh.mweb.im/15303794142935.html"/>
     <updated>2018-07-01T01:23:34+08:00</updated>
-    <id>http://zh.mweb.im/15303794142935.html</id>
+    <id>https://zh.mweb.im/15303794142935.html</id>
     <content type="html"><![CDATA[
 <p>快速笔记功能是 3.x 新增的功能，此功能依靠状态栏上的图标以随意增加笔记及图片等素材，并支持以天为单位把增加的素材组合在一个文档内，方便整理及记录历史收集情况。简单来说就是文本和素材收集的功能，而素材多是指图片。</p>
 <h2><a id="%E5%BC%80%E5%90%AF%E5%BF%AB%E9%80%9F%E7%AC%94%E8%AE%B0%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>开启快速笔记功能</h2>
@@ -1030,9 +1030,9 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
   
   <entry>
     <title type="html"><![CDATA[MWeb 文档库详细介绍]]></title>
-    <link href="http://zh.mweb.im/mweb-library.html"/>
+    <link href="https://zh.mweb.im/mweb-library.html"/>
     <updated>2018-07-01T00:18:57+08:00</updated>
-    <id>http://zh.mweb.im/mweb-library.html</id>
+    <id>https://zh.mweb.im/mweb-library.html</id>
     <content type="html"><![CDATA[
 <p>此文章介绍文档库的详细使用，如果你没看过 <a href="15303606797118.html">MWeb 的基本使用</a>，建议你先去看一下。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%BB%93%E6%9E%84%E5%8F%8A%E5%AD%98%E5%82%A8%E4%BD%8D%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库结构及存储位置</h2>
@@ -1117,9 +1117,9 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
   
   <entry>
     <title type="html"><![CDATA[MWeb 的图片上传服务介绍]]></title>
-    <link href="http://zh.mweb.im/15303740497765.html"/>
+    <link href="https://zh.mweb.im/15303740497765.html"/>
     <updated>2018-06-30T23:54:09+08:00</updated>
-    <id>http://zh.mweb.im/15303740497765.html</id>
+    <id>https://zh.mweb.im/15303740497765.html</id>
     <content type="html"><![CDATA[
 <p>图片上传服务（图床）支持 Google Photos、Imgur、七牛云、又拍云和自定义的图床服务。而在 MWeb 中使用图片上传服务，有两种处理方式，下面分别介绍一下：</p>
 <h2><a id="1%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%90%8E%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%9B%BE%E5%BA%8A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 插入图片后自动上传至图床</h2>
@@ -1153,9 +1153,9 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
   
   <entry>
     <title type="html"><![CDATA[MWeb 的发布服务介绍]]></title>
-    <link href="http://zh.mweb.im/15303685987267.html"/>
+    <link href="https://zh.mweb.im/15303685987267.html"/>
     <updated>2018-06-30T22:23:18+08:00</updated>
-    <id>http://zh.mweb.im/15303685987267.html</id>
+    <id>https://zh.mweb.im/15303685987267.html</id>
     <content type="html"><![CDATA[
 <p>使用 MWeb 把文档发布到  Wordrpess、支持 Metaweblog API 协议的服务、Wordpress.com、印象笔记、Blogger、Medium、Tumblr 和为知笔记。</p>
 <h2><a id="%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B0%E5%A2%9E%E5%92%8C%E4%BD%BF%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>发布服务的新增和使用</h2>
@@ -1186,9 +1186,9 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
   
   <entry>
     <title type="html"><![CDATA[Markdown 输出]]></title>
-    <link href="http://zh.mweb.im/15303673435460.html"/>
+    <link href="https://zh.mweb.im/15303673435460.html"/>
     <updated>2018-06-30T22:02:23+08:00</updated>
-    <id>http://zh.mweb.im/15303673435460.html</id>
+    <id>https://zh.mweb.im/15303673435460.html</id>
     <content type="html"><![CDATA[
 <p>使用 MWeb 将 Markdown 文档导出为图片、HTML、Epub、PDF、RTF和Docx。</p>
 <p>MWeb 使用 <code>发布</code> 菜单或者工具栏上的 <code>分享按钮</code> 来导出当前的 Markdown 文档，如下图：<br />
@@ -1216,9 +1216,9 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
   
   <entry>
     <title type="html"><![CDATA[Markdown 辅助]]></title>
-    <link href="http://zh.mweb.im/15303597337753.html"/>
+    <link href="https://zh.mweb.im/15303597337753.html"/>
     <updated>2018-06-30T19:55:33+08:00</updated>
-    <id>http://zh.mweb.im/15303597337753.html</id>
+    <id>https://zh.mweb.im/15303597337753.html</id>
     <content type="html"><![CDATA[
 <h2><a id="%E5%AF%B9%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E6%94%AF%E6%8C%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>对插入图片的支持</h2>
 <p>请做以下尝试：</p>
