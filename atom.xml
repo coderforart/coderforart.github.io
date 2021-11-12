@@ -4,7 +4,7 @@
   <title><![CDATA[MWeb]]></title>
   <link href="https://zh.mweb.im/atom.xml" rel="self"/>
   <link href="https://zh.mweb.im/"/>
-  <updated>2021-10-11T20:08:35+08:00</updated>
+  <updated>2021-10-11T20:24:09+08:00</updated>
   <id>https://zh.mweb.im/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -53,7 +53,7 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <p>语法的解析上会有一些细微的变化，比如说 ##如果不加空格，则不会解析为标题。另外，旧版的语法高亮 ==高亮== 不再支持了。真要用，只能用 HTML 的方式，比如说 <code>&lt;mark&gt;高亮&lt;/mark&gt;</code>。</p>
 <h2><a id="%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%8F%98%E5%8A%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>图片上传服务的变动</h2>
 <p>插入本地图片，之后再上传的方式不变，插入时就自动上传这个功能变了，改成独立的图片上传窗口了。使用菜单：<code>视图 - 图片上传窗口</code> 可以打开这个窗口。下图是 MWeb 3 到 MWeb 4 的变化图，左边的是 MWeb 3 的方式，右边是 MWeb 4 的方式：<br />
-<figure><img src="media/16285632311652/image_upload.jpg" alt="" /></figure></p>
+<img src="media/16285632311652/image_upload.jpg" alt="" /></p>
 <h2><a id="%E5%85%B6%E5%AE%83%E9%97%AE%E9%A2%98%EF%BC%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>其它问题？</h2>
 <p>如果有任何问题，请发送到 <a href="mailto:coderforart+233@gmail.com">coderforart+233@gmail.com</a> 这个邮箱，我通常会在 1 至 3 个工作日回复您，非常感谢！</p>
 
@@ -73,19 +73,19 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <p>新编辑器的介绍请参考：<a href="onemarkdown-help.html">One Markdown 使用说明</a>。</p>
 <h2><a id="2%E7%95%8C%E9%9D%A2%E6%94%B9%E8%BF%9B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. 界面改进</h2>
 <p>新的文档库界面如下：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176948643252.jpg" alt="" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176948643252.jpg" alt="" /></p>
 <p>新的外部模式的界面如下：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176949645435.jpg" alt="" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176949645435.jpg" alt="" /></p>
 <h2><a id="3%E6%96%B0%E5%A2%9E%E4%B8%BB%E9%A2%98%E7%BC%96%E8%BE%91%E7%95%8C%E9%9D%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 新增主题编辑界面</h2>
 <p>主题编辑的入口为：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176950735734.jpg" alt="" style="width:761px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176950735734.jpg" alt="" style="width:761px;" /></p>
 <p>目前不再分开编辑器主题和预览主题，都统一为“主题”。进入主题编辑界面如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176951852650.jpg" alt="" style="width:1015px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176951852650.jpg" alt="" style="width:1015px;" /></p>
 <h2><a id="4%E5%9B%BE%E5%BA%8A%E5%8A%9F%E8%83%BD%E6%9C%89%E6%94%B9%E5%8A%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. 图床功能有改动</h2>
 <p>原本的，本地图片上传至图床的功能不改，界面仍然为：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176953023352.jpg" alt="" style="width:556px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176953023352.jpg" alt="" style="width:556px;" /></p>
 <p>先上传图片再插入文档的功能有变化，改为使用单独的图片上传窗口，此窗口使用菜单：“视图 - 图片上传窗口” 可以打开，也可以点击工具栏上的 “图片上传” 按钮打开，如下图所示：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176955150774.jpg" alt="" style="width:414px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16176955150774.jpg" alt="" style="width:414px;" /></p>
 <p>这样独立出来一个窗口，使用上会更灵活一点。</p>
 <h2><a id="5%E5%8E%9F%E7%94%9F%E6%94%AF%E6%8C%81-m1%E8%8A%AF%E7%89%87" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. 原生支持 M1 芯片</h2>
 <p>原本的 3.x 版本因为界面问题无法原生支持 M1 芯片，现在改了界面，当然是能支持了。现在的包已经是 intel 和 M1 双版本的了。</p>
@@ -137,20 +137,20 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <li>sitemap.xml -- 网站地图所使用的模板</li>
 </ul>
 <p>你可以随便查看内置的网站模板的结构，右键<code>网站分类</code>，选择<code>编辑</code>，在模板那里，点<code>编辑...</code> 按钮，如果是 MWeb 自带的模板，请选择<code>复制当前的模板到自定义模板文件夹...</code>，复制出来，再选择 <code>打开自定义模板所在的文件夹...</code> 则可。**注意：**如果要修改 MWeb 自带模板，首先要先使用<code>复制当前的模板到自定义模板文件夹...</code>复制到自定义模板的位置，才能修改，如下图。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761566606148.jpg" alt="" style="width:591px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761566606148.jpg" alt="" style="width:591px;" /></p>
 <h3><a id="%E6%96%87%E7%AB%A0%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文章页的生成过程</h3>
 <p>不选<code>是否页面（Is Page）</code>选项时，生成文章页的顺序为：header.html + post.html + sidebar.html + footer.html。</p>
 <p>选中了 <code>是否页面（Is Page）</code> 选项后，生成文章页的顺序为： header.html + page.html + footer.html。</p>
 <p><strong>更高级的用法：</strong></p>
 <p>做网站经常要定制一些页面，在文档中，选中了 <code>是否页面（Is Page）</code> 选项后，如果要自定这页，可以新增一个名称为：page-{HTML 文件名}.html 的模板页面，这样生成文章页的顺序会变为：header.html + page-{HTML 文件名}.html + footer.html。<code>{HTML 文件名}</code> 说的就是下图的 <code>HTML 文件名：</code> 所填入的名字。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761556545753.jpg" alt="" style="width:595px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761556545753.jpg" alt="" style="width:595px;" /></p>
 <h3><a id="%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A6%96%E9%A1%B5%E4%BE%8B%E5%AD%90" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>自定义首页例子</h3>
 <p>在 MWeb 的静态网站生成中，可以自由指定一个文档为首页，方法非常简单，在 <code>HTML 文件名：</code> 中填入 <code>index</code> 即可，这样生成时，就会生成 <code>index.html</code> 页了，如下图。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761386523278.jpg" alt="" style="width:682px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761386523278.jpg" alt="" style="width:682px;" /></p>
 <p>如果要自定义，比如说像 MWeb 官网 <a href="https://zh.mweb.im/index.html">https://zh.mweb.im/index.html</a> 这样的首页，则是要自定义了，方法很简单，在主题文件夹里新增一个名为：page-index.html 的页面即可。如上面所说，当生成 index.html 这个 页面时，模板顺序会变成：header.html + page-index.html + footer.html。</p>
 <h3><a id="%E5%90%84%E5%88%86%E7%B1%BB%E7%9A%84%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>各分类的文章列表页的生成过程</h3>
 <p>分类页生成的顺序为：header.html + category.html + sidebar.html + footer.html。 其中，可以自定义任何一个分类的 category.html 模板。如下图，在网站的任何一个子分类中，<code>右键</code> - <code>编辑</code>，都可以设置 <code>HTML 文件名</code>，下图为 <code>help</code>，则会生成 help.html。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761391754516.jpg" alt="" style="width:391px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761391754516.jpg" alt="" style="width:391px;" /></p>
 <p>而 MWeb 在生成分类页的 HTML 时，会判定是否存在：category-{HTML 文件名}.html 的模板文件，如果存在，则会优先使用 category-{HTML 文件名}.html 模板文件。上图就是定制了一个 category-help.html 的模板文件，这样生成的顺序变为：header.html + category-help.html + sidebar.html + footer.html。最终效果如：<a href="https://zh.mweb.im/help.html">https://zh.mweb.im/help.html</a>，这就跟一般的分类不一样了。</p>
 <h3><a id="%E5%85%B6%E5%AE%83%E9%A1%B5%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>其它页的生成过程</h3>
 <p>其它页面生成没有像文章页和分类页的自定模板规则，下面列出一下：</p>
@@ -165,11 +165,11 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <p>**重要：**在 3.3.9 及以上版本，当在模板中直接输出数组或者字典变量时，会直接变成 json 输出。大概用法为 <code>&lt;script&gt;var postsArr = {{posts}}; var catsArr = {{p.cats}};&lt;/script&gt;</code> 。这个是为了解决模板语言描述能力不足问题，遇到这个问题，直接把变量变成 js 对象，这样就可以直接使用 js 输出了。</p>
 <p>一般可以直接修改模板文件来做小的自定义，因为模板文件都是 HTML，懂 HTML 即可。或者修改样式，同样，懂 CSS 即可。<br />
 如果要做更方便一点的自定义，比如说为网站模板增加一个广告位，这个广告经常换，但是我不想总是修改模板。这种需求可以用 MWeb 的网站扩展来解决。如下图为网站扩展设置界面，这里其实是变量，这些变量，在所有模板页都可以访问到。下页以增加 global_notice 这个变成为例子说明。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761405788732.jpg" alt="" style="width:610px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761405788732.jpg" alt="" style="width:610px;" /></p>
 <p>点<code>增加</code>按钮，然后设置如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761407661736.jpg" alt="" style="width:607px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761407661736.jpg" alt="" style="width:607px;" /></p>
 <p>增加了 global_notice 变量后，可以在 <code>网站扩展设置</code> 中设置这个变量的值，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761409322231.jpg" alt="" style="width:610px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761409322231.jpg" alt="" style="width:610px;" /></p>
 <p>这样，就可以在所有模板页中以 <code>{{ext_global_notice}}</code> 这个语法，输出设置了的值。</p>
 <p>**特别注意：**在修改了网站模板之后，要生成网站时，请使用<code>清除并重新生成网站</code>这个功能，这样才会生效。</p>
 <p>同样，可以看到还有<code>文档扩展</code>，文档扩展用法一样，但是只针对文档，设置是在文档的<code>大纲视图</code>最底下。</p>
@@ -615,11 +615,11 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
     <id>https://zh.mweb.im/how_to_use_aliyun_cos.html</id>
     <content type="html"><![CDATA[
 <p>如下图，在 MWeb 的偏好设置 - 发布服务中，点击 “阿里云 OSS”，来增加阿里云 OSS 图床服务。如下图为阿里云 OSS 图床的设置界面。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676586238889.jpg" alt="" style="width:673px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676586238889.jpg" alt="" style="width:673px;" /></p>
 <p>下面详细说明各项设置，首先是 “名称：” 这个，你可以随便取一个名称，用来标记这个上传服务。剩下的项目都要按阿里云 OSS 中的相关项来填写，下面仔细说明。</p>
 <h2><a id="1%E5%AD%98%E5%82%A8%E5%9C%B0%E5%9F%9F%E3%80%81-bucket%E5%90%8D%E7%A7%B0%E3%80%81%E5%9F%9F%E5%90%8D%E5%9C%B0%E5%9D%80%E7%9A%84%E5%A1%AB%E5%86%99%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 存储地域、Bucket 名称、域名地址的填写：</h2>
 <p>进入到阿里云对象存储，选择一个已新建好的存储空间，我选择的是 “mwebtest”，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676591242386.jpg" alt="" style="width:1138px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676591242386.jpg" alt="" style="width:1138px;" /></p>
 <p>按上图，<strong>存储地域</strong>就选择对应的区域，我这里是华北2（北京）；<strong>Bucket 名称</strong>我这里是 mwebtest；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可；<strong>图片处理代码</strong>，点击图片处理后进入相关设置，比如说他的默认规则为：</p>
 <pre><code class="language-plain_text">域名/sample.jpg?x-oss-process=style/stylename
 </code></pre>
@@ -632,11 +632,11 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <p>即可。</p>
 <h2><a id="2-access-key-id%E3%80%81access-key-secret%E5%92%8C%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84%E7%9A%84%E5%A1%AB%E5%86%99%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Access Key ID、Access Key Secret 和文件保存路径的填写：</h2>
 <p>在对象存储页右边，“创建 Bucket” 按钮旁边，有个 “Access Key” 按钮，点击后，就会进入阿里云的 “安全信息管理” 页。在页里可找到 <strong>Access Key ID、Access Key Secret</strong> 这两个要填写的项目，如下图所示，分别填入即可（如果没有，则需要自行新增）。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676597517520.jpg" alt="" style="width:1061px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676597517520.jpg" alt="" style="width:1061px;" /></p>
 <p>关于<strong>文件保存路径</strong>这个，设置为 &quot;/{year}/{mon}/{day}/{filename}{.suffix}&quot; 时，上传 filename.jpg 图片会保存在: &quot;/2019/02/02/filename.jpg&quot;。另外可以用 {random} 这个变量，是一个随机数字。</p>
 <h2><a id="3%E5%A1%AB%E5%86%99%E5%AE%8C%E6%88%90%E5%90%8E%E7%9A%84%E6%95%88%E6%9E%9C" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 填写完成后的效果</h2>
 <p>如下图是填写完成后的界面：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676604356718.jpg" alt="" style="width:664px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676604356718.jpg" alt="" style="width:664px;" /></p>
 <p>填写完成后，再使用“发布”菜单，选择“把本地图片上传至图床...”，在出来的界面中，再选择新增的阿里云图床即可。如果还不知道怎么使用 MWeb 的图片上传服务，建议参考文章：<a href="15303740497765.html">MWeb 的图片上传服务介绍</a></p>
 
 ]]></content>
@@ -745,20 +745,20 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
     <id>https://zh.mweb.im/how_to_use_tencent_cos.html</id>
     <content type="html"><![CDATA[
 <p>如下图，在 MWeb 的设置页面中，滑动到 “增加本地图片上传服务” 那里，点击后，选择 “腾讯云 COS”，来增加腾讯云 COS 图床服务。如下图的右边为腾讯云 COS 图床的设置界面。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos1.jpg" alt="cos2" /><figcaption>cos2<figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos1.jpg" alt="cos2" /></p>
 <p>下面详细说明各项设置，首先是 “名称：” 这个，你可以随便取一个名称，用来标记这个上传服务。剩下的项目都要按腾讯云 COS 中的相关项来填写，下面仔细说明。</p>
 <h2><a id="1%E5%AD%98%E5%82%A8%E5%9C%B0%E5%9F%9F%E3%80%81%E7%A9%BA%E9%97%B4%E5%90%8D%E7%A7%B0%E3%80%81%E5%9F%9F%E5%90%8D%E5%9C%B0%E5%9D%80%E7%9A%84%E5%A1%AB%E5%86%99%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 存储地域、空间名称、域名地址的填写：</h2>
 <p>进入到腾讯云 COS （对象存储）的存储桶列表中，新增一个存储桶后，点进去并切换到 “基础配置” 这一页，如下图，我的存储桶的名称是为：“test”。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550727428079.jpg" alt="" style="width:822px;" /></figure><br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550727428079.jpg" alt="" style="width:822px;" /><br />
 按上图，<strong>存储地域</strong>就选择对应的，我这里是上海金融；<strong>空间名称</strong>我这里是填入 test，不用填写后边的 “-数字”；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可。</p>
 <h2><a id="2-app-id%E3%80%81secretid%E3%80%81secretkey%E5%92%8C%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84%E7%9A%84%E5%A1%AB%E5%86%99%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. App ID、SecretId、SecretKey 和文件保存路径的填写：</h2>
 <p>进入腾讯云的 “API密钥管理” 中，即可找到 <strong>App ID、SecretId、SecretKey</strong> 这三个要填写的项目，如下图所示，分别填入即可。<br />
 <strong>请注意：</strong> App ID 也可以使用空间名称后面那串数字，这串数字是跟 “API密钥管理” 中的 App ID 一样的。这个 App ID <strong>不是</strong>子帐号的帐号 ID。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550737662425.jpg" alt="" style="width:740px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550737662425.jpg" alt="" style="width:740px;" /></p>
 <p>关于<strong>文件保存路径</strong>这个，设置为 &quot;/{year}/{mon}/{day}/{filename}{.suffix}&quot; 时，上传 filename.jpg 图片会保存在: &quot;/2019/02/02/filename.jpg&quot;。另外可以用 {random} 这个变量，是一个随机数字。</p>
 <h2><a id="3%E5%A1%AB%E5%86%99%E5%AE%8C%E6%88%90%E5%90%8E%E7%9A%84%E6%95%88%E6%9E%9C" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 填写完成后的效果</h2>
 <p>如下图左边，是填写完成后的界面，右边为使用腾讯云上传本地图片的界面。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos2.jpg" alt="cos1" /><figcaption>cos1<figcaption></figure><br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos2.jpg" alt="cos1" /><br />
 图片上传后，点 “复制 Markdown” 或者是 “复制 HTML” 时，就会把本地的图片地址替换为图床的地址并复制到剪切板中。</p>
 
 ]]></content>
@@ -776,31 +776,31 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <p>当前这个 3.0.0 版本，怎么说呢，算是一个常规更新吧，这个版本是在慢慢想明白了自身的情况，慢慢弄出来的，下面介绍一下。</p>
 <h2><a id="mweb-ios-3-0%E7%89%88%E6%9C%AC%E7%95%8C%E9%9D%A2%E6%83%85%E5%86%B5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb iOS 3.0 版本界面情况</h2>
 <p>如下图，这是新的界面，可以看到，几乎跟原来没什么大的改变。最大的改变就是文档导航变成侧边栏了，编辑器变成总会显示了，也就是在切换要打开的文档时，不会关闭原来已打开的文档了。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mweb-ios-3.jpg" alt="mweb ios 3" /><figcaption>mweb ios 3<figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mweb-ios-3.jpg" alt="mweb ios 3" /></p>
 <h2><a id="%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E5%BA%94%E7%94%A8%E4%B8%AD%E7%9A%84markdown%E6%88%96%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>打开文件应用中的 Markdown 或文本文档</h2>
 <p>这次更新优化了这个用途，侧边栏底部的工具栏中，最后两个按钮是常驻的，最后那个是关闭侧边栏按钮，剩下那个就是打开文件（Files）应用中的 Markdown 文档功能了。由于 iOS 11 及以上版本的新机制，也就是安装了 Dropbox、Google Drive、坚果等云盘的客户端后，都会可以在文件应用中访问到相关的云盘的文档。这个就非常方便了，这样 MWeb 不做同步功能也可以通过文件应用访问其它云盘的文档了。<br />
 由于目前 iOS 还不开放访问文件应用中的某个文件夹的权限，所以目前用 MWeb 打开文件应用中的 Markdown 文档还不支持插入图片到文档本地。需要插入图片的话，可以通过配置 MWeb 中的图床功能，这样插入图片后，MWeb 会自动上传至图床。还有就是，在文件应用中，还可以选择使用 MWeb 打开 Markdown 和文本文档。</p>
 <h2><a id="%E5%BF%AB%E9%80%9F%E7%AC%94%E8%AE%B0%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>快速笔记功能</h2>
 <p>快速笔记提供一个这样概念：就是不管什么时候，我需要记笔记的话，只需要点一下快速笔记的按钮即可马上开始记录，不需要考虑文件名、保存位置、怎样归类整理等等。只需要记下就是完成任务，至于整理或者什么的，那是之后的事了，不用考虑，减少负担，只为记下。</p>
 <p>快速笔记提供了三个入口，如下图所示为两个入口，还有一个办法是使用 URL Scheme：<code>mwebapp://?p=quicknote</code> 。点击后，MWeb 会自动按下图最右边那张图片的设置的规则，来打开快速笔记的文档并弹出键盘。快速笔记的重点在记，只要记下即可，MWeb 会自动按天来整理成文档。在你点击快速笔记时，如果快速笔记在非打开状态，则会自动加上时间做为标题。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note" /><figcaption>open-quick-note<figcaption></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note" /></p>
 <p>如果你把快速笔记设置保存在 MWeb for Mac 文档库，目前还不支持归类到某一分类，iOS 版本的文档库同步及完整功能会在数个版本内得到完善。</p>
 <p>如下图是快速笔记编辑器的情况和查看之前日期的快速笔记的文件夹（我是保存在本机中的 demo folder 文件夹里的）。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note" /><figcaption>quick-note<figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note" /></p>
 <h2><a id="%E5%AF%B9markdown%E8%AF%AD%E6%B3%95%E9%94%AE%E7%9B%98%E7%9A%84%E6%94%B9%E8%BF%9B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>对 Markdown 语法键盘的改进</h2>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/markdownkeyboard.jpg" alt="markdown-keyboard" /><figcaption>markdown-keyboard<figcaption></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/markdownkeyboard.jpg" alt="markdown-keyboard" /></p>
 <p>如上图，Markdown 语法输入键盘更改了样式，另外还增加了插入文件应用中的图片按钮和预览按钮。另外在 <code>设置 - 自定义键盘工具条按钮及顺序</code> 中，还可以调整顺序和设置是否显示在最上面的工具条中，如上图右边的图片所示。<br />
 如上图左边，最上面的工具条可以向左滑动来查看其它隐藏的按钮，另外，MWeb 还提供一个切换所有 Markdown 语法输入键盘的按钮，所以如果你不喜欢用滑动方式，可以点此按钮插入 Markdown 语法。</p>
 <h2><a id="%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>全文搜索</h2>
 <p>目前这个版本终于是支持全文搜索了，目前的搜索的话，如果填入的关键字用空格隔开，比如说填入 “测试 说明”，会搜索文档中既包含 “测试” 又包含 “说明” 的文档并显示出来。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/fulltextsearch.jpg" alt="full-text-search" /><figcaption>full-text-search<figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/fulltextsearch.jpg" alt="full-text-search" /></p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E6%94%B9%E8%BF%9B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库改进</h2>
 <p>如下图所示，文档库首页增加了显示最近新增的文档，在文档库的所有功能完善前，这个功能应该会方便不少。另外直接点击分类会进入如下图右图效果，此分类的子分类会先显示出来，然后再显示此分类下的文档。再有就是增加了一个新增文档库文档的 URL Scheme：<code>mwebapp://?p=newlibdoc</code> 。<br />
 要注意的是，目前的文档库还是不支持删除、管理分类和文档归类功能，这些功能只能等之后的更新了，其实这功能也是拖好久了。。。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mwebformaclibrary.jpg" alt="mweb-for-mac-library" /><figcaption>mweb-for-mac-library<figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mwebformaclibrary.jpg" alt="mweb-for-mac-library" /></p>
 <h2><a id="%E7%BD%91%E7%9B%98%E6%96%87%E6%A1%A3%E6%94%B9%E5%8A%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>网盘文档改动</h2>
 <p>之前的本机文档被归类到网盘文档中了，另外点击（i）按钮可以设置文件夹的相关功能还是没变动，如下图所示。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/externalfolder.jpg" alt="external-folde" /><figcaption>external-folde<figcaption></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/externalfolder.jpg" alt="external-folde" /></p>
 <p>以上，MWeb 新版本的情况就介绍完了。</p>
 
 ]]></content>
@@ -814,10 +814,10 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
     <content type="html"><![CDATA[
 <p>快速笔记提供一个这样概念：就是不管什么时候，我需要记笔记的话，只需要点一下快速笔记的按钮即可马上开始记录，不需要考虑文件名、保存位置、怎样归类整理等等。只需要记下就是完成任务，至于整理或者什么的，那是之后的事了，不用考虑，减少负担，只为记下。</p>
 <p>快速笔记提供了三个入口，如下图所示为两个入口，还有一个办法是使用 URL Scheme：<code>mwebapp://?p=quicknote</code> 。点击后，MWeb 会自动按你，下图最右边那张图片的设置的规则来打开快速笔记的文档并弹出键盘。快速笔记的重点在记，只要记下即可，MWeb 会自动按天来整理成文档。在你点击快速笔记时，如果快速笔记在非打开状态，则会自动加上时间做为标题。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note" /><figcaption>open-quick-note<figcaption></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note" /></p>
 <p>如果你把快速笔记设置保存在 MWeb for Mac 文档库，目前还不支持归类到某一分类，iOS 版本的文档库同步及完整功能会在数个版本内得到完善。</p>
 <p>如下图是快速笔记编辑器的情况和查看之前日期的快速笔记的文件夹（我是保存在本机中的 demo folder 文件夹里的）。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note" /><figcaption>quick-note<figcaption></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note" /></p>
 
 ]]></content>
   </entry>
@@ -837,7 +837,7 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <h2><a id="2-x%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.x 用户数据迁移</h2>
 <p><strong>文档库迁移：</strong></p>
 <p>3.x 启动时会提示导入旧的文档库，如果你开始没做这个，或者其它什么原因有问题，解决办法很简单，把旧的文档库复制到你想要的位置，然后用 3.x 版的 <code>偏好设置</code> - <code>文档库&amp;备份</code> - <code>修改文档库到其它位置</code>-<code>选择现有文档库</code> 然后选择刚刚你复制的位置即可，如图：<br />
-<figure><img src="media/15305355339332/15306726386908.jpg" alt="" style="width:682px;" /></figure><br />
+<img src="media/15305355339332/15306726386908.jpg" alt="" style="width:682px;" /><br />
 如果还有什么问题，建议查看 <a href="mweb-library.html">MWeb 文档库详细介绍</a> 这篇文章，估计一定能解决所有问题了。</p>
 <p><strong>其它数据迁移：</strong></p>
 <ol>
@@ -894,42 +894,42 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
 <h2><a id="mweb%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%88%86%E7%B1%BB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 的静态网站分类</h2>
 <p>在 MWeb 的文档库中，有两种分类，一种是普通分类，另一种就是静态网站分类了。你可以直接新增一个静态网站分类，也可以在普通分类的顶层的分类中右键，选择 <code>编辑</code>，然后在出来的界面中点击 <code>设置为静态网站</code> 按钮。</p>
 <p>网站分类可以设置网站相关的一些东西，设置界面如下：</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761324638192.jpg" alt="" style="width:495px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761324638192.jpg" alt="" style="width:495px;" /></p>
 <p>上图中的设置应该都不难理解，如果要生成静态网站，在设置好之后，点击 <code>生成网站</code> 按钮即可，在生成之前，请务必保证你的分类中有至少一篇文章。你也可以直接右键来选择相关菜单项来生成网站。如果你修改了网站模板，请使用 <code>清理并重新生成</code> 按钮。当然，你任何时候都可以使用这个按钮来清理并重新生成网站。</p>
 <p>可以看出，在 MWeb 中生成静态网站非常简单，就写好文章，然后归类到静态网站分类中，再右键静态网站分类并选择生成网站即可，当然你可以先预览一下。</p>
 <h2><a id="mweb%E4%B8%AD%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 中的两种文章类型</h2>
 <p>MWeb 和 Wordpress 等这类博客的结构一样，分为 <code>一般文章</code> 和 <code>页面</code> 两种文章类型。<code>页面</code> 是用来做像关于我们、联系我们等等这类不用放在正式文章中的网页。</p>
 <p>如下图，把 MWeb 文档库中的文档设置为 <code>页面</code> 非常简单，点击 <code>最上方的信息条</code> ，勾选 <code>是否页面（Is Page）</code> 即可。其中 <code>HTML 文件名</code> 栏是用来设置生成的 HTML 文件名的。比如说上图中的这个文章会生成 mweb-static-blog.html。<code>一般文章</code> 生成的 HTML 文件名也是在此设定。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304641791928.jpg" alt="" style="width:618px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304641791928.jpg" alt="" style="width:618px;" /></p>
 <h2><a id="%E7%BD%91%E7%AB%99%E7%9A%84%E6%89%A9%E5%B1%95%E8%AE%BE%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>网站的扩展设置</h2>
 <p>有些网站模板支持一些扩展设置，比如说网站的图标和 logo，可以自定义自己的图标和 logo 图片，还有，有些网站支持配置 disqus 评论，只要填入 disqus 的 shortname 即可。这些网站的配置是需要网站模板支持的，在 <code>偏好设置</code> - <code>网站扩展</code> - <code>网站扩展设置</code> 里可以设置，如下图就是使用了 site-mweb-bluma 模板的 Coder For Art 网站的扩展设置。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761331195368.jpg" alt="" style="width:616px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761331195368.jpg" alt="" style="width:616px;" /></p>
 <p>比如，这里我要设置 “site icon”，也就是网站图标。这就有一个问题，就是：网站图标是图片形式的，而输入框是要填入文本的，那要把图片增加到那里呢？<br />
 MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”，然后在其中，新增一个文档，并且设置这个文档的文章类型是属于页面。然后把图片拖拽进这个文档并删除 mweb 生成的 markdown 语法，这样就不会显示在文档中了。<br />
 然后如下图，打开大纲视图，找到刚刚拖入的图标，点“Copy”按钮复制，并在 “site icon” 的输入框，粘贴一下即可（我是拿 MWeb 的图标做测试）。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338435586.jpg" alt="" style="width:1275px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338435586.jpg" alt="" style="width:1275px;" /></p>
 <p>下图为设置好网站图标的效果：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338944073.jpg" alt="" style="width:611px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338944073.jpg" alt="" style="width:611px;" /></p>
 <p>其它需要填入图片的，也是用这用方法。</p>
 <h2><a id="%E8%AE%BE%E7%BD%AE%E6%96%87%E6%A1%A3%E6%89%A9%E5%B1%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>设置文档扩展</h2>
 <p>有些网站模板支持文档扩展，我这里还是以使用了 site-mweb-bluma 模板的 Coder For Art 网站为例子。</p>
 <p>如下图，打开其中一篇文档，在文档大纲视图最下边，就会发现网站模板所支持的文档扩展填写。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761343071119.jpg" alt="" style="width:1270px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761343071119.jpg" alt="" style="width:1270px;" /></p>
 <p>比如说我要填写 featured 图片，则可以先复制 “mweb3-1.jpg” 这张图，然后粘贴入 featured 输入框即可。另外我也顺便填写了 excerpt 这个字段。填写后，在 site-mweb-bluma 模板中的效果如下图：</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761345831970.jpg" alt="" style="width:1052px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761345831970.jpg" alt="" style="width:1052px;" /></p>
 <h2><a id="%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E4%B8%BB%E8%8F%9C%E5%8D%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>设置网站的主菜单</h2>
 <p>在 <code>偏好设置</code> - <code>网站扩展</code> - <code>网站菜单</code> 中，先选择要设置的网站，并选中 <code>网站菜单</code> 这个选项卡，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304650978816.jpg" alt="" style="width:595px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304650978816.jpg" alt="" style="width:595px;" /></p>
 <p>你可以新增，编辑和删除菜单，或者拖拽来调整顺序。要注意的是，自带的网站模板中，MWeb-Foundation-Book 这个模板是不支持网站菜单的。</p>
 <p>其它比如说：“网站扩展”、“文档扩展” 这两个选项卡的功能，是属于自定义模板和功能，这里暂时不做介绍。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E9%97%B4%E7%9A%84%E5%BC%95%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档间的引用</h2>
 <p>在 MWeb 中引用其它文档非常简单，在文档列表中，右键要引用的文档，选择 <code>复制</code>，如下图所示。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;" /></figure><br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;" /><br />
 然后在要引用的文档的位置 <code>CMD + V</code> 粘贴即可，MWeb 会生成 <code>[如何使用“发布脚本”功能发布静态网站](how_to_use_shell_script.html)</code> 这种语法。如果你按住 <code>CMD</code> 键并点击，则会打开这个引用的文档。</p>
 <p>生成静态网站功能可以很好的处理这种引用，并生成相关的网页连接。</p>
 <h2><a id="%E5%A2%9E%E5%8A%A0%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A%E6%B3%A8%E9%87%8A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>增加阅读更多注释</h2>
 <p>阅读更多的用途请看下面的图片，这个需要网站模板的支持，你可以使用菜单：<code>标签</code> - <code>插入阅读更多注释</code> 来插入阅读更多，然后要注意的是，这个注释是要前后空一行的，也如下图。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304722329962.jpg" alt="" style="width:946px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304722329962.jpg" alt="" style="width:946px;" /></p>
 <p>另外，比如说发布到 Wordpress 中时，Wordpress 也能识别这个阅读更多的设置。</p>
 <h2><a id="%E9%85%8D%E7%BD%AE%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E8%84%9A%E6%9C%AC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>配置网站发布脚本</h2>
 <p>这个功能 MWeb for Mac 2.2.3 版就有的，是为了让 MWeb 中的静态网站体验能达到 “新增文档并编辑” - “右键并选择执行发布脚本” 这样一个简单的流程。避免之前那样，生成网站后还要去敲命令进行发布。<br />
@@ -951,12 +951,12 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p>当然，引入文件夹到 MWeb 中，还能方便地打开和管理 Markdown 文档，查看文件夹的树形结构，而不用使用访达（Finder）。</p>
 <h2><a id="%E5%BC%95%E5%85%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0mweb%E4%B8%AD%E7%9A%84%E5%8A%9E%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>引入文件夹到 MWeb 中的办法</h2>
 <p>如下图，按 <code>CMD + E</code> 打开外部模式，然后点击左下角的 “+” 按钮，选择要引入的文件夹即可。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304590777747.jpg" alt="" style="width:958px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304590777747.jpg" alt="" style="width:958px;" /></p>
 <p>另外，你还可以直接把文件夹拖拽到左边的文件夹树形列表中，也可以引入文件夹。<br />
 还有一种方法就是：直接把文件夹拖拽到 MWeb 的图标中，也可以引入文件夹。</p>
 <h2><a id="%E9%85%8D%E7%BD%AE%E5%BC%95%E5%85%A5%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>配置引入的文件夹</h2>
 <p>引入文件夹后，还有一项重要的设置，就是引入文件夹的设置，可以右键引入的文件夹，然后选择 <code>编辑</code>，就会显示如下图的界面：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304601545484.jpg" alt="" style="width:352px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304601545484.jpg" alt="" style="width:352px;" /></p>
 <p>一个设置是 “显示名称”，这个是引入的文件夹所特有的，你修改这个名称不会修改到文件夹的名称。还有几个比较重要的设置，都是跟插入图片相关的，第一个就是 “保存插入的图片的文件夹名称：”，这个一看就知道意思，这个跟下面的 “插入的图片的保存位置” 相关联，这个只有 “绝对位置” 与 “相对位置” 两个选项。<br />
 举个例子，比如说我引入的文件夹为 A，然后有一文件在 “A/folder/file.md” 下，我如果在 “file.md” 中插入一张名为 “pic.jpg” 的图片，则不同的选项的结果为：</p>
 <ol>
@@ -967,7 +967,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p>根据这个特性，可以让 MWeb 很好地支持 Octpress、Jekyll、hexo、gitbook、VuePress 等等静态网站生成工具的图片插入、预览和管理。</p>
 <h2><a id="%E7%AE%A1%E7%90%86%E5%BC%95%E5%85%A5%E5%90%8E%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>管理引入后的文件夹</h2>
 <p>文件夹引入后，就可以使用右键对引入的文件夹和文件进行一些常用的操作，如下图所示。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304599733659.jpg" alt="" style="width:619px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304599733659.jpg" alt="" style="width:619px;" /></p>
 
 ]]></content>
   </entry>
@@ -981,17 +981,17 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p>快速搜索是 3.x 新增的功能，用于对文档库或外部模式引入的文件夹的 Markdown 文件进行全文搜索。使用快速搜索非常简单，在文档库界面或者外部模式界面按 <code>CMD + O</code> 键即可。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E5%BF%AB%E9%80%9F%E6%90%9C%E7%B4%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库的快速搜索</h2>
 <p>如下图是文档库的快速搜索，不填入搜索关键字的情况下会显示当前打开的文档和最近使用的文档。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304171097168.jpg" alt="" style="width:556px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304171097168.jpg" alt="" style="width:556px;" /></p>
 <p>按 <code>向下</code> 键即可选择文档，按 <code>Enter</code> 键可以打开所选择的文档。</p>
 <p>另外文档库搜索还可以设置一个全局搜索快捷键，按这个快捷键可以在任何时候进行文档库搜索，这个快捷键可以在 <code>偏好设置</code> - <code>通用设置</code> 中设置，如下图所示：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304175698841.jpg" alt="" style="width:570px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304175698841.jpg" alt="" style="width:570px;" /></p>
 <p>下图是设置了快捷键后，从桌面上打开快速搜索并进行搜索的结果。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304177571212.jpg" alt="" style="width:531px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304177571212.jpg" alt="" style="width:531px;" /></p>
 <h2><a id="%E5%A4%96%E9%83%A8%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%BF%AB%E9%80%9F%E6%90%9C%E7%B4%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>外部模式的快速搜索</h2>
 <p>如下图所示，不填入搜索关键字的情况下会显示当前打开的文档和最近使用的文档。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304173584955.jpg" alt="" style="width:942px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304173584955.jpg" alt="" style="width:942px;" /></p>
 <p>如下图的搜索结果，按 <code>向下</code> 键即可选择文档，按 <code>Enter</code> 键可以打开所选择的文档。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304174157473.jpg" alt="" style="width:941px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304174157473.jpg" alt="" style="width:941px;" /></p>
 <h2><a id="%E6%90%9C%E7%B4%A2%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>搜索语法</h2>
 <p>从 MWeb 3.1.8 版本开始支持以下的搜索语法：</p>
 <pre><code class="language-plain_text">[keyword1] [keyword2]... [-c category1,category2...] [-t tag1,tag2...] [-h keyword1,keyword2,...] 
@@ -1016,13 +1016,13 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p>快速笔记功能是 3.x 新增的功能，此功能依靠状态栏上的图标以随意增加笔记及图片等素材，并支持以天为单位把增加的素材组合在一个文档内，方便整理及记录历史收集情况。简单来说就是文本和素材收集的功能，而素材多是指图片。</p>
 <h2><a id="%E5%BC%80%E5%90%AF%E5%BF%AB%E9%80%9F%E7%AC%94%E8%AE%B0%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>开启快速笔记功能</h2>
 <p>此功能默认是关闭的，因为要占用宝贵的状态栏上的一个位置，你可以在 <code>偏好设置</code> - <code>通用设置</code> 中开启，如下图所示。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303797588878.jpg" alt="" style="width:630px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303797588878.jpg" alt="" style="width:630px;" /></p>
 <p>你可以设置快速笔记保存在那个分类和产生一篇新文档的时间，如果用得频繁就一天一篇，否则可以选择 3，5 天等等。</p>
 <h2><a id="%E4%BD%BF%E7%94%A8%E5%BF%AB%E9%80%9F%E7%AC%94%E8%AE%B0%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用快速笔记功能</h2>
 <p>如下图是快速笔记功能，你可以随意打开并填入一些内容。也可以直接截图并粘贴图片，使用方法就跟 MWeb 的编辑器一样。另外就是，你还可以直接在浏览器中拖拽一张图片到状态栏的快速笔记图标中，MWeb 会自动增加你拖拽的图片。如果你觉得这次的收集完成了，可以点 “✓” 按钮，来增加到文档库中。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303799152167.jpg" alt="" style="width:569px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303799152167.jpg" alt="" style="width:569px;" /></p>
 <p>你还可以把快速笔记界面拖拽出来，放置在屏幕任何位置，如下图所示。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303802411416.jpg" alt="" style="width:547px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303802411416.jpg" alt="" style="width:547px;" /></p>
 <p>界面中的左下角的按钮是显示 MWeb 界面，如果你在浏览器或者其它界面，调出快速笔记界面并点击这个按钮，会打开 MWeb 主界面。</p>
 
 ]]></content>
@@ -1037,19 +1037,19 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p>此文章介绍文档库的详细使用，如果你没看过 <a href="15303606797118.html">MWeb 的基本使用</a>，建议你先去看一下。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%BB%93%E6%9E%84%E5%8F%8A%E5%AD%98%E5%82%A8%E4%BD%8D%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库结构及存储位置</h2>
 <p>MWeb 的文档库是保存在一个你开始使用 MWeb 时设置好的文件夹内，由 docs 文件夹，mainlib.db 文件和 metadata 文件夹组成。其中 docs 文件夹里保存的是每一篇笔记及笔记的相关素材。mainlib.db 文件保存的是分类和 Tag 信息以及笔记所属于的分类信息。metadata 文件夹只有在使用到发布服务时才会有，保存的是发布服务相关信息。下图就是一个典型的文档库。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303762803232.jpg" alt="" style="width:624px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303762803232.jpg" alt="" style="width:624px;" /></p>
 <p>这种结构可以很好的备份和用于 git，同时也避免误删除，因为不可能会无故删除这么多文档。</p>
 <h2><a id="%E4%BF%9D%E8%AF%81%E6%96%87%E6%A1%A3%E5%BA%93%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>保证文档库数据安全</h2>
 <p>下图为 MWeb 中文档库的设置和备份，设计好好的备份策略，有利于保证文档库永远不会丢失。MWeb 的文档库就是一个文件夹，你可以直接使用 <code>在 Finder 中显示</code> 按钮，找到文档库的位置，直接复制到其它地方进行备份。还可以利用下面的备份文档库功能进行定时备份。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303764804498.jpg" alt="" style="width:680px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303764804498.jpg" alt="" style="width:680px;" /></p>
 <p>关于备份位置为什么要设置三处，是觉得可能有一些用户会需要，但是我认为，通常两处就不会有问题了。只要把一处设置在有历史记录的网盘中，另一处设置在其它硬盘的位置，或者不设置，也是可以的。但是建议务必设置一个位置在有历史记录功能的网盘中，或者是像时间机器这种设备中，因为文档库总是与备份位置同步的。</p>
 <p>如果你要恢复已备份的文档库，请先把备份的文档库复制到一个你想要的位置，然后再使用 <code>选择现有文档库</code> 选择这个位置。这样你的文档库就恢复过来并使用所选择的位置做文档库的位置了，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303770611706.jpg" alt="" style="width:522px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303770611706.jpg" alt="" style="width:522px;" /></p>
 <h2><a id="%E5%88%86%E7%B1%BB%E6%A0%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>分类树的使用方法</h2>
 <p>MWeb 的分类有两种，一种是普通的分类，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773079972.jpg" alt="" style="width:481px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773079972.jpg" alt="" style="width:481px;" /></p>
 <p>一种是静态网站分类，这个分类可以生成静态网站，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773879197.jpg" alt="" style="width:690px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773879197.jpg" alt="" style="width:690px;" /></p>
 <p>MWeb 提供一个非常简单的方法再把分类下的文档生成一个静态网站，比如 MWeb 中文官网就是用 MWeb 的静态网站功能生成的。</p>
 <p>界面左边的分类树配合 <code>右键</code> 及拖拽就可以完成相关的管理操作。中间的文档列表栏可以把文档拖拽至左边的分类以进行文档分类的管理。这种拖拽有三种情况，以下都假定拖拽到<strong>分类A</strong>：</p>
 <ol>
@@ -1058,31 +1058,31 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <li>按住 <code>Option</code> 键拖拽当前文档到<strong>分类A</strong>，这种情况下，如果所拖拽的文档属于<strong>分类A</strong>，则取消文档属于<strong>分类A</strong>，如果不属于<strong>分类A</strong>，则不做任何操作。</li>
 </ol>
 <p>这种操作方法的地方是可以多选，也就是可以批量管理。如果是单个文档，有更好的办法，就是点击编辑器最上面的信息条，然后进行勾选，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303782515887.jpg" alt="" style="width:590px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303782515887.jpg" alt="" style="width:590px;" /></p>
 <p>这个地方也是唯一可以设置文档标签（tag）的地方，下面介绍的标签，设置是用这个办法。你也可以使用快捷键 <code>CMD + 8</code> 来打开这个界面。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E9%97%B4%E7%9A%84%E5%BC%95%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档间的引用</h2>
 <p>在 MWeb 中引用其它文档非常简单，在文档列表中，右键要引用的文档，选择 <code>复制</code>，如下图所示。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;" /></figure><br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;" /><br />
 然后在要引用的文档的位置 <code>CMD + V</code> 粘贴即可，MWeb 会生成 <code>[如何使用“发布脚本”功能发布静态网站](how_to_use_shell_script.html)</code> 这种语法。如果你按住 <code>CMD</code> 键并点击，则会打开这个引用的文档。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E6%8E%92%E5%BA%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档排序</h2>
 <p>文档库支持多种排序方式，而且每个顶层分类还可以单独设置自己的排序方式。修改排序方式的办法有两种，一种是如下图所示：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303807570789.jpg" alt="" style="width:463px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303807570789.jpg" alt="" style="width:463px;" /></p>
 <p>另一种是，选中要修改排序的顶层分类或者顶层分类下的某一子分类，然后在文档列表中右键，如下图所示:<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303808791421.jpg" alt="" style="width:450px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303808791421.jpg" alt="" style="width:450px;" /></p>
 <p>在各种排序中，自定义拖拽排序比较特殊，需要特别说明。在说明之前，我先说明一个全局选项：<code>按分类分组显示</code>。在文档列表中右键，就可以看到这个功能的菜单，如果在启用状态，则表示列表中的文档都在以分类分组显示的状态，不管是什么排序设置。<br />
 这个用处其实也是查找和整理文档。但是如果这个全局选项不是启用状态，那么，如果排序设置为自定义拖拽排序，则这个顶层分类也会按分类分组显示的。也就是说，只要是自定义拖拽排序，文档列表栏必定是分组显示的。<br />
 这个是由于一个文档可以属于多个分类造成的规则设定，不然会比较乱。<br />
 如果你在一个不是自定义排序的分类尝试拖拽，MWeb 会提示你先设置为自定义拖拽排序，然后才能拖拽。自定义拖拽排序分类下的文档，建议保证只属于一个分类，这样拖拽排序才不会乱。</p>
 <h2><a id="%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>标签的使用方法</h2>
 <p>MWeb 中标签（tag）的功能还非常简单，设置标签的方法，上面有说到了，另外就是按标签查看文档了，这个功能如下图所示：</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16042935393203.jpg" alt="" style="width:263px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16042935393203.jpg" alt="" style="width:263px;" /></p>
 <p>可以看出 MWeb 会列出整个文档库的标签，选择后即可按标签查看文档。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%A4%A7%E7%BA%B2%E8%A7%86%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档大纲视图</h2>
 <p>如下图所示，文档大纲视图会列出当前文档的标题和插入的图片及附件，当然还有可以设置静态网站用的扩展项目（如果当前的文档属于某个静态网站分类的话）。下图是把大纲视图拖拽出来后固定的效果。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303793181537.jpg" alt="" style="width:293px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303793181537.jpg" alt="" style="width:293px;" /></p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库的导入和导出</h2>
 <p>如下图所示，文档库支持导入 Markdown 文档到文档库中。如果导入的时候你选择的是一个文件夹，MWeb 会把文件夹内的所有 Markdown 文档导入到当前所选择的分类。如果文件夹的 Markdown 文档中有本地图片，也会一并导入并修改为文档库格式的图片地址。这个是 3.x 版才有的，2.x 版只会导入 Markdown 文本，不会导入图片。需要说明的是，要导入图片，请一定要选择整个文件夹。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303786026066.jpg" alt="" style="width:490px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303786026066.jpg" alt="" style="width:490px;" /></p>
 <p>另外还可以把整个分类导出为 Markdown，导出后的 Markdown 文档会按分类的结构建立文件夹。按分类结构建立文件夹这个也是 3.x 才有的功能。</p>
 <p>剩下的两个就是导出为 Epub 和 PDF 了，没错，可以把整个分类都导出为 Epub 或 PDF！</p>
 <h2><a id="%E5%85%A8%E9%94%AE%E7%9B%98%E5%AF%BC%E8%88%AA" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>全键盘导航</h2>
@@ -1095,7 +1095,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 上面的文档库结构有说到，MWeb 的文档库是一个文件夹，由文件夹里的 docs 文件夹和 mainlib.db 文件组成。其中 docs 文件夹包括了所有笔记，一篇笔记一个文档，以数字 + .md 的形式保存。如果文档库有问题，通常是以下几种情况：</p>
 <h3><a id="1%E6%96%87%E6%A1%A3%E5%BA%93%E4%BD%8D%E7%BD%AE%E4%B8%8D%E6%AD%A3%E7%A1%AE%E3%80%82" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 文档库位置不正确。</h3>
 <p>在 MWeb 3.1.4 及之上的版本，文档库位置不正确，会自动打开 <code>偏好设置</code> - <code>文档库&amp;备份</code> 并在 <code>文档库位置</code> 中会有红字提示，如下图这样：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15313702907218.jpg" alt="" style="width:659px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15313702907218.jpg" alt="" style="width:659px;" /></p>
 <p>这种情况的话，你可以按以下几种方法解决：</p>
 <ol>
 <li>如果提示的那个位置不是你原来的文档库，可以使用 使用 <code>修改文档库到其它位置</code> - <code>选择现有文档库</code> 选择回原来的文档库，MWeb 的文档库是一个文件夹，里面包含有一个 <code>docs</code> 文件夹和一个 <code>mainlib.db</code> 文件。</li>
@@ -1125,21 +1125,21 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2><a id="1%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%90%8E%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%9B%BE%E5%BA%8A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 插入图片后自动上传至图床</h2>
 <p>这是很多朋友喜欢用，但是我不怎么建议用的方式，主要是万一图床挂了或者是什么问题，比较麻烦。这个方式只在外部模式中支持，文档库不支持，下面介绍一下配置方法。</p>
 <p><strong>MWeb for Mac 中的配置方法为：<strong>在外部模式中 <code>右键</code> 引入的文件夹，选择 <code>编辑</code>，这时出来如下图的</strong>文件夹设置</strong>界面。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303749773096.jpg" alt="" style="width:333px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303749773096.jpg" alt="" style="width:333px;" /></p>
 <p>勾选红框中的把插入的图片自动上传至...，然后选择要上传的图床即可（图床服务可以在 <code>偏好设置</code> - <code>发布服务</code> 中增加）。这样设置后，该引入的文件夹内的文档在插入图片时，会自动上传至所选择的图床并返回地址和生成 Markdown 语法。</p>
 <p><strong>注意：</strong> 此功能在 MWeb 4.x 已经更改，具体请参考：<a href="mweb4qa.html">MWeb 4 相关问题及回答</a></p>
 <h2><a id="2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E5%90%8E%E5%A4%8D%E5%88%B6%E4%B8%80%E4%BB%BD%E5%88%B0%E6%96%87%E6%A1%A3%E6%89%80%E5%9C%A8%E7%9A%84%E7%9B%B8%E5%AF%B9%E4%BD%8D%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. 插入图片后复制一份到文档所在的相对位置</h2>
 <p>这个是 MWeb 建议使用的方式，这个方式的好处是图片在本地并且跟 Markdown 文档相关联，不会造成图片丢失这种问题，MWeb 在编辑器中会直接显示本地图片，预览时也方便一点。MWeb 的文档库和外部模式都支持这种方式，下面介绍一下如何配置。</p>
 <p><strong>在 MWeb for Mac 中配置：</strong></p>
 <p>文档库不用配置，默认就是这样，外部模式中，同样 <code>右键</code> 引入的文件夹，在出来的菜单中选择 <code>编辑</code>，调出<strong>文件夹设置</strong>界面，其中的配置如下图：</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303752255512.jpg" alt="" style="width:346px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303752255512.jpg" alt="" style="width:346px;" /></p>
 <p>首先要取消勾选 “把插入的图片自动上传至”。上面的配置可以用默认的，也就是说你只要取消勾选自动上传图片即可。</p>
 <p>上面也只有两个可设置的地方，一个是 “文件夹名称”，一个是 “保存位置”，保存位置有两种设置，一种是 “相对位置”，另一种是 “绝对位置”。</p>
 <p>这里举个例子说明一下，比如说引入的文件夹为 folder，在 folder/sub/sub2/sub3/doc.md 这个位置的文档插入图片，如果是 “绝对位置”，图片会保存在 fodler/media 下，生成的 Markdown 为 <code>![](/media/pic.jpg)</code>；而 “相对位置”，则会保存在 folder/sub/sub2/sub3/media 下，生成的 Markdown 为  <code>![](media/pic.jpg)</code>。“绝对位置” 这个设置其实是为了支持 Hexo、Octpress、Jekyll 等静态博客的 Markdown 文档能文件用 MWeb 编辑。</p>
 <p>大家或者看出来了，也就是一般情况下不用配置，除非是 Hexo、Jekyll 等静态博客的 Markdown 文档，或者是想要自动上传到图床。</p>
 <h2><a id="%E6%8A%8A%E6%96%87%E6%A1%A3%E4%B8%AD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%9B%BE%E5%BA%8A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>把文档中的本地图片上传至图床</h2>
 <p>为什么推荐使用第二种插入后图片处理方式，就是因为有这个功能。使用方法非常简单，在 Mac 版中点 “分享” 按钮 - 把本地图片传至图床，或者菜单：发布 - 把本地图片传至图床 即可调出以下的图片上传面板：</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303753518695.jpg" alt="" style="width:975px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303753518695.jpg" alt="" style="width:975px;" /></p>
 <p>在这个面板中，中间的列表会列出文档中的所有本地图片（<strong>注意是文档中的</strong>），首先请选择要上传的图床，然后点 “上传本地图片” 按钮即可。当图片上传完成后，你可以选择使用 “复制 Markdown” 按钮或者 “复制 HTML” 按钮，看你需要什么样的格式。复制进来的就是已经把本地图片地址换成图床的远程地址后的内容。</p>
 <h2><a id="%E5%85%B6%E5%AE%83%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>其它详细介绍</h2>
 <p>你可以查看以下两篇文章关于自定义图床和七牛图床的使用方法：</p>
@@ -1160,16 +1160,16 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <p>使用 MWeb 把文档发布到  Wordrpess、支持 Metaweblog API 协议的服务、Wordpress.com、印象笔记、Blogger、Medium、Tumblr 和为知笔记。</p>
 <h2><a id="%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B0%E5%A2%9E%E5%92%8C%E4%BD%BF%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>发布服务的新增和使用</h2>
 <p>要使用发布服务，要先新增发布服务。请在 <code>偏好设置</code> - <code>发布服务</code> 中新增相关发布服务，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303730219594.jpg" alt="" style="width:595px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303730219594.jpg" alt="" style="width:595px;" /></p>
 <p>如果你是 2.x 版 MWeb 的用户，你可以更新 2.x 到最新版，然后从 2.x 中导出发布服务，再在 3.x 版中导入。要注意的是，印象笔记发布服务是无法导入的，必须重新增加。</p>
 <p>发布服务增加后，可以拖拽来改变发布服务的顺序，然后所有增加的发布服务会显示在 <code>发布</code> 菜单中，也会显示在工具栏上的 <code>分享</code> 按钮中，如下图所示：</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303732712589.jpg" alt="" style="width:276px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303732712589.jpg" alt="" style="width:276px;" /></p>
 <p>在当前文档中，选择要发布到的发布服务，即可调出相关界面来进行发布。</p>
 <p>除了发布到为知笔记比较特殊为，几乎所有发布服务都支持发布本地图片，除了 Medium 外，其它服务都支持更新，也就是说，同一发布服务，你发布过一次后，再发布时，会出现更新文档的信息和一个复选框，如果你勾选他，就会更新已发布的文档，默认是勾选的，如果你取消勾选，则会发布一篇新的文章，如下图：</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303737562154.jpg" alt="" style="width:1000px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303737562154.jpg" alt="" style="width:1000px;" /></p>
 <h2><a id="metaweblog-api%E4%BB%8B%E7%BB%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Metaweblog API 介绍</h2>
 <p>在增加发布服务中，选择 Metaweblog API，会出现下图的界面。发布至 Metaweblog API 的填入项目中，多了名为 “API 地址” 这一项。每个支持 Metaweblog API 的网站，都提供一个 API 地址，填入即可。</p>
-<p><figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303742846577.jpg" alt="" style="width:582px;" /></figure></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303742846577.jpg" alt="" style="width:582px;" /></p>
 <p>下边列出国内网站中常用的 Metaweblog API 地址。</p>
 <ul>
 <li>cnblogs：<a href="http://www.cnblogs.com/Blog%E5%90%8D/services/metaweblog.aspx">http://www.cnblogs.com/Blog名/services/metaweblog.aspx</a> 其中 Blog 名 请换为您的博客名。cnblogs 的博客后台设置，拉到最下面，也可以找到这个网址。比如说我的是 <a href="http://rpc.cnblogs.com/metaweblog/OtisBlog">http://rpc.cnblogs.com/metaweblog/OtisBlog</a> 两者网址不同，但是效果一样。</li>
@@ -1179,7 +1179,7 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 </ul>
 <h2><a id="%E5%8F%91%E5%B8%83%E5%88%B0tumblr%E6%97%B6%E5%8F%91%E5%9B%BE%E7%89%87%E6%94%AF%E6%8C%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>发布到 Tumblr 时发图片支持</h2>
 <p>发布到 Tumblr 一般情况下是不支持上传本地图片的，但是如果你配置好了图床服务，就可以利用图床服务来让发布到 Tumblr 支持本地图片，如下图，发布时选择一个图床服务即可。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303739190170.jpg" alt="" style="width:1006px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303739190170.jpg" alt="" style="width:1006px;" /></p>
 
 ]]></content>
   </entry>
@@ -1192,20 +1192,20 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
     <content type="html"><![CDATA[
 <p>使用 MWeb 将 Markdown 文档导出为图片、HTML、Epub、PDF、RTF和Docx。</p>
 <p>MWeb 使用 <code>发布</code> 菜单或者工具栏上的 <code>分享按钮</code> 来导出当前的 Markdown 文档，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303675502315.jpg" alt="" style="width:333px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303675502315.jpg" alt="" style="width:333px;" /></p>
 <h2><a id="%E5%A4%8D%E5%88%B6%E4%B8%BA%E5%AF%8C%E6%96%87%E6%9C%AC%E5%8A%9F%E8%83%BD%E7%9A%84%E7%94%A8%E9%80%94" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>复制为富文本功能的用途</h2>
 <p>这个功能主要用于把当前的 Markdown 文档到粘贴到 邮件（mail.app）、Pages.app、Word.app 中。在 Markdown 文档有本地图片的情况下，导出为 docx 功能目前还不能很好的支持图片。这时可以使用 <code>复制为富文本</code> 功能，然后在上述提到的三个软件中按下 <code>CMD + V</code> 粘贴，这样的话，图片就能很好的粘贴成功。</p>
 <h2><a id="%E5%AF%BC%E5%87%BA%E6%88%96%E5%A4%8D%E5%88%B6%E4%B8%BA%E5%9B%BE%E7%89%87" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出或复制为图片</h2>
 <p>使用这个功能后，会弹出如下图的界面：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303679268829.jpg" alt="" style="width:1109px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303679268829.jpg" alt="" style="width:1109px;" /></p>
 <p>你可以设置导出的图片的宽度，然后按 <code>复制为图片</code> 或者 <code>保存为图片</code> 按钮，或者使用 <code>分享</code> 按钮把图片分享出去。</p>
 <h2><a id="%E5%AF%BC%E5%87%BA%E4%B8%BApdf" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出为 PDF</h2>
 <p>使用这个功能后，会弹出以下界面：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303680716817.jpg" alt="" style="width:1110px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303680716817.jpg" alt="" style="width:1110px;" /></p>
 <p>你可以勾选 <code>生成 PDF 目录</code> 复选框来生成有目录的 PDF 文档，这个功能的快捷键是 <code>CMD + P</code>。</p>
 <h2><a id="%E5%AF%BC%E5%87%BA%E4%B8%BAepub" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出为 Epub</h2>
 <p>使用这个功能后，会弹出以下界面：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303683622275.jpg" alt="" style="width:1108px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303683622275.jpg" alt="" style="width:1108px;" /></p>
 <p>如图上图所示，你可以修改 Epub 的封面。</p>
 <h2><a id="%E5%AF%BC%E5%87%BA%E4%B8%BAhtml%E3%80%81rtf%E3%80%81docx%E7%AD%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出为 HTML、RTF、Docx 等</h2>
 <p>使用 MWeb 导出为 HTML，会导出单个的 HTML，如果有本地图片，会把本地图片进行 Base64 编码嵌入到 HTML 中。<br />
@@ -1235,15 +1235,15 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <pre><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
 </code></pre>
 <p>在 MWeb 编辑器中，你也可以右键图片，然后选择一些对图片的操作，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303665759795.jpg" alt="" style="width:568px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303665759795.jpg" alt="" style="width:568px;" /></p>
 <p>在 MWeb 中，你还可以设置图片的对齐，以上面的图片为例子，左对齐为 <code>-l140</code>，居中为 <code>-c140</code>，居右为 <code>-r140</code>。</p>
 <h2><a id="mweb%E5%AF%B9%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC%E7%9A%84%E6%94%AF%E6%8C%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 对插入表格的支持</h2>
 <p>你可以按工具栏上的插入表格按钮来插入表格，也可以用快捷键 <code>Ctrl + Shift + T</code>，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303667198523.jpg" alt="" style="width:606px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303667198523.jpg" alt="" style="width:606px;" /></p>
 <p>对于已存在的表格，你可以把光标移动到表格代码内，然后使用插入表格功能来修改已存在的表格。你可以先插入一张表格，然后再尝试修改。</p>
 <h2><a id="mweb%E5%AF%B9-latex%E4%B9%A6%E5%86%99%E7%9A%84%E8%BE%85%E5%8A%A9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 对 LaTeX 书写的辅助</h2>
 <p>在 MWeb 编辑器中，光标移到 LaTeX 公式中间，即可以预览 LaTeX 公式，如果修改公式，预览也会实时更新，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303669655303.jpg" alt="" style="width:476px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303669655303.jpg" alt="" style="width:476px;" /></p>
 
 ]]></content>
   </entry>

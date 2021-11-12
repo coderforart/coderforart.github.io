@@ -127,11 +127,11 @@
 		            </p>
 		            <div class="content-responsive">
 		            <p>如下图，在 MWeb 的偏好设置 - 发布服务中，点击 “阿里云 OSS”，来增加阿里云 OSS 图床服务。如下图为阿里云 OSS 图床的设置界面。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676586238889.jpg" alt="" style="width:673px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676586238889.jpg" alt="" style="width:673px;" /></p>
 <p>下面详细说明各项设置，首先是 “名称：” 这个，你可以随便取一个名称，用来标记这个上传服务。剩下的项目都要按阿里云 OSS 中的相关项来填写，下面仔细说明。</p>
 <h2><a id="1%E5%AD%98%E5%82%A8%E5%9C%B0%E5%9F%9F%E3%80%81-bucket%E5%90%8D%E7%A7%B0%E3%80%81%E5%9F%9F%E5%90%8D%E5%9C%B0%E5%9D%80%E7%9A%84%E5%A1%AB%E5%86%99%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 存储地域、Bucket 名称、域名地址的填写：</h2>
 <p>进入到阿里云对象存储，选择一个已新建好的存储空间，我选择的是 “mwebtest”，如下图：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676591242386.jpg" alt="" style="width:1138px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676591242386.jpg" alt="" style="width:1138px;" /></p>
 <p>按上图，<strong>存储地域</strong>就选择对应的区域，我这里是华北2（北京）；<strong>Bucket 名称</strong>我这里是 mwebtest；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可；<strong>图片处理代码</strong>，点击图片处理后进入相关设置，比如说他的默认规则为：</p>
 <pre><code class="language-plain_text">域名/sample.jpg?x-oss-process=style/stylename
 </code></pre>
@@ -144,11 +144,11 @@
 <p>即可。</p>
 <h2><a id="2-access-key-id%E3%80%81access-key-secret%E5%92%8C%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84%E7%9A%84%E5%A1%AB%E5%86%99%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Access Key ID、Access Key Secret 和文件保存路径的填写：</h2>
 <p>在对象存储页右边，“创建 Bucket” 按钮旁边，有个 “Access Key” 按钮，点击后，就会进入阿里云的 “安全信息管理” 页。在页里可找到 <strong>Access Key ID、Access Key Secret</strong> 这两个要填写的项目，如下图所示，分别填入即可（如果没有，则需要自行新增）。<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676597517520.jpg" alt="" style="width:1061px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676597517520.jpg" alt="" style="width:1061px;" /></p>
 <p>关于<strong>文件保存路径</strong>这个，设置为 &quot;/{year}/{mon}/{day}/{filename}{.suffix}&quot; 时，上传 filename.jpg 图片会保存在: &quot;/2019/02/02/filename.jpg&quot;。另外可以用 {random} 这个变量，是一个随机数字。</p>
 <h2><a id="3%E5%A1%AB%E5%86%99%E5%AE%8C%E6%88%90%E5%90%8E%E7%9A%84%E6%95%88%E6%9E%9C" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 填写完成后的效果</h2>
 <p>如下图是填写完成后的界面：<br />
-<figure><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676604356718.jpg" alt="" style="width:664px;" /></figure></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15676604356718.jpg" alt="" style="width:664px;" /></p>
 <p>填写完成后，再使用“发布”菜单，选择“把本地图片上传至图床...”，在出来的界面中，再选择新增的阿里云图床即可。如果还不知道怎么使用 MWeb 的图片上传服务，建议参考文章：<a href="15303740497765.html">MWeb 的图片上传服务介绍</a></p>
 
 		            </div>
