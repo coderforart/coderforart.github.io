@@ -35,7 +35,7 @@
            
         <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
         
-        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        <a class="menu-help blog-nav-item" target="_self" href="zh-help.html">文档</a>
         
         <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
         
@@ -149,12 +149,12 @@
 <img src="media/14233888581377/14233994590970.jpg" alt="" />￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 <p>选择tocPDF文件夹，并<code>CMD+C</code>复制,打开终端工具(Terminal)，打<code>cd </code> （注意cd后带一空格），然后<code>CMD+V</code>，再 Enter。<br />
 然后再执行以下命令</p>
-<pre><code class="language-plain_text">wkhtmltopdf toc index.html CoderForArt.pdf
+<pre class="line-numbers"><code class="language-plain_text">wkhtmltopdf toc index.html CoderForArt.pdf
 </code></pre>
 <p>￼执行结果生成的PDF如图：<br />
 <img src="media/14233888581377/14233999928601.jpg" alt="" />￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 <p>一般情况下有代码的地方如果过长会被切掉，可以加入以下CSS</p>
-<pre><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
+<pre class="line-numbers"><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
 </code></pre>
 <p>就不会被切了。如图：<br />
 <img src="media/14233888581377/14234006629706.jpg" alt="" />￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
@@ -167,7 +167,7 @@
 <p>如图，在预览CSS的文件夹里新增一个名为greyshade.css的内容为空的文件即可。<br />
 <img src="media/14233888581377/14233984379844.jpg" alt="" />￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 <p>要注意的是：greyshade.css的文件名greyshade和layout文件夹下的greyshade文件夹的名称是一样的。然后如果你引用的CSS加有<code> media=&quot;screen, projection&quot;</code>这样的限定，请删除，不然MWeb在导出PDF功能上会没有样式。还有如果你在用highlightjs这个代码高亮插件，导出PDF或者生成图片时，代码被切掉的话，可以用以下CSS强制换行：</p>
-<pre><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
+<pre class="line-numbers"><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
 </code></pre>
 
 		            </div>
@@ -193,7 +193,7 @@
         </div><!-- /.blog-main -->
 	</div>
 </div>   <footer class="blog-footer">
-      <p>Copyright &copy; 2021
+      <p>Copyright &copy; 2022
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
  <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
 .</p>

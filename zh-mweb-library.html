@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb 文档库详细介绍 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="zh-help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="mweb4qa.html" >MWeb 4 相关问题及回答</a><br /><a style="color:#ff0000;" href="download.html">MWeb 4.0 macOS/iOS 正式版已发布！</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+
+	<div class="row">
+		<div class="col-sm-10 blog-main">
+			<h1 style="padding-left: 20px;">
+				<a href="zh-help.html">文档</a> - MWeb 文档库详细介绍</h1>
+		</div>
+	</div>
+	<hr style="margin-bottom: 20px;" />
+
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <div class="content-responsive">
+		            <p>此文章介绍文档库的详细使用，如果你没看过 <a href="zh-mweb-start.html">MWeb 的基本使用</a>，建议你先去看一下。要注意的是，本文以下的内容几乎都是关于 macOS 上的 MWeb 的，iPadOS/iOS 上的文档库的使用比较简单，主要是点击底部的 “+” 按钮进行新增分类和文档，<strong>长按</strong>列表中的分类或文档进行收藏、移动、重命名和删除等操作。</p>
+<h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E5%AD%98%E5%82%A8%E4%BD%8D%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库存储位置</h2>
+<p>MWeb 的文档库可以存储在一个文件夹中，或者是存储在 iCloud 中（同步使用的是 CloudKit 技术）。在 macOS 版 MWeb 中，你可以在 <code>偏好设置 - 文档库 &amp; 备份</code> 中查看文档库存储的位置；在 iPadOS/iOS 版的 MWeb 中，你可以在 <code>设置页 - 文档库</code> 中查看文档库的存储位置。要注意的是，在 iPadOS/iOS 下，如果你的文档库不是存储在 iCloud 中的话，删除 MWeb app 时，文档库也会被删除！所以，建议在 iPadOS/iOS 上使用文档库，一定要把文档库设置为存储到 iCloud 中。如果你想在多个设备进行同步，也请把文档库存储在 iCloud 中。</p>
+<h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E7%BB%93%E6%9E%84%E3%80%81%E5%A4%87%E4%BB%BD%E5%92%8C%E4%BB%8E%E5%A4%87%E4%BB%BD%E4%B8%AD%E6%81%A2%E5%A4%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库的结构、备份和从备份中恢复</h2>
+<p>一般情况下，不需要了解文档库的结构，如果你是在 macOS 下使用 MWeb，并且想对文档库备份或者从备份中恢复，那么了解文档库的结构是很有必要的。在 macOS 下，当文档库存储在文件夹中时，可以直接查看文档库所在的文件夹来了解文档库的结构。当文档库存储在 iCloud 中时，MWeb 会使用 CloudKit 技术完整的把整个文档库都同步到本地的 MWeb 的一个私有文件夹中，位置就在：<code>~/Library/Containers/com.coderforart.MWeb3/Data/Library/Application Support/MWebLibrary</code>。如果你使用的是 MWeb 标准版，请把上面的 <code>com.coderforart.MWeb3</code> 换成 <code>com.coderforart.iOS.MWeb</code>。</p>
+<p>文档库的文件夹的结构，是由 docs 文件夹，mainlib.db 文件和 metadata 文件夹组成。其中 docs 文件夹里保存的是每一篇笔记及笔记的相关素材。mainlib.db 文件保存的是分类和 Tag 信息以及笔记所属于的分类信息。metadata 文件夹只有在使用到发布服务时才会有，保存的是发布服务相关信息。下图就是一个典型的文档库。<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303762803232.jpg" alt="" style="width:624px;" /></p>
+<p>这种结构可以很好的备份和用于 git 备份，你可能注意到了，即使你选择把文档库存储在 iCloud 中，也可以很方便的备份你的文档库。因为 MWeb 会把所有数据都同步到一个私有文件夹中，你只需要备份那个文件夹即可。</p>
+<p>在 macOS 下，如果你要从备份中恢复文档库，分为两种情况：</p>
+<ol>
+<li>文档库存储在文件夹中时：先把备份的文档库的文件夹复制到你想要的位置，然后在 <code>偏好设置 - 文档库 &amp; 备份</code> 中，点击 “选择现有文档库” 按钮并选择那个位置即可。</li>
+<li>文档库存储在 iCloud 中时：首先要用备份的文档库的文件夹里的所有文件替换掉文档库同步的私有文件夹（上面有说到）里的文件。然后，重启 MWeb，检查数据是否有问题，如果没问题，则点击 “同步” 按钮，在出来的菜单中，选择 “同步有问题？”，在出来的界面中，点击 “重新上传当前的文档库到 iCloud 中”。等完全上传后，再在进入这个界面，点击 “重新下载所有 iCloud 上的内容”。</li>
+</ol>
+<h2><a id="%E5%88%86%E7%B1%BB%E6%A0%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>分类树的使用方法</h2>
+<p>MWeb 的分类有两种，一种是普通的分类，如下图：<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773079972.jpg" alt="" style="width:481px;" /></p>
+<p>一种是静态网站分类（MWeb Pro 才有），这个分类可以生成静态网站，如下图：<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773879197.jpg" alt="" style="width:690px;" /></p>
+<p>MWeb 提供一个非常简单的方法再把分类下的文档生成一个静态网站，比如 MWeb 中文官网就是用 MWeb 的静态网站功能生成的。</p>
+<p>界面左边的分类树配合 <code>右键</code> 及拖拽就可以完成相关的管理操作。中间的文档列表栏可以把文档拖拽至左边的分类以进行文档分类的管理。这种拖拽有三种情况，以下都假定拖拽到<strong>分类A</strong>：</p>
+<ol>
+<li>直接拖拽当前文档到<strong>分类A</strong>。这种情况下，如果列表中的文档属于当前选中的分类，则会移动到<strong>分类A</strong>，否则的话，则为拖拽的文档增加到<strong>分类A</strong>。</li>
+<li>按住 <code>CMD</code> 键拖拽当前文档到<strong>分类A</strong>。这种情况下，会为拖拽的文档增加增加到<strong>分类A</strong>。</li>
+<li>按住 <code>Option</code> 键拖拽当前文档到<strong>分类A</strong>，这种情况下，如果所拖拽的文档属于<strong>分类A</strong>，则取消文档属于<strong>分类A</strong>，如果不属于<strong>分类A</strong>，则不做任何操作。</li>
+</ol>
+<p>这种操作方法的地方是可以多选，也就是可以批量管理。如果是单个文档，有更好的办法，就是点击编辑器最上面的信息条，然后进行勾选，如下图：<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303782515887.jpg" alt="" style="width:590px;" /></p>
+<p>这个地方也是唯一可以设置文档标签（tag）的地方，下面介绍的标签，设置是用这个办法。你也可以使用快捷键 <code>CMD + 8</code> 来打开这个界面。</p>
+<h2><a id="%E6%96%87%E6%A1%A3%E9%97%B4%E7%9A%84%E5%BC%95%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档间的引用</h2>
+<p>在 MWeb 中引用其它文档非常简单，在文档列表中，右键要引用的文档，选择 <code>复制</code>，如下图所示。<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;" /><br />
+然后在要引用的文档的位置 <code>CMD + V</code> 粘贴即可，MWeb 会生成 <code>[如何使用“发布脚本”功能发布静态网站](how_to_use_shell_script.html)</code> 这种语法。如果你按住 <code>CMD</code> 键并点击标题，则会打开这个引用的文档。</p>
+<h2><a id="%E6%96%87%E6%A1%A3%E6%8E%92%E5%BA%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档排序</h2>
+<p>文档库支持多种排序方式，而且每个顶层分类还可以单独设置自己的排序方式。修改排序方式的办法有两种，一种是如下图所示：<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303807570789.jpg" alt="" style="width:463px;" /></p>
+<p>另一种是，选中要修改排序的顶层分类或者顶层分类下的某一子分类，然后在文档列表中右键，如下图所示:<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303808791421.jpg" alt="" style="width:450px;" /></p>
+<p>在各种排序中，自定义拖拽排序比较特殊，需要特别说明。在说明之前，我先说明一个全局选项：<code>按分类分组显示</code>。在文档列表中右键，就可以看到这个功能的菜单，如果在启用状态，则表示列表中的文档都在以分类分组显示的状态，不管是什么排序设置。<br />
+这个用处其实也是查找和整理文档。但是如果这个全局选项不是启用状态，那么，如果排序设置为自定义拖拽排序，则这个顶层分类也会按分类分组显示的。也就是说，只要是自定义拖拽排序，文档列表栏必定是分组显示的。<br />
+这个是由于一个文档可以属于多个分类造成的规则设定，不然会比较乱。<br />
+如果你在一个不是自定义排序的分类尝试拖拽，MWeb 会提示你先设置为自定义拖拽排序，然后才能拖拽。自定义拖拽排序分类下的文档，建议保证只属于一个分类，这样拖拽排序才不会乱。</p>
+<h2><a id="%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>标签的使用方法</h2>
+<p>MWeb 中标签（tag）的功能还非常简单，设置标签的方法，上面有说到了，另外就是按标签查看文档了，这个功能如下图所示：</p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16042935393203.jpg" alt="" style="width:263px;" /></p>
+<p>可以看出 MWeb 会列出整个文档库的标签，选择后即可按标签查看文档。</p>
+<h2><a id="%E6%96%87%E6%A1%A3%E5%A4%A7%E7%BA%B2%E8%A7%86%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档大纲视图</h2>
+<p>如下图所示，文档大纲视图会列出当前文档的标题和插入的图片及附件，当然还有可以设置静态网站用的扩展项目（如果当前的文档属于某个静态网站分类的话）。下图是把大纲视图拖拽出来后固定的效果。<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303793181537.jpg" alt="" style="width:293px;" /></p>
+<h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库的导入和导出</h2>
+<p>如下图所示，文档库支持导入 Markdown 文档到文档库中。如果导入的时候你选择的是一个文件夹，MWeb 会把文件夹内的所有 Markdown 文档导入到当前所选择的分类。如果文件夹的 Markdown 文档中有本地图片，也会一并导入并修改为文档库格式的图片地址。需要说明的是，要导入图片，请一定要选择整个文件夹。<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303786026066.jpg" alt="" style="width:490px;" /></p>
+<p>另外还可以把整个分类导出为 Markdown，导出后的 Markdown 文档会按分类的结构建立文件夹。剩下的两个就是导出为 Epub 和 PDF 了，没错，可以把整个分类都导出为 Epub 或者 PDF！</p>
+<h2><a id="mweb-4-icloud%E5%90%8C%E6%AD%A5%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 4 iCloud 同步文档库的一些问题</h2>
+<p><strong>MWeb 3 的 iCloud 同步和 MWeb 4 的有何区别？</strong></p>
+<p>MWeb 3 的同步是把文档库的文件夹保存在 iCloud Drive 中，由系统进行文件同步。MWeb 4 的同步是使用一个叫 CloudKit 的技术进行同步，由 MWeb 控制，不再保存在 iCloud Drive 中。 如果要使用 MWeb 4 的 iCloud 同步，需要在设置中手动点击 “存储到 iCloud 中” 按钮。</p>
+<p><strong>MWeb 3 的文档库如何同步到 iCloud？</strong></p>
+<p>如果是 macOS 版的 MWeb，请先确认是不是保存到 iCloud Drive 或者相关的云盘的文件夹中，如果是，则需要确保文档库所在的文件夹完整同步到本地。总之是先要保证当前的文档库完整。<br />
+然后，再在 <code>偏好设置 - 文档库</code> 中，点击 <code>存储到 iCloud 中</code> 按钮，然后在跳出的提示是否合并文档库选择中，选择 <strong>合并</strong> 即可。<br />
+这个提示只显示一次，如果之前来不及选择，可以参考本文上方的 “文档库的结构、备份和从备份中恢复” 中的从备份中恢复的方法。</p>
+<p>如果是 iOS 版的 MWeb，因为原来 iOS 版的文档库就是只读的，所以需要先使用 macOS 版的 MWeb，按上面的方法把文档库同步到 iCloud。再在 iOS 版把文档库也设置为 <code>存储到 iCloud 中</code> 即可。</p>
+<p><strong>我能否手动 git 备份存储到 iCloud 中的文档库？</strong></p>
+<p>可以的，在 MWeb 4 中，同步用的是苹果的 CloudKit 技术，会完整的把所有文档都同步到本地的 MWeb 的一个私有文件夹中，位置就在：<code>~/Library/Containers/com.coderforart.MWeb3/Data/Library/Application Support/MWebLibrary</code>。如果你使用的是 MWeb 标准版，请把上面的 <code>com.coderforart.MWeb3</code> 换成 <code>com.coderforart.iOS.MWeb</code>。<br />
+如果你想备份或者 git 备份，只需要定期备份这个位置即可。这个位置只能备份，请不要改动。</p>
+<p>这个位置的文档库的结构是跟本地的一样的，如果你不想使用 iCloud 同步了，可以把这个文件夹复制到其它地方，再在 MWeb 中切回本地文件夹存储，再选择复制到的文件夹即可。</p>
+<p><strong>iCloud 同步时想要的文档版本被覆盖怎么办？</strong></p>
+<p>在 macOS 版本的 MWeb，可以使用菜单： <code>文件 - 恢复为 - 浏览所有版本</code>，对于 iOS 版，可以点击 “...” 按钮，选择 “文档历史版本” 来恢复。要注意的是，iOS 的文档历史版本只针对文档库中 iCloud 同步的文档。 建议使用时避免多设备编辑同一文档，如果要编辑，请确认文档为最新的状态。<br />
+因为在同步过程都是无状态的，比如说当前设备网络不好，网络传输出错，CloudKit 错误等等都会造成当前的设备的文档的最新版本无法及时同步到 CloudKit，这时如果另一设备上传了文档的新版本，然后当前设备变得正常，就会收到另一设备的更新推送，这时就会更新当前设备的文档。</p>
+<p><strong>想初始化 MWeb 文档库</strong></p>
+<p>如果你想初始化 MWeb 的文档库，办法有：</p>
+<ol>
+<li>下载 <a href="https://cdn.mwebapp.cn/MWebInitLibrary.zip">https://cdn.mwebapp.cn/MWebInitLibrary.zip</a> 并解压，再用 <code>选择现有文档库</code> 选择解压后那个位置即可。</li>
+<li>在命令行中运行命令：<code>defaults delete com.coderforart.MWeb3</code> （如果是 MWeb 标准版，则为 <code>defaults delete com.coderforart.iOS.MWeb</code>），此操作会删除 MWeb 的所有偏好设置，一切重新开始。</li>
+</ol>
+<!--
+## 全键盘导航
+
+任何时候，可以快捷键 `CMD + Shift + F` 把焦点切换至搜索框（外部模式切换到目录树）。只记这一个，基本就可以在 `目录树 - 列表 - 编辑器` 这三处随意切换了。
+这是因为，在搜索框按 `Tab 键` 可以切换到编辑器，按 `向下键` 可以切换到列表。焦点在列表时，按 `向左键` 切换到目录树，`向右键` 切换到编辑器；焦点在目录树时，可以按 `向右键` 切换到列表。另外切换 Tabs 可以使用 `Ctrl + Tab` 键，`CMD + Shift + [或]` 键，切换 Tab 时焦点会切到编辑器。
+另外还有快速搜索是 `CMD + O`，外部模式没有搜索框时，可以使用这个来进行搜索。
+-->
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2022
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

@@ -35,7 +35,7 @@
            
         <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
         
-        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        <a class="menu-help blog-nav-item" target="_self" href="zh-help.html">文档</a>
         
         <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
         
@@ -181,7 +181,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 <p>不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 撰寫。不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可以了。</p>
 <p>只有區塊元素──比如 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code> 等標籤，必須在前後加上空行，以利與內容區隔。而且這些（元素）的開始與結尾標籤，不可以用 tab 或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的 <code>&lt;p&gt;</code> 標籤。</p>
 <p>舉例來說，在 Markdown 文件裡加上一段 HTML 表格：</p>
-<pre><code class="language-plain_text">This is a regular paragraph.
+<pre class="line-numbers"><code class="language-plain_text">This is a regular paragraph.
 
 &lt;table&gt;
     &lt;tr&gt;
@@ -198,26 +198,26 @@ This is another regular paragraph.
 <p><a id="autoescape"></a></p>
 <p>在 HTML 文件中，有兩個字元需要特殊處理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符號用於起始標籤，<code>&amp;</code> 符號則用於標記 HTML 實體，如果你只是想要使用這些符號，你必須要使用實體的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
 <p><code>&amp;</code> 符號其實很容易讓寫作網路文件的人感到困擾，如果你要打「AT&amp;T」 ，你必須要寫成「<code>AT&amp;amp;T</code>」 ，還得轉換網址內的 <code>&amp;</code> 符號，如果你要連結到：</p>
-<pre><code class="language-plain_text">http://images.google.com/images?num=30&amp;q=larry+bird
+<pre class="line-numbers"><code class="language-plain_text">http://images.google.com/images?num=30&amp;q=larry+bird
 </code></pre>
 <p>你必須要把網址轉成：</p>
-<pre><code class="language-plain_text">http://images.google.com/images?num=30&amp;amp;q=larry+bird
+<pre class="line-numbers"><code class="language-plain_text">http://images.google.com/images?num=30&amp;amp;q=larry+bird
 </code></pre>
 <p>才能放到連結標籤的 <code>href</code> 屬性裡。不用說也知道這很容易忘記，這也可能是 HTML 標準檢查所檢查到的錯誤中，數量最多的。</p>
 <p>Markdown 允許你直接使用這些符號，但是你要小心跳脫字元的使用，如果你是在HTML 實體中使用 <code>&amp;</code> 符號的話，它不會被轉換，而在其它情形下，它則會被轉換成 <code>&amp;amp;</code>。所以你如果要在文件中插入一個著作權的符號，你可以這樣寫：</p>
-<pre><code class="language-plain_text">&amp;copy;
+<pre class="line-numbers"><code class="language-plain_text">&amp;copy;
 </code></pre>
 <p>Markdown 將不會對這段文字做修改，但是如果你這樣寫：</p>
-<pre><code class="language-plain_text">AT&amp;T
+<pre class="line-numbers"><code class="language-plain_text">AT&amp;T
 </code></pre>
 <p>Markdown 就會將它轉為：</p>
-<pre><code class="language-plain_text">AT&amp;amp;T
+<pre class="line-numbers"><code class="language-plain_text">AT&amp;amp;T
 </code></pre>
 <p>類似的狀況也會發生在 <code>&lt;</code> 符號上，因為 Markdown 支援 <a href="#html">行內 HTML</a> ，如果你是使用 <code>&lt;</code> 符號作為 HTML 標籤使用，那 Markdown 也不會對它做任何轉換，但是如果你是寫：</p>
-<pre><code class="language-plain_text">4 &lt; 5
+<pre class="line-numbers"><code class="language-plain_text">4 &lt; 5
 </code></pre>
 <p>Markdown 將會把它轉換為：</p>
-<pre><code class="language-plain_text">4 &amp;lt; 5
+<pre class="line-numbers"><code class="language-plain_text">4 &amp;lt; 5
 </code></pre>
 <p>不過需要注意的是，code 範圍內，不論是行內還是區塊， <code>&lt;</code> 和 <code>&amp;</code> 兩個符號都<em>一定</em>會被轉換成 HTML 實體，這項特性讓你可以很容易地用 Markdown 寫 HTML code （和 HTML 相對而言， HTML 語法中，你要把所有的 <code>&lt;</code> 和 <code>&amp;</code> 都轉換為 HTML 實體，才能在 HTML 文件裡面寫出 HTML code。）</p>
 <hr />
@@ -233,7 +233,7 @@ This is another regular paragraph.
 <p><a id="header"></a></p>
 <p>Markdown 支援兩種標題的語法，[Setext] <a href="http://docutils.sourceforge.net/mirror/setext.html">1</a> 和 [atx] <a href="http://www.aaronsw.com/2002/atx/">2</a> 形式。</p>
 <p>Setext 形式是用底線的形式，利用 <code>=</code> （最高階標題）和 <code>-</code> （第二階標題），例如：</p>
-<pre><code class="language-plain_text">This is an H1
+<pre class="line-numbers"><code class="language-plain_text">This is an H1
 =============
 
 This is an H2
@@ -241,14 +241,14 @@ This is an H2
 </code></pre>
 <p>任何數量的 <code>=</code> 和 <code>-</code> 都可以有效果。</p>
 <p>Atx 形式則是在行首插入 1 到 6 個 <code>#</code> ，對應到標題 1 到 6 階，例如：</p>
-<pre><code class="language-plain_text"># This is an H1
+<pre class="line-numbers"><code class="language-plain_text"># This is an H1
 
 ## This is an H2
 
 ###### This is an H6
 </code></pre>
 <p>你可以選擇性地「關閉」atx 樣式的標題，這純粹只是美觀用的，若是覺得這樣看起來比較舒適，你就可以在行尾加上 <code>#</code>，而行尾的 <code>#</code> 數量也不用和開頭一樣（行首的井字數量決定標題的階數）：</p>
-<pre><code class="language-plain_text"># This is an H1 #
+<pre class="line-numbers"><code class="language-plain_text"># This is an H1 #
 
 ## This is an H2 ##
 
@@ -257,7 +257,7 @@ This is an H2
 <h3><a id="blockquotes" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blockquotes</h3>
 <p><a id="blockquote"></a></p>
 <p>Markdown 使用 email 形式的區塊引言，如果你很熟悉如何在 email 信件中引言，你就知道怎麼在 Markdown 文件中建立一個區塊引言，那會看起來像是你強迫斷行，然後在每行的最前面加上 <code>&gt;</code> ：</p>
-<pre><code class="language-plain_text">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+<pre class="line-numbers"><code class="language-plain_text">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 &gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 &gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 &gt; 
@@ -265,7 +265,7 @@ This is an H2
 &gt; id sem consectetuer libero luctus adipiscing.
 </code></pre>
 <p>Markdown 也允許你只在整個段落的第一行最前面加上 <code>&gt;</code> ：</p>
-<pre><code class="language-plain_text">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+<pre class="line-numbers"><code class="language-plain_text">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
@@ -273,14 +273,14 @@ Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 id sem consectetuer libero luctus adipiscing.
 </code></pre>
 <p>區塊引言可以有階層（例如：引言內的引言），只要根據層數加上不同數量的 <code>&gt;</code> ：</p>
-<pre><code class="language-plain_text">&gt; This is the first level of quoting.
+<pre class="line-numbers"><code class="language-plain_text">&gt; This is the first level of quoting.
 &gt;
 &gt; &gt; This is nested blockquote.
 &gt;
 &gt; Back to the first level.
 </code></pre>
 <p>引言的區塊內也可以使用其他的 Markdown 語法，包括標題、清單、程式碼區塊等：</p>
-<pre><code class="language-plain_text">&gt; ## This is a header.
+<pre class="line-numbers"><code class="language-plain_text">&gt; ## This is a header.
 &gt; 
 &gt; 1.   This is the first list item.
 &gt; 2.   This is the second list item.
@@ -293,39 +293,39 @@ id sem consectetuer libero luctus adipiscing.
 <h3><a id="%E6%B8%85%E5%96%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>清單</h3>
 <p>Markdown 支援有序清單和無序清單。</p>
 <p>無序清單使用星號、加號或是減號作為清單標記：</p>
-<pre><code class="language-plain_text">*   Red
+<pre class="line-numbers"><code class="language-plain_text">*   Red
 *   Green
 *   Blue
 </code></pre>
 <p>等同於：</p>
-<pre><code class="language-plain_text">+   Red
+<pre class="line-numbers"><code class="language-plain_text">+   Red
 +   Green
 +   Blue
 </code></pre>
 <p>也等同於：</p>
-<pre><code class="language-plain_text">-   Red
+<pre class="line-numbers"><code class="language-plain_text">-   Red
 -   Green
 -   Blue
 </code></pre>
 <p>有序清單則使用數字接著一個英文句點：</p>
-<pre><code class="language-plain_text">1.  Bird
+<pre class="line-numbers"><code class="language-plain_text">1.  Bird
 2.  McHale
 3.  Parish
 </code></pre>
 <p>很重要的一點是，你在清單標記上使用的數字並不會影響輸出的 HTML 結果，上面的清單所產生的 HTML 標記為：</p>
-<pre><code class="language-plain_text">&lt;ol&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;ol&gt;
 &lt;li&gt;Bird&lt;/li&gt;
 &lt;li&gt;McHale&lt;/li&gt;
 &lt;li&gt;Parish&lt;/li&gt;
 &lt;/ol&gt;
 </code></pre>
 <p>如果你的清單標記寫成：</p>
-<pre><code class="language-plain_text">1.  Bird
+<pre class="line-numbers"><code class="language-plain_text">1.  Bird
 1.  McHale
 1.  Parish
 </code></pre>
 <p>或甚至是：</p>
-<pre><code class="language-plain_text">3. Bird
+<pre class="line-numbers"><code class="language-plain_text">3. Bird
 1. McHale
 8. Parish
 </code></pre>
@@ -333,14 +333,14 @@ id sem consectetuer libero luctus adipiscing.
 <p>如果你使用懶惰的寫法，建議第一個項目最好還是從 1. 開始，因為 Markdown 未來可能會支援有序清單的 start 屬性。</p>
 <p>清單項目標記通常是放在最左邊，但是其實也可以縮排，最多三個空白，項目標記後面則一定要接著至少一個空白或 tab。</p>
 <p>要讓清單看起來更漂亮，你可以把內容用固定的縮排整理好：</p>
-<pre><code class="language-plain_text">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+<pre class="line-numbers"><code class="language-plain_text">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
     viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
     Suspendisse id sem consectetuer libero luctus adipiscing.
 </code></pre>
 <p>但是如果你很懶，那也不一定需要：</p>
-<pre><code class="language-plain_text">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+<pre class="line-numbers"><code class="language-plain_text">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
 viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
@@ -348,28 +348,28 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 </code></pre>
 <p>如果清單項目間用空行分開， Markdown 會把項目的內容在輸出時用 <code>&lt;p&gt;</code><br />
 標籤包起來，舉例來說：</p>
-<pre><code class="language-plain_text">*   Bird
+<pre class="line-numbers"><code class="language-plain_text">*   Bird
 *   Magic
 </code></pre>
 <p>會被轉換為：</p>
-<pre><code class="language-plain_text">&lt;ul&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;ul&gt;
 &lt;li&gt;Bird&lt;/li&gt;
 &lt;li&gt;Magic&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
 <p>但是這個：</p>
-<pre><code class="language-plain_text">*   Bird
+<pre class="line-numbers"><code class="language-plain_text">*   Bird
 
 *   Magic
 </code></pre>
 <p>會被轉換為：</p>
-<pre><code class="language-plain_text">&lt;ul&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Bird&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Magic&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
 <p>清單項目可以包含多個段落，每個項目下的段落都必須縮排 4 個空白或是一個 tab ：</p>
-<pre><code class="language-plain_text">1.  This is a list item with two paragraphs. Lorem ipsum dolor
+<pre class="line-numbers"><code class="language-plain_text">1.  This is a list item with two paragraphs. Lorem ipsum dolor
     sit amet, consectetuer adipiscing elit. Aliquam hendrerit
     mi posuere lectus.
 
@@ -380,7 +380,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 2.  Suspendisse id sem consectetuer libero luctus adipiscing.
 </code></pre>
 <p>如果你每行都有縮排，看起來會看好很多，當然，再次地，如果你很懶惰，Markdown 也允許：</p>
-<pre><code class="language-plain_text">*   This is a list item with two paragraphs.
+<pre class="line-numbers"><code class="language-plain_text">*   This is a list item with two paragraphs.
 
     This is the second paragraph in the list item. You're
 only required to indent the first line. Lorem ipsum dolor
@@ -389,45 +389,45 @@ sit amet, consectetuer adipiscing elit.
 *   Another item in the same list.
 </code></pre>
 <p>如果要在清單項目內放進引言，那 <code>&gt;</code> 就需要縮排：</p>
-<pre><code class="language-plain_text">*   A list item with a blockquote:
+<pre class="line-numbers"><code class="language-plain_text">*   A list item with a blockquote:
 
     &gt; This is a blockquote
     &gt; inside a list item.
 </code></pre>
 <p>如果要放程式碼區塊的話，該區塊就需要縮排<em>兩次</em>，也就是 8 個空白或是兩個 tab：</p>
-<pre><code class="language-plain_text">*   A list item with a code block:
+<pre class="line-numbers"><code class="language-plain_text">*   A list item with a code block:
 
         &lt;code goes here&gt;
 </code></pre>
 <p>當然，項目清單很可能會不小心產生，像是下面這樣的寫法：</p>
-<pre><code class="language-plain_text">1986. What a great season.
+<pre class="line-numbers"><code class="language-plain_text">1986. What a great season.
 </code></pre>
 <p>換句話說，也就是在行首出現<em>數字-句點-空白</em>，要避免這樣的狀況，你可以在句點前面加上反斜線。</p>
-<pre><code class="language-plain_text">1986\. What a great season.
+<pre class="line-numbers"><code class="language-plain_text">1986\. What a great season.
 </code></pre>
 <h3><a id="%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%8D%80%E5%A1%8A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>程式碼區塊</h3>
 <p><a id="precode"></a></p>
 <p>和程式相關的寫作或是標籤語言原始碼通常會有已經排版好的程式碼區塊，通常這些區塊我們並不希望它以一般段落文件的方式去排版，而是照原來的樣子顯示，Markdown 會用 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 標籤來把程式碼區塊包起來。</p>
 <p>要在 Markdown 中建立程式碼區塊很簡單，只要簡單地縮排 4 個空白或是 1 個 tab 就可以，例如，下面的輸入：</p>
-<pre><code class="language-plain_text">This is a normal paragraph:
+<pre class="line-numbers"><code class="language-plain_text">This is a normal paragraph:
 
     This is a code block.
 </code></pre>
 <p>Markdown 會轉換成：</p>
-<pre><code class="language-plain_text">&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;This is a code block.
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
 <p>這個每行一階的縮排（4 個空白或是 1 個 tab），都會被移除，例如：</p>
-<pre><code class="language-plain_text">Here is an example of AppleScript:
+<pre class="line-numbers"><code class="language-plain_text">Here is an example of AppleScript:
 
     tell application &quot;Foo&quot;
         beep
     end tell
 </code></pre>
 <p>會被轉換為：</p>
-<pre><code class="language-plain_text">&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;tell application &quot;Foo&quot;
     beep
@@ -436,12 +436,12 @@ end tell
 </code></pre>
 <p>一個程式碼區塊會一直持續到沒有縮排的那一行（或是文件結尾）。</p>
 <p>在程式碼區塊裡面， <code>&amp;</code> 、 <code>&lt;</code> 和 <code>&gt;</code> 會自動轉成 HTML 實體，這樣的方式讓你非常容易使用 Markdown 插入範例用的 HTML 原始碼，只需要複製貼上，再加上縮排就可以了，剩下的 Markdown 都會幫你處理，例如：</p>
-<pre><code class="language-plain_text">    &lt;div class=&quot;footer&quot;&gt;
+<pre class="line-numbers"><code class="language-plain_text">    &lt;div class=&quot;footer&quot;&gt;
         &amp;copy; 2004 Foo Corporation
     &lt;/div&gt;
 </code></pre>
 <p>會被轉換為：</p>
-<pre><code class="language-plain_text">&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
     &amp;amp;copy; 2004 Foo Corporation
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -450,7 +450,7 @@ end tell
 <h3><a id="%E5%88%86%E9%9A%94%E7%B7%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>分隔線</h3>
 <p><a id="hr"></a></p>
 <p>你可以在一行中用三個或以上的星號、減號、底線來建立一個分隔線，行內不能有其他東西。你也可以在星號中間插入空白。下面每種寫法都可以建立分隔線：</p>
-<pre><code class="language-plain_text">* * *
+<pre class="line-numbers"><code class="language-plain_text">* * *
 
 ***
 
@@ -468,28 +468,28 @@ end tell
 <p>Markdown 支援兩種形式的連結語法： <em>行內</em>和<em>參考</em>兩種形式。</p>
 <p>不管是哪一種，連結的文字都是用 [方括號] 來標記。</p>
 <p>要建立一個行內形式的連結，只要在方塊括號後面馬上接著括號並插入網址連結即可，如果你還想要加上連結的 title 文字，只要在網址後面，用雙引號把 title 文字包起來即可，例如：</p>
-<pre><code class="language-plain_text">This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+<pre class="line-numbers"><code class="language-plain_text">This is [an example](http://example.com/ &quot;Title&quot;) inline link.
 
 [This link](http://example.net/) has no title attribute.
 </code></pre>
 <p>會產生：</p>
-<pre><code class="language-plain_text">&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
 an example&lt;/a&gt; inline link.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no
 title attribute.&lt;/p&gt;
 </code></pre>
 <p>如果你是要連結到同樣主機的資源，你可以使用相對路徑：</p>
-<pre><code class="language-plain_text">See my [About](/about/) page for details.   
+<pre class="line-numbers"><code class="language-plain_text">See my [About](/about/) page for details.   
 </code></pre>
 <p>參考形式的連結使用另外一個方括號接在連結文字的括號後面，而在第二個方括號裡面要填入用以辨識連結的標籤：</p>
-<pre><code class="language-plain_text">This is [an example][id] reference-style link.
+<pre class="line-numbers"><code class="language-plain_text">This is [an example][id] reference-style link.
 </code></pre>
 <p>你也可以選擇性地在兩個方括號中間加上空白：</p>
-<pre><code class="language-plain_text">This is [an example] [id] reference-style link.
+<pre class="line-numbers"><code class="language-plain_text">This is [an example] [id] reference-style link.
 </code></pre>
 <p>接著，在文件的任意處，你可以把這個標籤的連結內容定義出來：</p>
-<pre><code class="language-plain_text">[id]: http://example.com/  &quot;Optional Title Here&quot;
+<pre class="line-numbers"><code class="language-plain_text">[id]: http://example.com/  &quot;Optional Title Here&quot;
 </code></pre>
 <p>連結定義的形式為：</p>
 <ul>
@@ -500,38 +500,38 @@ title attribute.&lt;/p&gt;
 <li>選擇性地接著 title 內容，可以用單引號、雙引號或是括弧包著</li>
 </ul>
 <p>下面這三種連結的定義都是相同：</p>
-<pre><code class="language-plain_text">[foo]: http://example.com/  &quot;Optional Title Here&quot;
+<pre class="line-numbers"><code class="language-plain_text">[foo]: http://example.com/  &quot;Optional Title Here&quot;
 [foo]: http://example.com/  'Optional Title Here'
 [foo]: http://example.com/  (Optional Title Here)
 </code></pre>
 <p>**請注意：**有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的連結 title。</p>
 <p>連結網址也可以用方括號包起來：</p>
-<pre><code class="language-plain_text">[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
+<pre class="line-numbers"><code class="language-plain_text">[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
 </code></pre>
 <p>你也可以把 title 屬性放到下一行，也可以加一些縮排，網址太長的話，這樣會比較好看：</p>
-<pre><code class="language-plain_text">[id]: http://example.com/longish/path/to/resource/here
+<pre class="line-numbers"><code class="language-plain_text">[id]: http://example.com/longish/path/to/resource/here
     &quot;Optional Title Here&quot;
 </code></pre>
 <p>網址定義只有在產生連結的時候用到，並不會直接出現在文件之中。</p>
 <p>連結辨識標籤可以有字母、數字、空白和標點符號，但是並<em>不</em>區分大小寫，因此下面兩個連結是一樣的：</p>
-<pre><code class="language-plain_text">[link text][a]
+<pre class="line-numbers"><code class="language-plain_text">[link text][a]
 [link text][A]
 </code></pre>
 <p><em>預設的連結標籤</em>功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的方括號，如果你要讓 &quot;Google&quot; 連結到 google.com，你可以簡化成：</p>
-<pre><code class="language-plain_text">[Google][]
+<pre class="line-numbers"><code class="language-plain_text">[Google][]
 </code></pre>
 <p>然後定義連結內容：</p>
-<pre><code class="language-plain_text">[Google]: http://google.com/
+<pre class="line-numbers"><code class="language-plain_text">[Google]: http://google.com/
 </code></pre>
 <p>由於連結文字可能包含空白，所以這種簡化的標籤內也可以包含多個文字：</p>
-<pre><code class="language-plain_text">Visit [Daring Fireball][] for more information.
+<pre class="line-numbers"><code class="language-plain_text">Visit [Daring Fireball][] for more information.
 </code></pre>
 <p>然後接著定義連結：</p>
-<pre><code class="language-plain_text">[Daring Fireball]: http://daringfireball.net/
+<pre class="line-numbers"><code class="language-plain_text">[Daring Fireball]: http://daringfireball.net/
 </code></pre>
 <p>連結的定義可以放在文件中的任何一個地方，我比較偏好直接放在連結出現段落的後面，你也可以把它放在文件最後面，就像是註解一樣。</p>
 <p>下面是一個參考式連結的範例：</p>
-<pre><code class="language-plain_text">I get 10 times more traffic from [Google] [1] than from
+<pre class="line-numbers"><code class="language-plain_text">I get 10 times more traffic from [Google] [1] than from
 [Yahoo] [2] or [MSN] [3].
 
   [1]: http://google.com/        &quot;Google&quot;
@@ -539,7 +539,7 @@ title attribute.&lt;/p&gt;
   [3]: http://search.msn.com/    &quot;MSN Search&quot;
 </code></pre>
 <p>如果改成用連結名稱的方式寫：</p>
-<pre><code class="language-plain_text">I get 10 times more traffic from [Google][] than from
+<pre class="line-numbers"><code class="language-plain_text">I get 10 times more traffic from [Google][] than from
 [Yahoo][] or [MSN][].
 
   [google]: http://google.com/        &quot;Google&quot;
@@ -547,13 +547,13 @@ title attribute.&lt;/p&gt;
   [msn]:    http://search.msn.com/    &quot;MSN Search&quot;
 </code></pre>
 <p>上面兩種寫法都會產生下面的 HTML。</p>
-<pre><code class="language-plain_text">&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
 title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from
 &lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt;
 or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
 </code></pre>
 <p>下面是用行內形式寫的同樣一段內容的 Markdown 文件，提供作為比較之用：</p>
-<pre><code class="language-plain_text">I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
+<pre class="line-numbers"><code class="language-plain_text">I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
 than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
 [MSN](http://search.msn.com/ &quot;MSN Search&quot;).
 </code></pre>
@@ -562,7 +562,7 @@ than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
 <h3><a id="%E5%BC%B7%E8%AA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>強調</h3>
 <p><a id="em"></a></p>
 <p>Markdown 使用星號（<code>*</code>）和底線（<code>_</code>）作為標記強調字詞的符號，被 <code>*</code> 或 <code>_</code> 包圍的字詞會被轉成用 <code>&lt;em&gt;</code> 標籤包圍，用兩個 <code>*</code> 或 <code>_</code> 包起來的話，則會被轉成 <code>&lt;strong&gt;</code>，例如：</p>
-<pre><code class="language-plain_text">*single asterisks*
+<pre class="line-numbers"><code class="language-plain_text">*single asterisks*
 
 _single underscores_
 
@@ -571,7 +571,7 @@ _single underscores_
 __double underscores__
 </code></pre>
 <p>會轉成：</p>
-<pre><code class="language-plain_text">&lt;em&gt;single asterisks&lt;/em&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;em&gt;single asterisks&lt;/em&gt;
 
 &lt;em&gt;single underscores&lt;/em&gt;
 
@@ -581,47 +581,47 @@ __double underscores__
 </code></pre>
 <p>你可以隨便用你喜歡的樣式，唯一的限制是，你用什麼符號開啟標籤，就要用什麼符號結束。</p>
 <p>強調也可以直接插在文字中間：</p>
-<pre><code class="language-plain_text">un*frigging*believable
+<pre class="line-numbers"><code class="language-plain_text">un*frigging*believable
 </code></pre>
 <p>但是如果你的 <code>*</code> 和 <code>_</code> 兩邊都有空白的話，它們就只會被當成普通的符號。</p>
 <p>如果要在文字前後直接插入普通的星號或底線，你可以用反斜線：</p>
-<pre><code class="language-plain_text">\*this text is surrounded by literal asterisks\*
+<pre class="line-numbers"><code class="language-plain_text">\*this text is surrounded by literal asterisks\*
 </code></pre>
 <h3><a id="%E7%A8%8B%E5%BC%8F%E7%A2%BC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>程式碼</h3>
 <p><a id="code"></a></p>
 <p>如果要標記一小段行內程式碼，你可以用反引號把它包起來（\(`\)），例如：</p>
-<pre><code class="language-plain_text">Use the `printf()` function.
+<pre class="line-numbers"><code class="language-plain_text">Use the `printf()` function.
 </code></pre>
 <p>會產生：</p>
-<pre><code class="language-plain_text">&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
 </code></pre>
 <p>如果要在程式碼區段內插入反引號，你可以用多個反引號來開啟和結束程式碼區段：</p>
-<pre><code class="language-plain_text">``There is a literal backtick (`) here.``
+<pre class="line-numbers"><code class="language-plain_text">``There is a literal backtick (`) here.``
 </code></pre>
 <p>這段語法會產生：</p>
-<pre><code class="language-plain_text">&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
 </code></pre>
 <p>程式碼區段的起始和結束端都可以放入一個空白，起始端後面一個，結束端前面一個，這樣你就可以在區段的一開始就插入反引號：</p>
-<pre><code class="language-plain_text">A single backtick in a code span: `` ` ``
+<pre class="line-numbers"><code class="language-plain_text">A single backtick in a code span: `` ` ``
 
 A backtick-delimited string in a code span: `` `foo` ``
 </code></pre>
 <p>會產生：</p>
-<pre><code class="language-plain_text">&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
 </code></pre>
 <p>在程式碼區段內，<code>&amp;</code> 和方括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：</p>
-<pre><code class="language-plain_text">Please don't use any `&lt;blink&gt;` tags.
+<pre class="line-numbers"><code class="language-plain_text">Please don't use any `&lt;blink&gt;` tags.
 </code></pre>
 <p>轉為：</p>
-<pre><code class="language-plain_text">&lt;p&gt;Please don't use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;Please don't use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
 </code></pre>
 <p>你也可以這樣寫：</p>
-<pre><code class="language-plain_text">`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.
+<pre class="line-numbers"><code class="language-plain_text">`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.
 </code></pre>
 <p>以產生：</p>
-<pre><code class="language-plain_text">&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
+<pre class="line-numbers"><code class="language-plain_text">&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
 equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 </code></pre>
 <h3><a id="%E5%9C%96%E7%89%87" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>圖片</h3>
@@ -629,7 +629,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 <p>很明顯地，要在純文字應用中設計一個 「自然」的語法來插入圖片是有一定難度的。</p>
 <p>Markdown 使用一種和連結很相似的語法來標記圖片，同樣也允許兩種樣式： <em>行內</em>和<em>參考</em>。</p>
 <p>行內圖片的語法看起來像是：</p>
-<pre><code class="language-plain_text">![Alt text](/path/to/img.jpg)
+<pre class="line-numbers"><code class="language-plain_text">![Alt text](/path/to/img.jpg)
 
 ![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
 </code></pre>
@@ -641,10 +641,10 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 選擇性的 'title' 文字。</li>
 </ul>
 <p>參考式的圖片語法則長得像這樣：</p>
-<pre><code class="language-plain_text">![Alt text][id]
+<pre class="line-numbers"><code class="language-plain_text">![Alt text][id]
 </code></pre>
 <p>「id」是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：</p>
-<pre><code class="language-plain_text">[id]: url/to/image  &quot;Optional title attribute&quot;
+<pre class="line-numbers"><code class="language-plain_text">[id]: url/to/image  &quot;Optional title attribute&quot;
 </code></pre>
 <p>到目前為止， Markdown 還沒有辦法指定圖片的寬高，如果你需要的話，你可以使用普通的 <code>&lt;img&gt;</code> 標籤。</p>
 <hr />
@@ -653,16 +653,16 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 <h3><a id="%E8%87%AA%E5%8B%95%E9%80%A3%E7%B5%90" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>自動連結</h3>
 <p><a id="autolink"></a></p>
 <p>Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用方括號包起來， Markdown 就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：</p>
-<pre><code class="language-plain_text">&lt;http://example.com/&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;http://example.com/&gt;
 </code></pre>
 <p>Markdown 會轉為：</p>
-<pre><code class="language-plain_text">&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
 </code></pre>
 <p>自動的郵件連結也很類似，只是 Markdown 會先做一個編碼轉換的過程，把文字字元轉成 16 進位碼的 HTML 實體，這樣的格式可以混淆一些不好的信箱地址收集機器人，例如：</p>
-<pre><code class="language-plain_text">&lt;address@example.com&gt;
+<pre class="line-numbers"><code class="language-plain_text">&lt;address@example.com&gt;
 </code></pre>
 <p>Markdown 會轉成：</p>
-<pre><code class="language-plain_text">&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
+<pre class="line-numbers"><code class="language-plain_text">&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
 &amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;
 &amp;#109;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;
 &amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;
@@ -672,10 +672,10 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 <h3><a id="%E8%B7%B3%E8%84%AB%E5%AD%97%E5%85%83" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>跳脫字元</h3>
 <p><a id="backslash"></a></p>
 <p>Markdown 可以利用反斜線來插入一些在語法中有其它意義的符號，例如：如果你想要用星號加在文字旁邊的方式來做出強調效果（但不用 <code>&lt;em&gt;</code> 標籤），你可以在星號的前面加上反斜線：</p>
-<pre><code class="language-plain_text">\*literal asterisks\*
+<pre class="line-numbers"><code class="language-plain_text">\*literal asterisks\*
 </code></pre>
 <p>Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通的符號：</p>
-<pre><code class="language-plain_text">\   反斜線
+<pre class="line-numbers"><code class="language-plain_text">\   反斜線
 `   反引號
 *   星號
 _   底線
@@ -715,7 +715,7 @@ _   底線
         </div><!-- /.blog-main -->
 	</div>
 </div>   <footer class="blog-footer">
-      <p>Copyright &copy; 2021
+      <p>Copyright &copy; 2022
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
  <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
 .</p>

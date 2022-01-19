@@ -35,7 +35,7 @@
            
         <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
         
-        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        <a class="menu-help blog-nav-item" target="_self" href="zh-help.html">文档</a>
         
         <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
         
@@ -131,7 +131,7 @@
 <p>如果是 macOS 版的 MWeb，请先确认是不是保存到 iCloud Drive 或者相关的云盘的文件夹中，如果是，则需要确保文档库所在的文件夹完整同步到本地。总之是先要保证当前的文档库完整。<br />
 然后，再在 <code>偏好设置 - 文档库</code> 中，点击 <code>存储到 iCloud 中</code> 按钮，然后在跳出的提示是否合并文档库选择中，选择 <strong>合并</strong> 即可。<br />
 这个提示只显示一次，如果之前来不及选择，可以先切换回本地文档库，然后退出 MWeb，并在命令行中运行：</p>
-<pre><code class="language-plain_text">defaults write com.coderforart.MWeb3 ckIsChooseMergeLocalToCloudKit -boolean false
+<pre class="line-numbers"><code class="language-plain_text">defaults write com.coderforart.MWeb3 ckIsChooseMergeLocalToCloudKit -boolean false
 </code></pre>
 <p>然后再启动 MWeb，重新选择 <code>存储到 iCloud 中</code>，这样就会再次提示是否合并了。</p>
 <p>如果是 iOS 版的 MWeb，因为原来 iOS 版的文档库就是只读的，所以需要先使用 macOS 版的 MWeb，按上面的方法把文档库同步到 iCloud。再在 iOS 版把文档库也设置为 <code>存储到 iCloud 中</code> 即可。</p>
@@ -185,7 +185,7 @@ GitHub Flavored Markdown (GFM)：<a href="https://guides.github.com/features/mas
         </div><!-- /.blog-main -->
 	</div>
 </div>   <footer class="blog-footer">
-      <p>Copyright &copy; 2021
+      <p>Copyright &copy; 2022
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
  <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
 .</p>

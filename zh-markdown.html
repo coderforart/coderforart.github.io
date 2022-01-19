@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	Markdown 语法 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="zh-help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="mweb4qa.html" >MWeb 4 相关问题及回答</a><br /><a style="color:#ff0000;" href="download.html">MWeb 4.0 macOS/iOS 正式版已发布！</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+
+	<div class="row">
+		<div class="col-sm-10 blog-main">
+			<h1 style="padding-left: 20px;">
+				<a href="zh-help.html">文档</a> - Markdown 语法</h1>
+		</div>
+	</div>
+	<hr style="margin-bottom: 20px;" />
+
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <div class="content-responsive">
+		            <h2><a id="markdown%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Markdown 的设计哲学</h2>
+<p>以下是引用 <a href="https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a> 的描述，这描述非常清楚地说明了 Markdown 是什么，是用来做什么的。</p>
+<blockquote>
+<p>Markdown 的目标是实现“易读易写”。<br />
+不过最需要强调的便是它的可读性。一份使用 Markdown 格式撰写的文件应该可以直接以纯文字发布，并且看起来不会像是由许多标签或是格式指令所构成。<br />
+Markdown 的语法有个主要的目的：用来作为一种网络内容的<em>写作</em>用语言。</p>
+</blockquote>
+<p>这里再重点说明两点，也是最重要的两点：</p>
+<ul>
+<li>首先，Markdown 是纯文本，它不附带任何图片和其它附件，图片和附件都是用引用的方式，是保存在 Markdown 文本之外的地方的。所以 MWeb 的编辑器，会完整的显示文本，不会有任何的删减。编辑器为了方便查看，会显示图片语法引用的图片，但是 Markdown 本身是纯文本，不带任何格式和样式。</li>
+<li>另外 Markdown 的目标是“易读易写”，而不是为了排版好看。它主要还是为了方便输入文字，也就是说，为了达成“易写”，写的时候建议不要太考虑排版，只考虑用什么语法，比如说是标题、列表还是引用或代码块。Markdown 并不擅长复杂排版的，因为复杂的排版，Markdown 是建议直接写 HTML 的。</li>
+</ul>
+<p>理解这两点有利于了解 MWeb 这个软件的设计理念，从而能更愉快地使用 MWeb，毕竟 MWeb 就是围绕 Markdown 构建的。也有利于了解 MWeb 能做什么，不能做什么，为什么没有软件 A 的功能或者软件 B 的方式。如果有时间，也建议阅读一下 <a href="https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a> 这篇文章。</p>
+<h2><a id="%E5%AD%A6%E4%B9%A0markdown%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>学习 Markdown 语法</h2>
+<p>MWeb 4 采用的是 CommonMark 标准和 GitHub Flavored Markdown (GFM) 的语法，如果要快速上手，只需要简单学习一下即可。学习过程，大概就分三步吧：</p>
+<ol>
+<li><strong>初步学习：</strong> 目前最好的学习地方是：<a href="https://commonmark.org/help/">https://commonmark.org/help/</a> 这里，学习 10 分钟就能上手使用了。</li>
+<li><strong>进一步学习：</strong> 主要是学习 GFM 的扩展语法，主要有删除线、任务列表、表格和脚注，详细可以查看本文中的 GFM 语法扩展，也就这么几种，一下就学会了。</li>
+<li><strong>MWeb 中特有的：</strong> MWeb 中特有的有 TOC、LaTeX、画图支持（mermaid, echarts）和设置图片宽度，这些也会在本文后面说明。</li>
+</ol>
+<p>Markdown 的语法其实很简单，一般只需要了解有什么语法就好，比如说有标题、列表、引用、代码块等等。不知道语法详细，可以直接使用 MWeb 的编辑器插入相关语法。也可以结合 MWeb 的编辑器，一边学一边用，建议阅读 <a href="zh-mweb-editor.html">MWeb 的编辑器介绍</a> 这篇文章。</p>
+<p>另外，在编写 Markdown 文档时，空行的使用非常重要，空行有利于清晰的区分文档的结构和内容，增加文本的易读性。这样，在阅读 Markdown 文档时，就不需要都解析成网页了。一般来说，建议 Markdown 的块元素之间，都留一个空行。</p>
+<h2><a id="github-flavored-markdown-gfm%E8%AF%AD%E6%B3%95%E6%89%A9%E5%B1%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Flavored Markdown (GFM) 语法扩展</h2>
+<p>Github 在 CommonMark 的基础上，扩展了一些常用的语法，主要有删除线、任务列表、表格和脚注，以下就是简单介绍这些语法。</p>
+<h3><a id="%E5%88%A0%E9%99%A4%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>删除线</h3>
+<p>Markdown 语法：</p>
+<pre class="line-numbers"><code class="language-plain_text">加删除线像这样用： ~~删除这些~~
+</code></pre>
+<p>效果如下：</p>
+<p>加删除线像这样用： <del>删除这些</del></p>
+<h3><a id="%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>任务列表（Task lists）</h3>
+<p>Markdown 语法：</p>
+<pre class="line-numbers"><code class="language-plain_text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre>
+<p>效果如下：</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" disabled="" /> 任务一 未做任务 <code>- + 空格 + [ ]</code></li>
+<li class="task-list-item"><input type="checkbox" checked="" disabled="" /> 任务二 已做任务 <code>- + 空格 + [x]</code></li>
+</ul>
+<h3><a id="%E8%A1%A8%E6%A0%BC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>表格</h3>
+<p>Markdown 语法：</p>
+<pre class="line-numbers"><code class="language-plain_text">第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>脚注（Footnote）</h3>
+<p>Markdown 语法：</p>
+<pre class="line-numbers"><code class="language-plain_text">这是一个脚注：[^1]
+
+[^1]: 这里是脚注信息
+</code></pre>
+<p>效果如下：</p>
+<p>这是一个脚注：<sup class="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup></p>
+<h2><a id="mweb%E4%B8%AD%E7%89%B9%E6%9C%89%E7%9A%84%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 中特有的语法</h2>
+<h3><a id="%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>图片宽度</h3>
+<p>图片的 Markdown 语法：</p>
+<pre class="line-numbers"><code class="language-plain_text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![图片描述](url)
+</code></pre>
+<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
+<pre class="line-numbers"><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
+</code></pre>
+<p><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" style="width:140px;" /></p>
+<h3><a id="mweb%E7%94%BB%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 画图</h3>
+<h4><a id="mermaid" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>mermaid</h4>
+<p>mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图，它的官网为：<a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a> ，在 MWeb 中使用 mermaid 的语法就是声明代码块的语言为 mermaid，代码块中再写上 mermaid 的画图语法即可，你可以把下面的语法复制到 MWeb 中查看效果。</p>
+<pre class="line-numbers"><code class="language-plain_text">```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+```
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16421614330357.jpg" alt="" style="width:456px;" /></p>
+<h4><a id="echarts" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>echarts</h4>
+<p>echarts 是百度出品的 js 画图库，它的网址为：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="https://echarts.apache.org/examples/zh/index.html">https://echarts.apache.org/examples/zh/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
+<pre class="line-numbers"><code class="language-plain_text">```echarts
+option = {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line'
+    }]
+};
+```
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16421614994388.jpg" alt="" style="width:467px;" /></p>
+<h3><a id="latex%EF%BC%88-mathjax%E6%B8%B2%E6%9F%93%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>LaTeX （MathJax 渲染）</h3>
+<p>MWeb 采用 CommonMark 中本身的代码块语法来支持 LaTeX 数学公式。CommonMark 中的行内代码和代码块的语法有很高的扩展性，可以随意扩展。MWeb 采用了 ``inline math`` 作为数学公式的行内语法，```math block math ``` 作为数学公式的块语法。然后 `code` 仍然是行内代码的语法， ``inline math`` 在 CommonMark 中也是行内代码，但是在 MWeb 中会渲染成数学公式。这样做的好处是，原 markdown 文档发布到不支持数学公式的环境时，会以代码显示，这样就会显示原本的公式文本，不会太过影响阅读。<br />
+另外，MWeb 也兼容 <code>$ 和 $$</code> 方式的数学公式。使用数学公式时，需要在 <code>偏好设置 - 通用设置</code> 中启用 LaTeX 数学公式，并选择所使用的语法。</p>
+<h3><a id="%E6%B3%A8%E9%87%8A%E5%92%8C%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>注释和阅读更多</h3>
+<!-- comment -->
+<span id="more"></span><!-- more -->
+<p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br />
+<strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
+<h3><a id="toc" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>TOC</h3>
+<p>Markdown 语法：</p>
+<pre class="line-numbers"><code class="language-plain_text">[TOC]
+</code></pre>
+<p>效果如下：</p>
+<div class="mweb_toc"><ul>
+<li><a href="#markdown%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6">Markdown 的设计哲学</a></li>
+<li><a href="#%E5%AD%A6%E4%B9%A0markdown%E8%AF%AD%E6%B3%95">学习 Markdown 语法</a></li>
+<li><a href="#github-flavored-markdown-gfm%E8%AF%AD%E6%B3%95%E6%89%A9%E5%B1%95">GitHub Flavored Markdown (GFM) 语法扩展</a>
+<ul>
+<li><a href="#%E5%88%A0%E9%99%A4%E7%BA%BF">删除线</a></li>
+<li><a href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89">任务列表（Task lists）</a></li>
+<li><a href="#%E8%A1%A8%E6%A0%BC">表格</a></li>
+<li><a href="#%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89">脚注（Footnote）</a></li>
+</ul>
+</li>
+<li><a href="#mweb%E4%B8%AD%E7%89%B9%E6%9C%89%E7%9A%84%E8%AF%AD%E6%B3%95">MWeb 中特有的语法</a>
+<ul>
+<li><a href="#%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6">图片宽度</a></li>
+<li><a href="#mweb%E7%94%BB%E5%9B%BE">MWeb 画图</a>
+<ul>
+<li><a href="#mermaid">mermaid</a></li>
+<li><a href="#echarts">echarts</a></li>
+</ul>
+</li>
+<li><a href="#latex%EF%BC%88-mathjax%E6%B8%B2%E6%9F%93%EF%BC%89">LaTeX （MathJax 渲染）</a></li>
+<li><a href="#%E6%B3%A8%E9%87%8A%E5%92%8C%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A">注释和阅读更多</a></li>
+<li><a href="#toc">TOC</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section class="footnotes">
+<ol>
+<li id="fn1">
+<p>这里是脚注信息 <a href="#fnref1" class="footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2022
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

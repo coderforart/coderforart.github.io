@@ -35,7 +35,7 @@
            
         <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
         
-        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        <a class="menu-help blog-nav-item" target="_self" href="zh-help.html">文档</a>
         
         <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
         
@@ -145,7 +145,7 @@
 <img src="media/14997440994385/15028630661421.jpg" alt="" style="width:595px;" /></p>
 <p>我上图的是发布到 coding 的 pages，如果选择发布脚本执行前 “生成网站”，这样每次发布前都会生成网站，就能达到 “新增文档并编辑” - “右键并选择执行发布脚本” 这一简单的编辑和发布流程。实测没有问题。</p>
 <p>如果你点击 “加载例子” 按钮，加载出来的是以下的脚本样例：</p>
-<pre><code class="language-plain_text">#!/bin/sh
+<pre class="line-numbers"><code class="language-plain_text">#!/bin/sh
 # Please set the name and email. 
 # Because MWeb can't get your github global setting.
 
@@ -158,7 +158,7 @@ git push -u origin master
 </code></pre>
 <p>注意：有些朋友使用的分支是 <strong>gh-pages</strong>，我这里是 <strong>master</strong>。</p>
 <p>在中国，github 一般情况下是无法正常发布的，如果你用 github，可以使用代理，比如说我发布 “MWeb英文官网” 就是使用 Surge 的代理，全部发布脚本如下：</p>
-<pre><code class="language-plain_text">#!/bin/sh
+<pre class="line-numbers"><code class="language-plain_text">#!/bin/sh
 
 export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152
 
@@ -175,7 +175,7 @@ git push -u origin master
 <p>这个方法是：<a href="https://github.com/bramblex/">https://github.com/bramblex/</a> 这位朋友分享的，非常感谢，这位朋友的原文如下：</p>
 <p>mweb 现在的只能复制执行脚本命令, 并且打开终端嘛.</p>
 <p>那么打开终端的时候会自动执行 bashrc / zshrc 文件, 那在 bashrc / zshrc 里面加入检测剪贴板并且自动发布的脚本就能实现打开终端后自动执行发布脚本了.</p>
-<pre><code class="language-plain_text"># 在 ~/.zshrc 或 ~/.bashrc 添下面代码, 就能实现自动执行发布脚本
+<pre class="line-numbers"><code class="language-plain_text"># 在 ~/.zshrc 或 ~/.bashrc 添下面代码, 就能实现自动执行发布脚本
 # https://gist.github.com/bramblex/a6b12543a076e2c1fa5acecb95f51ead
 
 if (pbpaste  | grep -Eq  '^cd &quot;[^&quot;]*&quot; &amp;&amp; sh &quot;[^&quot;]*/site_publish_logs/sh_\d*\.sh&quot; &amp;&amp; open &quot;[^&quot;]*&quot;') 
@@ -230,7 +230,7 @@ fi
         </div><!-- /.blog-main -->
 	</div>
 </div>   <footer class="blog-footer">
-      <p>Copyright &copy; 2021
+      <p>Copyright &copy; 2022
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
  <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
 .</p>

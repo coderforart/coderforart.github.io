@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>https://zh.mweb.im/</loc>
-  <lastmod>2021-12-08T13:50:27+08:00</lastmod>
+  <lastmod>2022-01-19T13:53:42+08:00</lastmod>
 </url>
 
 <url>
@@ -21,7 +21,7 @@
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/make_your_site_template.html</loc>
+  <loc>https://zh.mweb.im/zh-make_your_site_template.html</loc>
   <lastmod>2019-12-12T15:38:11+08:00</lastmod>
 </url>
 
@@ -61,7 +61,7 @@
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/mweb-static-blog.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-static-blog.html</loc>
   <lastmod>2018-07-02T00:50:51+08:00</lastmod>
 </url>
 
@@ -71,47 +71,47 @@
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/15303804636963.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-quick-search.html</loc>
   <lastmod>2018-07-01T01:41:03+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/15303794142935.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-quick-note.html</loc>
   <lastmod>2018-07-01T01:23:34+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/mweb-library.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-library.html</loc>
   <lastmod>2018-07-01T00:18:57+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/15303740497765.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-images-upload.html</loc>
   <lastmod>2018-06-30T23:54:09+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/15303685987267.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-publishing.html</loc>
   <lastmod>2018-06-30T22:23:18+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/15303673435460.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-export.html</loc>
   <lastmod>2018-06-30T22:02:23+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/15303597337753.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-editor.html</loc>
   <lastmod>2018-06-30T19:55:33+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/markdown.html</loc>
+  <loc>https://zh.mweb.im/zh-markdown.html</loc>
   <lastmod>2018-06-29T23:13:33+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://zh.mweb.im/15303606797118.html</loc>
+  <loc>https://zh.mweb.im/zh-mweb-start.html</loc>
   <lastmod>2018-06-28T20:11:19+08:00</lastmod>
 </url>
 
@@ -449,6 +449,11 @@
 <url>
   <loc>https://zh.mweb.im/policy.html</loc>
   <lastmod>2021-09-13T12:25:26+08:00</lastmod>
+</url>
+
+<url>
+  <loc>https://zh.mweb.im/zh-help.html</loc>
+  <lastmod>2022-01-13T22:35:03+08:00</lastmod>
 </url>
 
 
