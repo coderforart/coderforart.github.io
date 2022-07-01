@@ -83,7 +83,7 @@
 <p>字段设置好了，下面要开始修改 greyshade 网站模板了。目前看来只需要为属于播客的文章增加一个播放器，让它可以播放 MP3。然后修改 RSS，让 RSS 按 Apple 播客的格式即可。</p>
 <p>以下为修改模板的内容，建议先参考 <a href="http://zh.mweb.im/custom-site-theme-detail-zh.html">自定网站或博客主题简单说明</a>。</p>
 <p>首先增加播放器，我随便找了一下，看到 <a href="http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/">http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/</a> 这个播放器不错，所以就决定用这个了，首先复制 greyshade 模板，并重命名为：podcast-greyshade。把 soundmanager 的相关代码放到 asset/soundmanager 中。然后打开 header.html 文档，在上面增加 soundmanager2 播放器的代码，大概是这样：</p>
-<pre class="line-numbers"><code class="language-js">&lt;link href=&quot;asset/soundmanager/css/bar-ui.css&quot; media=&quot;screen, projection&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+<pre><code class="language-js">&lt;link href=&quot;asset/soundmanager/css/bar-ui.css&quot; media=&quot;screen, projection&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/soundmanager2-jsmin.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/bar-ui.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -96,7 +96,7 @@ soundManager.setup({
 &lt;/script&gt;
 </code></pre>
 <p>因为我需要在文章列表和单篇文章都支持播放功能，所以为 category.html 和 post.html 增加播放支持。代码大概如下（我只选关键代码）。</p>
-<pre class="line-numbers"><code class="language-html">{% if post.ext_enclosureURL.length %}
+<pre><code class="language-html">{% if post.ext_enclosureURL.length %}
 	&lt;div class=&quot;sm2-bar-ui compact full-width&quot;&gt;
 		....
 		&lt;div class=&quot;sm2-inline-duration&quot;&gt;{{ post.ext_itunes_duration }}&lt;/div&gt;
@@ -115,7 +115,7 @@ MWeb 中 <code>Site Setting</code> 设置的所有值会传到所有模板页，
 <p>下面介绍一下如何增加输出 Apple 支持的播客的 RSS 格式。</p>
 <p>MWeb 一般情况下只生成全站文章的 RSS，名字为 atom.xml。然后 MWeb 为了满足扩展需要，增加了另外的规则，为：如果网站模板中存在有 <code>分类的 HTML File Name 的值 + -atom.xml</code> 这样的模板文档，则会为这个分类用 <code>分类的 HTML File Name 的值 + -atom.xml</code> 这个模板生成名为  <code>分类的 HTML File Name 的值 + -atom.xml</code> 的 RSS。</p>
 <p>如上面，我增加了两个子分类：文章和播客。然后我设置了播客子分类的 <code>HTML File Name</code> 为 <code>podcast</code>。然后我在网站模板中也增加了名为 <code>podcast-atom.xml</code> 的模板，下面是这个模板的内容。</p>
-<pre class="line-numbers"><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;rss xmlns:itunes=&quot;http://www.itunes.com/dtds/podcast-1.0.dtd&quot; version=&quot;2.0&quot;&gt;
     &lt;channel&gt;
         &lt;title&gt;&lt;![CDATA[{{ siteName }}]]&gt;&lt;/title&gt;
@@ -187,9 +187,6 @@ Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp;
       </p>
     </footer>
 
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
   
 

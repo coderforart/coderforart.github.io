@@ -129,7 +129,7 @@
 <h2><a id="%E5%A6%82%E4%BD%95%E5%BC%80%E5%90%AFmathjax%E9%A2%84%E8%A7%88%E6%94%AF%E6%8C%81%EF%BC%9F%E5%A6%82%E4%BD%95%E8%AE%A9%E7%BD%91%E7%AB%99%E6%94%AF%E6%8C%81mathjax%EF%BC%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
 <p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br />
 如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
-<pre class="line-numbers"><code class="language-js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+<pre><code class="language-js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 &lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;
@@ -140,11 +140,11 @@
 <span id="more"></span><!-- more -->
 <h2><a id="%E5%A6%82%E4%BD%95%E5%B0%86mweb%E7%9A%84%E6%96%87%E6%A1%A3%E5%BA%93%E5%A4%87%E4%BB%BD%E8%87%B3dropbox%EF%BC%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>如何将MWeb的文档库备份至Dropbox？</h2>
 <p>请打开终端工具(Terminal),并执行以下命令：</p>
-<pre class="line-numbers"><code class="language-plain_text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+<pre><code class="language-plain_text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
 </code></pre>
 <h2><a id="%E5%A6%82%E4%BD%95%E4%B8%BA%E6%96%87%E7%AB%A0%E5%A2%9E%E5%8A%A0disqus%E6%88%96%E8%80%85%E5%A4%9A%E8%AF%B4%E7%AD%89%E8%AF%84%E8%AE%BA%EF%BC%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>如何为文章增加Disqus或者多说等评论？</h2>
 <p>Disqus的话，去<a href="https://disqus.com/">https://disqus.com/</a>，然后会得到像以下这样的代码，点到主题模板的post.html页的合适的位置即可。</p>
-<pre class="line-numbers"><code class="language-js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+<pre><code class="language-js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
    var disqus_shortname = '这个会不一样'; 
 
@@ -192,9 +192,6 @@ Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp;
       </p>
     </footer>
 
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
   
 

@@ -137,7 +137,7 @@
 <p>打开<a href="http://duoshuo.com">多说网站</a>，注册并新建站点，我的设置如下：<br />
 <img src="media/14269156185154/14272065662894.jpg" alt="" />￼￼￼￼￼￼￼￼</p>
 <p>点创建后会跳到多说的获取代码页面。比如说我的代码如下：</p>
-<pre class="line-numbers"><code class="language-js">&lt;!-- 多说评论框 start --&gt;
+<pre><code class="language-js">&lt;!-- 多说评论框 start --&gt;
 	&lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;请将此处替换成文章在你的站点中的ID&quot; data-title=&quot;请替换成文章的标题&quot; data-url=&quot;请替换成文章的网址&quot;&gt;&lt;/div&gt;
 &lt;!-- 多说评论框 end --&gt;
 &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;
@@ -156,7 +156,7 @@ var duoshuoQuery = {short_name:&quot;mweb-zh&quot;};
 </code></pre>
 <p>然后删除 <code>data-thread-key=&quot;请将此处替换成文章在你的站点中的ID&quot; data-title=&quot;请替换成文章的标题&quot; data-url=&quot;请替换成文章的网址&quot;</code> 这些文字。这些都用不到。然后就贴到 MWeb 的分类设置的 <code>Comment &amp; Share code</code> 输入框中。</p>
 <p>如果你还要增加分享功能，请去 <a href="http://www.jiathis.com/">http://www.jiathis.com/</a> 然后点 <code>获取代码</code>，然后会得到以下代码：</p>
-<pre class="line-numbers"><code class="language-html">&lt;!-- JiaThis Button BEGIN --&gt;
+<pre><code class="language-html">&lt;!-- JiaThis Button BEGIN --&gt;
 &lt;div class=&quot;jiathis_style_24x24&quot;&gt;
 	&lt;a class=&quot;jiathis_button_tsina&quot;&gt;&lt;/a&gt;
 	&lt;a class=&quot;jiathis_button_qzone&quot;&gt;&lt;/a&gt;
@@ -170,7 +170,7 @@ var duoshuoQuery = {short_name:&quot;mweb-zh&quot;};
 &lt;!-- JiaThis Button END --&gt;
 </code></pre>
 <p>然后把分享代码放上边，评论代码在下边，一起加起来贴到 MWeb 的分类设置的 <code>Comment &amp; Share code</code> 输入框中。大概是像下面这样，这也是 MWeb 中文官网的分享和评论所用的代码。</p>
-<pre class="line-numbers"><code class="language-plain_text">&lt;!-- JiaThis Button BEGIN --&gt;
+<pre><code class="language-plain_text">&lt;!-- JiaThis Button BEGIN --&gt;
 &lt;div class=&quot;jiathis_style_24x24&quot;&gt;
 	&lt;a class=&quot;jiathis_button_tsina&quot;&gt;&lt;/a&gt;
 	&lt;a class=&quot;jiathis_button_qzone&quot;&gt;&lt;/a&gt;
@@ -207,7 +207,7 @@ var duoshuoQuery = {short_name:&quot;mweb-zh&quot;};
 <p>打开 <a href="https://disqus.com/">https://disqus.com/</a> 注册并登入后，点 <code>Add Disqus To Site</code> 填入博客信息，我是这样填：<br />
 <img src="media/14269156185154/14272092541267.jpg" alt="" />￼￼￼￼￼￼</p>
 <p>然后点 <code>Universal Code</code> 会得到以下代码：</p>
-<pre class="line-numbers"><code class="language-js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+<pre><code class="language-js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'mweb-en';
@@ -225,7 +225,7 @@ var duoshuoQuery = {short_name:&quot;mweb-zh&quot;};
 <p>如果你还要增加分享功能，请去 <a href="https://www.addthis.com">https://www.addthis.com</a> 然后注册，登录等等，然后它会出来让你选择样式，我选免费的如下图右边的那个，点 <code>Get Code</code>。<br />
 <img src="media/14269156185154/14272098995706.jpg" alt="" />￼￼￼￼￼￼</p>
 <p>会得到两段代码，点 <code>Active</code> 后，把合在一起即可。</p>
-<pre class="line-numbers"><code class="language-html">&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+<pre><code class="language-html">&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55117df11d1413c3&quot; async=&quot;async&quot;&gt;&lt;/script&gt;
 &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
 &lt;div class=&quot;addthis_native_toolbox&quot;&gt;&lt;/div&gt;
@@ -267,9 +267,6 @@ Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp;
       </p>
     </footer>
 
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
   
 

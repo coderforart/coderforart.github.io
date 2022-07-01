@@ -99,13 +99,13 @@ Markdown 的语法有个主要的目的：用来作为一种网络内容的<em>�
 <p>Github 在 CommonMark 的基础上，扩展了一些常用的语法，主要有删除线、任务列表、表格和脚注，以下就是简单介绍这些语法。</p>
 <h3><a id="%E5%88%A0%E9%99%A4%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>删除线</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">加删除线像这样用： ~~删除这些~~
+<pre><code class="language-plain_text">加删除线像这样用： ~~删除这些~~
 </code></pre>
 <p>效果如下：</p>
 <p>加删除线像这样用： <del>删除这些</del></p>
 <h3><a id="%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>任务列表（Task lists）</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+<pre><code class="language-plain_text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
 - [x] 任务二 已做任务 `- + 空格 + [x]`
 </code></pre>
 <p>效果如下：</p>
@@ -115,7 +115,7 @@ Markdown 的语法有个主要的目的：用来作为一种网络内容的<em>�
 </ul>
 <h3><a id="%E8%A1%A8%E6%A0%BC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>表格</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">第一格表头 | 第二格表头
+<pre><code class="language-plain_text">第一格表头 | 第二格表头
 --------- | -------------
 内容单元格 第一列第一格 | 内容单元格第二列第一格
 内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
@@ -141,7 +141,7 @@ Markdown 的语法有个主要的目的：用来作为一种网络内容的<em>�
 </table>
 <h3><a id="%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>脚注（Footnote）</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">这是一个脚注：[^1]
+<pre><code class="language-plain_text">这是一个脚注：[^1]
 
 [^1]: 这里是脚注信息
 </code></pre>
@@ -150,17 +150,17 @@ Markdown 的语法有个主要的目的：用来作为一种网络内容的<em>�
 <h2><a id="mweb%E4%B8%AD%E7%89%B9%E6%9C%89%E7%9A%84%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 中特有的语法</h2>
 <h3><a id="%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>图片宽度</h3>
 <p>图片的 Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
+<pre><code class="language-plain_text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
 格式: ![图片描述](url)
 </code></pre>
 <p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
-<pre class="line-numbers"><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
+<pre><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
 </code></pre>
 <p><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" style="width:140px;" /></p>
 <h3><a id="mweb%E7%94%BB%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 画图</h3>
 <h4><a id="mermaid" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>mermaid</h4>
 <p>mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图，它的官网为：<a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a> ，在 MWeb 中使用 mermaid 的语法就是声明代码块的语言为 mermaid，代码块中再写上 mermaid 的画图语法即可，你可以把下面的语法复制到 MWeb 中查看效果。</p>
-<pre class="line-numbers"><code class="language-plain_text">```mermaid
+<pre><code class="language-plain_text">```mermaid
 sequenceDiagram
     participant Alice
     participant Bob
@@ -178,7 +178,7 @@ sequenceDiagram
 <p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16421614330357.jpg" alt="" style="width:456px;" /></p>
 <h4><a id="echarts" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>echarts</h4>
 <p>echarts 是百度出品的 js 画图库，它的网址为：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="https://echarts.apache.org/examples/zh/index.html">https://echarts.apache.org/examples/zh/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
-<pre class="line-numbers"><code class="language-plain_text">```echarts
+<pre><code class="language-plain_text">```echarts
 option = {
     xAxis: {
         type: 'category',
@@ -206,7 +206,7 @@ option = {
 <strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
 <h3><a id="toc" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>TOC</h3>
 <p>Markdown 语法：</p>
-<pre class="line-numbers"><code class="language-plain_text">[TOC]
+<pre><code class="language-plain_text">[TOC]
 </code></pre>
 <p>效果如下：</p>
 <div class="mweb_toc"><ul>
@@ -276,9 +276,6 @@ Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp;
       </p>
     </footer>
 
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
   
 
