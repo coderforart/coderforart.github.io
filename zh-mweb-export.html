@@ -74,14 +74,14 @@
 				<div class="blog-post">
 		            <div class="content-responsive">
 		            <p>MWeb 支持把文档导出为图片、HTML、PDF，macOS 版还支持导出为 Epub、RTF 和 Docx，使用方法如下图所示。<br />
-<img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/mwebexportmenu.jpg" alt="mweb_export_menu" /></p>
+<img src="media/15303673435460/mweb_export_menu.jpg" alt="mweb_export_menu" /></p>
 <h2><a id="macos%E7%89%88-mweb%E7%89%B9%E6%9C%89%E7%9A%84%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>macOS 版 MWeb 特有的功能</h2>
 <h3><a id="%E5%A4%8D%E5%88%B6%E4%B8%BA%E5%AF%8C%E6%96%87%E6%9C%AC%E5%8A%9F%E8%83%BD%E5%8F%8A%E5%85%B6%E7%94%A8%E9%80%94" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>复制为富文本功能及其用途</h3>
 <p>可以使用菜单：<code>发布 - 复制为富文本</code> 来使用这个功能。这个功能的主要用于把当前的 Markdown 文档到粘贴到 邮件（mail.app）、Pages.app、Word.app 中。在 Markdown 文档有本地图片的情况下，导出为 docx 功能目前还不能很好的支持图片。这时可以使用 <code>复制为富文本</code> 功能，然后在上述提到的三个软件中按下 <code>CMD + V</code> 粘贴，这样的话，图片就能很好的粘贴成功。</p>
 <p>如果需要把预览样式也复制，可以试试菜单：<code>发布 - 导出或复制为图片</code>，然后全选界面中的内容，再按 <code>CMD + C</code> 复制，然后可以尝试粘贴到其它编辑器中，比如说微信公众号编辑器。</p>
 <h3><a id="%E5%AF%BC%E5%87%BA%E4%B8%BApdf%E6%88%96-epub" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出为 PDF 或 Epub</h3>
 <p>MWeb 不仅可以把单份 Markdown 文档导出为 PDF 或 Epub，在文档库模式中，还可以把多份文档导出为一份 PDF 或 Epub 文档，使用方法很简单，右键分类或者需要导出的文档，如下图：</p>
-<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/mwebexportlibpdfs.jpg" alt="" /></p>
+<p><img src="media/15303673435460/mweb_export_lib_pdfs.jpg" alt="" /></p>
 <h3><a id="%E5%AF%BC%E5%87%BA%E4%B8%BAhtml%E3%80%81docx%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出为 HTML、Docx 相关问题</h3>
 <p>使用 MWeb 导出为 HTML，会导出单个的 HTML，如果有本地图片，会把本地图片进行 Base64 编码嵌入到 HTML 中。</p>
 <p>另外，导出为 Docx 目前还不支持本地图片，如果需要导出的 Docx 文档包含图片，目前的解决方案是使用 Pandoc 导出为 Docx。使用办法是，先安装 Pandoc，然后再在 MWeb 的 <code>偏好设置 - 发布服务</code> 中，新增 <code>Pandoc 支持和运行脚本</code> 服务，在出来的窗口中，黑认的命令就是导出 Docx 的命令，自己取个名字然后保存，再在“发布”菜单中，选择运行这个发布服务即可。</p>

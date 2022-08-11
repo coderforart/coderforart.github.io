@@ -220,7 +220,7 @@ __这些文字会生成`&lt;strong&gt;`__
 效果如下：</p>
 <p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up" /></p>
 <p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
-<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up" style="width:140px;" /></p>
+<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up-w140" /></p>
 <h2><a id="%E9%93%BE%E6%8E%A5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>链接</h2>
 <p>Markdown 语法：</p>
 <pre><code class="language-plain_text">email &lt;example@example.com&gt;
@@ -375,7 +375,7 @@ $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <pre><code class="language-plain_text">这是一个脚注：[^sample_footnote]
 </code></pre>
 <p>效果如下：</p>
-<p>这是一个脚注：[^sample_footnote]</p>
+<p>这是一个脚注：<sup class="footnote-ref"><a href="#fn-sample_footnote" id="fnref-sample_footnote_ref" data-footnote-ref>1</a></sup></p>
 <h2><a id="%E6%B3%A8%E9%87%8A%E5%92%8C%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>注释和阅读更多</h2>
 <!-- comment -->
 <!-- more -->
@@ -420,6 +420,13 @@ $$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 </li>
 </ul>
 </div>
+<section class="footnotes" data-footnotes>
+<ol>
+<li id="fn-sample_footnote">
+<p>这里是脚注信息 <a href="#fnref-sample_footnote_ref" class="footnote-backref" data-footnote-backref aria-label="Back to content">&#8617;<a></p>
+</li>
+</ol>
+</section>
 
 		            </div>
 				</div><!-- /.blog-post -->
