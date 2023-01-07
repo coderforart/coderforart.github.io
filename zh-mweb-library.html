@@ -79,7 +79,7 @@
 <h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E7%BB%93%E6%9E%84%E3%80%81%E5%A4%87%E4%BB%BD%E5%92%8C%E4%BB%8E%E5%A4%87%E4%BB%BD%E4%B8%AD%E6%81%A2%E5%A4%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库的结构、备份和从备份中恢复</h2>
 <p>一般情况下，不需要了解文档库的结构，如果你是在 macOS 下使用 MWeb，并且想对文档库备份或者从备份中恢复，那么了解文档库的结构是很有必要的。在 macOS 下，当文档库存储在文件夹中时，可以直接查看文档库所在的文件夹来了解文档库的结构。当文档库存储在 iCloud 中时，MWeb 会使用 CloudKit 技术完整的把整个文档库都同步到本地的 MWeb 的一个私有文件夹中，位置就在：<code>~/Library/Containers/com.coderforart.MWeb3/Data/Library/Application Support/MWebLibrary</code>。如果你使用的是 MWeb 标准版，请把上面的 <code>com.coderforart.MWeb3</code> 换成 <code>com.coderforart.iOS.MWeb</code>。</p>
 <p>文档库的文件夹的结构，是由 docs 文件夹，mainlib.db 文件和 metadata 文件夹组成。其中 docs 文件夹里保存的是每一篇笔记及笔记的相关素材。mainlib.db 文件保存的是分类和 Tag 信息以及笔记所属于的分类信息。metadata 文件夹只有在使用到发布服务时才会有，保存的是发布服务相关信息。下图就是一个典型的文档库。<br />
-<img src="media/15303755379614/15303762803232.jpg" alt="" style="width:624px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303762803232.jpg" alt="" style="width:624px;" /></p>
 <p>这种结构可以很好的备份和用于 git 备份，你可能注意到了，即使你选择把文档库存储在 iCloud 中，也可以很方便的备份你的文档库。因为 MWeb 会把所有数据都同步到一个私有文件夹中，你只需要备份那个文件夹即可。</p>
 <p>在 macOS 下，如果你要从备份中恢复文档库，分为两种情况：</p>
 <ol>
@@ -88,9 +88,9 @@
 </ol>
 <h2><a id="%E5%88%86%E7%B1%BB%E6%A0%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>分类树的使用方法</h2>
 <p>MWeb 的分类有两种，一种是普通的分类，如下图：<br />
-<img src="media/15303755379614/15303773079972.jpg" alt="" style="width:481px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773079972.jpg" alt="" style="width:481px;" /></p>
 <p>一种是静态网站分类（MWeb Pro 才有），这个分类可以生成静态网站，如下图：<br />
-<img src="media/15303755379614/15303773879197.jpg" alt="" style="width:690px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773879197.jpg" alt="" style="width:690px;" /></p>
 <p>MWeb 提供一个非常简单的方法再把分类下的文档生成一个静态网站，比如 MWeb 中文官网就是用 MWeb 的静态网站功能生成的。</p>
 <p>界面左边的分类树配合 <code>右键</code> 及拖拽就可以完成相关的管理操作。中间的文档列表栏可以把文档拖拽至左边的分类以进行文档分类的管理。这种拖拽有三种情况，以下都假定拖拽到<strong>分类A</strong>：</p>
 <ol>
@@ -99,31 +99,31 @@
 <li>按住 <code>Option</code> 键拖拽当前文档到<strong>分类A</strong>，这种情况下，如果所拖拽的文档属于<strong>分类A</strong>，则取消文档属于<strong>分类A</strong>，如果不属于<strong>分类A</strong>，则不做任何操作。</li>
 </ol>
 <p>这种操作方法的地方是可以多选，也就是可以批量管理。如果是单个文档，有更好的办法，就是点击编辑器最上面的信息条，然后进行勾选，如下图：<br />
-<img src="media/15303755379614/15303782515887.jpg" alt="" style="width:590px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303782515887.jpg" alt="" style="width:590px;" /></p>
 <p>这个地方也是唯一可以设置文档标签（tag）的地方，下面介绍的标签，设置是用这个办法。你也可以使用快捷键 <code>CMD + 8</code> 来打开这个界面。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E9%97%B4%E7%9A%84%E5%BC%95%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档间的引用</h2>
 <p>在 MWeb 中引用其它文档非常简单，在文档列表中，右键要引用的文档，选择 <code>复制</code>，如下图所示。<br />
-<img src="media/15304638513365/15304655581752.jpg" alt="" style="width:342px;" /><br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;" /><br />
 然后在要引用的文档的位置 <code>CMD + V</code> 粘贴即可，MWeb 会生成 <code>[如何使用“发布脚本”功能发布静态网站](how_to_use_shell_script.html)</code> 这种语法。如果你按住 <code>CMD</code> 键并点击标题，则会打开这个引用的文档。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E6%8E%92%E5%BA%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档排序</h2>
 <p>文档库支持多种排序方式，而且每个顶层分类还可以单独设置自己的排序方式。修改排序方式的办法有两种，一种是如下图所示：<br />
-<img src="media/15303755379614/15303807570789.jpg" alt="" style="width:463px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303807570789.jpg" alt="" style="width:463px;" /></p>
 <p>另一种是，选中要修改排序的顶层分类或者顶层分类下的某一子分类，然后在文档列表中右键，如下图所示:<br />
-<img src="media/15303755379614/15303808791421.jpg" alt="" style="width:450px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303808791421.jpg" alt="" style="width:450px;" /></p>
 <p>在各种排序中，自定义拖拽排序比较特殊，需要特别说明。在说明之前，我先说明一个全局选项：<code>按分类分组显示</code>。在文档列表中右键，就可以看到这个功能的菜单，如果在启用状态，则表示列表中的文档都在以分类分组显示的状态，不管是什么排序设置。<br />
 这个用处其实也是查找和整理文档。但是如果这个全局选项不是启用状态，那么，如果排序设置为自定义拖拽排序，则这个顶层分类也会按分类分组显示的。也就是说，只要是自定义拖拽排序，文档列表栏必定是分组显示的。<br />
 这个是由于一个文档可以属于多个分类造成的规则设定，不然会比较乱。<br />
 如果你在一个不是自定义排序的分类尝试拖拽，MWeb 会提示你先设置为自定义拖拽排序，然后才能拖拽。自定义拖拽排序分类下的文档，建议保证只属于一个分类，这样拖拽排序才不会乱。</p>
 <h2><a id="%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>标签的使用方法</h2>
 <p>MWeb 中标签（tag）的功能还非常简单，设置标签的方法，上面有说到了，另外就是按标签查看文档了，这个功能如下图所示：</p>
-<p><img src="media/15303755379614/16042935393203.jpg" alt="" style="width:263px;" /></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16042935393203.jpg" alt="" style="width:263px;" /></p>
 <p>可以看出 MWeb 会列出整个文档库的标签，选择后即可按标签查看文档。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%A4%A7%E7%BA%B2%E8%A7%86%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档大纲视图</h2>
 <p>如下图所示，文档大纲视图会列出当前文档的标题和插入的图片及附件，当然还有可以设置静态网站用的扩展项目（如果当前的文档属于某个静态网站分类的话）。下图是把大纲视图拖拽出来后固定的效果。<br />
-<img src="media/15303755379614/15303793181537.jpg" alt="" style="width:293px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303793181537.jpg" alt="" style="width:293px;" /></p>
 <h2><a id="%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档库的导入和导出</h2>
 <p>如下图所示，文档库支持导入 Markdown 文档到文档库中。如果导入的时候你选择的是一个文件夹，MWeb 会把文件夹内的所有 Markdown 文档导入到当前所选择的分类。如果文件夹的 Markdown 文档中有本地图片，也会一并导入并修改为文档库格式的图片地址。需要说明的是，要导入图片，请一定要选择整个文件夹。<br />
-<img src="media/15303755379614/15303786026066.jpg" alt="" style="width:490px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303786026066.jpg" alt="" style="width:490px;" /></p>
 <p>另外还可以把整个分类导出为 Markdown，导出后的 Markdown 文档会按分类的结构建立文件夹。剩下的两个就是导出为 Epub 和 PDF 了，没错，可以把整个分类都导出为 Epub 或者 PDF！</p>
 <h2><a id="mweb-4-icloud%E5%90%8C%E6%AD%A5%E6%96%87%E6%A1%A3%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 4 iCloud 同步文档库的一些问题</h2>
 <p><strong>MWeb 3 的 iCloud 同步和 MWeb 4 的有何区别？</strong></p>
@@ -186,6 +186,9 @@ Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp;
       </p>
     </footer>
 
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
   
 

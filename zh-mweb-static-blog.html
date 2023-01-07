@@ -76,42 +76,42 @@
 		            <h2><a id="mweb%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%88%86%E7%B1%BB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 的静态网站分类</h2>
 <p>在 MWeb 的文档库中，有两种分类，一种是普通分类，另一种就是静态网站分类了。你可以直接新增一个静态网站分类，也可以在普通分类的顶层的分类中右键，选择 <code>编辑</code>，然后在出来的界面中点击 <code>设置为静态网站</code> 按钮。</p>
 <p>网站分类可以设置网站相关的一些东西，设置界面如下：</p>
-<p><img src="media/15304638513365/15761324638192.jpg" alt="" style="width:495px;" /></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761324638192.jpg" alt="" style="width:495px;" /></p>
 <p>上图中的设置应该都不难理解，如果要生成静态网站，在设置好之后，点击 <code>生成网站</code> 按钮即可，在生成之前，请务必保证你的分类中有至少一篇文章。你也可以直接右键来选择相关菜单项来生成网站。如果你修改了网站模板，请使用 <code>清理并重新生成</code> 按钮。当然，你任何时候都可以使用这个按钮来清理并重新生成网站。</p>
 <p>可以看出，在 MWeb 中生成静态网站非常简单，就写好文章，然后归类到静态网站分类中，再右键静态网站分类并选择生成网站即可，当然你可以先预览一下。</p>
 <h2><a id="mweb%E4%B8%AD%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 中的两种文章类型</h2>
 <p>MWeb 和 Wordpress 等这类博客的结构一样，分为 <code>一般文章</code> 和 <code>页面</code> 两种文章类型。<code>页面</code> 是用来做像关于我们、联系我们等等这类不用放在正式文章中的网页。</p>
 <p>如下图，把 MWeb 文档库中的文档设置为 <code>页面</code> 非常简单，点击 <code>最上方的信息条</code> ，勾选 <code>是否页面（Is Page）</code> 即可。其中 <code>HTML 文件名</code> 栏是用来设置生成的 HTML 文件名的。比如说上图中的这个文章会生成 mweb-static-blog.html。<code>一般文章</code> 生成的 HTML 文件名也是在此设定。</p>
-<p><img src="media/15304638513365/15304641791928.jpg" alt="" style="width:618px;" /></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304641791928.jpg" alt="" style="width:618px;" /></p>
 <h2><a id="%E7%BD%91%E7%AB%99%E7%9A%84%E6%89%A9%E5%B1%95%E8%AE%BE%E7%BD%AE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>网站的扩展设置</h2>
 <p>有些网站模板支持一些扩展设置，比如说网站的图标和 logo，可以自定义自己的图标和 logo 图片，还有，有些网站支持配置 disqus 评论，只要填入 disqus 的 shortname 即可。这些网站的配置是需要网站模板支持的，在 <code>偏好设置</code> - <code>网站扩展</code> - <code>网站扩展设置</code> 里可以设置，如下图就是使用了 site-mweb-bluma 模板的 Coder For Art 网站的扩展设置。</p>
-<p><img src="media/15304638513365/15761331195368.jpg" alt="" style="width:616px;" /></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761331195368.jpg" alt="" style="width:616px;" /></p>
 <p>比如，这里我要设置 “site icon”，也就是网站图标。这就有一个问题，就是：网站图标是图片形式的，而输入框是要填入文本的，那要把图片增加到那里呢？<br />
 MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”，然后在其中，新增一个文档，并且设置这个文档的文章类型是属于页面。然后把图片拖拽进这个文档并删除 mweb 生成的 markdown 语法，这样就不会显示在文档中了。<br />
 然后如下图，打开大纲视图，找到刚刚拖入的图标，点“Copy”按钮复制，并在 “site icon” 的输入框，粘贴一下即可（我是拿 MWeb 的图标做测试）。</p>
-<p><img src="media/15304638513365/15761338435586.jpg" alt="" style="width:1275px;" /></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338435586.jpg" alt="" style="width:1275px;" /></p>
 <p>下图为设置好网站图标的效果：<br />
-<img src="media/15304638513365/15761338944073.jpg" alt="" style="width:611px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761338944073.jpg" alt="" style="width:611px;" /></p>
 <p>其它需要填入图片的，也是用这用方法。</p>
 <h2><a id="%E8%AE%BE%E7%BD%AE%E6%96%87%E6%A1%A3%E6%89%A9%E5%B1%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>设置文档扩展</h2>
 <p>有些网站模板支持文档扩展，我这里还是以使用了 site-mweb-bluma 模板的 Coder For Art 网站为例子。</p>
 <p>如下图，打开其中一篇文档，在文档大纲视图最下边，就会发现网站模板所支持的文档扩展填写。</p>
-<p><img src="media/15304638513365/15761343071119.jpg" alt="" style="width:1270px;" /></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761343071119.jpg" alt="" style="width:1270px;" /></p>
 <p>比如说我要填写 featured 图片，则可以先复制 “mweb3-1.jpg” 这张图，然后粘贴入 featured 输入框即可。另外我也顺便填写了 excerpt 这个字段。填写后，在 site-mweb-bluma 模板中的效果如下图：</p>
-<p><img src="media/15304638513365/15761345831970.jpg" alt="" style="width:1052px;" /></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761345831970.jpg" alt="" style="width:1052px;" /></p>
 <h2><a id="%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E4%B8%BB%E8%8F%9C%E5%8D%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>设置网站的主菜单</h2>
 <p>在 <code>偏好设置</code> - <code>网站扩展</code> - <code>网站菜单</code> 中，先选择要设置的网站，并选中 <code>网站菜单</code> 这个选项卡，如下图：<br />
-<img src="media/15304638513365/15304650978816.jpg" alt="" style="width:595px;" /></p>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304650978816.jpg" alt="" style="width:595px;" /></p>
 <p>你可以新增，编辑和删除菜单，或者拖拽来调整顺序。要注意的是，自带的网站模板中，MWeb-Foundation-Book 这个模板是不支持网站菜单的。</p>
 <p>其它比如说：“网站扩展”、“文档扩展” 这两个选项卡的功能，是属于自定义模板和功能，这里暂时不做介绍。</p>
 <h2><a id="%E6%96%87%E6%A1%A3%E9%97%B4%E7%9A%84%E5%BC%95%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>文档间的引用</h2>
 <p>在 MWeb 中引用其它文档非常简单，在文档列表中，右键要引用的文档，选择 <code>复制</code>，如下图所示。<br />
-<img src="media/15304638513365/15304655581752.jpg" alt="" style="width:342px;" /><br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;" /><br />
 然后在要引用的文档的位置 <code>CMD + V</code> 粘贴即可，MWeb 会生成 <code>[如何使用“发布脚本”功能发布静态网站](how_to_use_shell_script.html)</code> 这种语法。如果你按住 <code>CMD</code> 键并点击，则会打开这个引用的文档。</p>
 <p>生成静态网站功能可以很好的处理这种引用，并生成相关的网页连接。</p>
 <h2><a id="%E5%A2%9E%E5%8A%A0%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A%E6%B3%A8%E9%87%8A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>增加阅读更多注释</h2>
 <p>阅读更多的用途请看下面的图片，这个需要网站模板的支持，你可以使用菜单：<code>标签</code> - <code>插入阅读更多注释</code> 来插入阅读更多，然后要注意的是，这个注释是要前后空一行的，也如下图。</p>
-<p><img src="media/15304638513365/15304722329962.jpg" alt="" style="width:946px;" /></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304722329962.jpg" alt="" style="width:946px;" /></p>
 <p>另外，比如说发布到 Wordpress 中时，Wordpress 也能识别这个阅读更多的设置。</p>
 <h2><a id="%E9%85%8D%E7%BD%AE%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E8%84%9A%E6%9C%AC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>配置网站发布脚本</h2>
 <p>这个功能 MWeb for Mac 2.2.3 版就有的，是为了让 MWeb 中的静态网站体验能达到 “新增文档并编辑” - “右键并选择执行发布脚本” 这样一个简单的流程。避免之前那样，生成网站后还要去敲命令进行发布。<br />
@@ -149,6 +149,9 @@ Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp;
       </p>
     </footer>
 
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
   
 
