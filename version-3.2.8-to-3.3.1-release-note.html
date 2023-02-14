@@ -55,78 +55,12 @@
       </div>
     
     
- <div class="container" id="content-wrap">
- 
- 
-    
-     
-   <script type="text/javascript">
-      $(function(){
-        $('a.menu-blog').addClass('active');
-      });
-      </script>
-
-    
-      <script type="text/javascript">
-    $(function(){
-      var url = window.location.pathname;
-    var filename = url.substring(url.lastIndexOf('/')+1);
-    if (filename.length > 5) {
-      $('.blog-cats a').each(function(){
-        var href = $(this).attr('href');
-        if(href.length>5){
-          href = href.substring(0,href.length-5);
-          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
-        }
-      });
-    }
-    });
-  </script>
-   <div class="row">
-        <div class="col-sm-12">
-
-          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
-
-        <ul class="blog-cats">
-
-  
-    
-
-  
-      <li><a href="blog.html">所有分类</a></li> 
-        
-              <li><a href="docsV2.html">使用文档</a></li>
-        
-              <li><a href="tips.html">使用技巧</a></li>
-        
-              <li><a href="releases.html">版本发布</a></li>
-        
-    
-
-        </ul>
-        <div class="rss"><a href="atom.xml">RSS</a></div>
-          </div>
-       </div>
-     </div>
-     <hr style="margin-bottom: 60px;" />
-
-      <div class="row">
-
-        <div class="col-sm-10 blog-main">
-			<div class="blog-content-wrap">
-				<div class="blog-post">
-		            <h2 class="blog-post-title">MWeb 3.2.8 及以下版本升级到 3.3.1 版本说明</h2>
-		            <p class="blog-post-meta">2019/09/21 
-			            &nbsp;posted in 
-						
-						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
-						
-						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
-						 
-						 
-		            </p>
-		            <div class="content-responsive">
-		            <p>这个说明只针对非 Mac App Store 版本，Mac App Store 版本不受影响。</p>
+   <div class="container" id="content-wrap">
+	<div class="page-post">
+		<h2 class="blog-post-title">MWeb 3.2.8 及以下版本升级到 3.3.1 版本说明</h2>
+<hr />
+		<div class="page-content content-responsive">
+			<p>这个说明只针对非 Mac App Store 版本，Mac App Store 版本不受影响。</p>
 <h2><a id="%E9%87%8D%E8%A6%81%E8%AF%B4%E6%98%8E%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>重要说明：</h2>
 <p><span style='color:red;font-weight:bold;'>3.2.8</span> 及以下版本的 MWeb 要更新到 <span style='color:red;font-weight:bold;'>3.3.1</span> 及以上版本时，请 <a href="https://cdn.mwebapp.cn/MWeb328.dmg">下载</a> 或更新到 <span style='color:red;font-weight:bold;'>3.2.8</span> 版本，然后使用菜单： <strong>MWeb - 导出偏好设置数据...</strong> 功能，导出所有设置。然后再升级到 <span style='color:red;font-weight:bold;'>3.3.1</span> 版本。当升级到 <span style='color:red;font-weight:bold;'>3.3.1</span> 版本后，请使用菜单： <strong>MWeb - 导入偏好设置数据...</strong> 功能，导入 <span style='color:red;font-weight:bold;'>3.2.8</span> 版本导出的偏好设置数据！</p>
 <p><strong>提示</strong>：如果你没有导出偏好设置数据就更新到了 3.3.1，可以重新下载 3.2.8 版本，再导出，然后再在 3.3.1 版本导入即可。</p>
@@ -140,29 +74,10 @@
 <li>其他 Bug 修正。</li>
 </ul>
 
-		            </div>
-				</div><!-- /.blog-post -->
-			</div>
-			<div class="share-comment">
-			
-
-<div class="jiathis_style_24x24">
-	<a class="jiathis_button_tsina"></a>
-	<a class="jiathis_button_qzone"></a>
-	<a class="jiathis_button_tqq"></a>
-	<a class="jiathis_button_weixin"></a>
-	<a class="jiathis_button_renren"></a>
-	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	<a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-			</div>
-
-        </div><!-- /.blog-main -->
-	</div>
-</div>   <footer class="blog-footer">
+		</div>
+  	</div>
+ </div>
+   <footer class="blog-footer">
       <p>Copyright &copy; 2022
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
  <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
