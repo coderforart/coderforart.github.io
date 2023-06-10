@@ -4,7 +4,7 @@
   <title><![CDATA[MWeb]]></title>
   <link href="https://zh.mweb.im/atom.xml" rel="self"/>
   <link href="https://zh.mweb.im/"/>
-  <updated>2023-06-02T23:37:37+08:00</updated>
+  <updated>2023-06-10T23:34:59+08:00</updated>
   <id>https://zh.mweb.im/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,52 +12,6 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[贺 WWDC 😀，促销一下我的 App，时间 6/3~6/10，共 7 天，最低 6 折！]]></title>
-    <link href="https://zh.mweb.im/16857229952489.html"/>
-    <updated>2023-06-03T00:23:15+08:00</updated>
-    <id>https://zh.mweb.im/16857229952489.html</id>
-    <content type="html"><![CDATA[
-<h2><a id="%E4%BF%83%E9%94%80%E6%83%85%E5%86%B5%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>促销情况：</h2>
-<p><strong>macOS 平台：</strong></p>
-<ul>
-<li>《MWeb 标准版》内购： ¥98 --&gt; ¥58</li>
-<li>《MWeb Pro》： ¥128 --&gt; ¥78 (比标准版多了静态网站功能)</li>
-<li>《One Markdown》内购： ¥38 --&gt; ¥28</li>
-</ul>
-<p><strong>iOS 平台：</strong></p>
-<ul>
-<li>《MWeb 标准版》内购： ¥58 --&gt; ¥38</li>
-<li>《One Markdown》内购： ¥38 --&gt; ¥28</li>
-</ul>
-<h2><a id="%E7%9B%B8%E5%85%B3%E8%A7%A3%E9%87%8A%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>相关解释：</h2>
-<p>《MWeb》第一个版本是 2015 年 1 月发布的，它的定位是 macOS 平台原生的 Markdown 编辑、笔记和静态网站生成软件。2021 年8 月发布 4.0 版本后，改名为 《MWeb Pro》。iOS 版 MWeb 好像是 2017 年发布的，比 macOS 版少很多功能，当然是没有静态博客生成功能。为了统一，2021 年，macOS 平台增加一款《MWeb 标准版》，这个版本无静态博客生成功能，跟 iOS 平台的 MWeb 一致。</p>
-<p>《One Markdown》其实是把《MWeb》的编辑器独立出来，变成一个像 TextEdit 那样的简洁的 App。</p>
-<p>所以最后变成：</p>
-<ul>
-<li>《MWeb 标准版》：支持 macOS/iPadOS/iOS 平台，Markdown 编辑、笔记、图床和发布到 Wordpress 等等一系列功能。</li>
-<li>《MWeb Pro》：仅 macOS 平台，为标准版的功能加静态网站生成功能。</li>
-<li>《One Markdown》：支持 macOS/iPadOS/iOS 平台，单纯的 Markdown 编辑功能。</li>
-</ul>
-<p>要了解更多，可参考官网： <a href="https://zh.mweb.im/">https://zh.mweb.im/</a></p>
-<h2><a id="%E8%B4%AD%E4%B9%B0%E5%9C%B0%E5%9D%80%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>购买地址：</h2>
-<ul>
-<li>《MWeb Pro》： <a href="https://apps.apple.com/cn/app/mweb/id1403919533?l=zh&amp;ls=1&amp;mt=12">https://apps.apple.com/cn/app/mweb/id1403919533?l=zh&amp;ls=1&amp;mt=12</a></li>
-<li>《MWeb 标准版》： <a href="https://apps.apple.com/cn/app/mweb-markdown-note-taking/id1183407767?platform=mac">https://apps.apple.com/cn/app/mweb-markdown-note-taking/id1183407767?platform=mac</a></li>
-<li>《One Markdown》： <a href="https://apps.apple.com/cn/app/mweb-markdown-note-taking/id1183407767?platform=mac">https://apps.apple.com/cn/app/mweb-markdown-note-taking/id1183407767?platform=mac</a></li>
-</ul>
-<h2><a id="%E7%9B%B8%E5%85%B3%E6%88%AA%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>相关截图</h2>
-<p>下图是 MWeb 的文档库模式，使用分类和标签来管理文档，主要用于记笔记和静态博客生成。<br />
-<img src="media/16857229952489/MWebLibraryMode.jpg" alt="MWebLibraryMode" /></p>
-<p>下图是 MWeb 的外部文件夹模式，用于编辑 Markdown 文件。<br />
-<img src="media/16857229952489/MWebFolderMode.jpg" alt="MWebFolderMode" /></p>
-<p><img src="media/16857229952489/iOSVersionMWeb.jpg" alt="iOSVersionMWeb" /></p>
-<p><img src="media/16857229952489/macOSVersionOneMarkdown.jpg" alt="macOSVersionOneMarkdown" /></p>
-<p><img src="media/16857229952489/iOSVersionOneMarkdown.jpg" alt="iOSVersionOneMarkdown" /></p>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 4 相关问题及回答]]></title>
@@ -1267,6 +1221,186 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <h2><a id="mweb%E5%AF%B9-latex%EF%BC%8Cmermaid%EF%BC%8Cecharts%E4%B9%A6%E5%86%99%E7%9A%84%E8%BE%85%E5%8A%A9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 对 LaTeX，mermaid，echarts 书写的辅助</h2>
 <p>在 MWeb 编辑器中，光标移到 LaTeX中间，即可以预览 LaTeX 公式，如果修改公式，预览也会实时更新，如下图为 LaTeX 公式的辅助，mermaid，echarts 的辅助也是一样效果：</p>
 <p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16420004813946.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown 语法]]></title>
+    <link href="https://zh.mweb.im/zh-markdown.html"/>
+    <updated>2018-06-29T23:13:33+08:00</updated>
+    <id>https://zh.mweb.im/zh-markdown.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="markdown%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Markdown 的设计哲学</h2>
+<p>以下是引用 <a href="https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a> 的描述，这描述非常清楚地说明了 Markdown 是什么，是用来做什么的。</p>
+<blockquote>
+<p>Markdown 的目标是实现“易读易写”。<br />
+不过最需要强调的便是它的可读性。一份使用 Markdown 格式撰写的文件应该可以直接以纯文字发布，并且看起来不会像是由许多标签或是格式指令所构成。<br />
+Markdown 的语法有个主要的目的：用来作为一种网络内容的<em>写作</em>用语言。</p>
+</blockquote>
+<p>这里再重点说明两点，也是最重要的两点：</p>
+<ul>
+<li>首先，Markdown 是纯文本，它不附带任何图片和其它附件，图片和附件都是用引用的方式，是保存在 Markdown 文本之外的地方的。所以 MWeb 的编辑器，会完整的显示文本，不会有任何的删减。编辑器为了方便查看，会显示图片语法引用的图片，但是 Markdown 本身是纯文本，不带任何格式和样式。</li>
+<li>另外 Markdown 的目标是“易读易写”，而不是为了排版好看。它主要还是为了方便输入文字，也就是说，为了达成“易写”，写的时候建议不要太考虑排版，只考虑用什么语法，比如说是标题、列表还是引用或代码块。Markdown 并不擅长复杂排版的，因为复杂的排版，Markdown 是建议直接写 HTML 的。</li>
+</ul>
+<p>理解这两点有利于了解 MWeb 这个软件的设计理念，从而能更愉快地使用 MWeb，毕竟 MWeb 就是围绕 Markdown 构建的。也有利于了解 MWeb 能做什么，不能做什么，为什么没有软件 A 的功能或者软件 B 的方式。如果有时间，也建议阅读一下 <a href="https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a> 这篇文章。</p>
+<h2><a id="%E5%AD%A6%E4%B9%A0markdown%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>学习 Markdown 语法</h2>
+<p>MWeb 4 采用的是 CommonMark 标准和 GitHub Flavored Markdown (GFM) 的语法，如果要快速上手，只需要简单学习一下即可。学习过程，大概就分三步吧：</p>
+<ol>
+<li><strong>初步学习：</strong> 目前最好的学习地方是：<a href="https://commonmark.org/help/">https://commonmark.org/help/</a> 这里，学习 10 分钟就能上手使用了。</li>
+<li><strong>进一步学习：</strong> 主要是学习 GFM 的扩展语法，主要有删除线、任务列表、表格和脚注，详细可以查看本文中的 GFM 语法扩展，也就这么几种，一下就学会了。</li>
+<li><strong>MWeb 中特有的：</strong> MWeb 中特有的有 TOC、LaTeX、画图支持（mermaid, echarts）和设置图片宽度，这些也会在本文后面说明。</li>
+</ol>
+<p>Markdown 的语法其实很简单，一般只需要了解有什么语法就好，比如说有标题、列表、引用、代码块等等。不知道语法详细，可以直接使用 MWeb 的编辑器插入相关语法。也可以结合 MWeb 的编辑器，一边学一边用，建议阅读 <a href="zh-mweb-editor.html">MWeb 的编辑器介绍</a> 这篇文章。</p>
+<p>另外，在编写 Markdown 文档时，空行的使用非常重要，空行有利于清晰的区分文档的结构和内容，增加文本的易读性。这样，在阅读 Markdown 文档时，就不需要都解析成网页了。一般来说，建议 Markdown 的块元素之间，都留一个空行。</p>
+<h2><a id="github-flavored-markdown-gfm%E8%AF%AD%E6%B3%95%E6%89%A9%E5%B1%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Flavored Markdown (GFM) 语法扩展</h2>
+<p>Github 在 CommonMark 的基础上，扩展了一些常用的语法，主要有删除线、任务列表、表格和脚注，以下就是简单介绍这些语法。</p>
+<h3><a id="%E5%88%A0%E9%99%A4%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>删除线</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">加删除线像这样用： ~~删除这些~~
+</code></pre>
+<p>效果如下：</p>
+<p>加删除线像这样用： <del>删除这些</del></p>
+<h3><a id="%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>任务列表（Task lists）</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre>
+<p>效果如下：</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" disabled="" /> 任务一 未做任务 <code>- + 空格 + [ ]</code></li>
+<li class="task-list-item"><input type="checkbox" checked="" disabled="" /> 任务二 已做任务 <code>- + 空格 + [x]</code></li>
+</ul>
+<h3><a id="%E8%A1%A8%E6%A0%BC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>表格</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>脚注（Footnote）</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">这是一个脚注：[^1]
+
+[^1]: 这里是脚注信息
+</code></pre>
+<p>效果如下：</p>
+<p>这是一个脚注：<sup class="footnote-ref"><a href="#fn-1" id="fnref-1_ref" data-footnote-ref>1</a></sup></p>
+<h2><a id="mweb%E4%B8%AD%E7%89%B9%E6%9C%89%E7%9A%84%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 中特有的语法</h2>
+<h3><a id="%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>图片宽度</h3>
+<p>图片的 Markdown 语法：</p>
+<pre><code class="language-plain_text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![图片描述](url)
+</code></pre>
+<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
+<pre><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
+</code></pre>
+<p><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" style="width:140px;" /></p>
+<h3><a id="mweb%E7%94%BB%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 画图</h3>
+<h4><a id="mermaid" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>mermaid</h4>
+<p>mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图，它的官网为：<a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a> ，在 MWeb 中使用 mermaid 的语法就是声明代码块的语言为 mermaid，代码块中再写上 mermaid 的画图语法即可，你可以把下面的语法复制到 MWeb 中查看效果。</p>
+<pre><code class="language-plain_text">```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+```
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16421614330357.jpg" alt="" style="width:456px;" /></p>
+<h4><a id="echarts" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>echarts</h4>
+<p>echarts 是百度出品的 js 画图库，它的网址为：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="https://echarts.apache.org/examples/zh/index.html">https://echarts.apache.org/examples/zh/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
+<pre><code class="language-plain_text">```echarts
+option = {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line'
+    }]
+};
+```
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16421614994388.jpg" alt="" style="width:467px;" /></p>
+<h3><a id="latex%EF%BC%88-mathjax%E6%B8%B2%E6%9F%93%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>LaTeX （MathJax 渲染）</h3>
+<p>MWeb 采用 CommonMark 中本身的代码块语法来支持 LaTeX 数学公式。CommonMark 中的行内代码和代码块的语法有很高的扩展性，可以随意扩展。MWeb 采用了 ``inline math`` 作为数学公式的行内语法，```math block math ``` 作为数学公式的块语法。然后 `code` 仍然是行内代码的语法， ``inline math`` 在 CommonMark 中也是行内代码，但是在 MWeb 中会渲染成数学公式。这样做的好处是，原 markdown 文档发布到不支持数学公式的环境时，会以代码显示，这样就会显示原本的公式文本，不会太过影响阅读。<br />
+另外，MWeb 也兼容 <code>$ 和 $$</code> 方式的数学公式。使用数学公式时，需要在 <code>偏好设置 - 通用设置</code> 中启用 LaTeX 数学公式，并选择所使用的语法。</p>
+<h3><a id="%E6%B3%A8%E9%87%8A%E5%92%8C%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>注释和阅读更多</h3>
+<!-- comment -->
+<span id="more"></span><!-- more -->
+<p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br />
+<strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
+<h3><a id="toc" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>TOC</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">[TOC]
+</code></pre>
+<p>效果如下：</p>
+<div class="mweb_toc"><ul>
+<li><a href="#markdown%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6">Markdown 的设计哲学</a></li>
+<li><a href="#%E5%AD%A6%E4%B9%A0markdown%E8%AF%AD%E6%B3%95">学习 Markdown 语法</a></li>
+<li><a href="#github-flavored-markdown-gfm%E8%AF%AD%E6%B3%95%E6%89%A9%E5%B1%95">GitHub Flavored Markdown (GFM) 语法扩展</a>
+<ul>
+<li><a href="#%E5%88%A0%E9%99%A4%E7%BA%BF">删除线</a></li>
+<li><a href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89">任务列表（Task lists）</a></li>
+<li><a href="#%E8%A1%A8%E6%A0%BC">表格</a></li>
+<li><a href="#%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89">脚注（Footnote）</a></li>
+</ul>
+</li>
+<li><a href="#mweb%E4%B8%AD%E7%89%B9%E6%9C%89%E7%9A%84%E8%AF%AD%E6%B3%95">MWeb 中特有的语法</a>
+<ul>
+<li><a href="#%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6">图片宽度</a></li>
+<li><a href="#mweb%E7%94%BB%E5%9B%BE">MWeb 画图</a>
+<ul>
+<li><a href="#mermaid">mermaid</a></li>
+<li><a href="#echarts">echarts</a></li>
+</ul>
+</li>
+<li><a href="#latex%EF%BC%88-mathjax%E6%B8%B2%E6%9F%93%EF%BC%89">LaTeX （MathJax 渲染）</a></li>
+<li><a href="#%E6%B3%A8%E9%87%8A%E5%92%8C%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A">注释和阅读更多</a></li>
+<li><a href="#toc">TOC</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section class="footnotes" data-footnotes>
+<ol>
+<li id="fn-1">
+<p>这里是脚注信息 <a href="#fnref-1_ref" class="footnote-backref" data-footnote-backref aria-label="Back to content">&#8617;<a></p>
+</li>
+</ol>
+</section>
 
 ]]></content>
   </entry>

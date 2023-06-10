@@ -51,76 +51,12 @@
     </div>
     
     
- <div class="container" id="content-wrap">
- 
- 
-    
-     
-   <script type="text/javascript">
-      $(function(){
-        $('a.menu-blog').addClass('active');
-      });
-      </script>
-
-    
-      <script type="text/javascript">
-    $(function(){
-      var url = window.location.pathname;
-    var filename = url.substring(url.lastIndexOf('/')+1);
-    if (filename.length > 5) {
-      $('.blog-cats a').each(function(){
-        var href = $(this).attr('href');
-        if(href.length>5){
-          href = href.substring(0,href.length-5);
-          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
-        }
-      });
-    }
-    });
-  </script>
-   <div class="row">
-        <div class="col-sm-12">
-
-          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
-
-        <ul class="blog-cats">
-
-  
-    
-
-  
-      <li><a href="blog.html">所有分类</a></li> 
-        
-              <li><a href="docsV2.html">使用文档</a></li>
-        
-              <li><a href="tips.html">使用技巧</a></li>
-        
-              <li><a href="releases.html">版本发布</a></li>
-        
-    
-
-        </ul>
-        <div class="rss"><a href="atom.xml">RSS</a></div>
-          </div>
-       </div>
-     </div>
-     <hr style="margin-bottom: 60px;" />
-
-      <div class="row">
-
-        <div class="col-sm-10 blog-main">
-			<div class="blog-content-wrap">
-				<div class="blog-post">
-		            <h2 class="blog-post-title">贺 WWDC 😀，促销一下我的 App，时间 6/3~6/10，共 7 天，最低 6 折！</h2>
-		            <p class="blog-post-meta">2023/06/03 
-			            &nbsp;posted in 
-						
-						    <a class='category' href='blog.html'>博客</a>&nbsp;
-						 
-						 
-		            </p>
-		            <div class="content-responsive">
-		            <h2><a id="%E4%BF%83%E9%94%80%E6%83%85%E5%86%B5%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>促销情况：</h2>
+   <div class="container" id="content-wrap">
+	<div class="page-post">
+		<h2 class="blog-post-title">贺 WWDC 😀，促销一下我的 App，时间 6/3~6/10，共 7 天，最低 6 折！</h2>
+<hr />
+		<div class="page-content content-responsive">
+			<h2><a id="%E4%BF%83%E9%94%80%E6%83%85%E5%86%B5%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>促销情况：</h2>
 <p><strong>macOS 平台：</strong></p>
 <ul>
 <li>《MWeb 标准版》内购： ¥98 --&gt; ¥58</li>
@@ -157,29 +93,10 @@
 <p><img src="media/16857229952489/macOSVersionOneMarkdown.jpg" alt="macOSVersionOneMarkdown" /></p>
 <p><img src="media/16857229952489/iOSVersionOneMarkdown.jpg" alt="iOSVersionOneMarkdown" /></p>
 
-		            </div>
-				</div><!-- /.blog-post -->
-			</div>
-			<div class="share-comment">
-			
-
-<div class="jiathis_style_24x24">
-	<a class="jiathis_button_tsina"></a>
-	<a class="jiathis_button_qzone"></a>
-	<a class="jiathis_button_tqq"></a>
-	<a class="jiathis_button_weixin"></a>
-	<a class="jiathis_button_renren"></a>
-	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	<a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-			</div>
-
-        </div><!-- /.blog-main -->
-	</div>
-</div>   <footer class="blog-footer">
+		</div>
+  	</div>
+ </div>
+   <footer class="blog-footer">
       <p>Copyright &copy; 2022
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
  <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
