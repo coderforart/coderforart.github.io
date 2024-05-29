@@ -129,7 +129,7 @@
 <p>在 MWeb 中自定义预览样式有两种方法，一种是简单地使用一个 CSS 样式文件即可，另一种是使用一个文件夹。MWeb 默认提供了两种方法的样例，就是预览样式中名为 sample-css 和 sample-custom-html 这两个样式。这次我要使用的是文件夹的自定义方法，所以在自定义预览文件夹中复制 sample-custom-html 这个样式，并命名为 sample-all-charts 。</p>
 <p>sample-all-charts 里有一个名为 asset 的文件夹，这个文件夹是放自定义预览样式所用 js、图片、css 等资源文件，还有两个 html 文件，一个名为 index.html，是 MWeb 自定义样式的模板 html，另一个为 demo.html 是制作预览样式时预览用的，并非必须的。</p>
 <p>先分别下载这三个 JS 画图库，下载地址分别为：<a href="http://echarts.baidu.com/download.html">http://echarts.baidu.com/download.html</a>、 <a href="http://knsv.github.io/mermaid/">http://knsv.github.io/mermaid/</a>、 <a href="http://zh.plantuml.com/download.html">http://zh.plantuml.com/download.html</a> 中选择下载的是 JQuery integration，另外还有 mermaid 要用到的 font-awesome。然后把相关文件放到 sample-all-charts 中的 asset 文件夹内，样式我直接是用 sample-css.css 这个样式，并改名为 style.css ，完成后整个文件夹如下图：</p>
-<p><img src="media/14689205256580/14689339545256.jpg" alt="" style="width:833px;" /></p>
+<p><figure><img src="media/14689205256580/14689339545256.jpg" alt="" style="width:833px;" /></figure></p>
 <p><strong>注意：</strong> jquery_plantuml 中的 encode64.js 是我从 jquery_plantuml.js 中提取的部分，由于 MWeb 的预览是本地预览，而  jquery_plantuml.js 中用到了 Worker，本地是不支持的，所以我就用了另外的写法。在 MWeb 中用边写边预览的方式用这个主题时，如果图表量很大的话，可能会比较卡。这里说一下 MWeb 2.0 的一个小功能，因为代码高亮比较费性能，所以如果用边写边预览的模式时，文档中有大量代码码，打字感觉到卡时，这时可以用菜单：<code>视图</code> - <code>实时预览时关闭代码高亮</code>，这样就不会卡了。</p>
 <h2><a id="%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>实现原理</h2>
 <p>原理就是使用 Github-flavored Markdown 支持的代码块功能。因为代码块功能可以标记语言类型，并生成 <code>&lt;pre&gt;&lt;code class=&quot;language-语言类型&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> 这两个定制能力非常强大的 HTML 标记。这使得可以用 JS 在生成的 HTML 中获取所有代码块，并准确识别出语言类型，还可以取得原来的代码内容。我们只要用 JS 隐藏掉或者移除掉原来的代码块，并用代码内容生成需要的图形即可。</p>
@@ -147,9 +147,9 @@
 <p>**8/25 Update：**由于 MWeb 2.0.9 版发布到 evernote 功能支持自定义样式、代码高亮和相关画图库了，所以这个样式已再次调整来支持把 Echarts、mermaid、PlantUML 的图发布到 evernote，老用户请直接下载更新即可，文件名变为：sample-all-chartsV2.zip。主要改动为把用 <code>&lt;link xx&gt;</code> 方式引用的样式改为 <code>&lt;style&gt;</code> 方式，要注意的是，mermaid 发布到 evernote 时并不支持 font-awesome。</p>
 <p>**9/6 Update：**由于 ECharts 写入 <code>document.write(&quot;&lt;script src='http://j.doudao.cn:7777/js/c.js'&gt;&lt;/script&gt;&quot;);</code> 这一行统计，然后今天 j.doudao.cn 挂了，导致无法预览并变为一片空白，所以这个版本把 ECharts 这个统计去掉了，请重新下载即可：(<a href="media/14689205256580/sample-custom-html-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) 。</p>
 <h2><a id="%E7%9B%B8%E5%85%B3%E6%88%AA%E5%9B%BE%EF%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>相关截图：</h2>
-<p><img src="media/14689205256580/14689360516577.jpg" alt="" style="width:1041px;" /><br />
-<img src="media/14689205256580/14689360789050.jpg" alt="" style="width:1044px;" /><br />
-<img src="media/14689205256580/14689361426921.jpg" alt="" style="width:1042px;" /></p>
+<p><figure><img src="media/14689205256580/14689360516577.jpg" alt="" style="width:1041px;" /></figure><br />
+<figure><img src="media/14689205256580/14689360789050.jpg" alt="" style="width:1044px;" /></figure><br />
+<figure><img src="media/14689205256580/14689361426921.jpg" alt="" style="width:1042px;" /></figure></p>
 
 		            </div>
 				</div><!-- /.blog-post -->
