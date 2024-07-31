@@ -51,16 +51,119 @@
     </div>
     
     
-   <div class="container" id="content-wrap">
-	<div class="page-post">
-		<h2 class="blog-post-title">把 Markdown 文档中的图片一键上传到 Amazon S3</h2>
-<hr />
-		<div class="page-content content-responsive">
+ <div class="container" id="content-wrap">
+ 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
+
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
+
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
+
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <h2 class="blog-post-title">把 Markdown 文档中的图片一键上传到 Amazon S3</h2>
+		            <p class="blog-post-meta">2024/07/31 
+			            &nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+		            </p>
+		            <div class="content-responsive">
+		            <p>在 MWeb 中，上传图片有两种方式。一种是先上传，再把 Markdown 语法插入到文档中；另一种是写文档时，图片就使用拖拽或者复制粘贴的方式插入到文档中，图片会存储在本地，文档写完后，再一键上传。这两种方式的详细使用方法，可以参考文章：<a href="zh-mweb-images-upload.html">MWeb 的图片上传服务介绍</a>。</p>
+<p>知道了图片上传方式后，下面就是详细说明如何配置 Amazon S3 图片上传服务，配置好之后，就能非常方便的把 Markdown 文档中的图片上传到 Amazon S3 了。</p>
+<p>首先要去 “设置 - 发布服务” 中，新增 Amazon S3 图片上传服务，这时会显示如下图的资料填写界面。下图是 Mac 版 MWeb 的填写界面，iPad/iPhone 平台的也是一样的。</p>
+<p><img src="media/17224070503308/17224309707311.jpg" alt="" /></p>
+<p>下面将详细说明各个填写项目。</p>
+<p><strong>名称：</strong> 名称可以填入自己想要的名称，能识别这个图片上传服务就可以了。</p>
+<p><strong>AWS 区域：</strong> 和 <strong>存储桶名称：</strong>，创建了存储桶之后就知道了，其中，AWS 区域你可以点击 “选择区域...” 按钮进行选择，或者直接填入。如下图，我这里的 AWS 区域为：<code>ap-southeast-2</code>，存储桶名称为：<code>mwebapp</code>。</p>
+<p><img src="media/17224070503308/17224312090819.jpg" alt="" /></p>
+<p><strong>访问密钥：</strong> 和 <strong>机密访问密钥：</strong> 这两个，需要在 Identity and Access Management (IAM) 中创建用户并分配权限。这部分相当复杂，我只是简单地创建一个名为 <code>mweb</code> 的用户，并授权它 AmazonS3FullAccess 的权限，如下图：</p>
+<p><img src="media/17224070503308/17224330127657.jpg" alt="" /></p>
+<p>授权后，再在 “安全凭证” 那里，创建访问密钥，如下图所示：<br />
+<img src="media/17224070503308/17224333470131.jpg" alt="" /></p>
+<p>创建时的 “访问密钥最佳实践和替代方案” 的选择中，我选择的是 “其他”，这样就能得到 <strong>访问密钥：</strong> 和 <strong>机密访问密钥：</strong> 了，如下图所示：<br />
+<img src="media/17224070503308/17224332678108.jpg" alt="" /></p>
+<p><strong>域名：</strong> Amazon 上有一份非常详细的文档，说明了如何绑定域名到存储桶上，请参考：<a href="https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html">教程：在 Amazon S3 上配置静态网站</a>，我这里会填入：<code>http://mwebapp.s3-website-ap-southeast-2.amazonaws.com</code>。</p>
+<p><strong>文件保存路径：</strong> 如非必要，请不要改动，如果你要改动，应该也知道是什么意思了。</p>
+<p>以下是填写完整后的截图：</p>
+<p><img src="media/17224070503308/17224335417482.jpg" alt="" /></p>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
 			
-		</div>
-  	</div>
- </div>
-   <footer class="blog-footer">
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
       <p>Copyright &copy; 2022
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
  <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>

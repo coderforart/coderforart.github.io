@@ -51,16 +51,118 @@
     </div>
     
     
-   <div class="container" id="content-wrap">
-	<div class="page-post">
-		<h2 class="blog-post-title">把 Markdown 文档中的图片一键上传到 Cloudflare R2</h2>
-<hr />
-		<div class="page-content content-responsive">
+ <div class="container" id="content-wrap">
+ 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
+
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
+
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
+
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <h2 class="blog-post-title">把 Markdown 文档中的图片一键上传到 Cloudflare R2</h2>
+		            <p class="blog-post-meta">2024/07/31 
+			            &nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+		            </p>
+		            <div class="content-responsive">
+		            <p>在 MWeb 中，上传图片有两种方式。一种是先上传，再把 Markdown 语法插入到文档中；另一种是写文档时，图片就使用拖拽或者复制粘贴的方式插入到文档中，图片会存储在本地，文档写完后，再一键上传。这两种方式的详细使用方法，可以参考文章：<a href="zh-mweb-images-upload.html">MWeb 的图片上传服务介绍</a>。</p>
+<p>知道了图片上传方式后，下面就是详细说明如何配置 Cloudflare R2 图片上传服务，配置好之后，就能非常方便的把 Markdown 文档中的图片上传到 Cloudflare R2 了。</p>
+<p>首先要去 “设置 - 发布服务” 中，新增 Cloudflare R2 图片上传服务，这时会显示如下图的资料填写界面。下图是 Mac 版 MWeb 的填写界面，iPad/iPhone 平台的也是一样的。<br />
+<img src="media/17224069154529/17224268802671.jpg" alt="" /></p>
+<p>下面将详细说明各个填写项目。</p>
+<p><strong>名称：</strong> 名称可以填入自己想要的名称，能识别这个图片上传服务就可以了。</p>
+<p><strong>帐户 ID：</strong> 和 <strong>存储桶名称：</strong>，这两个可以在 Cloudflare R2 的管理界面中找到，如果你没有存储桶，可以创建一个，如下图：<br />
+<img src="media/17224069154529/17224272676129.jpg" alt="" /></p>
+<p><strong>访问密钥：</strong> 和 <strong>机密访问密钥：</strong> 这两个，需要点击上图中的 “管理 R2 API 令牌”（就在帐户 ID 下面） 来产生，下图是创建这两个密钥的示例：<br />
+<img src="media/17224069154529/17224275943290.jpg" alt="" /></p>
+<p>点击 “创建 API 令牌” 按钮后，就会得到 <strong>访问密钥：</strong> 和 <strong>机密访问密钥：</strong> ，如下图所示，请分别填入就可以了。<br />
+<img src="media/17224069154529/17224277309550.jpg" alt="" /></p>
+<p><strong>域名：</strong> 如果有为这个存储桶绑定了域名，请填入自己的域名。如果没有，Cloudflare R2 也提供了一个临时的域名，在 “R2 - 存储桶 - 设置 - R2.dev 子域” 中，如下图所示。我这里是：<code>https://pub-e7575c891a134e899fd1c81d49f23497.r2.dev</code><br />
+<img src="media/17224069154529/17224285585038.jpg" alt="" /></p>
+<p><strong>文件保存路径：</strong> 如非必要，请不要改动，如果你要改动，应该也知道是什么意思了。</p>
+<p>以下是填写完整后的截图：<br />
+<img src="media/17224069154529/17224286624668.jpg" alt="" /></p>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
 			
-		</div>
-  	</div>
- </div>
-   <footer class="blog-footer">
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
       <p>Copyright &copy; 2022
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
  <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://vercel.com/">vercel</a>
