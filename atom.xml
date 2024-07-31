@@ -4,7 +4,7 @@
   <title><![CDATA[MWeb]]></title>
   <link href="https://zh.mweb.im/atom.xml" rel="self"/>
   <link href="https://zh.mweb.im/"/>
-  <updated>2024-07-04T01:33:57+08:00</updated>
+  <updated>2024-07-31T15:49:09+08:00</updated>
   <id>https://zh.mweb.im/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,36 +12,6 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[如何在 MWeb 中把 Markdown 文档中的图片一键上传到 Azure Blob]]></title>
-    <link href="https://zh.mweb.im/mweb-azure-blob.html"/>
-    <updated>2024-07-31T14:26:34+08:00</updated>
-    <id>https://zh.mweb.im/mweb-azure-blob.html</id>
-    <content type="html"><![CDATA[
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[如何在 MWeb 中把 Markdown 文档中的图片一键上传到 Amazon S3]]></title>
-    <link href="https://zh.mweb.im/mweb-amazon-s3.html"/>
-    <updated>2024-07-31T14:24:10+08:00</updated>
-    <id>https://zh.mweb.im/mweb-amazon-s3.html</id>
-    <content type="html"><![CDATA[
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[如何在 MWeb 中把 Markdown 文档中的图片一键上传到 Cloudflare R2]]></title>
-    <link href="https://zh.mweb.im/mweb-cloudflare-r2.html"/>
-    <updated>2024-07-31T14:21:55+08:00</updated>
-    <id>https://zh.mweb.im/mweb-cloudflare-r2.html</id>
-    <content type="html"><![CDATA[
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 4 相关问题及回答]]></title>
@@ -1179,6 +1149,258 @@ MWeb 中的做法是在网站分类中，新建一个分类，名为“其它”
 <li>提示 HTML 元素不支持的错误，通常是由于文档中有 “&lt;” 字符，比如说 &lt;int&gt; 这种。解决办法是用行内代码包起来，如：<code>&lt;int&gt;</code>，或者改为：<code>&amp;lt;int&amp;gt;</code>。</li>
 <li>提示中有 -3000 这种错误。这个错误目前只能先删除印象笔记发布服务，重启 MWeb，然后再重新增加印象笔记发布服务。</li>
 </ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown 输出]]></title>
+    <link href="https://zh.mweb.im/zh-mweb-export.html"/>
+    <updated>2018-06-30T22:02:23+08:00</updated>
+    <id>https://zh.mweb.im/zh-mweb-export.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb 支持把文档导出为图片、HTML、PDF，macOS 版还支持导出为 Epub、RTF 和 Docx，使用方法如下图所示。<br />
+<img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/mwebexportmenu.jpg" alt="mweb_export_menu" /></p>
+<h2><a id="macos%E7%89%88-mweb%E7%89%B9%E6%9C%89%E7%9A%84%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>macOS 版 MWeb 特有的功能</h2>
+<h3><a id="%E5%A4%8D%E5%88%B6%E4%B8%BA%E5%AF%8C%E6%96%87%E6%9C%AC%E5%8A%9F%E8%83%BD%E5%8F%8A%E5%85%B6%E7%94%A8%E9%80%94" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>复制为富文本功能及其用途</h3>
+<p>可以使用菜单：<code>发布 - 复制为富文本</code> 来使用这个功能。这个功能的主要用于把当前的 Markdown 文档到粘贴到 邮件（mail.app）、Pages.app、Word.app 中。在 Markdown 文档有本地图片的情况下，导出为 docx 功能目前还不能很好的支持图片。这时可以使用 <code>复制为富文本</code> 功能，然后在上述提到的三个软件中按下 <code>CMD + V</code> 粘贴，这样的话，图片就能很好的粘贴成功。</p>
+<p>如果需要把预览样式也复制，可以试试菜单：<code>发布 - 导出或复制为图片</code>，然后全选界面中的内容，再按 <code>CMD + C</code> 复制，然后可以尝试粘贴到其它编辑器中，比如说微信公众号编辑器。</p>
+<h3><a id="%E5%AF%BC%E5%87%BA%E4%B8%BApdf%E6%88%96-epub" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出为 PDF 或 Epub</h3>
+<p>MWeb 不仅可以把单份 Markdown 文档导出为 PDF 或 Epub，在文档库模式中，还可以把多份文档导出为一份 PDF 或 Epub 文档，使用方法很简单，右键分类或者需要导出的文档，如下图：</p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/mwebexportlibpdfs.jpg" alt="" /></p>
+<h3><a id="%E5%AF%BC%E5%87%BA%E4%B8%BAhtml%E3%80%81docx%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>导出为 HTML、Docx 相关问题</h3>
+<p>使用 MWeb 导出为 HTML，会导出单个的 HTML，如果有本地图片，会把本地图片进行 Base64 编码嵌入到 HTML 中。</p>
+<p>另外，导出为 Docx 目前还不支持本地图片，如果需要导出的 Docx 文档包含图片，目前的解决方案是使用 Pandoc 导出为 Docx。使用办法是，先安装 Pandoc，然后再在 MWeb 的 <code>偏好设置 - 发布服务</code> 中，新增 <code>Pandoc 支持和运行脚本</code> 服务，在出来的窗口中，黑认的命令就是导出 Docx 的命令，自己取个名字然后保存，再在“发布”菜单中，选择运行这个发布服务即可。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 的编辑器介绍]]></title>
+    <link href="https://zh.mweb.im/zh-mweb-editor.html"/>
+    <updated>2018-06-30T19:55:33+08:00</updated>
+    <id>https://zh.mweb.im/zh-mweb-editor.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="markdown%E8%AF%AD%E6%B3%95%E8%BE%93%E5%85%A5%E8%BE%85%E5%8A%A9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Markdown 语法输入辅助</h2>
+<p><strong>macOS 版 MWeb 中：</strong><br />
+所有支持的 Markdown 语法都可以在“语法”菜单或者工具栏上的 “Aa” 按钮下找到，所有语法都附带有快捷方式，以方便快速输入。另外，如果你喜欢使用工具栏，可以使用菜单：<code>视图 - 自定义工具栏</code> 来自定义工具栏上的语法输入按钮。</p>
+<p><strong>iPadOS/iOS 版 MWeb 中：</strong><br />
+所有支持的 Markdown 语法都可以在虚拟键盘的工具条中找到。在 iOS 中，由于屏幕比较小，可以点击工具条上的 “M” 按钮，查看所有语法按钮。如果要自定义工具条上的按钮，可以点击编辑器右上角的 “AA” 按钮，再点击 “自定义键盘工具条按钮及顺序” 来自定义。如果要查看快捷键，可以按住 “CMD” 键查看。</p>
+<h2><a id="%E8%BE%B9%E7%BC%96%E8%BE%91%E8%BE%B9%E9%A2%84%E8%A7%88%E5%92%8C%E5%A4%A7%E7%BA%B2%E8%A7%86%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>边编辑边预览和大纲视图</h2>
+<p>所有平台都支持边编辑边预览模式和大纲视图，相关快捷键如下：</p>
+<ul>
+<li>切换编辑和预览：<code>CMD + R</code></li>
+<li>切换边编辑边预览：<code>CMD + 4</code></li>
+<li>显示和隐藏大纲视图：<code>CMD + 7</code></li>
+</ul>
+<p>以上功能在工具条上也有相关的按钮，在 macOS 版 MWeb 中，还可以选择大纲视图的显示方式，目前有三种：固定在编辑器左边、固定在编辑器右边、浮动显示。可以使用 “视图” 菜单来修改这个设置。</p>
+<h2><a id="%E7%BC%96%E8%BE%91%E5%99%A8%E4%B8%BB%E9%A2%98%E5%8F%8A%E9%A2%84%E8%A7%88%E6%A0%B7%E5%BC%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>编辑器主题及预览样式</h2>
+<p>macOS/iPadOS/iOS 现在都有暗主题和亮主题，所以 MWeb 也可以分别设置系统暗/亮主题时使用的主题。macOS 版 MWeb 中可以在 <code>偏好设置 - 主题 &amp; 样式</code> 中设置，iOS 版 MWeb 可以点击编辑右上角的 “AA” 按钮设置，也可以在设置页面中设置。</p>
+<p>MWeb 4.x 的预览样式是和编辑器样式合并在一起了，统称为“主题”。如果要自定义编辑器样式或者预览样式，需要先自定义主题。在 macOS 版 MWeb 中，可以在 <code>偏好设置 - 主题 &amp; 样式</code> 中，点击“自定义主题”按钮；iPadOS/iOS 版 MWeb 中，可以点击编辑右上角的 “AA” 按钮，再点击当前的主题按钮，在出来的主题切换界面中，点击右上角的“...” 按钮进行自定义主题。</p>
+<p>如果要自定义预览样式，要注意自定义主题编辑界面中的 “按编辑器主题自动生成预览 CSS” 这个复选框。如果勾选这个复选框，MWeb 会按当前定义的编辑器主题的颜色，自动生成相关的 CSS 样式，如果有需要，你也可以在下边的输入框中填入重新定义的 CSS 样式；如果不勾选，则不会生成相关 CSS 样式，这样的话，你就可以在下边的输入框中填入自己的完整的 CSS 样式了。</p>
+<h2><a id="%E5%AF%B9%E5%9B%BE%E7%89%87%E7%9A%84%E7%9B%B8%E5%85%B3%E6%94%AF%E6%8C%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>对图片的相关支持</h2>
+<p>Markdown 是纯文本文件，它不附带任何图片和其它附件，图片和附件都是用引用的方式，是保存在 Markdown 文本之外的地方的。Markdown 最主要也是最重要的特性是“易读易写”，为了更突出这两个优点，我认为直接能查看引用的图片是很有必要的。因此，MWeb 可以在编辑器中直接显示 Markdown 引用的本地和网络图片。这个功能有四种设定：显示图片、显示缩略图、浮动显示图片和不显示图片。如果要修改设置，macOS/iPadOS/iOS 中都可以在偏好设置中设置，macOS 中也可以点击工具条上的 “眼睛” 按钮设置，iPadOS/iOS 中可以点击编辑器右上角的 “AA” 按钮设置。</p>
+<p>macOS/iPadOS/iOS 都支持复制、粘贴方式插入图片和拖拽方式插入图片，当然，也可以使用工具条上的插入图片按钮插入图片。</p>
+<p>如果你是在 macOS 中，请做以下尝试来进一步了解 MWeb 插入图片的方面之处：</p>
+<ol>
+<li>按下 <code>Ctrl + CMD + Shift + 4</code> 键，拖动然后截图，在 MWeb 中，按 <code>CMD + V</code> 键粘贴，即可插入图片。如果你要插入 PNG 格式的图片，可以使用菜单：<code>编辑</code> - <code>粘贴为 PNG</code>。</li>
+<li>在浏览器（如：Safari）中，找到一张图片，然后 <code>右键图片</code> - <code>复制图片</code>，返回 MWeb，按 <code>CMD + V</code> 粘贴即可插入图片。</li>
+<li>直接从 访达（Finder） 中拖拽图片到 MWeb 编辑器中插入图片。</li>
+<li>在访达（Finder）中，找到一张图片文件，按下 <code>CMD + C</code>，返回 MWeb，按 <code>CMD + V</code> 即可插入。</li>
+<li>使用菜单：<code>语法 - 把多张图片合并成一张</code>，体验一下 MWeb 的拼图功能。</li>
+<li>在网站中找一篇带图片和文字的文章，选中图片和文字后，按下 <code>CMD + C</code> 复制，返回 MWeb，使用菜单：<code>编辑 - 把 HTML 粘贴为 Markdown</code>。这样会自动把网页转为 Markdown。如果要下载网页中的网络图片，可以使用菜单：<code>编辑 - 远程图片下载</code> 来把图片下载到本地。</li>
+</ol>
+<h2><a id="%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>设置图片宽度</h2>
+<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
+<pre><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
+</code></pre>
+<h2><a id="mweb%E5%AF%B9%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC%E7%9A%84%E6%94%AF%E6%8C%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 对插入表格的支持</h2>
+<p>你可以按工具栏上的插入表格按钮来插入表格，也可以用快捷键 <code>Ctrl + Shift + T</code>，如下图为 macOS 上的表格插入支持，iPadOS/iOS 上也有此功能：</p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16420003610081.jpg" alt="" /></p>
+<p>对于已存在的表格，你可以把光标移动到表格代码内，然后使用插入表格功能来修改已存在的表格。你可以先插入一张表格，然后再尝试修改。</p>
+<h2><a id="mweb%E5%AF%B9-latex%EF%BC%8Cmermaid%EF%BC%8Cecharts%E4%B9%A6%E5%86%99%E7%9A%84%E8%BE%85%E5%8A%A9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 对 LaTeX，mermaid，echarts 书写的辅助</h2>
+<p>在 MWeb 编辑器中，光标移到 LaTeX中间，即可以预览 LaTeX 公式，如果修改公式，预览也会实时更新，如下图为 LaTeX 公式的辅助，mermaid，echarts 的辅助也是一样效果：</p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16420004813946.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown 语法]]></title>
+    <link href="https://zh.mweb.im/zh-markdown.html"/>
+    <updated>2018-06-29T23:13:33+08:00</updated>
+    <id>https://zh.mweb.im/zh-markdown.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="markdown%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Markdown 的设计哲学</h2>
+<p>以下是引用 <a href="https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a> 的描述，这描述非常清楚地说明了 Markdown 是什么，是用来做什么的。</p>
+<blockquote>
+<p>Markdown 的目标是实现“易读易写”。<br />
+不过最需要强调的便是它的可读性。一份使用 Markdown 格式撰写的文件应该可以直接以纯文字发布，并且看起来不会像是由许多标签或是格式指令所构成。<br />
+Markdown 的语法有个主要的目的：用来作为一种网络内容的<em>写作</em>用语言。</p>
+</blockquote>
+<p>这里再重点说明两点，也是最重要的两点：</p>
+<ul>
+<li>首先，Markdown 是纯文本，它不附带任何图片和其它附件，图片和附件都是用引用的方式，是保存在 Markdown 文本之外的地方的。所以 MWeb 的编辑器，会完整的显示文本，不会有任何的删减。编辑器为了方便查看，会显示图片语法引用的图片，但是 Markdown 本身是纯文本，不带任何格式和样式。</li>
+<li>另外 Markdown 的目标是“易读易写”，而不是为了排版好看。它主要还是为了方便输入文字，也就是说，为了达成“易写”，写的时候建议不要太考虑排版，只考虑用什么语法，比如说是标题、列表还是引用或代码块。Markdown 并不擅长复杂排版的，因为复杂的排版，Markdown 是建议直接写 HTML 的。</li>
+</ul>
+<p>理解这两点有利于了解 MWeb 这个软件的设计理念，从而能更愉快地使用 MWeb，毕竟 MWeb 就是围绕 Markdown 构建的。也有利于了解 MWeb 能做什么，不能做什么，为什么没有软件 A 的功能或者软件 B 的方式。如果有时间，也建议阅读一下 <a href="https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a> 这篇文章。</p>
+<h2><a id="%E5%AD%A6%E4%B9%A0markdown%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>学习 Markdown 语法</h2>
+<p>MWeb 4 采用的是 CommonMark 标准和 GitHub Flavored Markdown (GFM) 的语法，如果要快速上手，只需要简单学习一下即可。学习过程，大概就分三步吧：</p>
+<ol>
+<li><strong>初步学习：</strong> 目前最好的学习地方是：<a href="https://commonmark.org/help/">https://commonmark.org/help/</a> 这里，学习 10 分钟就能上手使用了。</li>
+<li><strong>进一步学习：</strong> 主要是学习 GFM 的扩展语法，主要有删除线、任务列表、表格和脚注，详细可以查看本文中的 GFM 语法扩展，也就这么几种，一下就学会了。</li>
+<li><strong>MWeb 中特有的：</strong> MWeb 中特有的有 TOC、LaTeX、画图支持（mermaid, echarts）和设置图片宽度，这些也会在本文后面说明。</li>
+</ol>
+<p>Markdown 的语法其实很简单，一般只需要了解有什么语法就好，比如说有标题、列表、引用、代码块等等。不知道语法详细，可以直接使用 MWeb 的编辑器插入相关语法。也可以结合 MWeb 的编辑器，一边学一边用，建议阅读 <a href="zh-mweb-editor.html">MWeb 的编辑器介绍</a> 这篇文章。</p>
+<p>另外，在编写 Markdown 文档时，空行的使用非常重要，空行有利于清晰的区分文档的结构和内容，增加文本的易读性。这样，在阅读 Markdown 文档时，就不需要都解析成网页了。一般来说，建议 Markdown 的块元素之间，都留一个空行。</p>
+<h2><a id="github-flavored-markdown-gfm%E8%AF%AD%E6%B3%95%E6%89%A9%E5%B1%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Flavored Markdown (GFM) 语法扩展</h2>
+<p>Github 在 CommonMark 的基础上，扩展了一些常用的语法，主要有删除线、任务列表、表格和脚注，以下就是简单介绍这些语法。</p>
+<h3><a id="%E5%88%A0%E9%99%A4%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>删除线</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">加删除线像这样用： ~~删除这些~~
+</code></pre>
+<p>效果如下：</p>
+<p>加删除线像这样用： <del>删除这些</del></p>
+<h3><a id="%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>任务列表（Task lists）</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre>
+<p>效果如下：</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" disabled="" /> 任务一 未做任务 <code>- + 空格 + [ ]</code></li>
+<li class="task-list-item"><input type="checkbox" checked="" disabled="" /> 任务二 已做任务 <code>- + 空格 + [x]</code></li>
+</ul>
+<h3><a id="%E8%A1%A8%E6%A0%BC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>表格</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>脚注（Footnote）</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">这是一个脚注：[^1]
+
+[^1]: 这里是脚注信息
+</code></pre>
+<p>效果如下：</p>
+<p>这是一个脚注：<sup class="footnote-ref"><a href="#fn-1" id="fnref-1_ref" data-footnote-ref>1</a></sup></p>
+<h2><a id="mweb%E4%B8%AD%E7%89%B9%E6%9C%89%E7%9A%84%E8%AF%AD%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 中特有的语法</h2>
+<h3><a id="%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>图片宽度</h3>
+<p>图片的 Markdown 语法：</p>
+<pre><code class="language-plain_text">![图片描述](https://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![图片描述](url)
+</code></pre>
+<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
+<pre><code class="language-plain_text">![图片描述-w140](https://zh.mweb.im/asset/img/set-up-git.gif)
+</code></pre>
+<p><img src="https://zh.mweb.im/asset/img/set-up-git.gif" alt="图片描述" style="width:140px;" /></p>
+<h3><a id="mweb%E7%94%BB%E5%9B%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MWeb 画图</h3>
+<h4><a id="mermaid" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>mermaid</h4>
+<p>mermaid 是比较流行的画图库，它支持流程图、顺序图和甘特图，它的官网为：<a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a> ，在 MWeb 中使用 mermaid 的语法就是声明代码块的语言为 mermaid，代码块中再写上 mermaid 的画图语法即可，你可以把下面的语法复制到 MWeb 中查看效果。</p>
+<pre><code class="language-plain_text">```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+```
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16421614330357.jpg" alt="" style="width:456px;" /></p>
+<h4><a id="echarts" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>echarts</h4>
+<p>echarts 是百度出品的 js 画图库，它的网址为：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a>，功能非常强大，MWeb 支持 echarts 的一些基本的用法，太高级的不支持。你可以将以下语法复制到 MWeb 中进行尝试。你也可以去 <a href="https://echarts.apache.org/examples/zh/index.html">https://echarts.apache.org/examples/zh/index.html</a> 这个网址查看一些例子，要注意的是 MWeb 只能解析 <code>option = {}</code> 这种简单的，不过应该是足够使用了。</p>
+<pre><code class="language-plain_text">```echarts
+option = {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line'
+    }]
+};
+```
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2022/01/14/16421614994388.jpg" alt="" style="width:467px;" /></p>
+<h3><a id="latex%EF%BC%88-mathjax%E6%B8%B2%E6%9F%93%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>LaTeX （MathJax 渲染）</h3>
+<p>MWeb 采用 CommonMark 中本身的代码块语法来支持 LaTeX 数学公式。CommonMark 中的行内代码和代码块的语法有很高的扩展性，可以随意扩展。MWeb 采用了 ``inline math`` 作为数学公式的行内语法，```math block math ``` 作为数学公式的块语法。然后 `code` 仍然是行内代码的语法， ``inline math`` 在 CommonMark 中也是行内代码，但是在 MWeb 中会渲染成数学公式。这样做的好处是，原 markdown 文档发布到不支持数学公式的环境时，会以代码显示，这样就会显示原本的公式文本，不会太过影响阅读。<br />
+另外，MWeb 也兼容 <code>$ 和 $$</code> 方式的数学公式。使用数学公式时，需要在 <code>偏好设置 - 通用设置</code> 中启用 LaTeX 数学公式，并选择所使用的语法。</p>
+<h3><a id="%E6%B3%A8%E9%87%8A%E5%92%8C%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>注释和阅读更多</h3>
+<!-- comment -->
+<span id="more"></span><!-- more -->
+<p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br />
+<strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
+<h3><a id="toc" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>TOC</h3>
+<p>Markdown 语法：</p>
+<pre><code class="language-plain_text">[TOC]
+</code></pre>
+<p>效果如下：</p>
+<div class="mweb_toc"><ul>
+<li><a href="#markdown%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6">Markdown 的设计哲学</a></li>
+<li><a href="#%E5%AD%A6%E4%B9%A0markdown%E8%AF%AD%E6%B3%95">学习 Markdown 语法</a></li>
+<li><a href="#github-flavored-markdown-gfm%E8%AF%AD%E6%B3%95%E6%89%A9%E5%B1%95">GitHub Flavored Markdown (GFM) 语法扩展</a>
+<ul>
+<li><a href="#%E5%88%A0%E9%99%A4%E7%BA%BF">删除线</a></li>
+<li><a href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%EF%BC%88task-lists%EF%BC%89">任务列表（Task lists）</a></li>
+<li><a href="#%E8%A1%A8%E6%A0%BC">表格</a></li>
+<li><a href="#%E8%84%9A%E6%B3%A8%EF%BC%88footnote%EF%BC%89">脚注（Footnote）</a></li>
+</ul>
+</li>
+<li><a href="#mweb%E4%B8%AD%E7%89%B9%E6%9C%89%E7%9A%84%E8%AF%AD%E6%B3%95">MWeb 中特有的语法</a>
+<ul>
+<li><a href="#%E5%9B%BE%E7%89%87%E5%AE%BD%E5%BA%A6">图片宽度</a></li>
+<li><a href="#mweb%E7%94%BB%E5%9B%BE">MWeb 画图</a>
+<ul>
+<li><a href="#mermaid">mermaid</a></li>
+<li><a href="#echarts">echarts</a></li>
+</ul>
+</li>
+<li><a href="#latex%EF%BC%88-mathjax%E6%B8%B2%E6%9F%93%EF%BC%89">LaTeX （MathJax 渲染）</a></li>
+<li><a href="#%E6%B3%A8%E9%87%8A%E5%92%8C%E9%98%85%E8%AF%BB%E6%9B%B4%E5%A4%9A">注释和阅读更多</a></li>
+<li><a href="#toc">TOC</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section class="footnotes" data-footnotes>
+<ol>
+<li id="fn-1">
+<p>这里是脚注信息 <a href="#fnref-1_ref" class="footnote-backref" data-footnote-backref aria-label="Back to content">&#8617;<a></p>
+</li>
+</ol>
+</section>
 
 ]]></content>
   </entry>
