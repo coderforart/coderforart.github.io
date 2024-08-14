@@ -128,7 +128,8 @@
 <p><img src="media/17224070503308/17224309707311.jpg" alt="" /></p>
 <p>下面将详细说明各个填写项目。</p>
 <p><strong>名称：</strong> 名称可以填入自己想要的名称，能识别这个图片上传服务就可以了。</p>
-<p><strong>AWS 区域：</strong> 和 <strong>存储桶名称：</strong>，创建了存储桶之后就知道了，其中，AWS 区域你可以点击 “选择区域...” 按钮进行选择，或者直接填入。如下图，我这里的 AWS 区域为：<code>ap-southeast-2</code>，存储桶名称为：<code>mwebapp</code>。</p>
+<p><strong>AWS 区域：</strong> 和 <strong>存储桶名称：</strong>，创建了存储桶之后就知道了，其中，AWS 区域你可以点击 “选择区域...” 按钮进行选择，或者直接填入。如下图，我这里的 AWS 区域为：<code>ap-southeast-2</code>，存储桶名称为：<code>mwebapp</code>。<br />
+另外要注意的是，不支持名称中有 <code>.</code> 的存储桶，比如说 <code>s3.sample.com</code> 这种存储桶是不支持的。具体请参考 <a href="https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/bucketnamingrules.html">S3 的存储桶命名规则文档</a>。</p>
 <p><img src="media/17224070503308/17224312090819.jpg" alt="" /></p>
 <p><strong>访问密钥：</strong> 和 <strong>机密访问密钥：</strong> 这两个，需要在 Identity and Access Management (IAM) 中创建用户并分配权限。这部分相当复杂，我只是简单地创建一个名为 <code>mweb</code> 的用户，并授权它 AmazonS3FullAccess 的权限，如下图：</p>
 <p><img src="media/17224070503308/17224330127657.jpg" alt="" /></p>
